@@ -18,15 +18,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #page {
 	display: block;
-	margin: 1em;
+	margin: 0 auto;
+	position: relative;
+	width: 900px;
 }
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 680px;
 }
 #content {
-	margin: 0 280px 0 0;
+	margin: 0 80px 0 0;
 }
 #main .widget-area {
 	float: right;
@@ -319,6 +320,12 @@ img.alignright {
 .wp-smiley {
 	margin: 0;
 }
+img.avatar {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 2px #BBBBBB;
+	padding: 3px;
+}
 
 
 /* =Forms
@@ -331,6 +338,8 @@ img.alignright {
 	width: 60%;
 }
 input[type=text],
+input[type="email"],
+input[type="url"],
 input#s {
 	margin: 0 1em 0 0;
 	width: 60%;
@@ -351,7 +360,9 @@ textarea {
 article.comment {
 	display: block;
 }
-#respond input[type=text] {
+#respond input[type=text],
+input[type="email"],
+input[type="url"] {
 	display: block;
 	width: 60%;
 }
@@ -367,6 +378,9 @@ article.comment {
 #respond .form-allowed-tags code {
 	display: block;
 }
+.comment-author img.avatar {
+  float: right;
+}
 
 
 /* =Widgets
@@ -381,11 +395,124 @@ article.comment {
 .widget-area .widget_search input {
 	float: left;
 }
-
+.widget-area ul, .widget-area li {
+	margin: 2px 0;
+	padding: 0;
+	list-style-position: outside;
+	list-style-image: none;
+}
+.widget-area li a {
+	border-bottom: 1px solid #eee;
+	padding: 2px 0;
+	display: block;
+}
+.widget-area h1 {
+	border-bottom: 1px solid #eee;
+}
 
 /* =Footer
 -------------------------------------------------------------- */
 
 #colophon {
 	padding: 1em 0 0;
+}
+
+/* =Responsive
+-------------------------------------------------------------- */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#page {
+		width: 600px;
+		margin: 0px auto;
+	}
+	#main .widget-area {
+		float: left;
+		overflow: hidden;
+		width: 260px;
+ 		padding-right: 40px;
+	}
+	#primary {
+		width: auto;
+		float: inherit;
+	}
+	#content {
+		margin: 0;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#page {
+		width: auto;
+		margin: 0 30px;
+	}
+	#main .widget-area {
+		clear: both;
+		overflow: hidden;
+		width: 100%;
+	}
+	#primary {
+		width: auto;
+		float: inherit;
+	}
+	#content {
+		margin: 0;
+	}
+	iframe, object, embed {
+		width: 100%;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#page {
+		width: 400px;
+		margin: 0 30px;
+	}
+	#primary {
+		width: auto;
+		float: inherit;
+	}
+	#main .widget-area {
+		clear: both;
+		overflow: hidden;
+		width: 400px;
+	}
+	#content {
+		margin: 0;
+	}
+	iframe, object, embed {
+		width: 100%;
+	}
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	#page {
+		overflow: hidden;
+	}
+	#primary, #content {
+		margin: 0;
+		width: auto;
+	}	
+	#site-title {
+		font-size: 3em;
+	}
+	iframe, object, embed {
+		width: 100%;
+	}
+}
+
+@media print {
+	.widget-area, #branding, #commentform, #colophon {
+		display: none;
+	}
+	#content {
+		margin: 0px;
+	}
+	#page {
+		width: auto;
+	}
 }
