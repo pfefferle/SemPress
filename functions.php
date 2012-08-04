@@ -68,7 +68,7 @@ function sempress_setup() {
 	/**
 	 * Add support for the Aside and Gallery Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
 }
 endif; // sempress_setup
 
@@ -258,9 +258,20 @@ add_filter( 'post_class', 'sempress_post_classes' );
  */
 function sempress_author_link( $link ) {
 	// Adds a class for microformats v2
-	return str_replace("'url'", "'url u-url'", $link);
+	return preg_replace('/(class\s*=\s*[\"|\'])/i', '${1}u-url ', $link);
 }
 add_filter( 'get_comment_author_link', 'sempress_author_link' );
+
+/**
+ * Adds microformats v2 support to the get_avatar() method.
+ *
+ * @since SemPress 0.1
+ */
+function sempress_get_avatar( $tag ) {
+	// Adds a class for microformats v2
+	return preg_replace('/(class\s*=\s*[\"|\'])/i', '${1}u-photo ', $tag);
+}
+add_filter( 'get_avatar', 'sempress_get_avatar' );
 
 /**
  * Returns true if a blog has more than 1 category
@@ -341,6 +352,75 @@ function get_post_id() {
 	$post_id = "post-" . get_the_ID();
 	
 	return apply_filters('post_id', $post_id, get_the_ID());
+}
+endif;
+
+if ( ! function_exists( 'wp_description' ) ):
+/**
+ * Displays a blog description (context sensitive)
+ */
+function wp_description( $display = true ) {
+  $description = wp_trim_words( wptexturize ( get_bloginfo( "description" ) ) );
+
+  if (is_single()) {
+    global $post;
+    $description = wp_trim_words( wptexturize ( strip_shortcodes($post->post_content) ), 25, '...' );
+  }
+  
+  if ( is_category() )
+    $description = wp_trim_words( wptexturize( category_description() ), 25, '...' );
+  
+  if ( is_tag() )
+    $description = wp_trim_words( wptexturize( tag_description() ), 25, '...' );
+  
+  if ($display) {
+    echo $description;
+  } else {
+    return $description;
+  }	
+}
+endif;
+
+if ( ! function_exists( 'wp_keywords' ) ):
+/**
+ * Displays a blogs keywords (context sensitive)
+ */
+function wp_keywords( $display = true ) {
+	$keywords = "";
+  $output = array();
+
+	if ( is_category() || is_tag() || is_tax() ) {
+		global $wp_query;
+		$term = $wp_query->get_queried_object();
+		$keywords = $term->name;
+	}
+	
+	if ( is_single() ) {
+	  $tags  = get_the_tags();
+  	if ( $tags ) {
+  		foreach ( $tags as $tag ) {
+  			$output[] = trim($tag->name);
+  		}
+  		$keywords = implode(", ", $output);
+  	}
+	}
+	
+	// if tags are still empty take the most used
+	if (empty($keywords)) {
+	  $tags = get_tags(array("orderby" => "count", "order" => "desc", "number" => 10));
+	  if ( $tags ) {
+  		foreach ( $tags as $tag ) {
+  			$output[] = trim($tag->name);
+  		}
+  		$keywords = implode(", ", $output);
+  	}
+	}
+
+  if ($display) {
+    echo $keywords;
+  } else {
+    return $keywords;
+  }
 }
 endif;
 
