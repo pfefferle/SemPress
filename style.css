@@ -7,16 +7,106 @@ Description: A semantic, HTML5, canvas for CSS artists and an ultra-minimal set 
 Version: 0.1
 License: GNU General Public License
 License URI: license.txt
-Tags: custom-menu, sticky-post, microformats, microformats-2, schema.org, rtl-language-support, translation-ready, full-width-template, post-formats
+Tags: custom-menu, sticky-post, microformats, microformats-2, schema.org, schema, rtl-language-support, translation-ready, full-width-template, post-formats, responsible
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@font-face {
+  font-family: "FontAwesome";
+  src: url('./font/fontawesome-webfont.eot');
+  src: url('./font/fontawesome-webfont.eot?#iefix') format('eot'),
+       url('./font/fontawesome-webfont.woff') format('woff'),
+       url('./font/fontawesome-webfont.ttf') format('truetype'),
+       url('./font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3f3f3f;
+}
+a {
+  color: #21759B;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+dl {
+  margin-bottom: 18px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 25px;
+}
+hr {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+blockquote {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  padding: 0 0 0 15px;
+  margin: 0 0 18px 40px;
+  position: relative;
+  font-style: italic;
+}
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 100px;
+  position: absolute;
+  left: -40px;
+  top: 30px;
+  color: #999999;
+  font-style: normal;
+}
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+blockquote small {
+  display: block;
+  line-height: 18px;
+  color: #999999;
+  font-style: normal;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+cite {
+  font-style: normal;
+}
+pre {
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px 4px 4px 4px;
+  display: block;
+  font-size: 12.025px;
+  line-height: 18px;
+  margin: 0 0 9px;
+  padding: 8.5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
 /* =Structure
 -------------------------------------------------------------- */
 
 #page {
+<<<<<<< HEAD
 	display: block;
 	margin: 0 auto;
 	position: relative;
@@ -28,62 +118,111 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 #content {
 	margin: 0 80px 0 0;
+=======
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 900px;
+}
+#primary {
+  float: left;
+  width: 680px;
+}
+#content {
+  margin: 0 80px 0 0;
+>>>>>>> more semantic classes and some more seo
 }
 #main .widget-area {
-	float: right;
-	overflow: hidden;
-	width: 220px;
+  float: right;
+  overflow: hidden;
+  width: 220px;
 }
 #colophon {
-	clear: both;
-	display: block;
-	width: 100%;
+  clear: both;
+  display: block;
+  width: 100%;
 }
 
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
 .error404 #content {
-	margin: 0;
+  margin: 0;
 }
 
 /* Text meant only for screen readers */
 .screen-reader-text,
 .assistive-text {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Alignment */
 .alignleft {
-	display: inline;
-	float: left;
+  display: inline;
+  float: left;
 }
 .alignright {
-	display: inline;
-	float: right;
+  display: inline;
+  float: right;
 }
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 /* =Header
 -------------------------------------------------------------- */
 
+#branding {
+  display: block;
+  margin: 5em 0 7em;
+  clear: both;
+}
 #site-title {
-	font-size: 2em;
-	font-weight: bold;
-	margin: .67em 0;
+  font-size: 4em;
+  letter-spacing: -2px;
+  margin: 0;
+}
+#site-title a {
+  color: #444;
+  text-shadow: 0 1px 1px #666;
+  text-decoration: none;
 }
 #site-description {
-	font-size: 1em;
-	font-weight: normal;
-	margin: 0 0 1em;
+  color: #777;
+  font-size: 1.7em;
+  height: auto;
+  line-height: 120%;
+  margin: 0 0 1em;
+  width: 100%;
+  font-weight: 100;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+  color: #444;
+}
+#author-info {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #EEEEEE;
+  background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px 4px 4px 4px;
+  padding: 15px;
+}
+#author-info #author-avatar {
+  margin: 0 30px 20px 0;
+  float: left;
+}
+.page-header h1, #author-description h2 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 
@@ -91,58 +230,160 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 #access {
-	background: #eee;
-	display: block;
-	float: left;
-	margin: 0 auto 1em;
-	width: 100%;
+  display: block;
+  float: left;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(center top , #f5f5f5 0%, #eee 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px 4px 4px 4px;
+  width: 100%;
 }
 #access ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+  list-style: none outside none;
+  margin: 0;
+  padding-left: 0;
 }
 #access li {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
 }
 #access a {
-	display: block;
-	line-height: 2em;
-	padding: 0 1em;
-	text-decoration: none;
+  display: block;
+  line-height: 2em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+#access ul > li > a {
+  border-right: 1px solid #e5e5e5;
+  margin: 0;
 }
 #access ul ul {
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	position: absolute;
-	top: 2em;
-	left: 0;
-	z-index: 99999;
+  background-color: #eee;
+  border-radius: 0px 4px 4px 4px;
+  border: 1px solid #e5e5e5;
+  display: none;
+  float: left;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  z-index: 99999;
 }
 #access ul ul ul {
-	left: 100%;
-	top: 0;
+  left: 100%;
+  top: 0;
 }
 #access ul ul a {
-	background: #dedede;
-	line-height: 1em;
-	padding: .5em .5em .5em 1em;
-	width: 10em;
-	height: auto;
+  line-height: 1em;
+  padding: .5em .5em .5em 1em;
+  width: 10em;
+  height: auto;
+  border-bottom: 1px solid #e5e5e5;
 }
 #access li:hover > a,
-#access ul ul :hover > a {
-	background: #dedede;
-}
-#access ul ul a:hover {
-	background: #cecece;
+#access ul ul li:hover > a {
+  background: #dedede;
 }
 #access ul li:hover > ul {
-	display: block;
+  display: block;
+}
+
+
+/* =Tables
+-------------------------------------------------------------- */
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table {
+  width: 100%;
+  margin-bottom: 18px;
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+table th,
+table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+table th {
+  font-weight: bold;
+}
+table thead th {
+  vertical-align: bottom;
+}
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+table th,
+table td {
+  padding: 4px 5px;
+  border-left: 1px solid #dddddd;
+}
+table caption + thead tr:first-child th,
+table caption + tbody tr:first-child th,
+table caption + tbody tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + tbody tr:first-child th,
+table colgroup + tbody tr:first-child td,
+table thead:first-child tr:first-child th,
+table tbody:first-child tr:first-child th,
+table tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+table thead:first-child tr:first-child th:first-child,
+table tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+table thead:first-child tr:first-child th:last-child,
+table tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+table thead:last-child tr:last-child th:first-child,
+table tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+table thead:last-child tr:last-child th:last-child,
+table tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+table tbody tr:nth-child(odd) td,
+table tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+table tbody tr:hover td,
+table tbody tr:hover th {
+  background-color: #f5f5f5;
 }
 
 
@@ -151,138 +392,221 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .sticky {
 }
+article, aside {
+  display: block;
+  position: relative;
+}
+.entry-content {
+  color: #3F3F3F;
+  font-size: 1em;
+  line-height: 27px;
+}
 .entry-meta {
-	clear: both;
-	display: block;
+  clear: both;
+  display: block;
 }
 .single-author .entry-meta .byline {
-	display: none;
+  display: none;
 }
 #content nav {
-	display: block;
-	overflow: hidden;
+  display: block;
+  overflow: hidden;
 }
 #content nav .nav-previous {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 #content nav .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+  float: right;
+  text-align: right;
+  width: 50%;
 }
-#content #nav-above {
-	display: none;
-}
-.paged #content #nav-above,
-.single #content #nav-above {
-	display: block;
+#nav-above {
+  margin: 0 0 40px;
 }
 #nav-below {
-	margin: 1em 0 0;
+  clear: both;
+  margin: 30px 0 60px;
+}
+.nav-previous, .nav-next {
+  font-size: 12px;
 }
 .page-link {
-	clear: both;
-	margin: 0 0 1em;
+  clear: both;
+  margin: 0 0 1em;
 }
 .page .edit-link {
-	clear: both;
-	display: block;
+  clear: both;
+  display: block;
+}
+.home #content .post,
+.archive #content .post,
+.home #content .page,
+.archive #content .page,
+.search #content .post,
+.search #content .page {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+.entry-meta,
+.tag-archive-meta,
+.category-archive-meta {
+  color: #aaa;
+  font-size: 0.8em;
+}
+.entry-meta a,
+.comment-meta a {
+  color: #777;
+}
+.entry-title, .entry-title a {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 /* 404 page */
 .error404 .widget {
-	float: left;
-	width: 33%;
+  float: left;
+  width: 33%;
 }
 .error404 .widget .widgettitle,
 .error404 .widget ul {
-	margin-right: 1em;
+  margin-right: 1em;
 }
 .error404 .widget_tag_cloud {
-	clear: both;
-	float: none;
-	width: 100%;
+  clear: both;
+  float: none;
+  width: 100%;
 }
 
 /* Notices */
 .post .notice,
 .error404 #searchform {
-	background: #eee;
-	display: block;
-	padding: 1em;
+  background: #eee;
+  display: block;
+  padding: 1em;
 }
 
 /* Image Attachments */
 .image-attachment div.entry-meta {
-	float: left;
+  float: left;
 }
 .image-attachment nav {
-	float: right;
-	margin: 0 0 1em 0;
+  float: right;
+  margin: 0 0 1em 0;
 }
 .image-attachment .entry-content {
-	clear: both;
+  clear: both;
 }
 .image-attachment .entry-content .entry-attachment {
-	background: #eee;
-	margin: 0 0 1em;
-	padding: 1em;
-	text-align: center;
+  background: #eee;
+  margin: 0 0 1em;
+  padding: 1em;
+  text-align: center;
 }
 .image-attachment .entry-content .attachment {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Aside Posts */
 .format-aside .entry-header {
-	display: none;
+  display: none;
 }
 .single .format-aside .entry-header {
-	display: block;
+  display: block;
 }
-.format-aside .entry-content,
-.format-aside .entry-summary {
-	padding-top: 1em;
+
+/* Status Post */
+.post .avatar {
+  float: left;
+  margin: 0 15px 0 0;
 }
-.single .format-aside .entry-content,
-.single .format-aside .entry-summary {
-	padding-top: 0;
+.format-status .entry-header h1 {
+  display: none;
+}
+.format-status .entry-content {
+  font-size: 1.2em;
+}
+.single .format-status .entry-header h1 {
+  display: block;
 }
 
 /* Gallery Posts */
 .format-gallery .gallery-thumb {
-	float: left;
-	margin: 0 1em 0 0;
+  float: left;
+  margin: 0 1em 0 0;
 }
 
 /* Image Posts */
 .format-image .entry-header {
-	display: none;
+  display: none;
 }
 .single .format-image .entry-header {
-	display: block;
+  display: block;
 }
 .format-image .entry-content,
 .format-image .entry-summary {
-	padding-top: 1em;
+  padding-top: 1em;
 }
 .single .format-image .entry-content,
 .single .format-image .entry-summary {
-	padding-top: 0;
+  padding-top: 0;
 }
 
+/* Custom Post Types */
+.format-aside:before,
+.format-video:before,
+.format-audio:before,
+.format-image:before,
+.format-gallery:before,
+.format-link:before,
+.format-quote:before,
+.sticky:before {
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 40px;
+  color: #999999;
+  font-style: normal;
+  position: absolute;
+  left: -60px;
+  top: 10px;
+}
+.format-aside:before {
+  content: "\f075";
+}
+.format-video:before {
+  content: "\f008";
+}
+.format-audio:before {
+  content: "\f0a1";
+}
+.format-image:before {
+  content: "\f03e";
+}
+.format-gallery:before {
+  content: "\f008";
+}
+.format-link:before {
+  content: "\f02e";
+}
+.sticky:before {
+  content: "\f08d";
+}
+.format-quote:before {
+  content: "\f036";
+}
 
 /* =Images
 -------------------------------------------------------------- */
 
 a img {
-	border: none;
+  border: none;
 }
 p img {
-	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+  margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
 }
 /*
 Resize images to fit the main content area.
@@ -296,29 +620,35 @@ img.size-medium,
 .attachment img,
 .widget-area img,
 .wp-caption {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
+  max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+  height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
 img.alignleft {
-	margin-right: 1em;
+  margin-right: 1em;
 }
 img.alignright {
-	margin-left: 1em;
+  margin-left: 1em;
 }
 .wp-caption {
-	padding: .5em;
-	text-align: center;
+  padding: .5em;
+  text-align: center;
 }
 .wp-caption img {
-	margin: .25em;
+  margin: .25em;
 }
 .wp-caption .wp-caption-text {
-	margin: .5em;
+  margin: .5em;
 }
 .gallery-caption {
 }
 .wp-smiley {
-	margin: 0;
+  margin: 0;
+}
+img.avatar {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 1px 2px #BBBBBB;
+  padding: 3px;
 }
 img.avatar {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -331,26 +661,270 @@ img.avatar {
 /* =Forms
 -------------------------------------------------------------- */
 
+form {
+  margin: 0 0 18px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+  font-size: 19.5px;
+  line-height: 36px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+legend small {
+  font-size: 13.5px;
+  color: #999999;
+}
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  display: inline-block;
+  height: 18px;
+  padding: 4px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #555555;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  line-height: normal;
+  cursor: pointer;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+input[type="search"] {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
 #searchform label {
-	display: none;
+  display: none;
 }
 #searchform input#s {
-	width: 60%;
+  width: 40%;
 }
+<<<<<<< HEAD
 input[type=text],
+=======
+input[type="text"],
+>>>>>>> more semantic classes and some more seo
 input[type="email"],
 input[type="url"],
 input#s {
-	margin: 0 1em 0 0;
-	width: 60%;
+  margin: 0 1em 0 0;
+  width: 60%;
 }
 textarea {
-	width: 80%;
+  width: 80%;
+  height: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+input[type="submit"] {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"].active,
+input[type="submit"].disabled,
+input[type="submit"][disabled] {
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+input[type="submit"]:active,
+input[type="submit"].active {
+  background-color: #cccccc \9;
+}
+input[type="submit"]:first-child {
+  *margin-left: 0;
+}
+input[type="submit"]:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+input[type="submit"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+input[type="submit"].active,
+input[type="submit"]:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+input[type="submit"].disabled,
+input[type="submit"][disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 /* Class for labelling required form items */
 .required {
-	color: #cc0033;
+  color: #cc0033;
 }
 
 
@@ -358,25 +932,82 @@ textarea {
 -------------------------------------------------------------- */
 
 article.comment {
-	display: block;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 27px;
 }
+<<<<<<< HEAD
 #respond input[type=text],
 input[type="email"],
 input[type="url"] {
 	display: block;
 	width: 60%;
+=======
+#respond input[type="text"],
+input[type="email"],
+input[type="url"] {
+  display: block;
+  width: 60%;
+>>>>>>> more semantic classes and some more seo
 }
 #respond textarea {
-	display: block;
-	margin: 0 0 1em;
-	width: 80%;
+  display: block;
+  margin: 0 0 1em;
+  width: 80%;
 }
 #respond .form-allowed-tags {
-	clear: both;
-	width: 80%;
+  clear: both;
+  width: 80%;
 }
 #respond .form-allowed-tags code {
-	display: block;
+  display: block;
+}
+.comment-author img.avatar {
+  float: right;
+}
+.form-allowed-tags {
+  display: none;
+}
+#comments {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+.comment-reply-link {
+  background: none repeat scroll 0 0 #e7e7e7;
+  border: medium none;
+  border-radius: 4px 4px 4px 4px;
+  color: #333;
+  display: inline;
+  font-size: 0.6em;
+  height: 16px;
+  line-height: 16px;
+  padding: 4px 8px;
+}
+.comment cite {
+  font-style: normal;
+  font-weight: normal;
+}
+.comment-meta {
+  color: #aaa;
+  display: block;
+  font-size: 12px;
+}
+ol.commentlist {
+  margin: 0;
+  padding: 0;
+}
+.commentlist li {
+  list-style: none outside none;
+  margin: 10px 0;
+}
+.comment-content {
+  font-size: 0.9em;
+}
+.commentlist .odd article {
+  border-radius: 4px 4px 4px 4px;
+  background-color: #EEEEEE;
 }
 .comment-author img.avatar {
 	float: right;
@@ -387,14 +1018,36 @@ input[type="url"] {
 -------------------------------------------------------------- */
 
 .widget {
-	display: block;
+  display: block;
+  margin-bottom: 30px;
+}
+.widget h1 {
+  margin: 0 0 10px;
+}
+.widget-area {
+  font-size: 0.8em;
 }
 .widget-area .widget_search {
-	overflow: hidden;
+  overflow: hidden;
 }
 .widget-area .widget_search input {
-	float: left;
+  float: left;
 }
+.widget-area ul, .widget-area li {
+  margin: 2px 0;
+  padding: 0;
+  list-style-position: outside;
+  list-style-image: none;
+}
+.widget-area li a {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2px 0;
+  display: block;
+}
+.widget-area h1 {
+  border-bottom: 1px solid #e5e5e5;
+}
+<<<<<<< HEAD
 .widget-area ul, .widget-area li {
 	margin: 2px 0;
 	padding: 0;
@@ -409,19 +1062,31 @@ input[type="url"] {
 .widget-area h1 {
 	border-bottom: 1px solid #eee;
 }
+=======
+>>>>>>> more semantic classes and some more seo
 
 /* =Footer
 -------------------------------------------------------------- */
 
 #colophon {
+<<<<<<< HEAD
 	padding: 1em 0 0;
 }
 
+=======
+  padding: 1em 0 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+>>>>>>> more semantic classes and some more seo
 /* =Responsive
 -------------------------------------------------------------- */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+<<<<<<< HEAD
 	#page {
 		width: 600px;
 		margin: 0px auto;
@@ -439,10 +1104,30 @@ input[type="url"] {
 	#content {
 		margin: 0;
 	}
+=======
+  #page {
+    width: 600px;
+    margin: 0px auto;
+  }
+  #main .widget-area {
+    float: left;
+    overflow: hidden;
+    width: 260px;
+    padding-right: 40px;
+  }
+  #primary {
+    width: auto;
+    float: inherit;
+  }
+  #content {
+    margin: 0;
+  }
+>>>>>>> more semantic classes and some more seo
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+<<<<<<< HEAD
 	#page {
 		width: auto;
 		margin: 0 30px;
@@ -462,10 +1147,35 @@ input[type="url"] {
 	iframe, object, embed {
 		width: 100%;
 	}
+=======
+  #page {
+    width: auto;
+    margin: 0 30px;
+  }
+  #main .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
+  #primary {
+    width: auto;
+    float: inherit;
+  }
+  #content {
+    margin: 0;
+  }
+  iframe, object, embed {
+    width: 100%;
+  }
+  #site-description {
+    display: none;
+  }
+>>>>>>> more semantic classes and some more seo
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
+<<<<<<< HEAD
 	#page {
 		width: 400px;
 		margin: 0 30px;
@@ -525,4 +1235,67 @@ input[type="url"] {
 	.widget-area, #branding, #commentform, #colophon { display: none; }
 	#content { margin: 0px; }
 	#page { width: auto; }
+=======
+  #page {
+    width: 400px;
+    margin: 0 30px;
+  }
+  #primary {
+    width: auto;
+    float: inherit;
+  }
+  #main .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 400px;
+  }
+  #content {
+    margin: 0;
+  }
+  iframe, object, embed {
+    width: 100%;
+  }
+  #site-description {
+    display: none;
+  }
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    #page {
+      overflow: hidden;
+    }
+    #primary, #content {
+      margin: 0;
+      width: auto;
+    }
+    #site-title {
+      font-size: 3em;
+    }
+    iframe, object, embed {
+      width: 100%;
+    }
+}
+
+/**
+ * lend from HTML5 boilerplate and tweaked a bit
+ */ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  .widget-area, #branding, #commentform, #colophon { display: none; }
+  #content { margin: 0px; }
+  #page { width: auto; }
+>>>>>>> more semantic classes and some more seo
 }
