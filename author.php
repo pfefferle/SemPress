@@ -24,10 +24,20 @@ get_header(); ?>
 				?>
 
 				<header class="page-header">
-					<h1 class="page-title author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-					  <?php printf( __( 'Author Archives: %s', 'sempress' ), '<span class="vcard h-card"><a class="url u-url fn p-fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="name url">' . get_the_author() . '</a></span>' ); ?>
+					<h1 class="page-title">
+					  <?php printf( __( 'Author Archives: %s', 'sempress' ), get_the_author() ); ?>
 					</h1>
 				</header>
+				
+				<div id="author-info" class="author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div id="author-avatar">
+        	  <?php echo get_avatar( get_the_author_meta('ID'), 60 ); ?>
+					</div><!-- #author-avatar -->
+      		<div id="author-description">
+        		<h2><?php printf( __( 'About: %s', 'sempress' ), '<a class="url u-url fn p-fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="name url">' . get_the_author() . '</a>' ); ?></h2>
+        		<div class="author-note note p-note" itemprop="description"><?php echo get_the_author_meta('description'); ?></div>
+        	</div><!-- #author-description	-->
+        </div><!-- #author-info -->
 
 				<?php
 					/* Since we called the_post() above, we need to
