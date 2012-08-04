@@ -106,19 +106,6 @@ pre {
 -------------------------------------------------------------- */
 
 #page {
-<<<<<<< HEAD
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	width: 900px;
-}
-#primary {
-	float: left;
-	width: 680px;
-}
-#content {
-	margin: 0 80px 0 0;
-=======
   display: block;
   margin: 0 auto;
   position: relative;
@@ -130,7 +117,6 @@ pre {
 }
 #content {
   margin: 0 80px 0 0;
->>>>>>> more semantic classes and some more seo
 }
 #main .widget-area {
   float: right;
@@ -237,7 +223,7 @@ h1, h2, h3, h4, h5 {
   background-repeat: repeat-x;
   border: 1px solid #e5e5e5;
   border-radius: 4px 4px 4px 4px;
-  width: 100%;
+  width:  100%;
 }
 #access ul {
   list-style: none outside none;
@@ -650,12 +636,6 @@ img.avatar {
   box-shadow: 0 1px 2px #BBBBBB;
   padding: 3px;
 }
-img.avatar {
-	background: none repeat scroll 0 0 #FFFFFF;
-	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 1px 2px #BBBBBB;
-	padding: 3px;
-}
 
 
 /* =Forms
@@ -808,11 +788,7 @@ input[type="search"] {
 #searchform input#s {
   width: 40%;
 }
-<<<<<<< HEAD
-input[type=text],
-=======
 input[type="text"],
->>>>>>> more semantic classes and some more seo
 input[type="email"],
 input[type="url"],
 input#s {
@@ -937,19 +913,11 @@ article.comment {
   padding: 10px;
   line-height: 27px;
 }
-<<<<<<< HEAD
-#respond input[type=text],
-input[type="email"],
-input[type="url"] {
-	display: block;
-	width: 60%;
-=======
 #respond input[type="text"],
 input[type="email"],
 input[type="url"] {
   display: block;
   width: 60%;
->>>>>>> more semantic classes and some more seo
 }
 #respond textarea {
   display: block;
@@ -1009,9 +977,6 @@ ol.commentlist {
   border-radius: 4px 4px 4px 4px;
   background-color: #EEEEEE;
 }
-.comment-author img.avatar {
-	float: right;
-}
 
 
 /* =Widgets
@@ -1047,64 +1012,22 @@ ol.commentlist {
 .widget-area h1 {
   border-bottom: 1px solid #e5e5e5;
 }
-<<<<<<< HEAD
-.widget-area ul, .widget-area li {
-	margin: 2px 0;
-	padding: 0;
-	list-style-position: outside;
-	list-style-image: none;
-}
-.widget-area li a {
-	border-bottom: 1px solid #eee;
-	padding: 2px 0;
-	display: block;
-}
-.widget-area h1 {
-	border-bottom: 1px solid #eee;
-}
-=======
->>>>>>> more semantic classes and some more seo
 
 /* =Footer
 -------------------------------------------------------------- */
 
 #colophon {
-<<<<<<< HEAD
-	padding: 1em 0 0;
-}
-
-=======
   padding: 1em 0 0;
   font-size: 12px;
   text-align: center;
 }
 
 
->>>>>>> more semantic classes and some more seo
 /* =Responsive
 -------------------------------------------------------------- */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-<<<<<<< HEAD
-	#page {
-		width: 600px;
-		margin: 0px auto;
-	}
-	#main .widget-area {
-		float: left;
-		overflow: hidden;
-		width: 260px;
- 		padding-right: 40px;
-	}
-	#primary {
-		width: auto;
-		float: inherit;
-	}
-	#content {
-		margin: 0;
-	}
-=======
   #page {
     width: 600px;
     margin: 0px auto;
@@ -1122,32 +1045,10 @@ ol.commentlist {
   #content {
     margin: 0;
   }
->>>>>>> more semantic classes and some more seo
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-<<<<<<< HEAD
-	#page {
-		width: auto;
-		margin: 0 30px;
-	}
-	#main .widget-area {
-		clear: both;
-		overflow: hidden;
-		width: 100%;
-	}
-	#primary {
-		width: auto;
-		float: inherit;
-	}
-	#content {
-		margin: 0;
-	}
-	iframe, object, embed {
-		width: 100%;
-	}
-=======
   #page {
     width: auto;
     margin: 0 30px;
@@ -1167,75 +1068,10 @@ ol.commentlist {
   iframe, object, embed {
     width: 100%;
   }
-  #site-description {
-    display: none;
-  }
->>>>>>> more semantic classes and some more seo
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
-<<<<<<< HEAD
-	#page {
-		width: 400px;
-		margin: 0 30px;
-	}
-	#primary {
-		width: auto;
-		float: inherit;
-	}
-	#main .widget-area {
-		clear: both;
-		overflow: hidden;
-		width: 400px;
-	}
-	#content {
-		margin: 0;
-	}
-	iframe, object, embed {
-		width: 100%;
-	}
-}
-
-@media
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-	#page {
-		overflow: hidden;
-	}
-	#primary, #content {
-		margin: 0;
-		width: auto;
-	}	
-	#site-title {
-		font-size: 3em;
-	}
-	iframe, object, embed {
-		width: 100%;
-	}
-}
-
-/* =Print
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
--------------------------------------------------------------- */
-@media print {
-	* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-	a, a:visited { text-decoration: underline; }
-	a[href]:after { content: " (" attr(href) ")"; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-	thead { display: table-header-group; } /* h5bp.com/t */
-	tr, img { page-break-inside: avoid; }
-	img { max-width: 100% !important; }
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans: 3; widows: 3; }
-	h2, h3 { page-break-after: avoid; }
-	.widget-area, #branding, #commentform, #colophon { display: none; }
-	#content { margin: 0px; }
-	#page { width: auto; }
-=======
   #page {
     width: 400px;
     margin: 0 30px;
@@ -1254,9 +1090,6 @@ ol.commentlist {
   }
   iframe, object, embed {
     width: 100%;
-  }
-  #site-description {
-    display: none;
   }
 }
 
@@ -1297,5 +1130,4 @@ ol.commentlist {
   .widget-area, #branding, #commentform, #colophon { display: none; }
   #content { margin: 0px; }
   #page { width: auto; }
->>>>>>> more semantic classes and some more seo
 }
