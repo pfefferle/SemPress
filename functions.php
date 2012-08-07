@@ -211,7 +211,7 @@ if ( ! function_exists( 'sempress_posted_on' ) ) :
  * @since SemPress 0.1
  */
 function sempress_posted_on() {
-	printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url u-url fn p-fn n" href="%5$s" title="%6$s" rel="author" itemprop="name url">%7$s</a></span></span>', 'sempress' ),
+	printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author p-author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url u-url fn p-fn p-name n" href="%5$s" title="%6$s" rel="author" itemprop="name url">%7$s</a></span></span>', 'sempress' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
