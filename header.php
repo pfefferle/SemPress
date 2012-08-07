@@ -24,26 +24,26 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
+  /*
+   * Print the <title> tag based on what is being viewed.
+   */
+  global $page, $paged;
 
-	wp_title( '|', true, 'right' );
-  
-	// Add the blog name.
-	bloginfo( 'name' );
+  wp_title( '|', true, 'right' );
 
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
+  // Add the blog name.
+  bloginfo( 'name' );
 
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
+  // Add the blog description for the home/front page.
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    echo " | $site_description";
 
-	?></title>
+  // Add a page number if necessary:
+  if ( $paged >= 2 || $page >= 2 )
+    echo ' | ' . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
+
+  ?></title>
 <meta name="description" content="<?php wp_description( ); ?>" />
 <meta name="keywords" content="<?php wp_keywords( ); ?>" />
 <link rel="profile" href="http://microformats.org/profile/specs" />
@@ -61,18 +61,18 @@
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/Blog">
 <div id="page" class="hfeed h-feed">
 <?php do_action( 'before' ); ?>
-	<header id="branding" role="banner">
-		<hgroup>
-			<h1 id="site-title" itemprop="name"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+  <header id="branding" role="banner">
+    <hgroup>
+      <h1 id="site-title" itemprop="name"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+      <h2 id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+    </hgroup>
 
-		<nav id="access" role="navigation">
-			<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'sempress' ); ?></h1>
-			<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sempress' ); ?>"><?php _e( 'Skip to content', 'sempress' ); ?></a></div>
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'sempress' ); ?></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sempress' ); ?>"><?php _e( 'Skip to content', 'sempress' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #access -->
-	</header><!-- #branding -->
+      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </nav><!-- #access -->
+  </header><!-- #branding -->
 
-	<div id="main">
+  <div id="main">
