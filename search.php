@@ -8,43 +8,43 @@
 
 get_header(); ?>
 
-		<section id="primary">
-			<div id="content" role="main">
+    <section id="primary">
+      <div id="content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+      <?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'sempress' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header>
+        <header class="page-header">
+          <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'sempress' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+        </header>
 
-				<?php sempress_content_nav( 'nav-above' ); ?>
+        <?php sempress_content_nav( 'nav-above' ); ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'search' ); ?>
+          <?php get_template_part( 'content', 'search' ); ?>
 
-				<?php endwhile; ?>
+        <?php endwhile; ?>
 
-				<?php sempress_content_nav( 'nav-below' ); ?>
+        <?php sempress_content_nav( 'nav-below' ); ?>
 
-			<?php else : ?>
+      <?php else : ?>
 
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title p-entry-title"><?php _e( 'Nothing Found', 'sempress' ); ?></h1>
-					</header><!-- .entry-header -->
+        <article id="post-0" class="post no-results not-found">
+          <header class="entry-header">
+            <h1 class="entry-title p-entry-title"><?php _e( 'Nothing Found', 'sempress' ); ?></h1>
+          </header><!-- .entry-header -->
 
-					<div class="entry-content e-entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'sempress' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
+          <div class="entry-content e-entry-content">
+            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'sempress' ); ?></p>
+            <?php get_search_form(); ?>
+          </div><!-- .entry-content -->
+        </article><!-- #post-0 -->
 
-			<?php endif; ?>
+      <?php endif; ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary -->
+      </div><!-- #content -->
+    </section><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
