@@ -1,0 +1,362 @@
+# Copyright (C) 2010 SemPress
+# This file is distributed under the same license as the SemPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: SemPress 0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/sempress\n"
+"POT-Creation-Date: 2012-01-06 21:50:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-08-08 22:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Poedit-Basepath: /User/pfefferle/Work/SemPress\n"
+
+#: 404.php:16
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smilie
+#: 404.php:35
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:25
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:27
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:29
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:31 sidebar.php:18
+msgid "Archives"
+msgstr ""
+
+#: archive.php:60 author.php:59 category.php:49 index.php:43 search.php:35
+#: tag.php:51
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:64 author.php:63 category.php:53 index.php:47 tag.php:55
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: author.php:27
+msgid "Author Archives: %s"
+msgstr ""
+
+#: category.php:18
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:32
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: content-aside.php:14 content-gallery.php:14 content-gallery.php:44
+#: content-image.php:14 content.php:9
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-aside.php:23 content-gallery.php:28 content-image.php:18
+#: content.php:24
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-aside.php:24 content-gallery.php:50 content-image.php:19
+#: content-page.php:17 content-single.php:18 content.php:25 image.php:85
+msgid "Pages:"
+msgstr ""
+
+#: content-aside.php:32 content-gallery.php:80 content-image.php:26
+#: content.php:55
+msgid "Leave a comment"
+msgstr ""
+
+#: content-aside.php:32 content-gallery.php:80 content-image.php:26
+#: content.php:55
+msgid "1 Comment"
+msgstr ""
+
+#: content-aside.php:32 content-gallery.php:80 content-image.php:26
+#: content.php:55
+msgid "% Comments"
+msgstr ""
+
+#: content-aside.php:34 content-gallery.php:84 content-image.php:28
+#: content-page.php:18 content-single.php:56 content.php:59 image.php:33
+#: image.php:99
+msgid "Edit"
+msgstr ""
+
+#: content-gallery.php:43
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: used between list items, there is a space after the comma
+#: content-gallery.php:58 content-gallery.php:69 content-single.php:24
+#: content.php:33 content.php:44
+msgid ", "
+msgstr ""
+
+#: content-gallery.php:62 content.php:37
+msgid "Posted in %1$s"
+msgstr ""
+
+#: content-gallery.php:73 content.php:48
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:32
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:34
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: content-single.php:40
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:42
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: footer.php:17
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:17
+msgid "Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:17
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:19
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:65
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:103
+msgid "Sidebar 1"
+msgstr ""
+
+#: functions.php:112
+msgid "Sidebar 2"
+msgstr ""
+
+#: functions.php:114
+msgid "An optional second sidebar area"
+msgstr ""
+
+#: functions.php:134
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:138
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: functions.php:139
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: functions.php:144
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:148
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:177
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:177 functions.php:200
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:187
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:190
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:198
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:226
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</"
+"time></a><span class=\"byline\"> <span class=\"sep\"> by </span> <span class="
+"\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel="
+"\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: functions.php:232
+msgid "View all posts by %s"
+msgstr ""
+
+#: header.php:44
+msgid "Page %s"
+msgstr ""
+
+#: header.php:68
+msgid "Main menu"
+msgstr ""
+
+#: header.php:69
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:23
+msgid ""
+"Published <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s"
+"\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">"
+"%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel="
+"\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:37
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:38
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:91
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:93
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:95
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:97
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: sidebar.php:25
+msgid "Meta"
+msgstr ""
+
+#: tag.php:18
+msgid "Tag Archives: %s"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "sempress"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wordpress.org/extend/themes/sempress"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A semantic, HTML5, canvas for CSS artists and an ultra-minimal set of super-"
+"clean templates for your own WordPress theme development."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Matthias Pfefferle"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://notizblog.org/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid ""
+"custom-menu, sticky-post, microformats, rtl-language-support, translation-"
+"ready, full-width-template, post-formats, blog, minimal"
+msgstr ""
