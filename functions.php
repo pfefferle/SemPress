@@ -234,19 +234,19 @@ endif;
  * @since SemPress 0.1
  */
 function sempress_post_thumbnail($content) {
-	if ( has_post_thumbnail() ) {
-	  $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-	  if ($image['1'] >= "480") {
+  if ( has_post_thumbnail() ) {
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+    if ($image['1'] >= "480") {
       $class="aligncenter";
-	  } else {
-	    $class="alignright";
-	  }
-		$post_thumbnail = '<p>'.get_the_post_thumbnail( null, "full", array( "class" => "$class size-medium" ) ).'</p>';
+    } else {
+      $class="alignright";
+    }
+    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "full", array( "class" => "$class size-medium" ) ).'</p>';
 
-		return $post_thumbnail . $content;
-	} else {
-		return $content;
-	}
+    return $post_thumbnail . $content;
+  } else {
+    return $content;
+  }
 }
 
 add_action('the_content', 'sempress_post_thumbnail', 1);
