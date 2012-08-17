@@ -100,6 +100,9 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+code {
+  word-wrap: break-word;
+}
 
 
 /* =Structure
@@ -198,6 +201,8 @@ pre {
 h1, h2, h3, h4, h5 {
   font-weight: 200;
   color: #444;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 #author-info {
   margin-bottom: 30px;
@@ -1010,6 +1015,7 @@ ol.commentlist {
   padding: 0;
   list-style-position: outside;
   list-style-image: none;
+  list-style-type: none;
 }
 .widget-area li a {
   border-bottom: 1px solid #e5e5e5;
@@ -1034,7 +1040,7 @@ ol.commentlist {
 -------------------------------------------------------------- */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (max-width: 959px) {
   #page {
     width: 600px;
     margin: 0px auto;
@@ -1042,7 +1048,7 @@ ol.commentlist {
   #sidebar {
     float: right;
     overflow: hidden;
-    width: 600px;
+    width: 100%;
   }
   #main .widget-area {
     float: left;
@@ -1057,36 +1063,16 @@ ol.commentlist {
   #content {
     margin: 0;
   }
-  #site-description {
-    font-size: 18px;
-  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   #page {
     width: auto;
     margin: 0 30px;
   }
-  #sidebar {
-    float: right;
-    overflow: hidden;
-    width: 100%;
-  }
   #main .widget-area {
-    clear: both;
-    overflow: hidden;
     width: 100%;
-  }
-  #primary {
-    width: auto;
-    float: inherit;
-  }
-  #content {
-    margin: 0;
-  }
-  #site-description {
-    font-size: 16px;
   }
   iframe, object, embed {
     width: 100%;
@@ -1095,53 +1081,18 @@ ol.commentlist {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  #page {
-    width: auto;
-    margin: 0 30px;
-  }
-  #primary {
-    width: auto;
-    float: inherit;
-  }
-  #main .widget-area {
-    clear: both;
-    overflow: hidden;
-    width: 100%;
-  }
-  #content {
-    margin: 0;
-  }
-  #site-description {
-    font-size: 14px;
-  }
-  iframe, object, embed {
-    width: 100%;
-  }
+
 }
 
 @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
-    #page {
-      overflow: hidden;
-      margin: 0 30px;
-    }
-    #primary, #content {
-      margin: 0;
-      width: auto;
-    }
-    #site-title {
-      font-size: 3em;
-    }
-    iframe, object, embed {
-      width: 100%;
-    }
-    #site-description {
-      display: none;
-    }
-    #branding {
-      margin-top: 10px;
-    }
+  body {
+    font-size: 0.8em;
+  }
+  #site-description {
+    display: none;
+  }
 }
 
 /**
