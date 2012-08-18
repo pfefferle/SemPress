@@ -201,8 +201,6 @@ code {
 h1, h2, h3, h4, h5 {
   font-weight: 200;
   color: #444;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 #author-info {
   margin-bottom: 30px;
@@ -686,7 +684,6 @@ textarea {
   line-height: 18px;
 }
 label {
-  display: block;
   margin-bottom: 5px;
 }
 select,
@@ -1070,6 +1067,9 @@ ol.commentlist {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
+  body {
+    word-wrap: break-word;
+  }
   #page {
     width: auto;
     margin: 0 30px;
@@ -1078,18 +1078,13 @@ ol.commentlist {
     width: 100%;
   }
   iframe, object, embed {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
   }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
-
-}
-
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2) {
   body {
     font-size: 0.8em;
   }
@@ -1104,6 +1099,9 @@ ol.commentlist {
     top: 0;
     left: 0;
     z-index: 1;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
   }
   #access:target ul {
     display: block;
@@ -1118,7 +1116,7 @@ ol.commentlist {
     background-color: #eee;
     margin: 0;
     padding: 0;
-    border-bottom: #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
   }
   #access .section-heading a:before {
     font-family: "FontAwesome";
@@ -1135,10 +1133,13 @@ ol.commentlist {
     clear: both;
     float: none;
     position: inherit;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
   }
   #access:target .skip-link a:before {
     content: '\f057';
     font-family: "FontAwesome";
+    margin-right: 10px;
   }
   #access li {
     float: inherit;
@@ -1149,7 +1150,6 @@ ol.commentlist {
     display: none;
     margin: inherit;
     padding-left: inherit;
-    border-radius: 0;
   }
   #access ul ul {
     display: inherit;
