@@ -1063,6 +1063,9 @@ ol.commentlist {
   #content {
     margin: 0;
   }
+  .post:before {
+    content: none;
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1092,6 +1095,85 @@ ol.commentlist {
   }
   #site-description {
     display: none;
+  }
+  #page {
+    position: inherit;
+  }
+  #access {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #access:target ul {
+    display: block;
+  }
+  #access .section-heading {
+    width: 100%;
+    clip: inherit;
+    display: block;
+    clear: both;
+    float: none;
+    z-index: 3;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    border-bottom: #e5e5e5;
+  }
+  #access .section-heading a:before {
+    font-family: "FontAwesome";
+    content: '\f0c9 ';
+    margin-right: 10px;
+  }
+  #access:target .section-heading {
+    display: none;
+  }
+  #access:target .skip-link {
+    display: block;
+    clip: inherit;
+    display: block;
+    clear: both;
+    float: none;
+    position: inherit;
+  }
+  #access:target .skip-link a:before {
+    content: '\f057';
+    font-family: "FontAwesome";
+  }
+  #access li {
+    float: inherit;
+    margin: inherit;
+  }
+  #access ul {
+    padding-top: 30px;
+    display: none;
+    margin: inherit;
+    padding-left: inherit;
+    border-radius: 0;
+  }
+  #access ul ul {
+    display: inherit;
+    position: inherit;
+    float: none;
+    padding: inherit;
+    margin-left: 10px;
+    border: none;
+    top: inherit;
+    left: inherit;
+  }
+  #access ul > li > a {
+    border-right: none;
+    margin: inherit;
+  }
+  #access ul ul ul {
+    left: inherit;
+    top: inherit;
+  }
+  #access ul ul a {
+    line-height: 1em;
+    height: auto;
+    border-bottom: inherit;
+    width: auto;
   }
 }
 

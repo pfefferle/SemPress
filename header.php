@@ -68,7 +68,7 @@
     </hgroup>
 
     <nav id="access" role="navigation">
-      <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'sempress' ); ?></h1>
+      <h1 class="assistive-text section-heading"><a href="#access" title="<?php esc_attr_e( 'Main menu', 'sempress' ); ?>"><?php _e( 'Main menu', 'sempress' ); ?></a></h1>
       <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sempress' ); ?>"><?php _e( 'Skip to content', 'sempress' ); ?></a></div>
 
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
