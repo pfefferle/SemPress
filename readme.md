@@ -41,11 +41,19 @@ Web Semantics
 
 SemPress' code is marked-up with microformats and microdata:
 
-* used microformats: hAtom, hCard, rel-tag and XFN
-* used microformats version 2: h-atom and h-card
-* used microdata: schema.org/Blog, schema.org/BlogPosting and schema.org/person
+* used [microformats](http://microformats.org/): [hAtom](http://microformats.org/wiki/hatom), [hCard](http://microformats.org/wiki/hcard), [rel-tag](http://microformats.org/wiki/rel-tag) and [XFN](http://microformats.org/wiki/xfn)
+* used [microformats version 2](http://microformats.org/wiki/microformats-2): h-atom and h-card
+* used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): http://schema.org/Blog, http://schema.org/BlogPosting and http://schema.org/person
 
 Planned formats:
 
 * micormats (v2): hAudio and hMedia
-* microdata: schema.org/MediaObject
+* microdata: http://schema.org/MediaObject
+
+WordPress Features
+--------------
+
+SemPress supports:
+
+* [Custom Post Types](http://codex.wordpress.org/Post_Types): aside, status, gallery, video, audio, link and image
+* [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails): 
