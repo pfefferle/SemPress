@@ -188,7 +188,7 @@ function sempress_comment( $comment, $args, $depth ) {
         <?php endif; ?>
 
         <div class="comment-meta commentmetadata">
-          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
           <?php
             /* translators: 1: date, 2: time */
             printf( __( '%1$s at %2$s', 'sempress' ), get_comment_date(), get_comment_time() ); ?>
@@ -216,7 +216,7 @@ if ( ! function_exists( 'sempress_posted_on' ) ) :
  * @since SemPress 0.1
  */
 function sempress_posted_on() {
-  printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author p-author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url u-url fn p-fn p-name n" href="%5$s" title="%6$s" rel="author" itemprop="name url">%7$s</a></span></span>', 'sempress' ),
+  printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified">%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author p-author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url u-url fn p-fn p-name n" href="%5$s" title="%6$s" rel="author" itemprop="name url">%7$s</a></span></span>', 'sempress' ),
     esc_url( get_permalink() ),
     esc_attr( get_the_time() ),
     esc_attr( get_the_date( 'c' ) ),
