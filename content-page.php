@@ -7,7 +7,7 @@
  */
 ?>
 
-<article <?php post_id(); ?> <?php post_class(); ?>>
+<article <?php sempress_post_id(); ?> <?php post_class(); ?>>
   <header class="entry-header">
     <h1 class="entry-title p-entry-title"><?php the_title(); ?></h1>
   </header><!-- .entry-header -->

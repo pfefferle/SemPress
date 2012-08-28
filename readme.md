@@ -16,7 +16,7 @@ From the [micrormats wiki](http://microformats.org/wiki/posh):
 SemPress is fully HTML5 compatible and uses a lot of the new tags for the best possible content structure:
 
 ```php
-<aside <?php post_id(); ?> <?php post_class(); ?>>
+<aside <?php sempress_post_id(); ?> <?php post_class(); ?>>
   <header class="entry-header">
     <h1 class="entry-title p-entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sempress' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
   </header><!-- .entry-header -->

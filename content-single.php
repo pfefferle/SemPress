@@ -5,7 +5,7 @@
  */
 ?>
 
-<article <?php post_id(); ?> <?php post_class(); ?> itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+<article <?php sempress_post_id(); ?> <?php post_class(); ?> itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="entry-header">
     <h1 class="entry-title p-entry-title" itemprop="name"><?php the_title(); ?></h1>
 

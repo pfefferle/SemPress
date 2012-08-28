@@ -355,33 +355,29 @@ function sempress_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'sempress_enhanced_image_navigation' );
 
-if ( ! function_exists( 'post_id' ) ):
 /**
  * Display the id for the post div.
  *
  * @param string $id.
  */
-function post_id( $post_id = null ) {
+function sempress_post_id( $post_id = null ) {
   if ($post_id) {
     echo 'id="' . $post_id  . '"';
   } else {
-    echo 'id="' . get_post_id()  . '"';
+    echo 'id="' . sempress_get_post_id()  . '"';
   } 
 }
-endif;
 
-if ( ! function_exists( 'get_post_id' ) ):
 /**
  * Retrieve the id for the post div.
  *
  * @return string The post-id.
  */
-function get_post_id() {
+function sempress_get_post_id() {
   $post_id = "post-" . get_the_ID();
   
-  return apply_filters('post_id', $post_id, get_the_ID());
+  return apply_filters('sempress_post_id', $post_id, get_the_ID());
 }
-endif;
 
 /**
  * Displays a blog description (context sensitive)
