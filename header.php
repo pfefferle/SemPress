@@ -44,8 +44,8 @@
     echo ' | ' . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
 
   ?></title>
-<meta name="description" content="<?php wp_description( ); ?>" />
-<meta name="keywords" content="<?php wp_keywords( ); ?>" />
+<meta name="description" content="<?php sempress_meta_description( ); ?>" />
+<meta name="keywords" content="<?php sempress_meta_keywords( ); ?>" />
 <link rel="profile" href="http://microformats.org/profile/specs" />
 <link rel="profile" href="http://microformats.org/profile/hatom" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />

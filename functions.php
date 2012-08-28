@@ -383,11 +383,10 @@ function get_post_id() {
 }
 endif;
 
-if ( ! function_exists( 'wp_description' ) ):
 /**
  * Displays a blog description (context sensitive)
  */
-function wp_description( $display = true ) {
+function sempress_meta_description( $display = true ) {
   $description = wp_trim_words( wptexturize ( get_bloginfo( "description" ) ) );
 
   if (is_single()) {
@@ -407,13 +406,11 @@ function wp_description( $display = true ) {
     return $description;
   } 
 }
-endif;
 
-if ( ! function_exists( 'wp_keywords' ) ):
 /**
  * Displays a blogs keywords (context sensitive)
  */
-function wp_keywords( $display = true ) {
+function sempress_meta_keywords( $display = true ) {
   $keywords = "";
   $output = array();
 
@@ -450,7 +447,6 @@ function wp_keywords( $display = true ) {
     return $keywords;
   }
 }
-endif;
 
 /**
  * adds the new HTML5 input types to the comment-form
