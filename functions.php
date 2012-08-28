@@ -389,16 +389,16 @@ endif;
 function sempress_meta_description( $display = true ) {
   $description = wp_trim_words( wptexturize ( get_bloginfo( "description" ) ) );
 
-  if (is_single()) {
+  if ( is_singular() ) {
     global $post;
     $description = wp_trim_words( wptexturize ( strip_shortcodes($post->post_content) ), 25, '...' );
   }
   
   if ( is_category() )
-    $description = wp_trim_words( wptexturize( category_description() ), 25, '...' );
+    $description = wp_trim_words( wptexturize ( category_description() ), 25, '...' );
   
   if ( is_tag() )
-    $description = wp_trim_words( wptexturize( tag_description() ), 25, '...' );
+    $description = wp_trim_words( wptexturize ( tag_description() ), 25, '...' );
   
   if ($display) {
     echo $description;
