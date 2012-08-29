@@ -47,12 +47,12 @@ dd {
 hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #999999;
+  border-bottom: 1px dotted #999;
 }
 blockquote {
   font-family: Georgia,"Times New Roman",Times,serif;
@@ -68,7 +68,7 @@ blockquote:before {
   position: absolute;
   left: -40px;
   top: 30px;
-  color: #999999;
+  color: #999;
   font-style: normal;
 }
 blockquote p {
@@ -79,7 +79,7 @@ blockquote p {
 blockquote small {
   display: block;
   line-height: 18px;
-  color: #999999;
+  color: #999;
   font-style: normal;
 }
 blockquote small:before {
@@ -89,7 +89,7 @@ cite {
   font-style: normal;
 }
 pre {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px 4px 4px 4px;
   display: block;
@@ -205,10 +205,10 @@ h1, h2, h3, h4, h5 {
 #author-info {
   margin-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
-  background-color: #EEEEEE;
-  background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+  background-color: #eee;
+  background-image: -moz-linear-gradient(center top , #f5f5f5 0%, #eee 100%);
   background-repeat: repeat-x;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   border-radius: 4px 4px 4px 4px;
   padding: 15px;
 }
@@ -297,7 +297,7 @@ table {
 table {
   width: 100%;
   margin-bottom: 18px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
@@ -311,7 +311,7 @@ table td {
   line-height: 18px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 table th {
   font-weight: bold;
@@ -328,12 +328,12 @@ table thead:first-child tr:first-child td {
   border-top: 0;
 }
 table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ddd;
 }
 table th,
 table td {
   padding: 4px 5px;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
 }
 table caption + thead tr:first-child th,
 table caption + tbody tr:first-child th,
@@ -393,7 +393,7 @@ article, aside {
   position: relative;
 }
 .entry-content {
-  color: #3F3F3F;
+  color: #3f3f3f;
   font-size: 1em;
   line-height: 27px;
 }
@@ -564,7 +564,7 @@ article, aside {
   font-family: "FontAwesome";
   display: block;
   font-size: 40px;
-  color: #999999;
+  color: #999;
   font-style: normal;
   position: absolute;
   left: -60px;
@@ -646,9 +646,9 @@ img.aligncenter {
   margin: 0;
 }
 img.avatar {
-  background: none repeat scroll 0 0 #FFFFFF;
+  background: none repeat scroll 0 0 #fff;
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0 1px 2px #BBBBBB;
+  box-shadow: 0 1px 2px #bbb;
   padding: 3px;
 }
 
@@ -671,13 +671,13 @@ legend {
   margin-bottom: 27px;
   font-size: 19.5px;
   line-height: 36px;
-  color: #333333;
+  color: #333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 legend small {
   font-size: 13.5px;
-  color: #999999;
+  color: #999;
 }
 label,
 input,
@@ -711,7 +711,7 @@ input[type="color"] {
   margin-bottom: 9px;
   font-size: 13px;
   line-height: 18px;
-  color: #555555;
+  color: #555;
 }
 textarea,
 input[type="text"],
@@ -728,8 +728,8 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -870,7 +870,7 @@ input[type="submit"]:first-child {
   *margin-left: 0;
 }
 input[type="submit"]:hover {
-  color: #333333;
+  color: #333;
   text-decoration: none;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
@@ -987,7 +987,7 @@ ol.commentlist {
 }
 .commentlist .odd article {
   border-radius: 4px 4px 4px 4px;
-  background-color: #EEEEEE;
+  background-color: #eee;
 }
 
 
