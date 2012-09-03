@@ -103,6 +103,10 @@ pre {
 code {
   word-wrap: break-word;
 }
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
 
 
 /* =Structure
@@ -256,7 +260,7 @@ h1, h2, h3, h4, h5 {
 }
 #access ul ul {
   background-color: #eee;
-  border-radius: 0px 4px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   border: 1px solid #e5e5e5;
   display: none;
   float: left;
@@ -536,20 +540,12 @@ article, aside {
   margin: 0 1em 0 0;
 }
 
-/* Image Posts */
-.format-image .entry-header {
+/* Link Posts */
+.format-link .entry-header {
   display: none;
 }
-.single .format-image .entry-header {
+.single .format-link .entry-header {
   display: block;
-}
-.format-image .entry-content,
-.format-image .entry-summary {
-  padding-top: 1em;
-}
-.single .format-image .entry-content,
-.single .format-image .entry-summary {
-  padding-top: 0;
 }
 
 /* Custom Post Types */
@@ -568,7 +564,7 @@ article, aside {
   font-style: normal;
   position: absolute;
   left: -60px;
-  top: 10px;
+  top: 8px;
 }
 .format-aside:before {
   content: "\f075";
@@ -782,23 +778,8 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
-input[type="search"] {
-  padding-right: 14px;
-  padding-right: 4px \9;
-  padding-left: 14px;
-  padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
-  margin-bottom: 0;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  border-radius: 14px;
-}
 #searchform label {
   display: none;
-}
-#searchform input#s {
-  width: 40%;
 }
 input[type="text"],
 input[type="email"],
@@ -969,7 +950,7 @@ input[type="url"] {
   font-style: normal;
   font-weight: normal;
 }
-.comment-meta {
+.comment-meta, .comment-notes {
   color: #aaa;
   display: block;
   font-size: 12px;
@@ -1088,9 +1069,6 @@ ol.commentlist {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  body {
-    font-size: 0.8em;
-  }
   #site-description {
     display: none;
   }
@@ -1108,6 +1086,7 @@ ol.commentlist {
   }
   #access:target ul {
     display: block;
+    font-size: 17px;
   }
   #access .section-heading {
     width: 100%;
@@ -1129,27 +1108,11 @@ ol.commentlist {
   #access:target .section-heading {
     display: none;
   }
-  #access:target .skip-link {
-    display: block;
-    clip: inherit;
-    display: block;
-    clear: both;
-    float: none;
-    position: inherit;
-    width: 100%;
-    border-bottom: 1px solid #e5e5e5;
-  }
-  #access:target .skip-link a:before {
-    content: '\f057';
-    font-family: "FontAwesome";
-    margin-right: 10px;
-  }
   #access li {
     float: inherit;
     margin: inherit;
   }
   #access ul {
-    padding-top: 30px;
     display: none;
     margin: inherit;
     padding-left: inherit;
@@ -1177,6 +1140,9 @@ ol.commentlist {
     height: auto;
     border-bottom: inherit;
     width: auto;
+  }
+  .entry-title a {
+    font-size: 0.8em;
   }
 }
 
