@@ -99,9 +99,33 @@ pre {
   padding: 8.5px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  position: relative;
 }
 code {
   word-wrap: break-word;
+}
+pre code {
+  display: block;
+  margin-top: 30px;
+}
+pre code:after {
+  content: "code";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+  display: block;
+}
+pre code[data-code-type]:after {
+  content: "" attr(data-code-type) " code";
 }
 ins {
   background: #fff9c0;
