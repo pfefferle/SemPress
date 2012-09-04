@@ -25,7 +25,7 @@ get_header(); ?>
 
         <header class="page-header">
           <h1 class="page-title">
-            <?php printf( __( 'Author Archives: %s', 'sempress' ), get_the_author() ); ?>
+            <?php _e( 'Author Archives', 'sempress' ); ?>
           </h1>
         </header>
         
