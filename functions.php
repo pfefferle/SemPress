@@ -19,7 +19,7 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 
 /**
@@ -130,7 +130,7 @@ if ( ! function_exists( 'sempress_content_nav' ) ):
 /**
  * Display navigation to next/previous pages when applicable
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_content_nav( $nav_id ) {
   global $wp_query;
@@ -171,7 +171,7 @@ if ( ! function_exists( 'sempress_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
@@ -214,7 +214,7 @@ if ( ! function_exists( 'sempress_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  * Create your own sempress_posted_on to override in a child theme
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_posted_on() {
   printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified">%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author p-author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url u-url fn p-fn p-name n" href="%5$s" title="%6$s" rel="author" itemprop="name url">%7$s</a></span></span>', 'sempress' ),
@@ -232,7 +232,7 @@ endif;
 /**
  * Adds post-thumbnail support :)
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_post_thumbnail($content) {
   if ( has_post_thumbnail() ) {
@@ -254,7 +254,7 @@ add_action('the_content', 'sempress_post_thumbnail', 1);
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_body_classes( $classes ) {
   // Adds a class of single-author to blogs with only 1 published author
@@ -269,7 +269,7 @@ add_filter( 'body_class', 'sempress_body_classes' );
 /**
  * Adds custom classes to the array of post classes.
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_post_classes( $classes ) {
   // Adds a class for microformats v2
@@ -282,7 +282,7 @@ add_filter( 'post_class', 'sempress_post_classes' );
 /**
  * Adds microformats v2 support to the comment_author_link.
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_author_link( $link ) {
   // Adds a class for microformats v2
@@ -293,7 +293,7 @@ add_filter( 'get_comment_author_link', 'sempress_author_link' );
 /**
  * Adds microformats v2 support to the get_avatar() method.
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_get_avatar( $tag ) {
   // Adds a class for microformats v2
@@ -304,7 +304,7 @@ add_filter( 'get_avatar', 'sempress_get_avatar' );
 /**
  * Returns true if a blog has more than 1 category
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_categorized_blog() {
   if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
@@ -331,7 +331,7 @@ function sempress_categorized_blog() {
 /**
  * Flush out the transients used in sempress_categorized_blog
  *
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 function sempress_category_transient_flusher() {
   // Like, beat it. Dig?

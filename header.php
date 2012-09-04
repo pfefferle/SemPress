@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 6]>

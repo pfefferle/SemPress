@@ -3,7 +3,7 @@
  * The template for displaying Search Results pages.
  *
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 
 get_header(); ?>

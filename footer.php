@@ -5,7 +5,7 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 ?>
 

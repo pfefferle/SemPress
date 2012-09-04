@@ -8,7 +8,7 @@
  * located in the functions.php file.
  *
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 ?>
   <div id="comments">

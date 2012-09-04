@@ -1,7 +1,7 @@
 <?php
 /**
  * @package SemPress
- * @since SemPress 0.1
+ * @since SemPress 1.0.0
  */
 ?>
 
