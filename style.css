@@ -124,8 +124,8 @@ pre code:after {
   border-radius: 4px 0 4px 0;
   display: block;
 }
-pre code[data-code-type]:after {
-  content: "" attr(data-code-type) " code";
+pre code[data-programming-language]:after {
+  content: "" attr(data-programming-language) " code";
 }
 ins {
   background: #fff9c0;
