@@ -31,7 +31,7 @@ get_header(); ?>
         
         <div id="author-info" class="author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <div id="author-avatar">
-            <?php echo get_avatar( get_the_author_meta('ID'), 60 ); ?>
+            <?php echo get_avatar( get_the_author_meta('ID'), 40 ); ?>
           </div><!-- #author-avatar -->
           <div id="author-description">
             <h2><?php printf( __( 'About: %s', 'sempress' ), '<a class="url u-url fn p-fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="name url">' . get_the_author() . '</a>' ); ?></h2>

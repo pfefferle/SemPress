@@ -241,12 +241,15 @@ h1, h2, h3, h4, h5 {
   padding: 15px;
 }
 #author-info #author-avatar {
-  margin: 0 30px 20px 0;
-  float: left;
+  margin: 0 0 20px 20px;
+  float: right;
 }
 .page-header h1, #author-description h2 {
   margin-top: 0;
   padding-top: 0;
+}
+#author-description .author-note {
+  font-size: 14px;
 }
 
 
