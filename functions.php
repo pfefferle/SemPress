@@ -236,13 +236,12 @@ endif;
  */
 function sempress_post_thumbnail($content) {
   if ( has_post_thumbnail() ) {
-    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-    if ($image['1'] >= "480") {
-      $class="aligncenter";
-    } else {
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
+    $class = "aligncenter";
+    if ($image['1'] < "480")
       $class="alignright";
-    }
-    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "full", array( "class" => "$class size-medium" ) ).'</p>';
+
+    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "post-thumbnail", array( "class" => $class ) ).'</p>';
 
     return $post_thumbnail . $content;
   } else {
