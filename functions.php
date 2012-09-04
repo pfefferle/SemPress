@@ -62,6 +62,7 @@ function sempress_setup() {
    * This theme uses post thumbnails
    */
   add_theme_support( 'post-thumbnails' );
+  set_post_thumbnail_size( 600, 9999 ); // Unlimited height, soft crop
 
   /**
    * This theme uses wp_nav_menu() in one location.
