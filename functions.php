@@ -241,7 +241,7 @@ function sempress_post_thumbnail($content) {
     if ($image['1'] < "480")
       $class="alignright";
 
-    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "post-thumbnail", array( "class" => $class ) ).'</p>';
+    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "post-thumbnail", array( "class" => $class, "itemprop" => "image" ) ).'</p>';
 
     return $post_thumbnail . $content;
   } else {
