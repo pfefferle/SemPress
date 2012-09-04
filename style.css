@@ -429,9 +429,6 @@ article, aside {
   clear: both;
   display: block;
 }
-.single-author .entry-meta .byline {
-  display: none;
-}
 #content nav {
   display: block;
   overflow: hidden;
