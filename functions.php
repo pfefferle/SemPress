@@ -248,7 +248,6 @@ function sempress_post_thumbnail($content) {
     return $content;
   }
 }
-
 add_action('the_content', 'sempress_post_thumbnail', 1);
 
 /**
