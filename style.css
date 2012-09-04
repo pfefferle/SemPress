@@ -974,7 +974,7 @@ input[type="url"] {
   font-style: normal;
   font-weight: normal;
 }
-.comment-meta, .comment-notes {
+.comment-meta, .comment-notes, .logged-in-as {
   color: #aaa;
   display: block;
   font-size: 12px;
