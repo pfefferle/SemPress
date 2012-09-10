@@ -445,6 +445,9 @@ function sempress_meta_keywords( $display = true ) {
 
 /**
  * adds the new HTML5 input types to the comment-form
+ *
+ * @param string $form
+ * @return string
  */
 function sempress_comment_input_types($fields) {
   if (get_option("require_name_email", false)) {
@@ -462,6 +465,9 @@ add_filter("comment_form_default_fields", "sempress_comment_input_types");
 
 /**
  * adds the new HTML5 input type to the search-field
+ *
+ * @param string $form
+ * @return string
  */
 function sempress_search_form_input_type($form) {
   return preg_replace('/"text"/', '"search"', $form);
@@ -470,11 +476,36 @@ add_filter("get_search_form", "sempress_search_form_input_type");
 
 /**
  * adds the new HTML5 input types to the comment-text-area
+ *
+ * @param string $form
+ * @return string
  */
 function sempress_comment_field_input_type($field) {
   return preg_replace('/<textarea/', '<textarea required', $field);
 }
 add_filter("comment_form_field_comment", "sempress_comment_field_input_type");
+
+/**
+ * hide blog item types on single pages and posts
+ */
+function sempress_blog_itemscope() {
+  if (is_author()) {
+    echo ' itemscope itemtype="http://schema.org/ProfilePage"';
+  } elseif (is_search()) {
+    echo ' itemscope itemtype="http://schema.org/SearchResultsPage"';
+  } elseif (!is_singular()) {
+    echo ' itemscope itemtype="http://schema.org/Blog"';
+  }
+}
+
+/**
+ * hide blog item properties on single pages and posts
+ */
+function sempress_blog_itemprop($prop) {
+  if (!is_singular()) {
+    echo ' itemprop="'.$prop.'"';
+  }
+}
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a SemPress.

@@ -58,13 +58,13 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> itemscope itemtype="http://schema.org/Blog">
+<body <?php body_class(); ?><?php sempress_blog_itemscope(); ?>>
 <div id="page" class="hfeed h-feed">
 <?php do_action( 'before' ); ?>
   <header id="branding" role="banner">
     <hgroup>
-      <h1 id="site-title" itemprop="name"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-      <h2 id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+      <h1 id="site-title"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
+      <h2 id="site-description"<?php sempress_blog_itemprop("description"); ?>><?php bloginfo( 'description' ); ?></h2>
     </hgroup>
 
     <nav id="access" role="navigation">
