@@ -489,11 +489,7 @@ add_filter("comment_form_field_comment", "sempress_comment_field_input_type");
  * hide blog item types on single pages and posts
  */
 function sempress_blog_itemscope() {
-  if (is_author()) {
-    echo ' itemscope itemtype="http://schema.org/ProfilePage"';
-  } elseif (is_search()) {
-    echo ' itemscope itemtype="http://schema.org/SearchResultsPage"';
-  } elseif (!is_singular()) {
+  if (!is_singular()) {
     echo ' itemscope itemtype="http://schema.org/Blog"';
   }
 }
