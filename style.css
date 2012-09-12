@@ -483,7 +483,7 @@ article, aside {
 .comment-meta a {
   color: #777;
 }
-.entry-title, .entry-title a {
+.post .entry-title, .post .entry-title a {
   font-size: 40px;
   margin: 0;
   padding: 0;
@@ -603,7 +603,7 @@ article, aside {
   content: "\f03e";
 }
 .format-gallery:before {
-  content: "\f008";
+  content: "\f03e";
 }
 .format-link:before {
   content: "\f02e";
@@ -613,6 +613,14 @@ article, aside {
 }
 .format-quote:before {
   content: "\f036";
+}
+
+.format-quote .entry-title, .format-quote .entry-title a,
+.format-image .entry-title, .format-image .entry-title a,
+.format-video .entry-title, .format-video .entry-title a,
+.format-audio .entry-title, .format-audio .entry-title a
+.format-gallery .entry-title, .format-gallery .entry-title a {
+  font-size: 25px;
 }
 
 /* =Images
@@ -646,7 +654,7 @@ img.alignleft {
 img.alignright {
   margin-left: 1em;
 }
-img.aligncenter {
+img.aligncenter, .attachment-thumbnail {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px 3px 3px 3px;
 }
