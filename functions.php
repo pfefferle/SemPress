@@ -504,5 +504,17 @@ function sempress_blog_itemprop($prop) {
 }
 
 /**
+ * add .attachement to the imported media-objects
+ */
+function sempress_oembed_dataparse($return, $data, $url) {
+  if ($return) {
+    $return = '<div class="media-attachment oembed">' . $return . '</div>';
+  }
+  
+  return $return;
+}
+add_filter( 'oembed_dataparse', 'sempress_oembed_dataparse', 3 );
+
+/**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a SemPress.
  */
