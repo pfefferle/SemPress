@@ -240,9 +240,8 @@ h1, h2, h3, h4, h5 {
 #author-info {
   margin-bottom: 30px;
 }
-#author-info #author-avatar img {
-  margin: 0 0 20px 20px;
-  float: right;
+.page-header {
+  padding-bottom: 45px;
 }
 .page-header h1, #author-description h2 {
   margin-top: 0;
