@@ -470,9 +470,7 @@ add_filter("comment_form_default_fields", "sempress_comment_input_types");
  * @return string
  */
 function sempress_search_form_input_type($form) {
-  $form = preg_replace('/"text"/', '"search"', $form);
-  $form = preg_replace('/\/>/', 'placeholder="'.__('Search here&hellip;', 'sempress').'"/>', $form);
-  return $form;
+  return preg_replace('/"text"/', '"search" placeholder="'.__('Search here&hellip;', 'sempress').'"', $form);
 }
 add_filter("get_search_form", "sempress_search_form_input_type");
 
