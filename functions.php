@@ -181,7 +181,7 @@ function sempress_comment( $comment, $args, $depth ) {
       <footer>
         <div class="comment-author vcard h-card">
           <?php echo get_avatar( $comment, 40 ); ?>
-          <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-fn">%s</cite>', get_comment_author_link() ) ); ?>
+          <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn n p-fn p-name">%s</cite>', get_comment_author_link() ) ); ?>
         </div><!-- .comment-author .vcard -->
         <?php if ( $comment->comment_approved == '0' ) : ?>
           <em><?php _e( 'Your comment is awaiting moderation.', 'sempress' ); ?></em>

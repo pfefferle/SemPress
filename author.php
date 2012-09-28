@@ -24,7 +24,7 @@ get_header(); ?>
         ?>
 
         <header class="page-header author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <h1 class="page-title"><?php printf( __( 'Author Archives: %s', 'sempress' ), '<a class="url u-url fn p-fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="url"><span itemprop="name">' . get_the_author() . '</span></a>' ); ?></h1>
+          <h1 class="page-title"><?php printf( __( 'Author Archives: %s', 'sempress' ), '<a class="url u-url fn p-fn n p-name" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="url"><span itemprop="name">' . get_the_author() . '</span></a>' ); ?></h1>
           
         <?php if (get_the_author_meta('description')) { ?>
           <div class="author-note note p-note" itemprop="description"><?php echo get_the_author_meta('description'); ?></div>
