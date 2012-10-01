@@ -174,11 +174,6 @@ h1, h2, h3, h4, h5 {
   float: right;
   width: 220px;
 }
-#colophon {
-  clear: both;
-  display: block;
-  width: 100%;
-}
 
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
@@ -1080,11 +1075,13 @@ ol.commentlist {
 -------------------------------------------------------------- */
 
 #colophon {
-  padding: 1em 0 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  padding: 2em 0;
   font-size: 12px;
   text-align: center;
 }
-
 
 /* =Responsive
 -------------------------------------------------------------- */
