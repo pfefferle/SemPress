@@ -1149,6 +1149,8 @@ ol.commentlist {
   }
   article.post,
   article.page,
+  aside.post,
+  aside.page,
   footer.entry-meta {
     border: none;
     -moz-box-shadow: none;
@@ -1180,25 +1182,34 @@ ol.commentlist {
     top: 0;
     left: 0;
     z-index: 1;
-    border-radius: 0;
     border: none;
-    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    background-color: #464646;
+  }
+  #access a,
+  #access a:visited,
+  #access a:hover,
+  #access .section-heading a {
+    color: #fff;
+    text-shadow: none;
+    border: none;
+    text-decoration: none;
   }
   #access:target ul {
     display: block;
     font-size: 17px;
+    background-color: transparent;
   }
   #access .section-heading {
-    width: 100%;
     clip: inherit;
     display: block;
     clear: both;
     float: none;
+    width: 100%;
     z-index: 3;
-    background-color: #eee;
+    padding: 0 0 0 25px;
     margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #e5e5e5;
+    background-color: #464646;
   }
   #access .section-heading a:before {
     font-family: "FontAwesome";
@@ -1215,9 +1226,12 @@ ol.commentlist {
   #access ul {
     display: none;
     margin: inherit;
-    padding-left: inherit;
+    padding-left: 25px;
+    background-color: transparent;
   }
   #access ul ul {
+    background-color: transparent;
+    background-image: none;
     display: inherit;
     position: inherit;
     float: none;
@@ -1226,9 +1240,11 @@ ol.commentlist {
     border: none;
     top: inherit;
     left: inherit;
+    box-shadow: none;
+    border: none;
   }
   #access ul > li > a {
-    border-right: none;
+    border: none;
     margin: inherit;
   }
   #access ul ul ul {
@@ -1238,8 +1254,27 @@ ol.commentlist {
   #access ul ul a {
     line-height: 1em;
     height: auto;
-    border-bottom: inherit;
+    border: none;
     width: auto;
+  }
+  #access div > ul > li > a,
+  #access div > ul > li > a:hover,
+  #access div > ul > li > a:visited,
+  #access .current_page_item > a,
+  #access .current_page_ancestor > a,
+  #access ul ul li a,
+  #access ul ul li a:hover,
+  #access ul ul li a:visited,
+  #access ul ul li.current_page_item a {
+    color: #fff;
+    border-bottom: none;
+  }
+  #access ul ul li a {
+    height: auto;
+    border-top: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   .entry-title a {
     font-size: 0.8em;
