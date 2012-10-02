@@ -427,6 +427,7 @@ table tbody tr:hover th {
 
 article.page,
 article.post,
+article.attachment,
 aside.post {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   position: relative;
@@ -439,13 +440,13 @@ aside.post {
   background-color: white;
   border: 1px solid #ccc;
   padding-top: 20px;
+  text-shadow: none;
 }
 .sticky {
 }
 article, aside {
   display: block;
   position: relative;
-  text-shadow: none;
 }
 footer.entry-meta {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -604,7 +605,7 @@ footer.entry-meta {
 .format-gallery:before,
 .format-link:before,
 .format-quote:before,
-.sticky:before,
+.post.format-standard.sticky:before,
 .entry-content .avatar {
   font-family: "FontAwesome";
   display: block;
@@ -633,7 +634,7 @@ footer.entry-meta {
 .format-link:before {
   content: "\f02e";
 }
-.sticky:before {
+.post.format-standard.sticky:before {
   content: "\f08d";
 }
 .format-quote:before {
