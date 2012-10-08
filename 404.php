@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-  <div id="primary">
+  <div id="primary" class="full-width">
     <div id="content" role="main">
 
       <article id="post-0" class="post error404 not-found">
