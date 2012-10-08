@@ -990,11 +990,11 @@ article.comment {
 #respond textarea {
   display: block;
   margin: 0 0 1em;
-  width: 80%;
+  width: 98%;
 }
 #respond .form-allowed-tags {
   clear: both;
-  width: 80%;
+  width: 98%;
 }
 #respond .form-allowed-tags code {
   display: block;
