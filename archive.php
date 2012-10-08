@@ -27,6 +27,8 @@ get_header(); ?>
                 printf( __( 'Monthly Archives: %s', 'sempress' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
               elseif ( is_year() ) :
                 printf( __( 'Yearly Archives: %s', 'sempress' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+              elseif ( get_post_format() ) :
+                printf( __( 'Archives: %s', 'sempress' ), '<span>' . get_post_format_string(get_post_format()) . '</span>' );
               else :
                 _e( 'Archives', 'sempress' );
               endif;
