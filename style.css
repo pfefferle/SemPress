@@ -585,10 +585,17 @@ footer.entry-meta {
 }
 
 /* Aside Posts */
-.home .format-aside .entry-header,
-.home .format-status .entry-header,
-.home .format-link .entry-header {
+.format-aside .entry-header,
+.format-status .entry-header,
+.format-link .entry-header {
   display: none;
+}
+
+/* Aside Posts */
+.search-results .format-aside .entry-header,
+.search-results .format-status .entry-header,
+.search-results .format-link .entry-header {
+  display: block;
 }
 
 /* Gallery Posts */
