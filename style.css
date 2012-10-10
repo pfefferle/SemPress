@@ -427,8 +427,7 @@ table tbody tr:hover th {
 
 article.page,
 article.post,
-article.attachment,
-aside.post {
+article.attachment {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   position: relative;
   -moz-border-radius: 3px;
@@ -1127,6 +1126,9 @@ ol.commentlist {
   .post:before {
     content: none;
   }
+  .entry-content .avatar {
+    display: none;
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1154,8 +1156,6 @@ ol.commentlist {
   }
   article.post,
   article.page,
-  aside.post,
-  aside.page,
   footer.entry-meta {
     border: none;
     -moz-box-shadow: none;
