@@ -26,7 +26,7 @@
           <h1 class="widget-title"><?php _e( 'Meta', 'sempress' ); ?></h1>
           <ul>
             <?php wp_register(); ?>
-            <aside><?php wp_loginout(); ?></aside>
+            <li><?php wp_loginout(); ?></li>
             <?php wp_meta(); ?>
           </ul>
         </aside>
