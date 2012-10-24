@@ -1,0 +1,34 @@
+body#tinymce.wp-editor { 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 27px;
+}
+
+body#tinymce.wp-editor a {
+  color: #21759B;
+}
+
+body#tinymce.wp-editor blockquote {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  padding: 0 0 0 15px;
+  margin: 0 0 18px 40px;
+  position: relative;
+  font-style: italic;
+}
+
+body#tinymce.wp-editor blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 100px;
+  position: absolute;
+  left: -40px;
+  top: 30px;
+  color: #999;
+  font-style: normal;
+}
+
+body#tinymce.wp-editor blockquote p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  font-weight: 300;
+}
