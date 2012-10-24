@@ -1,6 +1,6 @@
 == Changelog ==
 
-= 1.1.1 =
+= 1.2.0 =
 * fixed microdata/schema.org and some microformats
 * added "editor style" support
 * several fixes to comply with the wordpress-directory rules
