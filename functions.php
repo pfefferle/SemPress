@@ -134,7 +134,7 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
  *
  * @uses wp_enqueue_scripts() To enqueue scripts
  *
- * @since Minimatica 1.0
+ * @since SemPress 1.1.1
  */
 function sempress_enqueue_scripts() {
 	// Add HTML5 support to older versions of IE
