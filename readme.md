@@ -1,7 +1,7 @@
 SemPress
 ============
 
-A semantic html5 WordPress Theme with a little SEO
+A highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
 
 POSH - Plain old Semantic HTML
 --------------
@@ -43,7 +43,7 @@ SemPress' code is marked-up with microformats and microdata:
 
 * used [microformats](http://microformats.org/): [hAtom](http://microformats.org/wiki/hatom), [hCard](http://microformats.org/wiki/hcard), [rel-tag](http://microformats.org/wiki/rel-tag) and [XFN](http://microformats.org/wiki/xfn)
 * used [microformats version 2](http://microformats.org/wiki/microformats-2): h-atom and h-card
-* used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): http://schema.org/Blog, http://schema.org/BlogPosting and http://schema.org/person
+* used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): http://schema.org/Blog, http://schema.org/BlogPosting, http://schema.org/WebPage and http://schema.org/Person
 
 Planned formats:
 
@@ -56,4 +56,11 @@ WordPress Features
 SemPress supports:
 
 * [Custom Post Types](http://codex.wordpress.org/Post_Types): aside, status, gallery, video, audio, link and image
-* [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails): 
+* [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails)
+* [Editor-Style](http://codex.wordpress.org/Function_Reference/add_editor_style)
+* [Navigation Menus](http://codex.wordpress.org/Navigation_Menus)
+* [Automatic Feed Links](http://codex.wordpress.org/Automatic_Feed_Links)
+
+Planned features:
+
+* custom header
