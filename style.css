@@ -5,12 +5,14 @@ Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
 Description: A highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
 Version: 1.1.1-dev
-License: GNU General Public License
+License: GNU General Public License Version 3
 License URI: license.txt
-Tags: white, gray, light, black, custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column
+Tags: white, gray, light, black, custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style
 
-This theme is based on the toolbox theme (http://wordpress.org/extend/themes/toolbox)
+This theme is based on the toolbox theme (http://wordpress.org/extend/themes/toolbox),
+is making use of "Font Awesome" (http://fortawesome.github.com/Font-Awesome)
 and, like WordPress, licensed under the GPL.
+
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
@@ -151,6 +153,9 @@ h1, h2, h3, h4, h5 {
   position: relative;
   width: 950px;
 }
+#main {
+  clear: both;
+}
 #primary {
   float: left;
   width: 710px;
@@ -212,13 +217,15 @@ h1, h2, h3, h4, h5 {
 
 #branding {
   display: block;
-  margin: 5em 0 6.5em;
   clear: both;
 }
 #site-title {
   font-size: 4em;
   letter-spacing: -2px;
   margin: 0;
+}
+h1#site-title {
+  margin-top: 1em;
 }
 #site-title a {
   color: #444;
@@ -256,6 +263,7 @@ h1, h2, h3, h4, h5 {
   -webkit-box-shadow: #FFF 0 1px 0 0;
   box-shadow: #FFF 0 1px 0 0;
   float: left;
+  margin-bottom: 40px;
 }
 #access ul {
   margin: 0;
@@ -267,7 +275,6 @@ h1, h2, h3, h4, h5 {
   float: left;
   position: relative;
   font-weight: 500;
-  margin-bottom: -1px;
 }
 #access a,
 #access a:visited {
@@ -282,12 +289,12 @@ h1, h2, h3, h4, h5 {
 #access .current_page_ancestor > a {
   color: #444;
   font-weight: 500;
-  border-bottom: 1px solid #777;
+  /*border-bottom: 1px solid #777;*/
 }
 #access ul ul {
   background-color: #f0f0f0;
   background-image: url("img/noise.png");
-  border-top: 1px solid #777;
+  border: 1px #ccc solid;
   display: none;
   float: left;
   position: absolute;
@@ -295,9 +302,7 @@ h1, h2, h3, h4, h5 {
   left: 0;
   z-index: 99999;
   box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
-  border-radius: 0 0 4px 4px; 
-  -moz-border-radius: 0 0 4px 50px; 
-  -webkit-border-radius: 0 0 4px 4px; 
+  border-radius: 4px; 
 }
 #access ul ul ul {
   left: 100%;
@@ -314,6 +319,10 @@ h1, h2, h3, h4, h5 {
   -webkit-box-shadow: #ccc 0 -1px 0 0;
   box-shadow: #ccc 0 -1px 0 0;
   font-weight: 300;
+}
+#access ul ul li:first-child a {
+  border: 0 none;
+  box-shadow: none;
 }
 #access ul ul li a:hover,
 #access ul ul li.current_page_item a {
