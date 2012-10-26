@@ -7,14 +7,14 @@
 
 <article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_blog_itemprop("blogPost"); ?> itemscope itemtype="http://schema.org/BlogPosting">
   <header class="entry-header">
-    <h1 class="entry-title p-entry-title" itemprop="name"><?php the_title(); ?></h1>
+    <h1 class="entry-title p-name" itemprop="name"><?php the_title(); ?></h1>
 
     <div class="entry-meta">
       <?php sempress_posted_on(); ?>
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
 
-  <div class="entry-content e-entry-content" itemprop="articleBody description">
+  <div class="entry-content e-content" itemprop="articleBody description">
     <?php the_content(); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
   </div><!-- .entry-content -->
