@@ -517,12 +517,8 @@ footer.entry-meta {
   clear: both;
   display: block;
 }
-.home #content .post,
-.archive #content .post,
-.home #content .page,
-.archive #content .page,
-.search #content .post,
-.search #content .page {
+#content .post,
+#content .post {
   margin-bottom: 60px;
 }
 .entry-meta,
