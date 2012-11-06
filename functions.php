@@ -296,7 +296,37 @@ add_filter( 'body_class', 'sempress_body_classes' );
 function sempress_post_classes( $classes ) {
   // Adds a class for microformats v2
   $classes[] = 'h-entry';
-
+  
+  // adds microformats 2 activity-stream support
+  // for pages and articles
+  if ( get_post_type() == "page" ) {
+    $classes[] = "h-as-page";
+  }
+  if ( !get_post_format() && get_post_type() == "post" ) {
+    $classes[] = "h-as-article";
+  }
+  
+  // adds some more microformats 2 classes based on the
+  // posts "format"
+  switch ( get_post_format() ) {
+    case "aside":
+    case "status":
+      $classes[] = "h-as-note";
+      break;
+    case "audio":
+      $classes[] = "h-as-audio";
+      break;
+    case "video":
+      $classes[] = "h-as-video";
+      break;
+    case "image":
+      $classes[] = "h-as-image";
+      break;
+    case "link":
+      $classes[] = "h-as-bookmark";
+      break;
+  }
+  
   return $classes;
 }
 add_filter( 'post_class', 'sempress_post_classes' );
