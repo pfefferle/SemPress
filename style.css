@@ -521,6 +521,15 @@ footer.entry-meta {
 #content .post {
   margin-bottom: 60px;
 }
+#content .post:after,
+#content .page:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 .entry-meta,
 .tag-archive-meta,
 .category-archive-meta,
