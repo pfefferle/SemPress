@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.2.1 =
+* some css and html fixes
+* added micro formats v2 activity extension
+
 = 1.2.0 =
 * fixed microdata/schema.org and some microformats
 * added "editor style" support
