@@ -64,3 +64,5 @@ SemPress supports:
 Planned features:
 
 * custom header
+
+[![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
