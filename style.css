@@ -1041,7 +1041,7 @@ ol.commentlist {
   margin: 0;
   padding: 0;
 }
-.commentlist li {
+ol.commentlist li.comment {
   list-style: none outside none;
   margin: 10px 0;
 }
