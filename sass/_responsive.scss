@@ -1,0 +1,192 @@
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  #page {
+    width: 650px;
+    margin: 0px auto;
+  }
+  #sidebar {
+    float: right;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+    border-top: 1px solid #fff;
+    -moz-box-shadow: #ccc 0 -1px 0 0;
+    -webkit-box-shadow: #ccc 0 -1px 0 0;
+    box-shadow: #ccc 0 -1px 0 0;
+  }
+  #main .widget-area {
+    float: left;
+    overflow: hidden;
+    width: 285px;
+    padding-right: 40px;
+  }
+  #primary {
+    width: auto;
+    float: inherit;
+  }
+  #content {
+    margin: 0;
+  }
+  .post:before {
+    content: none;
+  }
+  .entry-content .avatar {
+    display: none;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 767px) {
+  body {
+    word-wrap: break-word;
+    font-size: 0.8em;
+  }
+  #page {
+    width: auto;
+    margin: 0 20px;
+  }
+  #main .widget-area {
+    width: 100%;
+  }
+  iframe, object, embed {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  table {
+    width: auto;
+    max-width: 100%;
+    overflow: scroll;
+  }
+  article.post,
+  article.page,
+  footer.entry-meta {
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .entry-title,
+  .entry-content,
+  .entry-summary,
+  .entry-meta {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #site-description {
+    display: none;
+  }
+  #page {
+    position: inherit;
+  }
+  #access {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+    border-radius: 0;
+    background-color: #464646;
+  }
+  #access a,
+  #access a:visited,
+  #access a:hover,
+  #access .section-heading a {
+    color: #fff;
+    text-shadow: none;
+    border: none;
+    text-decoration: none;
+  }
+  #access:target ul {
+    display: block;
+    font-size: 17px;
+    background-color: transparent;
+  }
+  #access .section-heading {
+    clip: inherit;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    z-index: 3;
+    padding: 0 0 0 25px;
+    margin: 0;
+    background-color: #464646;
+  }
+  #access .section-heading a:before {
+    font-family: "FontAwesome";
+    content: '\f0c9 ';
+    margin-right: 10px;
+  }
+  #access:target .section-heading {
+    display: none;
+  }
+  #access li {
+    float: inherit;
+    margin: inherit;
+  }
+  #access ul {
+    display: none;
+    margin: inherit;
+    padding-left: 25px;
+    background-color: transparent;
+  }
+  #access ul ul {
+    background-color: transparent;
+    background-image: none;
+    display: inherit;
+    position: inherit;
+    float: none;
+    padding: inherit;
+    margin-left: 10px;
+    border: none;
+    top: inherit;
+    left: inherit;
+    box-shadow: none;
+    border: none;
+  }
+  #access ul > li > a {
+    border: none;
+    margin: inherit;
+  }
+  #access ul ul ul {
+    left: inherit;
+    top: inherit;
+  }
+  #access ul ul a {
+    line-height: 1em;
+    height: auto;
+    border: none;
+    width: auto;
+  }
+  #access div > ul > li > a,
+  #access div > ul > li > a:hover,
+  #access div > ul > li > a:visited,
+  #access .current_page_item > a,
+  #access .current_page_ancestor > a,
+  #access ul ul li a,
+  #access ul ul li a:hover,
+  #access ul ul li a:visited,
+  #access ul ul li.current_page_item a {
+    color: #fff;
+    border-bottom: none;
+  }
+  #access ul ul li a {
+    height: auto;
+    border-top: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .entry-title a {
+    font-size: 0.8em;
+  }
+}

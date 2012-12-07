@@ -1,0 +1,229 @@
+/* =Content
+-------------------------------------------------------------- */
+
+article.page,
+article.post,
+article.attachment {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  position: relative;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding-top: 20px;
+  text-shadow: none;
+}
+.sticky {
+}
+article, aside {
+  display: block;
+  position: relative;
+}
+footer.entry-meta {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #f5f5f5;
+  padding: 10px 34px;
+  color: #555;
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -khtml-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+.entry-content,
+.entry-summary {
+  color: #3f3f3f;
+  font-size: 1em;
+  line-height: 27px;
+  margin-bottom: 34px;
+}
+.entry-content,
+.entry-title,
+.entry-meta,
+.entry-summary {
+  padding: 0 34px;
+}
+.entry-meta {
+  clear: both;
+  display: block;
+}
+#content nav {
+  display: block;
+  overflow: hidden;
+}
+#content nav .nav-previous {
+  float: left;
+  width: 50%;
+}
+#content nav .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+#nav-above .nav-previous,
+#nav-above .nav-next {
+  margin: 0 0 40px;
+}
+#nav-below {
+  clear: both;
+  margin: 30px 0 0;
+}
+.nav-previous, .nav-next,
+.previous-image, .next-image {
+  font-size: 12px;
+}
+.page-link {
+  clear: both;
+  margin: 0 0 1em;
+}
+.page .edit-link {
+  clear: both;
+  display: block;
+}
+#content .post,
+#content .post {
+  margin-bottom: 60px;
+}
+#content .post:after,
+#content .page:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.entry-meta,
+.tag-archive-meta,
+.category-archive-meta,
+.author-note {
+  color: #aaa;
+  font-size: 0.8em;
+}
+.entry-meta a,
+.comment-meta a {
+  color: #777;
+}
+.entry-title, .entry-title a {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* 404 page */
+.error404 .widget {
+  float: left;
+  width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+  margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+  background: #eee;
+  display: block;
+  padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+  float: left;
+}
+.image-attachment nav {
+  float: right;
+  margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+  clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+  text-align: center;
+}
+.entry-content .media-attachment iframe,
+.entry-content .media-attachment object,
+.entry-content .media-attachment embed {
+  display: block;
+  margin: 15px auto;
+  padding: 0;
+  text-align: center;
+  background-color: #444;
+  background-image: -moz-linear-gradient(top,#555,#333);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#555),to(#333));
+  filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr="#555555",endColorStr="#333333");
+}
+
+/* Aside Posts */
+.format-aside .entry-header,
+.format-status .entry-header,
+.format-link .entry-header {
+  display: none;
+}
+
+/* Aside Posts */
+.search-results .format-aside .entry-header,
+.search-results .format-status .entry-header,
+.search-results .format-link .entry-header {
+  display: block;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+/* Custom Post Types */
+.format-aside:before,
+.format-video:before,
+.format-audio:before,
+.format-image:before,
+.format-gallery:before,
+.format-link:before,
+.format-quote:before,
+.post.format-standard.sticky:before,
+.entry-content .avatar {
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 40px;
+  color: #999;
+  font-style: normal;
+  position: absolute;
+  left: -65px;
+  top: 30px;
+}
+.format-aside:before {
+  content: "\f075";
+}
+.format-video:before {
+  content: "\f008";
+}
+.format-audio:before {
+  content: "\f0a1";
+}
+.format-image:before {
+  content: "\f03e";
+}
+.format-gallery:before {
+  content: "\f03e";
+}
+.format-link:before {
+  content: "\f02e";
+}
+.post.format-standard.sticky:before {
+  content: "\f08d";
+}
+.format-quote:before {
+  content: "\f036";
+}

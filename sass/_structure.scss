@@ -1,0 +1,66 @@
+/* =Structure
+-------------------------------------------------------------- */
+
+#page {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 950px;
+}
+#main {
+  clear: both;
+}
+#primary {
+  float: left;
+  width: 710px;
+}
+#primary.full-width {
+  width: 100%;
+}
+#content {
+  margin: 0 40px 0 0;
+}
+#sidebar {
+  float: right;
+  overflow: hidden;
+  width: 220px;
+  color: #999;
+}
+#sidebar a {
+  color: #555;
+}
+#main .widget-area {
+  float: right;
+  width: 220px;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+  margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+}
+.alignright {
+  display: inline;
+  float: right;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

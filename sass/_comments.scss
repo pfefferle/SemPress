@@ -1,0 +1,77 @@
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+  border-top: 1px solid #fff;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
+  display: block;
+  position: relative;
+  padding: 25px 0;
+  line-height: 24px;
+}
+#respond input[type="text"],
+#respond input[type="email"],
+#respond input[type="url"] {
+  display: block;
+  width: 60%;
+}
+#respond textarea {
+  display: block;
+  margin: 0 0 1em;
+  width: 98%;
+}
+#respond .form-allowed-tags {
+  clear: both;
+  width: 98%;
+}
+#respond .form-allowed-tags code {
+  display: block;
+}
+.form-allowed-tags {
+  display: none;
+}
+a.comment-reply-link {
+  font-size: 12px;
+  color: #aaa;
+  height: 16px;
+  line-height: 16px;
+	:before {
+	  font-family: "FontAwesome";
+	  content: "\f064";
+	  padding-right: 5px;
+	}
+}
+.comment {
+	cite {
+  	font-style: normal;
+  	font-weight: normal;
+	}
+  img.avatar {
+  	float: right;
+	}
+}
+.comment-meta, .comment-notes, .logged-in-as {
+  color: #aaa;
+  display: block;
+  font-size: 12px;
+}
+ol.commentlist {
+  margin: 0;
+  padding: 0;
+  li.comment {
+		list-style: none outside none;
+		margin: 10px 0;
+	}
+}
+.comment-content {
+  font-size: 0.9em;
+}
+.commentlist .odd article {
+}
+.bypostauthor {
+}
+#comments {
+  padding-top: 30px;
+}
