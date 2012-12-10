@@ -75,9 +75,7 @@ input[type="tel"],
 input[type="color"] {
   background-color: #fff;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  @include rounded(3px);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -182,9 +180,7 @@ input[type="submit"] {
   border: 1px solid #cccccc;
   *border: 0;
   border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  @include rounded(4px);
   *margin-left: .3em;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
@@ -249,21 +245,4 @@ input[type="submit"][disabled] {
 /* Class for labelling required form items */
 .required {
   color: #cc0033;
-}
-
-
-
-
-
-
-/* =Footer
--------------------------------------------------------------- */
-
-#colophon {
-  clear: both;
-  display: block;
-  width: 100%;
-  padding: 2em 0;
-  font-size: 12px;
-  text-align: center;
 }

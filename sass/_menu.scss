@@ -48,7 +48,7 @@
   left: 0;
   z-index: 99999;
   box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
-  border-radius: 4px; 
+  @include rounded(4px);
 }
 #access ul ul ul {
   left: 100%;

@@ -37,20 +37,20 @@ a.comment-reply-link {
   color: #aaa;
   height: 16px;
   line-height: 16px;
-	:before {
-	  font-family: "FontAwesome";
-	  content: "\f064";
-	  padding-right: 5px;
+	&:before {
+    font-family: "FontAwesome";
+    content: "\f064";
+    padding-right: 5px;
 	}
 }
 .comment {
-	cite {
-  	font-style: normal;
-  	font-weight: normal;
-	}
+  cite {
+    font-style: normal;
+    font-weight: normal;
+  }
   img.avatar {
-  	float: right;
-	}
+    float: right;
+  }
 }
 .comment-meta, .comment-notes, .logged-in-as {
   color: #aaa;

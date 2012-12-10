@@ -15,6 +15,8 @@ and, like WordPress, licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import "mixins";
+
 @font-face {
   font-family: "FontAwesome";
   src: url('./font/fontawesome-webfont.eot');
@@ -66,15 +68,15 @@ blockquote {
   margin: 0 0 18px 40px;
   position: relative;
   font-style: italic;
-	:before {
-	  display: block;
-	  content: "\201C";
-	  font-size: 100px;
-	  position: absolute;
-	  left: -40px;
-	  top: 30px;
-	  color: #999;
-	  font-style: normal;
+  &:before {
+    display: block;
+    content: "\201C";
+    font-size: 100px;
+    position: absolute;
+    left: -40px;
+    top: 30px;
+    color: #999;
+    font-style: normal;
 	}
 	p {
 	  margin-bottom: 0;
@@ -82,14 +84,14 @@ blockquote {
 	  font-weight: 300;
 	}
 	small {
-	  display: block;
-	  line-height: 18px;
-	  color: #999;
-	  font-style: normal;
-		:before {
-			content: '\2014 \00A0';
-		}
-	}
+    display: block;
+    line-height: 18px;
+    color: #999;
+    font-style: normal;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
 }
 cite {
   font-style: normal;
@@ -97,7 +99,7 @@ cite {
 pre {
   background-color: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px 4px 4px 4px;
+  @include rounded(4px);
   display: block;
   font-size: 12.025px;
   line-height: 18px;
@@ -113,25 +115,23 @@ code {
 pre code {
   display: block;
   margin-top: 30px;
-	:after {
-	  content: "code";
-	  position: absolute;
-	  top: -1px;
-	  left: -1px;
-	  padding: 3px 7px;
-	  font-size: 12px;
-	  font-weight: bold;
-	  background-color: #fff;
-	  border: 1px solid #ddd;
-	  color: #9da0a4;
-	  -webkit-border-radius: 4px 0 4px 0;
-	  -moz-border-radius: 4px 0 4px 0;
-	  border-radius: 4px 0 4px 0;
-	  display: block;
+  &:after {
+    content: "code";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    @include custom-rounded(4px, 0, 4px, 0);
+    display: block;
 	}
-	[data-programming-language]:after {
-	  content: "" attr(data-programming-language) " code";
-	}
+  &[data-programming-language]:after {
+    content: "" attr(data-programming-language) " code";
+  }
 }
 ins {
   background: #fff9c0;

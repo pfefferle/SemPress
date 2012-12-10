@@ -93,7 +93,7 @@
     left: 0;
     z-index: 1;
     border: none;
-    border-radius: 0;
+    @include rounded(0);
     background-color: #464646;
   }
   #access a,

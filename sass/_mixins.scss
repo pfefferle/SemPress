@@ -1,0 +1,17 @@
+@mixin rounded($rad) {
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+  -o-border-radius: $rad;
+  -ms-border-radius: $rad;
+  -khtml-border-radius: $rad;
+  border-radius: $rad;
+}
+
+@mixin custom-rounded($tl, $tr, $br, $bl) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-radius: $tl $tr $br $bl;
+  -o-border-radius: $tl $tr $br $bl;
+  -ms-border-radius: $tl $tr $br $bl;
+  -khtml-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+}

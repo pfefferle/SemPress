@@ -61,7 +61,7 @@ blockquote {
   margin: 0 0 18px 40px;
   position: relative;
   font-style: italic; }
-  blockquote :before {
+  blockquote:before {
     display: block;
     content: "\201C";
     font-size: 100px;
@@ -79,7 +79,7 @@ blockquote {
     line-height: 18px;
     color: #999;
     font-style: normal; }
-    blockquote small :before {
+    blockquote small:before {
       content: '\2014 \00A0'; }
 
 cite {
@@ -88,7 +88,12 @@ cite {
 pre {
   background-color: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
   display: block;
   font-size: 12.025px;
   line-height: 18px;
@@ -104,7 +109,7 @@ code {
 pre code {
   display: block;
   margin-top: 30px; }
-  pre code :after {
+  pre code:after {
     content: "code";
     position: absolute;
     top: -1px;
@@ -115,11 +120,14 @@ pre code {
     background-color: #fff;
     border: 1px solid #ddd;
     color: #9da0a4;
-    -webkit-border-radius: 4px 0 4px 0;
     -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    -o-border-radius: 4px 0 4px 0;
+    -ms-border-radius: 4px 0 4px 0;
+    -khtml-border-radius: 4px 0 4px 0;
     border-radius: 4px 0 4px 0;
     display: block; }
-  pre code [data-programming-language]:after {
+  pre code[data-programming-language]:after {
     content: "" attr(data-programming-language) " code"; }
 
 ins {
@@ -229,6 +237,16 @@ h1#site-title {
   margin-left: auto;
   margin-right: auto; }
 
+/* =Footer
+-------------------------------------------------------------- */
+#colophon {
+  clear: both;
+  display: block;
+  width: 100%;
+  padding: 2em 0;
+  font-size: 12px;
+  text-align: center; }
+
 /* =Menu
 -------------------------------------------------------------- */
 #access {
@@ -278,6 +296,11 @@ h1#site-title {
   left: 0;
   z-index: 99999;
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
   border-radius: 4px; }
 
 #access ul ul ul {
@@ -322,8 +345,11 @@ table {
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
-  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
   border-radius: 4px; }
 
 table th,
@@ -381,8 +407,11 @@ table tbody:first-child tr:first-child td:last-child {
 
 table thead:last-child tr:last-child th:first-child,
 table tbody:last-child tr:last-child td:first-child {
-  -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
+  -webkit-border-radius: 0 0 0 4px;
+  -o-border-radius: 0 0 0 4px;
+  -ms-border-radius: 0 0 0 4px;
+  -khtml-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -661,7 +690,12 @@ img.size-thumbnail,
 .media-attachment img,
 .entry-attachment img {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 3px 3px 3px 3px; }
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px; }
 
 .wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
   padding: .2em;
@@ -680,10 +714,12 @@ img.size-thumbnail,
   vertical-align: middle; }
 
 #page img.avatar {
-  border-radius: 3px 3px 3px 3px;
   box-shadow: 0 1px 2px #bbb;
-  -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -o-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -khtml-border-radius: 500px;
   border-radius: 500px; }
 
 /* =Forms
@@ -762,8 +798,11 @@ input[type="tel"],
 input[type="color"] {
   background-color: #fff;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -865,8 +904,11 @@ input[type="submit"] {
   border: 1px solid #cccccc;
   *border: 0;
   border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
   border-radius: 4px;
   *margin-left: .3em;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -931,16 +973,6 @@ input[type="submit"][disabled] {
 .required {
   color: #cc0033; }
 
-/* =Footer
--------------------------------------------------------------- */
-#colophon {
-  clear: both;
-  display: block;
-  width: 100%;
-  padding: 2em 0;
-  font-size: 12px;
-  text-align: center; }
-
 /* =Comments
 -------------------------------------------------------------- */
 article.comment {
@@ -979,7 +1011,7 @@ a.comment-reply-link {
   color: #aaa;
   height: 16px;
   line-height: 16px; }
-  a.comment-reply-link :before {
+  a.comment-reply-link:before {
     font-family: "FontAwesome";
     content: "\f064";
     padding-right: 5px; }

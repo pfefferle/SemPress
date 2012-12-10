@@ -36,7 +36,7 @@ img.size-thumbnail,
 .media-attachment img,
 .entry-attachment img {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 3px 3px 3px 3px;
+  @include rounded(3px);
 }
 .wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
   padding: .2em;
@@ -55,9 +55,6 @@ img.size-thumbnail,
   vertical-align: middle;
 }
 #page img.avatar {
-  border-radius: 3px 3px 3px 3px;
   box-shadow: 0 1px 2px #bbb;
-  -webkit-border-radius: 500px;
-     -moz-border-radius: 500px;
-          border-radius: 500px;
+  @include rounded(500px);
 }

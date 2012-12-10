@@ -9,25 +9,25 @@
   -moz-box-shadow: #FFF 0 1px 0 0;
   -webkit-box-shadow: #FFF 0 1px 0 0;
   box-shadow: #FFF 0 1px 0 0;
-	h1 {
-	  font-weight: 500;
-	  margin: 0 0 10px;
-	}
+  h1 {
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
 }
 .widget-area {
   font-size: 0.8em;
   .widget_search {
     overflow: hidden;
  	}
-	ul, li {
+  ul, li {
     margin: 2px 0;
     padding: 0;
     list-style-position: outside;
     list-style-image: none;
     list-style-type: none;
-	}
+  }
   li a {
     padding: 2px 0;
     display: block;
-	}
+  }
 }
