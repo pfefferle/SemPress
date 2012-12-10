@@ -137,13 +137,13 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
  * @since SemPress 1.1.1
  */
 function sempress_enqueue_scripts() {
-	// Add HTML5 support to older versions of IE
-	if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
-		 ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
-		 ( false === strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 9' ) ) ) {
+  // Add HTML5 support to older versions of IE
+  if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
+     ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
+     ( false === strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 9' ) ) ) {
     
     wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.6');
-	}
+  }
 }
 endif;
 
