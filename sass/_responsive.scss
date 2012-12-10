@@ -63,9 +63,7 @@
   article.page,
   footer.entry-meta {
     border: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    @include reset-box-shadow;
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -150,7 +148,7 @@
     border: none;
     top: inherit;
     left: inherit;
-    box-shadow: none;
+    @include reset-box-shadow;
     border: none;
   }
   #access ul > li > a {
@@ -182,9 +180,7 @@
   #access ul ul li a {
     height: auto;
     border-top: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    @include reset-box-shadow;
   }
   .entry-title a {
     font-size: 0.8em;

@@ -13,9 +13,9 @@
 #primary {
   float: left;
   width: 710px;
-}
-#primary.full-width {
-  width: 100%;
+  &.full-width {
+    width: 100%;
+  }
 }
 #content {
   margin: 0 40px 0 0;

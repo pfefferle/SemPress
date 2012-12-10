@@ -4,7 +4,7 @@
 article.page,
 article.post,
 article.attachment {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  @include box-shadow(0, 1px, 5px, 0, rgba(0,0,0,0.2));
   position: relative;
   @include rounded(3px);
   background-color: white;
@@ -76,7 +76,7 @@ footer.entry-meta {
   display: block;
 }
 #content .post,
-#content .post {
+#content .page {
   margin-bottom: 60px;
 }
 #content .post:after,

@@ -10,25 +10,62 @@
   box-shadow: #FFF 0 1px 0 0;
   float: left;
   margin-bottom: 40px;
-}
-#access ul {
-  margin: 0;
-  padding-left: 0px;
-  list-style: none outside none;
-}
-#access li {
-  display: block;
-  float: left;
-  position: relative;
-  font-weight: 500;
-}
-#access a,
-#access a:visited {
-  display: block;
-  line-height: 2em;
-  padding-right: 1.5em;
-  text-decoration: none;
-  color: #777;
+  ul {
+    margin: 0;
+    padding-left: 0px;
+    list-style: none outside none;
+    ul {
+      background-color: #f0f0f0;
+      background-image: url("img/noise.png");
+      border: 1px #ccc solid;
+      display: none;
+      float: left;
+      position: absolute;
+      top: 2em;
+      left: 0;
+      z-index: 99999;
+      @include box-shadow(0, 5px, 25px, 0, rgba(0,0,0,0.2));
+      @include rounded(4px);
+      ul {
+        left: 100%;
+        top: 0;
+      }
+      li {
+        a {
+          color: #777;
+          line-height: 1em;
+          padding: .4em .4em .4em 1em;
+          width: 15em;
+          height: auto;
+          border-top: 1px solid #fff;
+          -moz-box-shadow: #ccc 0 -1px 0 0;
+          -webkit-box-shadow: #ccc 0 -1px 0 0;
+          box-shadow: #ccc 0 -1px 0 0;
+          font-weight: 300;
+        }
+        &:first-child a {
+          border: 0 none;
+          box-shadow: none;
+        }
+        a:hover, &.current_page_item a {
+          color: #444;
+        }
+      }
+    }
+  }
+  li {
+    display: block;
+    float: left;
+    position: relative;
+    font-weight: 500;
+  }
+  a, a:visited {
+    display: block;
+    line-height: 2em;
+    padding-right: 1.5em;
+    text-decoration: none;
+    color: #777;
+  }
 }
 #access div > ul > li > a:hover,
 #access .current_page_item > a,
@@ -36,43 +73,6 @@
   color: #444;
   font-weight: 500;
   /*border-bottom: 1px solid #777;*/
-}
-#access ul ul {
-  background-color: #f0f0f0;
-  background-image: url("img/noise.png");
-  border: 1px #ccc solid;
-  display: none;
-  float: left;
-  position: absolute;
-  top: 2em;
-  left: 0;
-  z-index: 99999;
-  box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
-  @include rounded(4px);
-}
-#access ul ul ul {
-  left: 100%;
-  top: 0;
-}
-#access ul ul li a {
-  color: #777;
-  line-height: 1em;
-  padding: .4em .4em .4em 1em;
-  width: 15em;
-  height: auto;
-  border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
-  font-weight: 300;
-}
-#access ul ul li:first-child a {
-  border: 0 none;
-  box-shadow: none;
-}
-#access ul ul li a:hover,
-#access ul ul li.current_page_item a {
-  color: #444;
 }
 #access ul li:hover > ul {
   display: block;

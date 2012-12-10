@@ -15,3 +15,15 @@
   -khtml-border-radius: $tl $tr $br $bl;
   border-radius: $tl $tr $br $bl;
 }
+
+@mixin box-shadow($hor-len, $ver-len, $blur, $spread, $color) {
+  -webkit-box-shadow: $hor-len $ver-len $blur $spread $color;
+  -moz-box-shadow: $hor-len $ver-len $blur $spread $color;
+  box-shadow: $hor-len $ver-len $blur $spread $color;
+}
+
+@mixin reset-box-shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

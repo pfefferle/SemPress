@@ -37,11 +37,11 @@ a.comment-reply-link {
   color: #aaa;
   height: 16px;
   line-height: 16px;
-	&:before {
+  &:before {
     font-family: "FontAwesome";
     content: "\f064";
     padding-right: 5px;
-	}
+  }
 }
 .comment {
   cite {

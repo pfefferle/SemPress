@@ -3,7 +3,7 @@ Theme Name: SemPress
 Theme URI: https://github.com/pfefferle/SemPress
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
-Description: A highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
+Description: SemPress is a highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org). SemPress comes with a very simple and clean style but feel free to use it as source for your own theme or build your custom theme based on SemPress.
 Version: 1.2.1-dev
 License: GNU General Public License Version 3
 License URI: license.txt
@@ -188,9 +188,8 @@ h1#site-title {
 #primary {
   float: left;
   width: 710px; }
-
-#primary.full-width {
-  width: 100%; }
+  #primary.full-width {
+    width: 100%; }
 
 #content {
   margin: 0 40px 0 0; }
@@ -258,25 +257,59 @@ h1#site-title {
   box-shadow: #FFF 0 1px 0 0;
   float: left;
   margin-bottom: 40px; }
-
-#access ul {
-  margin: 0;
-  padding-left: 0px;
-  list-style: none outside none; }
-
-#access li {
-  display: block;
-  float: left;
-  position: relative;
-  font-weight: 500; }
-
-#access a,
-#access a:visited {
-  display: block;
-  line-height: 2em;
-  padding-right: 1.5em;
-  text-decoration: none;
-  color: #777; }
+  #access ul {
+    margin: 0;
+    padding-left: 0px;
+    list-style: none outside none; }
+    #access ul ul {
+      background-color: #f0f0f0;
+      background-image: url("img/noise.png");
+      border: 1px #ccc solid;
+      display: none;
+      float: left;
+      position: absolute;
+      top: 2em;
+      left: 0;
+      z-index: 99999;
+      -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -khtml-border-radius: 4px;
+      border-radius: 4px; }
+      #access ul ul ul {
+        left: 100%;
+        top: 0; }
+      #access ul ul li a {
+        color: #777;
+        line-height: 1em;
+        padding: .4em .4em .4em 1em;
+        width: 15em;
+        height: auto;
+        border-top: 1px solid #fff;
+        -moz-box-shadow: #cccccc 0 -1px 0 0;
+        -webkit-box-shadow: #cccccc 0 -1px 0 0;
+        box-shadow: #cccccc 0 -1px 0 0;
+        font-weight: 300; }
+      #access ul ul li:first-child a {
+        border: 0 none;
+        box-shadow: none; }
+      #access ul ul li a:hover, #access ul ul li.current_page_item a {
+        color: #444; }
+  #access li {
+    display: block;
+    float: left;
+    position: relative;
+    font-weight: 500; }
+  #access a, #access a:visited {
+    display: block;
+    line-height: 2em;
+    padding-right: 1.5em;
+    text-decoration: none;
+    color: #777; }
 
 #access div > ul > li > a:hover,
 #access .current_page_item > a,
@@ -284,48 +317,6 @@ h1#site-title {
   color: #444;
   font-weight: 500;
   /*border-bottom: 1px solid #777;*/ }
-
-#access ul ul {
-  background-color: #f0f0f0;
-  background-image: url("img/noise.png");
-  border: 1px #ccc solid;
-  display: none;
-  float: left;
-  position: absolute;
-  top: 2em;
-  left: 0;
-  z-index: 99999;
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px; }
-
-#access ul ul ul {
-  left: 100%;
-  top: 0; }
-
-#access ul ul li a {
-  color: #777;
-  line-height: 1em;
-  padding: .4em .4em .4em 1em;
-  width: 15em;
-  height: auto;
-  border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
-  font-weight: 300; }
-
-#access ul ul li:first-child a {
-  border: 0 none;
-  box-shadow: none; }
-
-#access ul ul li a:hover,
-#access ul ul li.current_page_item a {
-  color: #444; }
 
 #access ul li:hover > ul {
   display: block; }
@@ -436,6 +427,8 @@ table tbody tr:hover th {
 article.page,
 article.post,
 article.attachment {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   -moz-border-radius: 3px;
@@ -516,7 +509,7 @@ footer.entry-meta {
   display: block; }
 
 #content .post,
-#content .post {
+#content .page {
   margin-bottom: 60px; }
 
 #content .post:after,
@@ -689,7 +682,9 @@ img.size-thumbnail,
 .wp-caption img,
 .media-attachment img,
 .entry-attachment img {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -714,7 +709,9 @@ img.size-thumbnail,
   vertical-align: middle; }
 
 #page img.avatar {
-  box-shadow: 0 1px 2px #bbb;
+  -webkit-box-shadow: 0 1px 2px 0 #bbbbbb;
+  -moz-box-shadow: 0 1px 2px 0 #bbbbbb;
+  box-shadow: 0 1px 2px 0 #bbbbbb;
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
   -o-border-radius: 500px;
@@ -1157,6 +1154,11 @@ ol.commentlist {
     left: 0;
     z-index: 1;
     border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    -khtml-border-radius: 0;
     border-radius: 0;
     background-color: #464646; }
 
@@ -1214,6 +1216,8 @@ ol.commentlist {
     border: none;
     top: inherit;
     left: inherit;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     border: none; }
 
