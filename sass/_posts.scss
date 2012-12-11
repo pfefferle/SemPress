@@ -55,9 +55,10 @@ footer.entry-meta {
   text-align: right;
   width: 50%;
 }
-#nav-above .nav-previous,
-#nav-above .nav-next {
-  margin: 0 0 40px;
+#nav-above {
+  .nav-previous, .nav-next {
+    margin: 0 0 40px;
+  }
 }
 #nav-below {
   clear: both;
@@ -75,18 +76,18 @@ footer.entry-meta {
   clear: both;
   display: block;
 }
-#content .post,
-#content .page {
-  margin-bottom: 60px;
-}
-#content .post:after,
-#content .page:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+#content {
+  .post, .page {
+    margin-bottom: 60px;
+  }
+  .post:after, .page:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
 }
 .entry-meta,
 .tag-archive-meta,
@@ -102,6 +103,9 @@ footer.entry-meta {
 .entry-title, .entry-title a {
   font-size: 40px;
   margin: 0;
+  .format-quote &, .format-video &, .format-audio &, .format-image & {
+    font-size: 25px;
+  }
 }
 
 /* 404 page */
@@ -159,7 +163,7 @@ footer.entry-meta {
 .format-status .entry-header,
 .format-link .entry-header {
   display: none;
-}
+} 
 
 /* Aside Posts */
 .search-results .format-aside .entry-header,
