@@ -4,10 +4,7 @@
 #access {
   display: block;
   width:  100%;
-  border-bottom: 1px solid #ccc;
-  -moz-box-shadow: #FFF 0 1px 0 0;
-  -webkit-box-shadow: #FFF 0 1px 0 0;
-  box-shadow: #FFF 0 1px 0 0;
+  @include border-shadow-bottom;
   float: left;
   margin-bottom: 40px;
   ul {
@@ -37,10 +34,7 @@
           padding: .4em .4em .4em 1em;
           width: 15em;
           height: auto;
-          border-top: 1px solid #fff;
-          -moz-box-shadow: #ccc 0 -1px 0 0;
-          -webkit-box-shadow: #ccc 0 -1px 0 0;
-          box-shadow: #ccc 0 -1px 0 0;
+          @include border-shadow-top;
           font-weight: 300;
         }
         &:first-child a {
