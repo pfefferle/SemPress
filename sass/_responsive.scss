@@ -37,7 +37,7 @@
 @media only screen and (max-width: 767px) {
   body {
     word-wrap: break-word;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   #page {
     width: auto;
@@ -76,6 +76,10 @@
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  #site-title {
+    margin-bottom: 50px;
+    @include border-shadow-bottom;
+  }
   #site-description {
     display: none;
   }

@@ -1105,7 +1105,7 @@ ol.commentlist {
 @media only screen and (max-width: 767px) {
   body {
     word-wrap: break-word;
-    font-size: 0.8em; }
+    font-size: 0.9em; }
 
   #page {
     width: auto;
@@ -1143,6 +1143,13 @@ ol.commentlist {
     padding: 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  #site-title {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    -moz-box-shadow: #FFF 0 1px 0 0;
+    -webkit-box-shadow: #FFF 0 1px 0 0;
+    box-shadow: #FFF 0 1px 0 0; }
+
   #site-description {
     display: none; }
 
