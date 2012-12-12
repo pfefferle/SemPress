@@ -83,6 +83,13 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
   
+  $args = array(
+  	'width'         => 950,
+  	'height'        => 200,
+    'header-text'   => false
+  );
+  add_theme_support( 'custom-header', $args );
+  
   /**
    * Nicer WYSIWYG editor
    */
@@ -306,6 +313,10 @@ function sempress_body_classes( $classes ) {
   // Adds a class of single-author to blogs with only 1 published author
   if ( ! is_multi_author() ) {
     $classes[] = 'single-author';
+  }
+  
+  if ( get_header_image() ) {
+    $classes[] = 'header-image';
   }
 
   return $classes;

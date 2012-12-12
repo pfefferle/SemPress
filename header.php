@@ -61,7 +61,11 @@
       <h1 id="site-title"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
       <h2 id="site-description"<?php sempress_blog_itemprop("description"); ?>><?php bloginfo( 'description' ); ?></h2>
     </hgroup>
-
+    
+    <?php if (get_header_image()) { ?>
+      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="header image" id="site-image" />
+    <?php } ?>
+    
     <nav id="access" role="navigation">
       <h1 class="assistive-text section-heading"><a href="#access" title="<?php esc_attr_e( 'Main menu', 'sempress' ); ?>"><?php _e( 'Main menu', 'sempress' ); ?></a></h1>
       <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sempress' ); ?>"><?php _e( 'Skip to content', 'sempress' ); ?></a></div>

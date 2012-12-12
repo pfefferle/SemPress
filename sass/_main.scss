@@ -129,6 +129,14 @@ h1, h2, h3, h4, h5 {
 #branding {
   display: block;
   clear: both;
+  margin-top: 48px;
+}
+#site-image {
+  float: left;
+  @include rounded(3px);
+  @include box-shadow(0, 1px, 2px, 0, #bbb);
+  margin-bottom: 40px;
+  clear: both;
 }
 #site-title {
   font-size: 4em;
@@ -138,6 +146,9 @@ h1, h2, h3, h4, h5 {
 	  color: #444;
 	  text-decoration: none;
 	}
+  .header-image & {
+    font-size: 3em;
+  }
 }
 h1#site-title {
   margin-top: 1em;

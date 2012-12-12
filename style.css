@@ -142,6 +142,21 @@ h1, h2, h3, h4, h5 {
 -------------------------------------------------------------- */
 #branding {
   display: block;
+  clear: both;
+  margin-top: 48px; }
+
+#site-image {
+  float: left;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px 0 #bbbbbb;
+  -moz-box-shadow: 0 1px 2px 0 #bbbbbb;
+  box-shadow: 0 1px 2px 0 #bbbbbb;
+  margin-bottom: 40px;
   clear: both; }
 
 #site-title {
@@ -151,6 +166,8 @@ h1, h2, h3, h4, h5 {
   #site-title a {
     color: #444;
     text-decoration: none; }
+  .header-image #site-title {
+    font-size: 3em; }
 
 h1#site-title {
   margin-top: 1em; }
