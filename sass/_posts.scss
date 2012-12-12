@@ -222,3 +222,9 @@ footer.entry-meta {
 .format-quote:before {
   content: "\f036";
 }
+
+// infinite-scroll comes with jetpack
+.infinite-scroll {
+  #nav-below, #nav-above, #colophon
+  display: none;
+}

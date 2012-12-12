@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.2.2 =
+* added support for jetpacks "infinite-scroll"
+* some css changes
+
 = 1.2.1 =
 * some css and html fixes
 * added micro formats v2 activity extension
@@ -11,7 +15,7 @@
 
 = 1.1.0 =
 * complete redesign
-* some macrodata/schema.org improvements
+* some microdata/schema.org improvements
 
 = 1.0.0 =
 * initial release
