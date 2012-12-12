@@ -225,6 +225,7 @@ footer.entry-meta {
 
 // infinite-scroll comes with jetpack
 .infinite-scroll {
-  #nav-below, #nav-above, #colophon
-  display: none;
+  #nav-below, #nav-above, #colophon {
+    display: none;
+  }
 }

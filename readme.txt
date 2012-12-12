@@ -1,6 +1,6 @@
 == Changelog ==
 
-= 1.2.2 =
+= 1.3.0 =
 * added support for jetpacks "infinite-scroll"
 * some css changes
 
