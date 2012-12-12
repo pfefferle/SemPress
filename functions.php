@@ -284,6 +284,20 @@ function sempress_post_thumbnail($content) {
 add_action('the_content', 'sempress_post_thumbnail', 1);
 
 /**
+ * Adjusts content_width value for full-width and single image attachment
+ * templates, and when there are no active widgets in the sidebar.
+ *
+ * @since SemPress 1.3.0
+ */
+function sempress_content_width() {
+	if ( is_page_template( 'full-width-page.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
+		global $content_width;
+		$content_width = 880;
+	}
+}
+add_action( 'template_redirect', 'sempress_content_width' );
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @since SemPress 1.0.0
