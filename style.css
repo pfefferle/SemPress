@@ -1046,7 +1046,7 @@ a.comment-reply-link {
 ol.commentlist {
   margin: 0;
   padding: 0; }
-  ol.commentlist li.comment {
+  ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingback {
     list-style: none outside none;
     margin: 10px 0; }
 
