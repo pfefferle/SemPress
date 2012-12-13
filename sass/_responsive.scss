@@ -31,6 +31,11 @@
   .entry-content .avatar {
     display: none;
   }
+  #site-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
