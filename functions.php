@@ -86,21 +86,21 @@ function sempress_setup() {
   /**
    * This theme supports a custom header
    */
-  $args = array(
+  $custom_header_args = array(
   	'width'         => 950,
   	'height'        => 200,
     'header-text'   => false
   );
-  add_theme_support( 'custom-header', $args );
+  add_theme_support( 'custom-header', $custom_header_args );
   
   /**
    * This theme supports custom backgrounds
    */
-  $args = array(
+  $custom_background_args = array(
   	'default-color' => 'f0f0f0',
   	'default-image' => get_template_directory_uri() . '/img/noise.png',
   );
-  add_theme_support( 'custom-background', $args );
+  add_theme_support( 'custom-background', $custom_background_args );
   
   /**
    * Nicer WYSIWYG editor
@@ -232,7 +232,7 @@ function sempress_comment( $comment, $args, $depth ) {
     <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>">
       <footer>
         <div class="comment-author vcard hcard h-card">
-          <?php echo get_avatar( $comment, 40 ); ?>
+          <?php echo get_avatar( $comment, 50 ); ?>
           <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name">%s</cite>', get_comment_author_link() ) ); ?>
         </div><!-- .comment-author .vcard -->
         <?php if ( $comment->comment_approved == '0' ) : ?>
