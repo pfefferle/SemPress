@@ -12,8 +12,8 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #3f3f3f;
-  background-color: #f0f0f0;
-  background-image: url("img/noise.png");
+  /*background-color: #f0f0f0;
+  background-image: url("img/noise.png");*/
   text-shadow: 0 1px 0 #fff;
   font-weight: 300;
 }
@@ -154,7 +154,7 @@ h1#site-title {
   margin-top: 1em;
 }
 #site-description {
-  color: #777;
+  color: #555;
   font-size: 1.7em;
   height: auto;
   line-height: 120%;

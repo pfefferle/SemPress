@@ -83,12 +83,24 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
   
+  /**
+   * This theme supports a custom header
+   */
   $args = array(
   	'width'         => 950,
   	'height'        => 200,
     'header-text'   => false
   );
   add_theme_support( 'custom-header', $args );
+  
+  /**
+   * This theme supports custom backgrounds
+   */
+  $args = array(
+  	'default-color' => 'f0f0f0',
+  	'default-image' => get_template_directory_uri() . '/img/noise.png',
+  );
+  add_theme_support( 'custom-background', $args );
   
   /**
    * Nicer WYSIWYG editor
