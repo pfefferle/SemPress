@@ -176,9 +176,9 @@ h1, h2, h3, h4, h5 {
   -ms-border-radius: 3px;
   -khtml-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 2px 0 #bbbbbb;
-  -moz-box-shadow: 0 1px 2px 0 #bbbbbb;
-  box-shadow: 0 1px 2px 0 #bbbbbb;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
   clear: both;
 }
