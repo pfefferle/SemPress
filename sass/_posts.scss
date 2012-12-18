@@ -11,6 +11,8 @@ article.attachment {
   border: 1px solid #ccc;
   padding-top: 20px;
   text-shadow: none;
+  z-index: 1;
+  *z-index: -1; /* ie7 bug */
 }
 .sticky {
 }

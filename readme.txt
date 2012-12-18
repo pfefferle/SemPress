@@ -5,6 +5,7 @@
 * added custom-background support
 * added support for jetpacks "infinite-scroll"
 * some css changes
+* fixed menu bug in ie7
 
 = 1.2.1 =
 * some css and html fixes
