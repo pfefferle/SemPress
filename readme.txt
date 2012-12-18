@@ -1,6 +1,8 @@
 == Changelog ==
 
 = 1.3.0 =
+* added custom-header support
+* added custom-background support
 * added support for jetpacks "infinite-scroll"
 * some css changes
 
