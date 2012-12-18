@@ -48,6 +48,9 @@ a.comment-reply-link {
   img.avatar {
     float: right;
   }
+  li {
+    list-style-type: disc;
+  }
 }
 .comment-meta, .comment-notes, .logged-in-as {
   color: #aaa;

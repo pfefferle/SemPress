@@ -1196,6 +1196,9 @@ a.comment-reply-link:before {
 .comment img.avatar {
   float: right;
 }
+.comment li {
+  list-style-type: disc;
+}
 
 .comment-meta, .comment-notes, .logged-in-as {
   color: #aaa;
