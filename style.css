@@ -1378,7 +1378,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     border: none;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -1387,6 +1386,7 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     -khtml-border-radius: 0;
     border-radius: 0;
     background-color: #464646;
+    z-index: 99999;
   }
 
   #access a,
@@ -1411,7 +1411,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     clear: both;
     float: none;
     width: 100%;
-    z-index: 3;
     padding: 0 0 0 25px;
     margin: 0;
     background-color: #464646;
