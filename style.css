@@ -59,6 +59,9 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
+abbr {
+  font-variant: small-caps;
+}
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999;
@@ -1361,10 +1364,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 @media only screen and (max-width: 479px) {
   #site-title {
     margin-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-    -moz-box-shadow: #FFF 0 1px 0 0;
-    -webkit-box-shadow: #FFF 0 1px 0 0;
-    box-shadow: #FFF 0 1px 0 0;
   }
 
   #site-description {

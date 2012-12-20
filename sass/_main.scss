@@ -39,9 +39,15 @@ hr {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff;
 }
-abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #999;
+abbr {
+  font-variant: small-caps;
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted #999;
+  }
+}
+abbr {
+  
 }
 blockquote {
   font-family: Georgia,"Times New Roman",Times,serif;
