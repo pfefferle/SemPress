@@ -15,7 +15,7 @@ get_header(); ?>
 
         <?php sempress_content_nav( 'nav-above' ); ?>
 
-        <?php get_template_part( 'content', 'single' ); ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
 
         <?php sempress_content_nav( 'nav-below' ); ?>
 
