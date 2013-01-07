@@ -1225,6 +1225,10 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   font-size: 0.9em;
 }
 
+.bypostauthor {
+  color: inherit;
+}
+
 #comments {
   padding-top: 30px;
 }
