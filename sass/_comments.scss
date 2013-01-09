@@ -31,7 +31,6 @@ article.comment {
 }
 a.comment-reply-link {
   font-size: 12px;
-  color: #aaa;
   height: 16px;
   line-height: 16px;
   &:before {
@@ -53,9 +52,14 @@ a.comment-reply-link {
   }
 }
 .comment-meta, .comment-notes, .logged-in-as {
-  color: #aaa;
   display: block;
   font-size: 12px;
+}
+.comment-meta a, .comment-reply-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 ol.commentlist {
   margin: 0;

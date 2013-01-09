@@ -11,18 +11,17 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #3f3f3f;
+  color: #444;
   background-color: #f0f0f0;
   background-image: url("img/noise.png");
   text-shadow: 0 1px 0 #fff;
   font-weight: 300;
 }
 a {
-  color: #21759B;
-  text-decoration: none;
+  color: #555;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 dl {
   margin-bottom: 18px;
@@ -62,7 +61,6 @@ blockquote {
     position: absolute;
     left: -40px;
     top: 30px;
-    color: #999;
     font-style: normal;
 	}
 	p {
@@ -126,7 +124,6 @@ ins {
 }
 h1, h2, h3, h4, h5 {
   font-weight: 200;
-  color: #444;
 }
 
 
@@ -150,10 +147,9 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -2px;
   margin: 0;
 	a {
-	  color: #444;
 	  text-decoration: none;
 	}
-  .header-image & {
+  .custom-header & {
     font-size: 3em;
   }
 }
@@ -161,7 +157,6 @@ h1#site-title {
   margin-top: 1em;
 }
 #site-description {
-  color: #555;
   font-size: 1.7em;
   height: auto;
   line-height: 120%;

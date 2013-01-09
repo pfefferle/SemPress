@@ -69,11 +69,21 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
+    a {
+      color: inherit;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   .entry-title,
   .entry-content,
   .entry-summary,
-  .entry-meta {
+  .entry-meta,
+  footer.entry-meta {
+    color: inherit;
+    text-shadow: inherit;
     margin: 0;
     padding: 0;
   }
@@ -119,7 +129,6 @@
     clear: both;
     float: none;
     width: 100%;
-    padding: 0 0 0 25px;
     margin: 0;
     background-color: #464646;
   }
@@ -127,6 +136,7 @@
     font-family: "FontAwesome";
     content: '\f0c9 ';
     margin-right: 10px;
+    padding-left: 25px;
   }
   #access:target .section-heading {
     display: none;

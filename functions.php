@@ -28,6 +28,16 @@
 if ( ! isset( $content_width ) )
   $content_width = 600; /* pixels */
 
+/**
+ * Set a default theme color array for WP.com.
+ */
+$themecolors = array(
+  'bg' => 'f0f0f0',
+  'border' => 'cccccc',
+  'text' => '444444',
+  'shadow' => 'ffffff'
+);
+
 if ( ! function_exists( 'sempress_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -40,6 +50,8 @@ if ( ! function_exists( 'sempress_setup' ) ):
  * functions.php file.
  */
 function sempress_setup() {
+  global $themecolors;
+
   /**
    * Make theme available for translation
    * Translations can be filed in the /languages/ directory
@@ -97,7 +109,7 @@ function sempress_setup() {
    * This theme supports custom backgrounds
    */
   $custom_background_args = array(
-  	'default-color' => 'f0f0f0',
+  	'default-color' => $themecolors['bg'],
   	'default-image' => get_template_directory_uri() . '/img/noise.png',
   );
   add_theme_support( 'custom-background', $custom_background_args );
@@ -109,69 +121,84 @@ function sempress_setup() {
 }
 endif; // sempress_setup
 
-/*
-function sempress_customize_register( $wp_customize ) {
-  $wp_customize->add_setting( 'header_textcolor' , array(
-      'default'     => '#000000',
-      'transport'   => 'refresh',
-  ) );
-  
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_textcolor', array(
-  	'label'      => __( 'Header Color', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'header_textcolor',
-  ) ) );
-  
-  $wp_customize->add_setting( 'menu_textcolor' , array(
-      'default'     => '#000000',
-      'transport'   => 'refresh',
-  ) );
-
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_textcolor', array(
-  	'label'      => __( 'Text-Color of the top-menu', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'menu_textcolor',
-  ) ) );
-  
-  $wp_customize->add_setting( 'global_shadowcolor' , array(
-      'default'     => '#000000',
-      'transport'   => 'refresh',
-  ) );
-
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'global_shadowcolor', array(
-  	'label'      => __( 'Drop-Shadow color', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'global_shadowcolor',
-  ) ) );
-}
-add_action( 'customize_register', 'sempress_customize_register' );
-
-function sempress_customize_css()
-{
-?>
-  <style type="text/css" id="sempress-custom-colors">
-    body { text-shadow: 0 1px 0 <?php echo get_theme_mod('global_shadowcolor'); ?>; }
-    #site-title a, #site-description { color: #<?php echo get_theme_mod('header_textcolor'); ?>; }
-    a { color: <?php echo get_theme_mod('menu_textcolor'); ?>; }
-  </style>
-<?php
-}
-add_action( 'wp_head', 'sempress_customize_css');
-*/
-
 /**
  * Tell WordPress to run sempress_setup() when the 'after_setup_theme' hook is run.
  */
 add_action( 'after_setup_theme', 'sempress_setup' );
 
+
 /**
- * Set a default theme color array for WP.com.
+ *
+ *
+ *
  */
-$themecolors = array(
-  'bg' => 'ffffff',
-  'border' => 'eeeeee',
-  'text' => '444444',
-);
+function sempress_customize_register( $wp_customize ) {
+  global $themecolors;
+
+  $wp_customize->add_setting( 'sempress_textcolor' , array(
+      'default'     => '#'.$themecolors['text'],
+      'transport'   => 'refresh',
+  ) );
+  
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_textcolor', array(
+  	'label'      => __( 'Text Color', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'sempress_textcolor',
+  ) ) );
+  
+  $wp_customize->add_setting( 'sempress_shadowcolor' , array(
+      'default'     => '#'.$themecolors['shadow'],
+      'transport'   => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_shadowcolor', array(
+  	'label'      => __( 'Shadow Color', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'sempress_shadowcolor',
+  ) ) );
+  
+  $wp_customize->add_setting( 'sempress_bordercolor' , array(
+      'default'     => '#'.$themecolors['border'],
+      'transport'   => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_bordercolor', array(
+  	'label'      => __( 'Border Color', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'sempress_bordercolor',
+  ) ) );
+}
+add_action( 'customize_register', 'sempress_customize_register' );
+
+
+/**
+ *
+ *
+ *
+ *
+ */
+function sempress_customize_css()
+{
+?>
+  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 <?php echo get_theme_mod('sempress_shadowcolor'); ?>; }
+    body, a { color: <?php echo get_theme_mod('sempress_textcolor'); ?>; }
+    .widget, #access {
+      border-bottom: 1px solid <?php echo get_theme_mod('sempress_bordercolor'); ?>;
+      -moz-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
+      -webkit-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
+      box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid <?php echo get_theme_mod('sempress_shadowcolor'); ?>;
+      -moz-box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
+      -webkit-box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
+      box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
+    }
+  </style>
+<?php
+}
+add_action( 'wp_head', 'sempress_customize_css');
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
@@ -378,7 +405,7 @@ function sempress_body_classes( $classes ) {
   }
   
   if ( get_header_image() ) {
-    $classes[] = 'header-image';
+    $classes[] = 'custom-header';
   }
 
   return $classes;

@@ -10,7 +10,6 @@ article.attachment {
   background-color: white;
   border: 1px solid #ccc;
   padding-top: 20px;
-  text-shadow: none;
   a {
     color: #21759B;
     text-decoration: none;
@@ -33,8 +32,12 @@ footer.entry-meta {
   @include custom-rounded(0, 0, 3px, 3px);
 }
 .entry-content,
-.entry-summary {
+.entry-summary,
+.entry-title {
   color: #3f3f3f;
+}
+.entry-content,
+.entry-summary {
   font-size: 1em;
   line-height: 27px;
   margin-bottom: 34px;
@@ -44,6 +47,7 @@ footer.entry-meta {
 .entry-meta,
 .entry-summary {
   padding: 0 34px;
+  text-shadow: none;
 }
 .entry-meta {
   clear: both;
@@ -103,8 +107,7 @@ footer.entry-meta {
   color: #aaa;
   font-size: 0.8em;
 }
-.entry-meta a,
-.comment-meta a {
+.entry-meta a {
   color: #777;
 }
 .entry-title, .entry-title a {
@@ -198,12 +201,10 @@ footer.entry-meta {
   font-family: "FontAwesome";
   display: block;
   font-size: 40px;
-  color: #999;
   font-style: normal;
   position: absolute;
   left: -65px;
   top: 30px;
-  text-shadow: 0 1px 0 #fff;
 }
 .format-aside:before {
   content: "\f075";

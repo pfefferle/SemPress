@@ -7,7 +7,7 @@ Description: SemPress is a highly semantic, HTML5 template, responsive and seo o
 Version: 1.3.0-dev
 License: GNU General Public License Version 3
 License URI: license.txt
-Tags: white, gray, light, black, custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style
+Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style
 
 This theme is based on the toolbox theme (http://wordpress.org/extend/themes/toolbox)
 and, like WordPress, licensed under the GPL.
@@ -24,7 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #3f3f3f;
+  color: #444;
   background-color: #f0f0f0;
   background-image: url("img/noise.png");
   text-shadow: 0 1px 0 #fff;
@@ -32,12 +32,11 @@ body {
 }
 
 a {
-  color: #21759B;
-  text-decoration: none;
+  color: #555;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 dl {
@@ -81,7 +80,6 @@ blockquote:before {
   position: absolute;
   left: -40px;
   top: 30px;
-  color: #999;
   font-style: normal;
 }
 blockquote p {
@@ -160,7 +158,6 @@ ins {
 
 h1, h2, h3, h4, h5 {
   font-weight: 200;
-  color: #444;
 }
 
 /* =Header
@@ -192,10 +189,9 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 #site-title a {
-  color: #444;
   text-decoration: none;
 }
-.header-image #site-title {
+.custom-header #site-title {
   font-size: 3em;
 }
 
@@ -204,7 +200,6 @@ h1#site-title {
 }
 
 #site-description {
-  color: #555;
   font-size: 1.7em;
   height: auto;
   line-height: 120%;
@@ -255,11 +250,6 @@ h1#site-title {
   float: right;
   overflow: hidden;
   width: 220px;
-  color: #999;
-}
-
-#sidebar a {
-  color: #555;
 }
 
 #main .widget-area {
@@ -333,6 +323,7 @@ h1#site-title {
   background-color: #f0f0f0;
   background-image: url("img/noise.png");
   border: 1px #ccc solid;
+  text-shadow: 0 1px 0 #fff;
   display: none;
   float: left;
   position: absolute;
@@ -376,22 +367,13 @@ h1#site-title {
   display: block;
   float: left;
   position: relative;
-  font-weight: 500;
+  font-weight: 300;
 }
 #access a, #access a:visited {
   display: block;
   line-height: 2em;
   padding-right: 1.5em;
   text-decoration: none;
-  color: #777;
-}
-
-#access div > ul > li > a:hover,
-#access .current_page_item > a,
-#access .current_page_ancestor > a {
-  color: #444;
-  font-weight: 500;
-  /*border-bottom: 1px solid #777;*/
 }
 
 #access ul li:hover > ul {
@@ -532,10 +514,17 @@ article.attachment {
   background-color: white;
   border: 1px solid #ccc;
   padding-top: 20px;
-  text-shadow: none;
-  z-index: 1;
-  *z-index: -1;
-  /* ie7 bug */
+}
+article.page a,
+article.post a,
+article.attachment a {
+  color: #21759B;
+  text-decoration: none;
+}
+article.page a:hover,
+article.post a:hover,
+article.attachment a:hover {
+  text-decoration: underline;
 }
 
 article, aside {
@@ -557,8 +546,13 @@ footer.entry-meta {
 }
 
 .entry-content,
-.entry-summary {
+.entry-summary,
+.entry-title {
   color: #3f3f3f;
+}
+
+.entry-content,
+.entry-summary {
   font-size: 1em;
   line-height: 27px;
   margin-bottom: 34px;
@@ -569,6 +563,7 @@ footer.entry-meta {
 .entry-meta,
 .entry-summary {
   padding: 0 34px;
+  text-shadow: none;
 }
 
 .entry-meta {
@@ -636,8 +631,7 @@ footer.entry-meta {
   font-size: 0.8em;
 }
 
-.entry-meta a,
-.comment-meta a {
+.entry-meta a {
   color: #777;
 }
 
@@ -738,12 +732,10 @@ footer.entry-meta {
   font-family: "FontAwesome";
   display: block;
   font-size: 40px;
-  color: #999;
   font-style: normal;
   position: absolute;
   left: -65px;
   top: 30px;
-  text-shadow: 0 1px 0 #fff;
 }
 
 .format-aside:before {
@@ -857,9 +849,9 @@ img.size-thumbnail,
 }
 
 #page img.avatar {
-  -webkit-box-shadow: 0 1px 2px 0 #bbbbbb;
-  -moz-box-shadow: 0 1px 2px 0 #bbbbbb;
-  box-shadow: 0 1px 2px 0 #bbbbbb;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
   -o-border-radius: 500px;
@@ -1185,7 +1177,6 @@ article.comment {
 
 a.comment-reply-link {
   font-size: 12px;
-  color: #aaa;
   height: 16px;
   line-height: 16px;
 }
@@ -1207,9 +1198,15 @@ a.comment-reply-link:before {
 }
 
 .comment-meta, .comment-notes, .logged-in-as {
-  color: #aaa;
   display: block;
   font-size: 12px;
+}
+
+.comment-meta a, .comment-reply-link {
+  text-decoration: none;
+}
+.comment-meta a:hover, .comment-reply-link:hover {
+  text-decoration: underline;
 }
 
 ol.commentlist {
@@ -1265,6 +1262,12 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 .widget-area li a {
   padding: 2px 0;
   display: block;
+}
+
+body.ie7 article.page,
+body.ie7 article.post,
+body.ie7 article.attachment {
+  z-index: -1;
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -1355,11 +1358,25 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     padding: 0;
     background-color: transparent;
   }
+  article.post a,
+  article.page a,
+  footer.entry-meta a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  article.post a:hover,
+  article.page a:hover,
+  footer.entry-meta a:hover {
+    text-decoration: none;
+  }
 
   .entry-title,
   .entry-content,
   .entry-summary,
-  .entry-meta {
+  .entry-meta,
+  footer.entry-meta {
+    color: inherit;
+    text-shadow: inherit;
     margin: 0;
     padding: 0;
   }
@@ -1415,7 +1432,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     clear: both;
     float: none;
     width: 100%;
-    padding: 0 0 0 25px;
     margin: 0;
     background-color: #464646;
   }
@@ -1424,6 +1440,7 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     font-family: "FontAwesome";
     content: '\f0c9 ';
     margin-right: 10px;
+    padding-left: 25px;
   }
 
   #access:target .section-heading {

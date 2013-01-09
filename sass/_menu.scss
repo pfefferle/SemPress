@@ -15,6 +15,7 @@
       background-color: #f0f0f0;
       background-image: url("img/noise.png");
       border: 1px #ccc solid;
+      text-shadow: 0 1px 0 #fff;
       display: none;
       float: left;
       position: absolute;
@@ -58,15 +59,7 @@
     line-height: 2em;
     padding-right: 1.5em;
     text-decoration: none;
-    color: #777;
   }
-}
-#access div > ul > li > a:hover,
-#access .current_page_item > a,
-#access .current_page_ancestor > a {
-  color: #444;
-  font-weight: 300;
-  /*border-bottom: 1px solid #777;*/
 }
 #access ul li:hover > ul {
   display: block;
