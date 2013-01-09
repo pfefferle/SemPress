@@ -109,6 +109,56 @@ function sempress_setup() {
 }
 endif; // sempress_setup
 
+/*
+function sempress_customize_register( $wp_customize ) {
+  $wp_customize->add_setting( 'header_textcolor' , array(
+      'default'     => '#000000',
+      'transport'   => 'refresh',
+  ) );
+  
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_textcolor', array(
+  	'label'      => __( 'Header Color', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'header_textcolor',
+  ) ) );
+  
+  $wp_customize->add_setting( 'menu_textcolor' , array(
+      'default'     => '#000000',
+      'transport'   => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_textcolor', array(
+  	'label'      => __( 'Text-Color of the top-menu', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'menu_textcolor',
+  ) ) );
+  
+  $wp_customize->add_setting( 'global_shadowcolor' , array(
+      'default'     => '#000000',
+      'transport'   => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'global_shadowcolor', array(
+  	'label'      => __( 'Drop-Shadow color', 'sempress' ),
+  	'section'    => 'colors',
+  	'settings'   => 'global_shadowcolor',
+  ) ) );
+}
+add_action( 'customize_register', 'sempress_customize_register' );
+
+function sempress_customize_css()
+{
+?>
+  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 <?php echo get_theme_mod('global_shadowcolor'); ?>; }
+    #site-title a, #site-description { color: #<?php echo get_theme_mod('header_textcolor'); ?>; }
+    a { color: <?php echo get_theme_mod('menu_textcolor'); ?>; }
+  </style>
+<?php
+}
+add_action( 'wp_head', 'sempress_customize_css');
+*/
+
 /**
  * Tell WordPress to run sempress_setup() when the 'after_setup_theme' hook is run.
  */

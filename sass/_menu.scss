@@ -51,7 +51,7 @@
     display: block;
     float: left;
     position: relative;
-    font-weight: 500;
+    font-weight: 300;
   }
   a, a:visited {
     display: block;
@@ -65,7 +65,7 @@
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
   color: #444;
-  font-weight: 500;
+  font-weight: 300;
   /*border-bottom: 1px solid #777;*/
 }
 #access ul li:hover > ul {
