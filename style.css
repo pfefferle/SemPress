@@ -1283,10 +1283,6 @@ body.ie7 article.attachment {
     width: 100%;
     padding-top: 50px;
     margin-top: 50px;
-    border-top: 1px solid #fff;
-    -moz-box-shadow: #cccccc 0 -1px 0 0;
-    -webkit-box-shadow: #cccccc 0 -1px 0 0;
-    box-shadow: #cccccc 0 -1px 0 0;
   }
 
   #main .widget-area {
