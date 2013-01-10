@@ -34,7 +34,7 @@ if ( ! isset( $content_width ) )
 $themecolors = array(
   'bg' => 'f0f0f0',
   'border' => 'cccccc',
-  'text' => '444444',
+  'text' => '555555',
   'shadow' => 'ffffff'
 );
 
