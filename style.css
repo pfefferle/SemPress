@@ -137,7 +137,7 @@ pre code:after {
   font-size: 12px;
   font-weight: bold;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   color: #9da0a4;
   -moz-border-radius: 4px 0 4px 0;
   -webkit-border-radius: 4px 0 4px 0;
