@@ -128,16 +128,16 @@ add_action( 'after_setup_theme', 'sempress_setup' );
 
 
 /**
+ * Adds "custom-color" support
  *
- *
- *
+ * @since 1.3.0
  */
 function sempress_customize_register( $wp_customize ) {
   global $themecolors;
 
   $wp_customize->add_setting( 'sempress_textcolor' , array(
-      'default'     => '#'.$themecolors['text'],
-      'transport'   => 'refresh',
+    'default'     => '#'.$themecolors['text'],
+    'transport'   => 'refresh',
   ) );
   
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_textcolor', array(
@@ -147,8 +147,8 @@ function sempress_customize_register( $wp_customize ) {
   ) ) );
   
   $wp_customize->add_setting( 'sempress_shadowcolor' , array(
-      'default'     => '#'.$themecolors['shadow'],
-      'transport'   => 'refresh',
+    'default'     => '#'.$themecolors['shadow'],
+    'transport'   => 'refresh',
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_shadowcolor', array(
@@ -158,8 +158,8 @@ function sempress_customize_register( $wp_customize ) {
   ) ) );
   
   $wp_customize->add_setting( 'sempress_bordercolor' , array(
-      'default'     => '#'.$themecolors['border'],
-      'transport'   => 'refresh',
+    'default'     => '#'.$themecolors['border'],
+    'transport'   => 'refresh',
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_bordercolor', array(
@@ -172,28 +172,27 @@ add_action( 'customize_register', 'sempress_customize_register' );
 
 
 /**
+ * Adds the custom CSS to the theme-header
  *
- *
- *
- *
+ * @since 1.3.0
  */
-function sempress_customize_css()
-{
+function sempress_customize_css() {
+  global $themecolors;
 ?>
   <style type="text/css" id="sempress-custom-colors">
-    body { text-shadow: 0 1px 0 <?php echo get_theme_mod('sempress_shadowcolor'); ?>; }
-    body, a { color: <?php echo get_theme_mod('sempress_textcolor'); ?>; }
+    body { text-shadow: 0 1px 0 <?php echo get_theme_mod('sempress_shadowcolor', "#".$themecolors["shadow"]); ?>; }
+    body, a { color: <?php echo get_theme_mod('sempress_textcolor', "#".$themecolors["text"]); ?>; }
     .widget, #access {
-      border-bottom: 1px solid <?php echo get_theme_mod('sempress_bordercolor'); ?>;
-      -moz-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
-      -webkit-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
-      box-shadow: <?php echo get_theme_mod('sempress_shadowcolor'); ?> 0 1px 0 0;
+      border-bottom: 1px solid <?php echo get_theme_mod('sempress_bordercolor', 'inherit'); ?>;
+      -moz-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor', 'inherit'); ?> 0 1px 0 0;
+      -webkit-box-shadow: <?php echo get_theme_mod('sempress_shadowcolor', 'inherit'); ?> 0 1px 0 0;
+      box-shadow: <?php echo get_theme_mod('sempress_shadowcolor', 'inherit'); ?> 0 1px 0 0;
     }
     article.comment {
-      border-top: 1px solid <?php echo get_theme_mod('sempress_shadowcolor'); ?>;
-      -moz-box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
-      -webkit-box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
-      box-shadow: <?php echo get_theme_mod('sempress_bordercolor'); ?> 0 -1px 0 0;
+      border-top: 1px solid <?php echo get_theme_mod('sempress_shadowcolor', 'inherit'); ?>;
+      -moz-box-shadow: <?php echo get_theme_mod('sempress_bordercolor', 'inherit'); ?> 0 -1px 0 0;
+      -webkit-box-shadow: <?php echo get_theme_mod('sempress_bordercolor', 'inherit'); ?> 0 -1px 0 0;
+      box-shadow: <?php echo get_theme_mod('sempress_bordercolor', 'inherit'); ?> 0 -1px 0 0;
     }
   </style>
 <?php
