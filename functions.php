@@ -215,8 +215,8 @@ function sempress_widgets_init() {
   register_sidebar( array(
     'name' => __( 'Sidebar 1', 'sempress' ),
     'id' => 'sidebar-1',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget' => "</aside>",
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => "</section>",
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>',
   ) );
@@ -225,8 +225,8 @@ function sempress_widgets_init() {
     'name' => __( 'Sidebar 2', 'sempress' ),
     'id' => 'sidebar-2',
     'description' => __( 'An optional second sidebar area', 'sempress' ),
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget' => "</aside>",
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => "</section>",
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>',
   ) );
