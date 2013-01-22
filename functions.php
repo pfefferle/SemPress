@@ -99,8 +99,8 @@ function sempress_setup() {
    * This theme supports a custom header
    */
   $custom_header_args = array(
-  	'width'         => 950,
-  	'height'        => 200,
+    'width'         => 950,
+    'height'        => 200,
     'header-text'   => false
   );
   add_theme_support( 'custom-header', $custom_header_args );
@@ -109,8 +109,8 @@ function sempress_setup() {
    * This theme supports custom backgrounds
    */
   $custom_background_args = array(
-  	'default-color' => $themecolors['bg'],
-  	'default-image' => get_template_directory_uri() . '/img/noise.png',
+    'default-color' => $themecolors['bg'],
+    'default-image' => get_template_directory_uri() . '/img/noise.png',
   );
   add_theme_support( 'custom-background', $custom_background_args );
   
@@ -141,9 +141,9 @@ function sempress_customize_register( $wp_customize ) {
   ) );
   
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_textcolor', array(
-  	'label'      => __( 'Text Color', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'sempress_textcolor',
+    'label'      => __( 'Text Color', 'sempress' ),
+    'section'    => 'colors',
+    'settings'   => 'sempress_textcolor',
   ) ) );
   
   $wp_customize->add_setting( 'sempress_shadowcolor' , array(
@@ -152,9 +152,9 @@ function sempress_customize_register( $wp_customize ) {
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_shadowcolor', array(
-  	'label'      => __( 'Shadow Color', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'sempress_shadowcolor',
+    'label'      => __( 'Shadow Color', 'sempress' ),
+    'section'    => 'colors',
+    'settings'   => 'sempress_shadowcolor',
   ) ) );
   
   $wp_customize->add_setting( 'sempress_bordercolor' , array(
@@ -163,9 +163,9 @@ function sempress_customize_register( $wp_customize ) {
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_bordercolor', array(
-  	'label'      => __( 'Border Color', 'sempress' ),
-  	'section'    => 'colors',
-  	'settings'   => 'sempress_bordercolor',
+    'label'      => __( 'Border Color', 'sempress' ),
+    'section'    => 'colors',
+    'settings'   => 'sempress_bordercolor',
   ) ) );
 }
 add_action( 'customize_register', 'sempress_customize_register' );
