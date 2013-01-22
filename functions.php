@@ -385,10 +385,10 @@ add_action('the_content', 'sempress_post_thumbnail', 1);
  * @since SemPress 1.3.0
  */
 function sempress_content_width() {
-	if ( is_page_template( 'full-width-page.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
-		global $content_width;
-		$content_width = 880;
-	}
+  if ( is_page_template( 'full-width-page.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
+    global $content_width;
+    $content_width = 880;
+  }
 }
 add_action( 'template_redirect', 'sempress_content_width' );
 
