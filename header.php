@@ -54,12 +54,12 @@
 </head>
 
 <body <?php body_class(); ?><?php sempress_blog_itemscope(); ?>>
-<div id="page" class="hfeed h-feed">
+<div id="page" class="hfeed h-feed feed">
 <?php do_action( 'before' ); ?>
   <header id="branding" role="banner">
     <hgroup>
-      <h1 id="site-title"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
-      <h2 id="site-description"<?php sempress_blog_itemprop("description"); ?>><?php bloginfo( 'description' ); ?></h2>
+      <h1 id="site-title" class="p-name"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
+      <h2 id="site-description" class="e-content"<?php sempress_blog_itemprop("description"); ?>><?php bloginfo( 'description' ); ?></h2>
     </hgroup>
     
     <?php if (get_header_image()) { ?>
