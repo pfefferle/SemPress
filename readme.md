@@ -22,7 +22,10 @@ SemPress' code is marked-up with microformats and microdata:
     * [hCard](http://microformats.org/wiki/hcard)
     * [rel-tag](http://microformats.org/wiki/rel-tag)
     * [XFN](http://microformats.org/wiki/xfn)
-* used [microformats version 2](http://microformats.org/wiki/microformats-2): h-atom and h-card
+* used [microformats version 2](http://microformats.org/wiki/microformats-2):
+   * h-atom/h-entry
+   * h-card
+   * [ActivityStreams](http://microformats.org/wiki/activity-streams) (h-as-bookmark, h-as-note, ...)
 * used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): 
     * http://schema.org/Blog
     * http://schema.org/BlogPosting
