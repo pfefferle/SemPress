@@ -41,7 +41,7 @@ Planned formats:
 
 SemPress supports:
 
-* [Custom Post Types](http://codex.wordpress.org/Post_Types): aside, status, gallery, video, audio, link and image
+* [Custom Post Formats](http://codex.wordpress.org/Post_Formats): aside, status, gallery, video, audio, link and image
 * [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails)
 * [Editor-Style](http://codex.wordpress.org/Function_Reference/add_editor_style)
 * [Navigation Menus](http://codex.wordpress.org/Navigation_Menus)
