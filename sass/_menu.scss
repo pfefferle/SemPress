@@ -7,6 +7,8 @@
   @include border-shadow-bottom;
   float: left;
   margin-bottom: 40px;
+  z-index: 3;
+  position: relative;
   ul {
     margin: 0;
     padding-left: 0px;
@@ -21,7 +23,6 @@
       position: absolute;
       top: 2em;
       left: 0;
-      z-index: 99999;
       @include box-shadow(0, 5px, 25px, 0, rgba(0,0,0,0.2));
       @include rounded(4px);
       ul {

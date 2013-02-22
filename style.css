@@ -313,6 +313,8 @@ h1#site-title {
   box-shadow: #FFF 0 1px 0 0;
   float: left;
   margin-bottom: 40px;
+  z-index: 3;
+  position: relative;
 }
 #access ul {
   margin: 0;
@@ -329,7 +331,6 @@ h1#site-title {
   position: absolute;
   top: 2em;
   left: 0;
-  z-index: 99999;
   -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
@@ -1261,12 +1262,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 .widget-area li a {
   padding: 2px 0;
   display: block;
-}
-
-body.ie7 article.page,
-body.ie7 article.post,
-body.ie7 article.attachment {
-  z-index: -1;
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
