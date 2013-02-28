@@ -84,10 +84,11 @@ function sempress_setup() {
   ) );
 
   /**
-   * Add support for the Aside and Gallery Post Formats
+   * Add support for the Aside, Gallery Post Formats...
    */
   add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
-  
+  add_theme_support( 'structured-post-formats', array( 'image', 'quote', 'link' ) );
+
   /**
    * This theme supports jetpacks "infinite-scroll"
    *
@@ -613,18 +614,6 @@ function sempress_blog_itemprop($prop) {
     echo ' itemprop="'.$prop.'"';
   }
 }
-
-/**
- * add .attachement to the imported media-objects
- */
-function sempress_oembed_dataparse($return, $data, $url) {
-  if ($return) {
-    $return = '<div class="media-attachment oembed">' . $return . '</div>';
-  }
-  
-  return $return;
-}
-add_filter( 'oembed_dataparse', 'sempress_oembed_dataparse', 3 );
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a SemPress.
