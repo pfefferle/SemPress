@@ -97,25 +97,27 @@ pre {
 code {
   word-wrap: break-word;
 }
-pre code {
-  display: block;
-  margin-top: 30px;
-  &:after {
-    content: "code";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: bold;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    color: #9da0a4;
-    @include custom-rounded(4px, 0, 4px, 0);
+pre {
+  code {
     display: block;
-	}
-  &[data-programming-language]:after {
-    content: "" attr(data-programming-language) " code";
+    margin-top: 30px;
+    &:after {
+      content: "code";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      color: #9da0a4;
+      @include custom-rounded(4px, 0, 4px, 0);
+      display: block;
+	  }
+    &[data-programming-language]:after {
+      content: "" attr(data-programming-language) " code";
+    }
   }
 }
 ins {
@@ -124,6 +126,15 @@ ins {
 }
 h1, h2, h3, h4, h5 {
   font-weight: 200;
+}
+article {
+  address {
+    display: inline;
+    font-style: normal;
+  }
+}
+main {
+  display: block;
 }
 
 
