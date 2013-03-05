@@ -13,9 +13,9 @@ get_header(); ?>
 
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>itemscope itemtype="http://schema.org/ImageObject">
           <header class="entry-header">
-            <h1 class="entry-title p-entry-title"><?php the_title(); ?></h1>
+            <h1 class="entry-title p-entry-title" itemprop="name"><?php the_title(); ?></h1>
 
             <div class="entry-meta">
               <?php
@@ -39,7 +39,7 @@ get_header(); ?>
             </nav><!-- #image-navigation -->
           </header><!-- .entry-header -->
 
-          <div class="entry-content e-entry-content">
+          <div class="entry-content e-content" itemprop="description">
 
             <div class="entry-attachment">
               <div class="attachment">
@@ -70,7 +70,7 @@ get_header(); ?>
 
                 <a href="<?php echo $next_attachment_url; ?>" title="<?php echo esc_attr( get_the_title() ); ?>" rel="attachment"><?php
                 $attachment_size = apply_filters( 'sempress_attachment_size', 1200 );
-                echo wp_get_attachment_image( $post->ID, array( $attachment_size, $attachment_size ) ); // filterable image width with, essentially, no limit for image height.
+                echo wp_get_attachment_image( $post->ID, array( $attachment_size, $attachment_size ), null, array("itemprop" => "image contentURL") ); // filterable image width with, essentially, no limit for image height.
                 ?></a>
               </div><!-- .attachment -->
 
