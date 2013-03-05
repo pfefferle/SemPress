@@ -364,7 +364,7 @@ endif;
  * @since SemPress 1.0.0
  */
 function sempress_post_thumbnail($content) {
-  if ( has_post_thumbnail() ) {
+  if ( has_post_thumbnail() && get_the_post_thumbnail() ) {
     $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
     $class = "aligncenter";
     if ($image['1'] < "480")

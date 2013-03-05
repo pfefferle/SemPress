@@ -8,8 +8,8 @@
 
 get_header(); ?>
 
-  <div id="primary" class="full-width">
-    <div id="content" role="main">
+  <section id="primary" class="full-width">
+    <main id="content" role="main">
 
       <article id="post-0" class="post error404 not-found">
         <header class="entry-header">
@@ -41,7 +41,7 @@ get_header(); ?>
         </div><!-- .entry-content -->
       </article><!-- #post-0 -->
 
-    </div><!-- #content -->
-  </div><!-- #primary -->
+    </main><!-- #content -->
+  </section><!-- #primary -->
 
 <?php get_footer(); ?>
