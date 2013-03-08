@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: SemPress 1.3.0\n"
-"POT-Creation-Date: 2013-03-01 11:59+0100\n"
-"PO-Revision-Date: 2013-03-01 12:00+0100\n"
+"Project-Id-Version: SemPress 1.3.2\n"
+"POT-Creation-Date: 2013-03-08 12:37+0100\n"
+"PO-Revision-Date: 2013-03-08 12:37+0100\n"
 "Last-Translator: Matthias Pfefferle <pfefferle@gmail.com>\n"
 "Language-Team: Matthias Pfefferle\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: /Users/matthias/Work/SemPress/content-aside.php:24
-#: /Users/matthias/Work/SemPress/content-gallery.php:50
+#: /Users/matthias/Work/SemPress/content-gallery.php:29
 #: /Users/matthias/Work/SemPress/content-image.php:24
 #: /Users/matthias/Work/SemPress/content-link.php:24
 #: /Users/matthias/Work/SemPress/content-page.php:17
@@ -121,47 +121,18 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: /Users/matthias/Work/SemPress/content-gallery.php:58
-#: /Users/matthias/Work/SemPress/content-gallery.php:69
-#: /Users/matthias/Work/SemPress/content-single.php:25
-#: /Users/matthias/Work/SemPress/entry-footer.php:10
-#: /Users/matthias/Work/SemPress/entry-footer.php:21
-msgid ", "
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:62
-#, php-format
-msgid "Posted in %1$s"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:73
-#: /Users/matthias/Work/SemPress/entry-footer.php:25
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:80
-#: /Users/matthias/Work/SemPress/entry-footer.php:32
-msgid "Leave a comment"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:80
-#: /Users/matthias/Work/SemPress/entry-footer.php:32
-msgid "1 Comment"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:80
-#: /Users/matthias/Work/SemPress/entry-footer.php:32
-msgid "% Comments"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/content-gallery.php:83
 #: /Users/matthias/Work/SemPress/content-page.php:18
 #: /Users/matthias/Work/SemPress/content-single.php:57
 #: /Users/matthias/Work/SemPress/entry-footer.php:35
 #: /Users/matthias/Work/SemPress/image.php:33
 #: /Users/matthias/Work/SemPress/image.php:99
 msgid "Edit"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/content-single.php:25
+#: /Users/matthias/Work/SemPress/entry-footer.php:10
+#: /Users/matthias/Work/SemPress/entry-footer.php:21
+msgid ", "
 msgstr ""
 
 #: /Users/matthias/Work/SemPress/content-single.php:33
@@ -201,6 +172,23 @@ msgstr ""
 msgid "in %1$s"
 msgstr ""
 
+#: /Users/matthias/Work/SemPress/entry-footer.php:25
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/entry-footer.php:32
+msgid "Leave a comment"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/entry-footer.php:32
+msgid "1 Comment"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/entry-footer.php:32
+msgid "% Comments"
+msgstr ""
+
 #: /Users/matthias/Work/SemPress/footer.php:17
 #, php-format
 msgid "This site is powered by %1$s and styled with %2$s"
@@ -210,91 +198,91 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: /Users/matthias/Work/SemPress/functions.php:145
-msgid "Text Color"
-msgstr ""
-
 #: /Users/matthias/Work/SemPress/functions.php:156
-msgid "Shadow Color"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:167
-msgid "Border Color"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:217
-msgid "Sidebar 1"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:226
-msgid "Sidebar 2"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:228
-msgid "An optional second sidebar area"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:269
-msgid "Post navigation"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:279
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:283
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:313
-#, php-format
-msgid "%s <span class=\"says\">says:</span>"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:316
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:324
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:326
-msgid "(Edit)"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:349
-#, php-format
-msgid ""
-"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
-"\"bookmark\"><time class=\"entry-date updated dt-updated\" datetime=\"%3$s\" "
-"itemprop=\"dateModified\">%4$s</time></a><span class=\"byline\"> <span class="
-"\"sep\"> by </span> <span class=\"author p-author vcard hcard h-card\" "
-"itemprop=\"author\" itemscope itemtype=\"http://schema.org/Person\"><a class="
-"\"url uid u-url u-uid fn p-name\" href=\"%5$s\" title=\"%6$s\" rel=\"author"
-"\" itemprop=\"url\"><span itemprop=\"name\">%7$s</span></a></span></span>"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:355
-#, php-format
-msgid "View all posts by %s"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/functions.php:585
-msgid "Search here&hellip;"
-msgstr ""
-
-#: /Users/matthias/Work/SemPress/header.php:44
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: /Users/matthias/Work/SemPress/header.php:70
+#: /Users/matthias/Work/SemPress/functions.php:176
+msgid "Text Color"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:187
+msgid "Shadow Color"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:198
+msgid "Border Color"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:248
+msgid "Sidebar 1"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:257
+msgid "Sidebar 2"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:259
+msgid "An optional second sidebar area"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:310
+msgid "Post navigation"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:320
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:324
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:354
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:357
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:365
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:367
+msgid "(Edit)"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:390
+#, php-format
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\"><time class=\"entry-date updated dt-updated\" datetime=\"%3$s\" "
+"itemprop=\"dateModified\">%4$s</time></a><address class=\"byline\"> <span "
+"class=\"sep\"> by </span> <span class=\"author p-author vcard hcard h-card\" "
+"itemprop=\"author\" itemscope itemtype=\"http://schema.org/Person\"><a class="
+"\"url uid u-url u-uid fn p-name\" href=\"%5$s\" title=\"%6$s\" rel=\"author"
+"\" itemprop=\"url\"><span itemprop=\"name\">%7$s</span></a></span></address>"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:396
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/functions.php:649
+msgid "Search here&hellip;"
+msgstr ""
+
+#: /Users/matthias/Work/SemPress/header.php:48
 msgid "Main menu"
 msgstr ""
 
-#: /Users/matthias/Work/SemPress/header.php:71
+#: /Users/matthias/Work/SemPress/header.php:49
 msgid "Skip to content"
 msgstr ""
 
