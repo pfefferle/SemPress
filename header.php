@@ -23,31 +23,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php
-  /*
-   * Print the <title> tag based on what is being viewed.
-   */
-  global $page, $paged;
-
-  wp_title( '|', true, 'right' );
-
-  // Add the blog name.
-  bloginfo( 'name' );
-
-  // Add the blog description for the home/front page.
-  $site_description = get_bloginfo( 'description', 'display' );
-  if ( $site_description && ( is_home() || is_front_page() ) )
-    echo " | $site_description";
-
-  // Add a page number if necessary:
-  if ( $paged >= 2 || $page >= 2 )
-    echo ' | ' . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
-
-  ?></title>
+<title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://microformats.org/profile/specs" />
 <link rel="profile" href="http://microformats.org/profile/hatom" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>

@@ -127,6 +127,37 @@ endif; // sempress_setup
  */
 add_action( 'after_setup_theme', 'sempress_setup' );
 
+/**
+ * Creates a nicely formatted and more specific title element text for output
+ * in head of document, based on current view.
+ *
+ * @since 1.3.1
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string Filtered title.
+ */
+function sempress_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() )
+		return $title;
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title = "$title $sep $site_description";
+
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 )
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
+
+	return $title;
+}
+add_filter( 'wp_title', 'sempress_wp_title', 10, 2 );
 
 /**
  * Adds "custom-color" support
@@ -243,6 +274,13 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
  * @since SemPress 1.1.1
  */
 function sempress_enqueue_scripts() {
+	/*
+	 * Adds JavaScript to pages with the comment form to support sites with
+	 * threaded comments (when in use).
+	 */
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
+		wp_enqueue_script( 'comment-reply' );
+
   // Add HTML5 support to older versions of IE
   if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
      ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
@@ -250,6 +288,9 @@ function sempress_enqueue_scripts() {
     
     wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.6');
   }
+  
+	// Loads our main stylesheet.
+	wp_enqueue_style( 'sempress-style', get_stylesheet_uri() );
 }
 endif;
 
@@ -503,6 +544,29 @@ function sempress_categorized_blog() {
     return false;
   }
 }
+
+if ( ! function_exists( 'sempress_featured_gallery' ) ) :
+/**
+ * Displays first gallery from post content. Changes image size from thumbnail
+ * to large, to display a larger first image.
+ *
+ * @since 1.3.1
+ *
+ * @return void
+ */
+function sempress_featured_gallery() {
+	$pattern = get_shortcode_regex();
+
+	if ( preg_match( "/$pattern/s", get_the_content(), $match ) ) {
+		if ( 'gallery' == $match[2] ) {
+			if ( ! strpos( $match[3], 'size' ) )
+				$match[3] .= ' size="medium"';
+
+			echo do_shortcode_tag( $match );
+		}
+	}
+}
+endif;
 
 /**
  * Flush out the transients used in sempress_categorized_blog
