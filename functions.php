@@ -65,27 +65,19 @@ function sempress_setup() {
   if ( is_readable( $locale_file ) )
     require_once( $locale_file );
 
-  /**
-   * Add default posts and comments RSS feed links to head
-   */
+  // Add default posts and comments RSS feed links to head
   add_theme_support( 'automatic-feed-links' );
   
-  /**
-   * This theme uses post thumbnails
-   */
+  // This theme uses post thumbnails
   add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 600, 9999 ); // Unlimited height, soft crop
 
-  /**
-   * This theme uses wp_nav_menu() in one location.
-   */
+  // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'sempress' ),
   ) );
 
-  /**
-   * Add support for the Aside, Gallery Post Formats...
-   */
+  // Add support for the Aside, Gallery Post Formats...
   add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
   //add_theme_support( 'structured-post-formats', array( 'image', 'quote', 'link' ) );
 
@@ -96,9 +88,7 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
   
-  /**
-   * This theme supports a custom header
-   */
+  // This theme supports a custom header
   $custom_header_args = array(
     'width'         => 950,
     'height'        => 200,
@@ -106,19 +96,18 @@ function sempress_setup() {
   );
   add_theme_support( 'custom-header', $custom_header_args );
   
-  /**
-   * This theme supports custom backgrounds
-   */
+  // This theme supports custom backgrounds
   $custom_background_args = array(
     'default-color' => $themecolors['bg'],
     'default-image' => get_template_directory_uri() . '/img/noise.png',
   );
   add_theme_support( 'custom-background', $custom_background_args );
   
-  /**
-   * Nicer WYSIWYG editor
-   */
-  add_editor_style( 'editor-style.css' );
+	// This theme uses its own gallery styles.
+	add_filter( 'use_default_gallery_style', '__return_false' );
+  
+  // Nicer WYSIWYG editor
+  add_editor_style( 'css/editor-style.css' );
 }
 endif; // sempress_setup
 
@@ -418,7 +407,7 @@ function sempress_post_thumbnail($content) {
     return $content;
   }
 }
-add_action('the_content', 'sempress_post_thumbnail', 1);
+add_filter('the_content', 'sempress_post_thumbnail', 1);
 
 /**
  * Adjusts content_width value for full-width and single image attachment
@@ -582,6 +571,9 @@ add_action( 'save_post', 'sempress_category_transient_flusher' );
 
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
+ *
+ * @param string $url
+ * @return string
  */
 function sempress_enhanced_image_navigation( $url ) {
   global $post, $wp_rewrite;
@@ -680,5 +672,5 @@ function sempress_blog_itemprop($prop) {
 }
 
 /**
- * This theme was built with PHP, Semantic HTML, CSS, love, and a SemPress.
+ * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
  */
