@@ -1,23 +1,51 @@
 {
   "name": "SemPress",
-  "version": "1.3.3",
-  "description": "A highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).",
+  "version": "1.3.4-dev",
+  "description": "SemPress is a highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/pfefferle/SemPress.git"
   },
+  "bugs": {
+    "url": "https://github.com/pfefferle/SemPress/issues"
+  },
   "keywords": [
-    "SemPress",
-    "WordPress",
-    "Theme",
-    "Microformats",
-    "Microdata",
-    "Schema.org"
+    "white",
+    "gray",
+    "light",
+    "black",
+    "custom-menu",
+    "custom-colors",
+    "custom-header",
+    "custom-background",
+    "sticky-post",
+    "microformats",
+    "rtl-language-support",
+    "translation-ready",
+    "full-width-template",
+    "post-formats",
+    "threaded-comments",
+    "flexible-width",
+    "right-sidebar",
+    "two-columns",
+    "one-column",
+    "editor-style",
+    "featured-images"
   ],
-  "author": "Matthias Pfefferle",
-  "license": "GPL Version 3",
+  "author": {
+    "name": "Matthias Pfefferle",
+    "url": "http://notizblog.org/"
+  },
+  "license": {
+    "name": "GNU General Public License",
+    "version": "3",
+    "url": "http://www.gnu.org/licenses/gpl.html"
+  },
+  "homepage": "http://notizblog.org/projects/sempress/",
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.2.2",
+    "grunt-replace": "~0.4.0"
   }
 }
