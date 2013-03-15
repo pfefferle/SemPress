@@ -103,8 +103,8 @@ function sempress_setup() {
   );
   add_theme_support( 'custom-background', $custom_background_args );
   
-	// This theme uses its own gallery styles.
-	add_filter( 'use_default_gallery_style', '__return_false' );
+  // This theme uses its own gallery styles.
+  add_filter( 'use_default_gallery_style', '__return_false' );
   
   // Nicer WYSIWYG editor
   add_editor_style( 'css/editor-style.css' );
