@@ -50,4 +50,8 @@ SemPress supports:
 * [Custom-Backgrounds](http://codex.wordpress.org/Custom_Backgrounds)
 * [Infinite Scroll](http://jetpack.me/support/infinite-scroll/) (JetPack)
 
+## Translations
+
+* Russion: Thanks to [http://0leg.net](Oleg) ([https://twitter.com/oleg_sh](@oleg_sh))
+
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
