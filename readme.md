@@ -52,6 +52,6 @@ SemPress supports:
 
 ## Translations
 
-* Russion: Thanks to [http://0leg.net](Oleg) ([https://twitter.com/oleg_sh](@oleg_sh))
+* ru_RU: thanks to [http://0leg.net](Oleg) ([https://twitter.com/oleg_sh](@oleg_sh))
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
