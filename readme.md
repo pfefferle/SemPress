@@ -23,9 +23,9 @@ SemPress' code is marked-up with microformats and microdata:
     * [rel-tag](http://microformats.org/wiki/rel-tag)
     * [XFN](http://microformats.org/wiki/xfn)
 * used [microformats version 2](http://microformats.org/wiki/microformats-2):
-   * h-atom/h-entry
-   * h-card
-   * [ActivityStreams](http://microformats.org/wiki/activity-streams) (h-as-bookmark, h-as-note, ...)
+    * h-atom/h-entry
+    * h-card
+    * [ActivityStreams](http://microformats.org/wiki/activity-streams) (h-as-bookmark, h-as-note, ...)
 * used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): 
     * http://schema.org/Blog
     * http://schema.org/BlogPosting
@@ -52,6 +52,6 @@ SemPress supports:
 
 ## Translations
 
-* ru_RU: thanks to [http://0leg.net](Oleg) ([https://twitter.com/oleg_sh](@oleg_sh))
+* ru_RU: thanks to [Oleg](http://0leg.net) ([@oleg_sh](https://twitter.com/oleg_sh))
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
