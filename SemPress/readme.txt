@@ -9,7 +9,6 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 
 The exceptions to this license are as follows:
 
-* The Toolbox Theme is licensed under the GPL license
 * The Bootstrap CSS by Twitter is licensed under the GPL-compatible [http://www.apache.org/licenses/LICENSE-2.0 Apache License v2.0]
 * FontAwesome by Dave Gandy is licensed under the [http://scripts.sil.org/OFL SIL Open Font License]
 * html5shiv is licensed under the [http://opensource.org/licenses/MIT MIT license]
