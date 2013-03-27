@@ -544,16 +544,16 @@ if ( ! function_exists( 'sempress_featured_gallery' ) ) :
  * @return void
  */
 function sempress_featured_gallery() {
-	$pattern = get_shortcode_regex();
+  $pattern = get_shortcode_regex();
 
-	if ( preg_match( "/$pattern/s", get_the_content(), $match ) ) {
-		if ( 'gallery' == $match[2] ) {
-			if ( ! strpos( $match[3], 'size' ) )
-				$match[3] .= ' size="medium"';
+  if ( preg_match( "/$pattern/s", get_the_content(), $match ) ) {
+    if ( 'gallery' == $match[2] ) {
+      if ( ! strpos( $match[3], 'size' ) )
+        $match[3] .= ' size="medium"';
 
-			echo do_shortcode_tag( $match );
-		}
-	}
+      echo do_shortcode_tag( $match );
+    }
+  }
 }
 endif;
 
