@@ -87,18 +87,19 @@ blockquote p {
   font-size: 16px;
   font-weight: 300;
 }
-blockquote small {
+
+cite {
+  font-style: normal;
+}
+
+blockquote small, .post-format-content cite {
   display: block;
   line-height: 18px;
   color: #999;
   font-style: normal;
 }
-blockquote small:before {
+blockquote small:before, .post-format-content cite:before {
   content: '\2014 \00A0';
-}
-
-cite {
-  font-style: normal;
 }
 
 pre {
@@ -119,14 +120,9 @@ pre {
   word-wrap: break-word;
   position: relative;
 }
-
-code {
-  word-wrap: break-word;
-}
-
 pre code {
-  display: block;
   margin-top: 30px;
+  display: block;
 }
 pre code:after {
   content: "code";
@@ -149,6 +145,10 @@ pre code:after {
 }
 pre code[data-programming-language]:after {
   content: "" attr(data-programming-language) " code";
+}
+
+code {
+  word-wrap: break-word;
 }
 
 ins {
@@ -333,7 +333,6 @@ h1#site-title {
 }
 #access ul ul {
   background-color: #f0f0f0;
-  background-image: url("img/noise.png");
   border: 1px #ccc solid;
   text-shadow: 0 1px 0 #fff;
   display: none;

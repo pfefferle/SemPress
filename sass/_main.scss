@@ -45,9 +45,6 @@ abbr {
     border-bottom: 1px dotted #999;
   }
 }
-abbr {
-  
-}
 blockquote {
   font-family: Georgia,"Times New Roman",Times,serif;
   padding: 0 0 0 15px;
@@ -68,18 +65,18 @@ blockquote {
 	  font-size: 16px;
 	  font-weight: 300;
 	}
-	small {
-    display: block;
-    line-height: 18px;
-    color: #999;
-    font-style: normal;
-    &:before {
-      content: '\2014 \00A0';
-    }
-  }
 }
 cite {
   font-style: normal;
+}
+blockquote small, .post-format-content cite {
+  display: block;
+  line-height: 18px;
+  color: #999;
+  font-style: normal;
+  &:before {
+    content: '\2014 \00A0';
+  }
 }
 pre {
   background-color: #f5f5f5;
@@ -93,14 +90,9 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   position: relative;
-}
-code {
-  word-wrap: break-word;
-}
-pre {
   code {
-    display: block;
     margin-top: 30px;
+    display: block;
     &:after {
       content: "code";
       position: absolute;
@@ -115,10 +107,15 @@ pre {
       @include custom-rounded(4px, 0, 4px, 0);
       display: block;
 	  }
-    &[data-programming-language]:after {
-      content: "" attr(data-programming-language) " code";
+    &[data-programming-language] {
+      &:after {
+        content: "" attr(data-programming-language) " code";
+      }
     }
   }
+}
+code {
+  word-wrap: break-word;
 }
 ins {
   background: #fff9c0;
