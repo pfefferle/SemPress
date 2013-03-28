@@ -1,6 +1,6 @@
 {
   "name": "SemPress",
-  "version": "1.3.4-dev",
+  "version": "1.4.0-dev",
   "description": "SemPress is a highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).",
   "main": "Gruntfile.js",
   "repository": {
