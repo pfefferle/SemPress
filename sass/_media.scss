@@ -1,0 +1,27 @@
+article.format-video, article.format-image, article.format-quote {
+  padding-top: 0px;
+  
+  .entry-media {
+    width: 100%;
+    @include custom-rounded(3px, 3px, 0px, 0px);
+    margin: 0px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    iframe, object, embed {
+      margin: 0px auto;
+      text-align: center;
+    }
+  }
+}
+
+article.format-video {
+  .entry-media {
+    background-color: #000000;
+  }
+}
+
+article.format-audio {
+  .entry-media {
+    padding: 20px 34px;
+  }
+}
