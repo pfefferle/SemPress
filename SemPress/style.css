@@ -4,7 +4,7 @@ Theme URI: http://notizblog.org/projects/sempress/
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
 Description: SemPress is a highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
-Version: 1.3.4-dev
+Version: 1.4.0-dev
 License: GNU General Public License Version 3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style, featured-images
@@ -781,6 +781,34 @@ footer.entry-meta {
 
 .infinite-scroll #nav-below, .infinite-scroll #nav-above, .infinite-scroll #colophon {
   display: none;
+}
+
+article.format-video, article.format-image, article.format-quote {
+  padding-top: 0px;
+}
+article.format-video .entry-media, article.format-image .entry-media, article.format-quote .entry-media {
+  width: 100%;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -o-border-radius: 3px 3px 0px 0px;
+  -ms-border-radius: 3px 3px 0px 0px;
+  -khtml-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+article.format-video .entry-media iframe, article.format-video .entry-media object, article.format-video .entry-media embed, article.format-image .entry-media iframe, article.format-image .entry-media object, article.format-image .entry-media embed, article.format-quote .entry-media iframe, article.format-quote .entry-media object, article.format-quote .entry-media embed {
+  margin: 0px auto;
+  text-align: center;
+}
+
+article.format-video .entry-media {
+  background-color: #000000;
+}
+
+article.format-audio .entry-media {
+  padding: 20px 34px;
 }
 
 /* =Images
