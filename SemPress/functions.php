@@ -71,6 +71,9 @@ function sempress_setup() {
   // This theme uses post thumbnails
   add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 600, 9999 ); // Unlimited height, soft crop
+  
+  // Register custom image size for image post formats.
+  add_image_size( 'sempress-image-post-format', 668, 1288 );
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
@@ -79,7 +82,7 @@ function sempress_setup() {
 
   // Add support for the Aside, Gallery Post Formats...
   add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
-  //add_theme_support( 'structured-post-formats', array( 'image', 'quote', 'link' ) );
+  add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio' ) );
 
   /**
    * This theme supports jetpacks "infinite-scroll"
@@ -320,7 +323,6 @@ function sempress_content_nav( $nav_id ) {
 }
 endif; // sempress_content_nav
 
-
 if ( ! function_exists( 'sempress_comment' ) ) :
 /**
  * Template for comments and pingbacks.
@@ -420,6 +422,11 @@ function sempress_content_width() {
     global $content_width;
     $content_width = 880;
   }
+  
+	if ( has_post_format( 'image' ) || has_post_format( 'video' ) || is_attachment() ) {
+		global $content_width;
+		$content_width = 668;
+	}
 }
 add_action( 'template_redirect', 'sempress_content_width' );
 
@@ -612,46 +619,15 @@ function sempress_get_post_id() {
 }
 
 /**
- * adds the new HTML5 input types to the comment-form
+ * Switches default core markup for search form to output valid HTML5.
  *
- * @param string $form
- * @return string
+ * @param string $format Expected markup format, default is `xhtml`
+ * @return string Twenty Thirteen loves HTML5.
  */
-function sempress_comment_input_types($fields) {
-  if (get_option("require_name_email", false)) {
-    $fields['author'] = preg_replace('/<input/', '<input required', $fields['author']);
-    $fields['email'] = preg_replace('/"text"/', '"email" required', $fields['email']);
-  } else {
-    $fields['email'] = preg_replace('/"text"/', '"email"', $fields['email']);
-  }
-
-  $fields['url'] = preg_replace('/"text"/', '"url"', $fields['url']);
-
-  return $fields;
+function sempress_searchform_format( $format ) {
+	return 'html5';
 }
-add_filter("comment_form_default_fields", "sempress_comment_input_types");
-
-/**
- * adds the new HTML5 input type to the search-field
- *
- * @param string $form
- * @return string
- */
-function sempress_search_form_input_type($form) {
-  return preg_replace('/"text"/', '"search" placeholder="'.__('Search here&hellip;', 'sempress').'"', $form);
-}
-add_filter("get_search_form", "sempress_search_form_input_type");
-
-/**
- * adds the new HTML5 input types to the comment-text-area
- *
- * @param string $form
- * @return string
- */
-function sempress_comment_field_input_type($field) {
-  return preg_replace('/<textarea/', '<textarea required', $field);
-}
-add_filter("comment_form_field_comment", "sempress_comment_field_input_type");
+add_filter( 'search_form_format', 'sempress_searchform_format' );
 
 /**
  * hide blog item types on single pages and posts
