@@ -71,6 +71,6 @@
     <p class="nocomments"><?php _e( 'Comments are closed.', 'sempress' ); ?></p>
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php comment_form( array( 'format' => 'html5' ) ); ?>
 
 </div><!-- #comments -->
