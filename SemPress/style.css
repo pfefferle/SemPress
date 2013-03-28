@@ -1049,12 +1049,13 @@ input[type="url"] {
   width: 60%;
 }
 
-input#s {
+.widget .searchform label input, input#s {
   width: 90%;
   margin: 0;
 }
 
-input#searchsubmit {
+input[type="submit"].searchsubmit,
+input.searchsubmit {
   display: none;
 }
 
