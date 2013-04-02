@@ -73,8 +73,8 @@ function sempress_setup() {
   set_post_thumbnail_size( 600, 9999 ); // Unlimited height, soft crop
   
   // Register custom image size for image post formats.
-  add_image_size( 'sempress-image-post-format', 668, 1288 );
-
+  add_image_size( 'sempress-image-post', 668, 1288 );
+  
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'sempress' ),
@@ -82,7 +82,7 @@ function sempress_setup() {
 
   // Add support for the Aside, Gallery Post Formats...
   add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
-  add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio' ) );
+  add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio', 'quote' ) );
 
   /**
    * This theme supports jetpacks "infinite-scroll"
@@ -395,21 +395,18 @@ endif;
  *
  * @since SemPress 1.0.0
  */
-function sempress_post_thumbnail($content) {
-  if ( has_post_thumbnail() && get_the_post_thumbnail() ) {
+function sempress_the_post_thumbnail($content) {
+  if ( '' != get_the_post_thumbnail() ) {
     $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
     $class = "aligncenter";
     if ($image['1'] < "480")
       $class="alignright";
 
     $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "post-thumbnail", array( "class" => $class, "itemprop" => "image" ) ).'</p>';
-
-    return $post_thumbnail . $content;
-  } else {
-    return $content;
+    
+    echo $post_thumbnail;
   }
 }
-add_filter('the_content', 'sempress_post_thumbnail', 1);
 
 /**
  * Adjusts content_width value for full-width and single image attachment
@@ -593,6 +590,36 @@ function sempress_enhanced_image_navigation( $url ) {
   return $url;
 }
 add_filter( 'attachment_link', 'sempress_enhanced_image_navigation' );
+
+if ( ! function_exists( 'sempress_the_quote' ) ) : 
+/** 
+ * Displays a quote based on post format meta data for quote post formats. 
+ * 
+ * @since Twenty Thirteen 1.0 
+ * 
+ * @return void 
+ */ 
+function sempress_the_quote() { 
+  $quote_meta = get_post_format_meta( get_the_ID() ); 
+ 	
+  if ( empty( $quote_meta ) ) 
+ 	  return; 
+
+  if ( ! empty( $quote_meta['quote'] ) && ! stristr( get_the_content(), $quote_meta['quote'] ) ) { 
+    $quote = sprintf( '<blockquote>%s</blockquote>', wpautop( $quote_meta['quote'] ) ); 
+    if ( ! empty( $quote_meta['quote_source'] ) ) { 
+      $source = ( ! empty( $quote_meta['url'] ) ) ? 
+        sprintf( '<a href="%s">%s</a>', esc_url( $quote_meta['url'] ), $quote_meta['quote_source'] ) : 
+        $quote_meta['quote_source']; 
+      $quote .= sprintf( '<figcaption class="quote-caption">%s</figcaption>', $source ); 
+    } 
+    $quote = sprintf( '<figure class="quote">%s</figure>', $quote ); 
+  } 
+
+  if ( isset( $quote ) ) 
+    echo $quote; 
+  } 
+endif; 
 
 /**
  * Display the id for the post div.

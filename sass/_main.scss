@@ -69,13 +69,40 @@ blockquote {
 cite {
   font-style: normal;
 }
-blockquote small, .post-format-content cite {
+blockquote small, .post-format-content cite, figcaption.quote-caption {
   display: block;
   line-height: 18px;
   color: #999;
   font-style: normal;
   &:before {
     content: '\2014 \00A0';
+  }
+}
+figure.quote {
+  background-color: #F5F5F5;
+  height: auto;
+  padding: 34px;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  blockquote {
+    margin: 0px;
+    padding: 0px;
+
+    &:before {
+      content: none;
+    }
+    p {
+      font-size: 30px;
+    }
+    p:first-child {
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
+  
+  figcaption.quote-caption {
+    padding-top: 10px;
   }
 }
 pre {

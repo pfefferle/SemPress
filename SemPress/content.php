@@ -10,7 +10,7 @@
     <h1 class="entry-title p-name" itemprop="name"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sempress' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" itemprop="url"><?php the_title(); ?></a></h1>
 
     <?php if ( 'post' == get_post_type() ) : ?>
-    <div class="entry-meta">
+    <div class="entry-meta">      
       <?php sempress_posted_on(); ?>
     </div><!-- .entry-meta -->
     <?php endif; ?>
@@ -22,6 +22,7 @@
   </div><!-- .entry-summary -->
   <?php else : ?>
   <div class="entry-content e-content" itemprop="description articleBody">
+    <?php sempress_the_post_thumbnail(); ?>
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
   </div><!-- .entry-content -->

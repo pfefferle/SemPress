@@ -9,7 +9,6 @@ article.attachment {
   @include rounded(3px);
   background-color: white;
   border: 1px solid #ccc;
-  padding-top: 20px;
   a {
     color: #21759B;
     text-decoration: none;
@@ -52,6 +51,9 @@ footer.entry-meta {
 .entry-meta {
   clear: both;
   display: block;
+}
+.entry-title {
+  padding-top: 20px;
 }
 #content nav {
   display: block;
@@ -168,10 +170,15 @@ footer.entry-meta {
 }
 
 /* Aside Posts */
-.format-aside .entry-header,
-.format-status .entry-header,
-.format-link .entry-header {
-  display: none;
+.format-aside,
+.format-status,
+.format-link {
+  .entry-header {
+    display: none;
+  }
+  .entry-content {
+    padding-top: 15px;
+  }
 }
 
 /* Aside Posts */

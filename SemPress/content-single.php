@@ -15,6 +15,7 @@
   </header><!-- .entry-header -->
 
   <div class="entry-content e-content" itemprop="articleBody description">
+    <?php sempress_the_post_thumbnail(); ?>
     <?php the_content(); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
   </div><!-- .entry-content -->

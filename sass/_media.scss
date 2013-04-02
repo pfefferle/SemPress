@@ -5,13 +5,18 @@ article.format-video, article.format-image, article.format-quote {
     width: 100%;
     @include custom-rounded(3px, 3px, 0px, 0px);
     margin: 0px auto;
-    margin-bottom: 20px;
     text-align: center;
     iframe, object, embed {
       margin: 0px auto;
       text-align: center;
     }
   }
+}
+
+.entry-media img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 article.format-video {
