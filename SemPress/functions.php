@@ -70,7 +70,7 @@ function sempress_setup() {
   
   // This theme uses post thumbnails
   add_theme_support( 'post-thumbnails' );
-  set_post_thumbnail_size( 600, 9999 ); // Unlimited height, soft crop
+  set_post_thumbnail_size( 668, 9999 ); // Unlimited height, soft crop
   
   // Register custom image size for image post formats.
   add_image_size( 'sempress-image-post', 668, 1288 );
@@ -395,16 +395,11 @@ endif;
  *
  * @since SemPress 1.0.0
  */
-function sempress_the_post_thumbnail($content) {
-  if ( '' != get_the_post_thumbnail() ) {
-    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
-    $class = "aligncenter";
-    if ($image['1'] < "480")
-      $class="alignright";
-
-    $post_thumbnail = '<p>'.get_the_post_thumbnail( null, "post-thumbnail", array( "class" => $class, "itemprop" => "image" ) ).'</p>';
-    
-    echo $post_thumbnail;
+function sempress_the_post_thumbnail() {
+	if ( '' != get_the_post_thumbnail() ) {
+?>
+	  <p><?php the_post_thumbnail( "thumbnail", array( "class" => "alignright", "itemprop" => "image" ) ); ?></p>
+<?php 
   }
 }
 

@@ -1,22 +1,21 @@
-article.format-video, article.format-image, article.format-quote {
-  padding-top: 0px;
-  
-  .entry-media {
-    width: 100%;
-    @include custom-rounded(3px, 3px, 0px, 0px);
+.entry-media {
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: auto;
+  @include custom-rounded(3px, 3px, 0px, 0px);
+  iframe, object, embed {
     margin: 0px auto;
     text-align: center;
-    iframe, object, embed {
-      margin: 0px auto;
-      text-align: center;
-    }
   }
-}
-
-.entry-media img {
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 article.format-video {

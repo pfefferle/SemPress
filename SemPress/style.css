@@ -816,29 +816,29 @@ footer.entry-meta {
   display: none;
 }
 
-article.format-video, article.format-image, article.format-quote {
-  padding-top: 0px;
-}
-article.format-video .entry-media, article.format-image .entry-media, article.format-quote .entry-media {
+.entry-media {
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #F5F5F5;
   width: 100%;
+  height: auto;
   -moz-border-radius: 3px 3px 0px 0px;
   -webkit-border-radius: 3px 3px 0px 0px;
   -o-border-radius: 3px 3px 0px 0px;
   -ms-border-radius: 3px 3px 0px 0px;
   -khtml-border-radius: 3px 3px 0px 0px;
   border-radius: 3px 3px 0px 0px;
+}
+.entry-media iframe, .entry-media object, .entry-media embed {
   margin: 0px auto;
   text-align: center;
 }
-article.format-video .entry-media iframe, article.format-video .entry-media object, article.format-video .entry-media embed, article.format-image .entry-media iframe, article.format-image .entry-media object, article.format-image .entry-media embed, article.format-quote .entry-media iframe, article.format-quote .entry-media object, article.format-quote .entry-media embed {
-  margin: 0px auto;
-  text-align: center;
-}
-
 .entry-media img {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  padding: 0;
 }
 
 article.format-video .entry-media {
