@@ -7,9 +7,9 @@
 
 <article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_blog_itemprop("blogPost"); ?> itemscope itemtype="http://schema.org/BlogPosting">
   <header class="entry-header">
-		<?php if ( '' != get_the_post_thumbnail() ) { ?>
+    <?php if ( '' != get_the_post_thumbnail() ) { ?>
     <div class="entry-media">
-			<?php the_post_thumbnail( "post-thumbnail", array( "itemprop" => "image" ) ); ?>
+      <?php the_post_thumbnail( "post-thumbnail", array( "itemprop" => "image" ) ); ?>
 		</div>
     <?php } ?>    
     <h1 class="entry-title p-name" itemprop="name"><?php the_title(); ?></h1>
