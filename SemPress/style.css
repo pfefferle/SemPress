@@ -124,7 +124,7 @@ figure.quote blockquote p:first-child {
   margin-top: 0px;
 }
 figure.quote figcaption.quote-caption {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 pre {
@@ -816,7 +816,7 @@ footer.entry-meta {
   display: none;
 }
 
-.entry-media {
+.entry-header .entry-media {
   padding: 0px;
   margin: 0px auto;
   text-align: center;
@@ -830,11 +830,11 @@ footer.entry-meta {
   -khtml-border-radius: 3px 3px 0px 0px;
   border-radius: 3px 3px 0px 0px;
 }
-.entry-media iframe, .entry-media object, .entry-media embed {
+.entry-header .entry-media iframe, .entry-header .entry-media object, .entry-header .entry-media embed {
   margin: 0px auto;
   text-align: center;
 }
-.entry-media img {
+.entry-header .entry-media img {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
@@ -847,6 +847,8 @@ article.format-video .entry-media {
 
 article.format-audio .entry-media {
   padding: 20px 34px;
+  margin: 0 auto;
+  width: auto;
 }
 
 /* =Images

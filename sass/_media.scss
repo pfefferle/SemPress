@@ -1,4 +1,4 @@
-.entry-media {
+.entry-header .entry-media {
   padding: 0px;
   margin: 0px auto;
   text-align: center;
@@ -27,5 +27,7 @@ article.format-video {
 article.format-audio {
   .entry-media {
     padding: 20px 34px;
+    margin: 0 auto;
+    width: auto;
   }
 }
