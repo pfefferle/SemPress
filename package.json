@@ -35,14 +35,14 @@
   ],
   "author": {
     "name": "Matthias Pfefferle",
-    "url": "http://notizblog.org/"
+    "url": "http://notizblog.org/projects/sempress/"
   },
   "license": {
     "name": "GNU General Public License",
     "version": "3",
     "url": "http://www.gnu.org/licenses/gpl.html"
   },
-  "homepage": "http://notizblog.org/projects/sempress/",
+  "homepage": "https://github.com/pfefferle/SemPress",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.2.2",
