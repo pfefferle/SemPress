@@ -266,12 +266,12 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
  * @since SemPress 1.1.1
  */
 function sempress_enqueue_scripts() {
-	/*
-	 * Adds JavaScript to pages with the comment form to support sites with
-	 * threaded comments (when in use).
-	 */
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
+  /*
+   * Adds JavaScript to pages with the comment form to support sites with
+   * threaded comments (when in use).
+   */
+  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
+    wp_enqueue_script( 'comment-reply' );
 
   // Add HTML5 support to older versions of IE
   if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
@@ -281,8 +281,8 @@ function sempress_enqueue_scripts() {
     wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.6');
   }
   
-	// Loads our main stylesheet.
-	wp_enqueue_style( 'sempress-style', get_stylesheet_uri() );
+  // Loads our main stylesheet.
+  wp_enqueue_style( 'sempress-style', get_stylesheet_uri() );
 }
 endif;
 
@@ -396,9 +396,9 @@ endif;
  * @since SemPress 1.0.0
  */
 function sempress_the_post_thumbnail() {
-	if ( '' != get_the_post_thumbnail() ) {
+  if ( '' != get_the_post_thumbnail() ) {
 ?>
-	  <p><?php the_post_thumbnail( "thumbnail", array( "class" => "alignright", "itemprop" => "image" ) ); ?></p>
+    <p><?php the_post_thumbnail( "thumbnail", array( "class" => "alignright", "itemprop" => "image" ) ); ?></p>
 <?php 
   }
 }
@@ -415,10 +415,10 @@ function sempress_content_width() {
     $content_width = 880;
   }
   
-	if ( has_post_format( 'image' ) || has_post_format( 'video' ) || is_attachment() ) {
-		global $content_width;
-		$content_width = 668;
-	}
+  if ( has_post_format( 'image' ) || has_post_format( 'video' ) || is_attachment() ) {
+    global $content_width;
+    $content_width = 668;
+  }
 }
 add_action( 'template_redirect', 'sempress_content_width' );
 
