@@ -594,7 +594,7 @@ if ( ! function_exists( 'sempress_the_quote' ) ) :
  * 
  * @return void 
  */ 
-function sempress_the_quote() { 
+function sempress_the_post_format_quote() { 
   $quote_meta = get_post_format_meta( get_the_ID() ); 
  	
   if ( empty( $quote_meta ) ) 
