@@ -81,7 +81,7 @@ function sempress_setup() {
   ) );
 
   // Add support for the Aside, Gallery Post Formats...
-  add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'quote', 'link', 'audio', 'video', 'status' ) );
+  add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status' ) );
   add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio', 'quote' ) );
 
   /**
