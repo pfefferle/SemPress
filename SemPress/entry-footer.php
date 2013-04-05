@@ -13,7 +13,6 @@
     <span class="cat-links">
       <?php printf( __( 'in %1$s', 'sempress' ), $categories_list ); ?>
     </span>
-    <span class="sep"> | </span>
     <?php endif; // End if categories ?>
 
     <?php
@@ -21,14 +20,15 @@
       $tags_list = get_the_tag_list( '', __( ', ', 'sempress' ) );
       if ( $tags_list ) :
     ?>
+    <span class="sep"> | </span>
     <span class="tag-links">
       <?php printf( __( 'Tagged %1$s', 'sempress' ), $tags_list ); ?>
     </span>
-    <span class="sep"> | </span>
     <?php endif; // End if $tags_list ?>
   <?php endif; // End if 'post' == get_post_type() ?>
 
   <?php if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
+  <span class="sep"> | </span>
   <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'sempress' ), __( '1 Comment', 'sempress' ), __( '% Comments', 'sempress' ) ); ?></span>
   <?php endif; ?>
 
