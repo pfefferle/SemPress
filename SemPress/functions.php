@@ -538,7 +538,7 @@ if ( ! function_exists( 'sempress_featured_gallery' ) ) :
  * Displays first gallery from post content. Changes image size from thumbnail
  * to large, to display a larger first image.
  *
- * @since 1.3.1
+ * @since SemPress 1.3.1
  *
  * @return void
  */
@@ -586,11 +586,11 @@ function sempress_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'sempress_enhanced_image_navigation' );
 
-if ( ! function_exists( 'sempress_the_quote' ) ) : 
+if ( ! function_exists( 'sempress_the_post_format_quote' ) ) : 
 /** 
  * Displays a quote based on post format meta data for quote post formats. 
  * 
- * @since Twenty Thirteen 1.0 
+ * @since SemPress 1.4.0 
  * 
  * @return void 
  */ 
@@ -644,7 +644,7 @@ function sempress_get_post_id() {
  * Switches default core markup for search form to output valid HTML5.
  *
  * @param string $format Expected markup format, default is `xhtml`
- * @return string Twenty Thirteen loves HTML5.
+ * @return string SemPress loves HTML5.
  */
 function sempress_searchform_format( $format ) {
 	return 'html5';
