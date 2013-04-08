@@ -34,8 +34,8 @@ get_header(); ?>
             </div><!-- .entry-meta -->
 
             <nav id="image-navigation">
-              <span class="previous-image" rel="prev"><?php previous_image_link( false, __( '&larr; Previous' , 'sempress' ) ); ?></span>
-              <span class="next-image" rel="next"><?php next_image_link( false, __( 'Next &rarr;' , 'sempress' ) ); ?></span>
+              <span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous' , 'sempress' ) ); ?></span>
+              <span class="next-image"><?php next_image_link( false, __( 'Next &rarr;' , 'sempress' ) ); ?></span>
             </nav><!-- #image-navigation -->
           </header><!-- .entry-header -->
 

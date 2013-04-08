@@ -107,7 +107,7 @@ function sempress_setup() {
   add_theme_support( 'custom-background', $custom_background_args );
   
   // This theme uses its own gallery styles.
-  add_filter( 'use_default_gallery_style', '__return_false' );
+  //add_filter( 'use_default_gallery_style', '__return_false' );
   
   // Nicer WYSIWYG editor
   add_editor_style( 'css/editor-style.css' );
@@ -585,6 +585,50 @@ function sempress_enhanced_image_navigation( $url ) {
   return $url;
 }
 add_filter( 'attachment_link', 'sempress_enhanced_image_navigation' );
+
+/**
+ * add rel-prev attribute to previous_image_link
+ *
+ * @param string a-tag
+ * @return string
+ */
+function sempress_semantic_previous_image_link( $link ) {
+  return preg_replace( '/<a/i', '<a rel="prev"', $link );
+}
+add_filter( 'previous_image_link', 'sempress_semantic_previous_image_link' );
+
+/**
+ * add rel-next attribute to next_image_link
+ *
+ * @param string a-tag
+ * @return string
+ */
+function sempress_semantic_next_image_link( $link ) {
+  return preg_replace( '/<a/i', '<a rel="next"', $link );
+}
+add_filter( 'next_image_link', 'sempress_semantic_next_image_link' );
+
+/**
+ * add rel-prev attribute to next_posts_link_attributes
+ *
+ * @param string attributes
+ * @return string
+ */
+function sempress_next_posts_link_attributes( $attr ) {
+  return $attr.' rel="prev"';
+}
+add_filter( 'next_posts_link_attributes', 'sempress_next_posts_link_attributes' );
+
+/**
+ * add rel-next attribute to previous_posts_link
+ *
+ * @param string attributes
+ * @return string
+ */
+function sempress_previous_posts_link_attributes( $attr ) {
+  return $attr.' rel="next"';
+}
+add_filter( 'previous_posts_link_attributes', 'sempress_previous_posts_link_attributes' );
 
 if ( ! function_exists( 'sempress_the_post_format_quote' ) ) : 
 /** 
