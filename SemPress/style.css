@@ -386,9 +386,9 @@ h1#site-title {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -755,6 +755,13 @@ footer.entry-meta {
   display: block;
 }
 
+.format-chat .chat-timestamp {
+  float: right;
+  font-weight: normal;
+  font-size: 10px;
+  color: #21759B;
+}
+
 /* Gallery Posts */
 .format-gallery .gallery-thumb {
   float: left;
@@ -769,6 +776,7 @@ footer.entry-meta {
 .format-gallery:before,
 .format-link:before,
 .format-quote:before,
+.format-chat:before,
 .post.format-standard.sticky:before,
 .entry-content .avatar {
   font-family: "FontAwesome";
@@ -810,6 +818,10 @@ footer.entry-meta {
 
 .format-quote:before {
   content: "\f036";
+}
+
+.format-chat:before {
+  content: "\f086";
 }
 
 .infinite-scroll #nav-below, .infinite-scroll #nav-above, .infinite-scroll #colophon {
@@ -1219,9 +1231,9 @@ input[type="submit"][disabled] {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;

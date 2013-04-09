@@ -188,6 +188,15 @@ footer.entry-meta {
   display: block;
 }
 
+.format-chat {
+  .chat-timestamp {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    color: #21759B;
+  }
+}
+
 /* Gallery Posts */
 .format-gallery .gallery-thumb {
   float: left;
@@ -202,6 +211,7 @@ footer.entry-meta {
 .format-gallery:before,
 .format-link:before,
 .format-quote:before,
+.format-chat:before,
 .post.format-standard.sticky:before,
 .entry-content .avatar {
   font-family: "FontAwesome";
@@ -235,6 +245,9 @@ footer.entry-meta {
 }
 .format-quote:before {
   content: "\f036";
+}
+.format-chat:before {
+  content: "\f086";
 }
 
 // infinite-scroll comes with jetpack
