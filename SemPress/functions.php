@@ -657,7 +657,7 @@ function sempress_the_post_format_quote() {
 
   if ( isset( $quote ) ) 
     echo $quote; 
-  } 
+} 
 endif; 
 
 /**
