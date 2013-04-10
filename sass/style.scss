@@ -15,6 +15,7 @@ and, like WordPress, licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import "vars";
 @import "mixins";
 
 @import "main";
@@ -23,8 +24,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "menu";
 @import "tables";
 @import "posts";
+@import "custom_post_formats";
 @import "media";
-@import "images";
 @import "forms";
 @import "comments";
 @import "widgets";

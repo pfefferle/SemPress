@@ -76,7 +76,7 @@ input[type="tel"],
 input[type="color"] {
   background-color: #fff;
   border: 1px solid #ccc;
-  @include rounded(3px);
+  @include rounded($border-radius);
   @include box-shadow(inset, 0, 1px, 1px, rgba(0, 0, 0, 0.075));
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;

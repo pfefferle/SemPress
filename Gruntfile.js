@@ -6,7 +6,9 @@ module.exports = function(grunt) {
     sass: {
       expanded: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          line_comments: false,
+          line_numbers: false
         },
         files: {
           'SemPress/style.css': 'sass/style.scss',

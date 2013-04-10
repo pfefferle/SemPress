@@ -6,11 +6,11 @@ article.post,
 article.attachment {
   @include box-shadow(0, 1px, 5px, 0, rgba(0,0,0,0.2));
   position: relative;
-  @include rounded(3px);
+  @include rounded($border-radius);
   background-color: white;
   border: 1px solid #ccc;
   a {
-    color: #21759B;
+    color: $blue;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -28,7 +28,7 @@ footer.entry-meta {
   background-color: #f5f5f5;
   padding: 10px 34px;
   color: #555;
-  @include custom-rounded(0, 0, 3px, 3px);
+  @include custom-rounded(0, 0, $border-radius, $border-radius);
 }
 .entry-content,
 .entry-summary,
@@ -140,119 +140,4 @@ footer.entry-meta {
   background: #eee;
   display: block;
   padding: 1em;
-}
-
-/* Image Attachments */
-.image-attachment div.entry-meta {
-  float: left;
-}
-.image-attachment nav {
-  float: right;
-  margin: 0 30px 1em 0;
-}
-.image-attachment .entry-content {
-  clear: both;
-}
-.image-attachment .entry-content .entry-attachment {
-  text-align: center;
-}
-.entry-content .media-attachment iframe,
-.entry-content .media-attachment object,
-.entry-content .media-attachment embed {
-  display: block;
-  margin: 15px auto;
-  padding: 0;
-  text-align: center;
-  background-color: #444;
-  background-image: -moz-linear-gradient(top,#555,#333);
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#555),to(#333));
-  filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr="#555555",endColorStr="#333333");
-}
-
-/* Aside Posts */
-.format-aside,
-.format-status,
-.format-link {
-  .entry-header {
-    display: none;
-  }
-  .entry-content {
-    padding-top: 15px;
-  }
-}
-
-/* Aside Posts */
-.search-results .format-aside .entry-header,
-.search-results .format-status .entry-header,
-.search-results .format-link .entry-header {
-  display: block;
-}
-
-.format-chat {
-  .chat-timestamp {
-    float: right;
-    font-weight: normal;
-    font-size: 10px;
-    color: #21759B;
-  }
-}
-
-/* Gallery Posts */
-.format-gallery .gallery-thumb {
-  float: left;
-  margin: 0 1em 0 0;
-}
-
-/* Custom Post Types */
-.format-aside:before,
-.format-video:before,
-.format-audio:before,
-.format-image:before,
-.format-gallery:before,
-.format-link:before,
-.format-quote:before,
-.format-chat:before,
-.post.format-standard.sticky:before,
-.entry-content .avatar {
-  font-family: "FontAwesome";
-  display: block;
-  font-size: 40px;
-  font-style: normal;
-  position: absolute;
-  left: -65px;
-  top: 30px;
-}
-.format-aside:before {
-  content: "\f075";
-}
-.format-video:before {
-  content: "\f008";
-}
-.format-audio:before {
-  content: "\f0a1";
-}
-.format-image:before {
-  content: "\f03e";
-}
-.format-gallery:before {
-  content: "\f03e";
-}
-.format-link:before {
-  content: "\f02e";
-}
-.post.format-standard.sticky:before {
-  content: "\f08d";
-}
-.format-quote:before {
-  content: "\f036";
-}
-.format-chat:before {
-  content: "\f086";
-}
-
-// infinite-scroll comes with jetpack
-.infinite-scroll {
-  #nav-below, #nav-above, #colophon {
-    display: none;
-  }
 }

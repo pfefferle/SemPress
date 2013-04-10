@@ -24,7 +24,7 @@
       top: 2em;
       left: 0;
       @include box-shadow(0, 5px, 25px, 0, rgba(0,0,0,0.2));
-      @include rounded(4px);
+      @include rounded($border-radius);
       ul {
         left: 100%;
         top: 0;

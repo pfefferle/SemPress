@@ -3,9 +3,7 @@
   margin: 0px auto;
   text-align: center;
   background-color: #F5F5F5;
-  width: 100%;
-  height: auto;
-  @include custom-rounded(3px, 3px, 0px, 0px);
+  @include custom-rounded($border-radius, $border-radius, 0px, 0px);
   iframe, object, embed {
     margin: 0px auto;
     text-align: center;
@@ -16,6 +14,12 @@
     height: auto;
     padding: 0;
   }
+}
+
+.entry-media {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 article.format-video {
@@ -30,4 +34,91 @@ article.format-audio {
     margin: 0 auto;
     width: auto;
   }
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+  border: 0 none;
+}
+p img {
+  margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption,
+.entry-content img {
+  max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+  height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+  margin-right: 1em;
+}
+img.alignright {
+  margin-left: 1em;
+}
+img.aligncenter,
+img.attachment-thumbnail,
+img.size-thumbnail,
+.wp-caption img,
+.media-attachment img,
+.entry-attachment img {
+  @include box-shadow(0, 1px, 4px, 0, rgba(0, 0, 0, 0.2));
+}
+.wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
+  padding: .2em;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 2;
+  color: #777;
+}
+.wp-caption img {
+  margin: .25em;
+}
+.wp-smiley {
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+}
+#page img.avatar {
+  @include box-shadow(0, 1px, 5px, 0, rgba(0,0,0,0.2));
+  @include rounded(500px);
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+  float: left;
+}
+.image-attachment nav {
+  float: right;
+  margin: 0 30px 1em 0;
+}
+.image-attachment .entry-content {
+  clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+  text-align: center;
+}
+.entry-content .media-attachment iframe,
+.entry-content .media-attachment object,
+.entry-content .media-attachment embed {
+  display: block;
+  margin: 15px auto;
+  padding: 0;
+  text-align: center;
+  background-color: #444;
+  background-image: -moz-linear-gradient(top,#555,#333);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#555),to(#333));
+  filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr="#555555",endColorStr="#333333");
 }

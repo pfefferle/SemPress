@@ -1,0 +1,87 @@
+/* Aside Posts */
+.format-aside,
+.format-status,
+.format-link {
+  .entry-header {
+    display: none;
+  }
+  .entry-content {
+    padding-top: 15px;
+  }
+}
+
+/* Aside Posts */
+.search-results .format-aside .entry-header,
+.search-results .format-status .entry-header,
+.search-results .format-link .entry-header {
+  display: block;
+}
+
+.format-chat {
+  .chat-timestamp {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    color: $blue;
+  }
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+/* Custom Post Types */
+.format-aside:before,
+.format-video:before,
+.format-audio:before,
+.format-image:before,
+.format-gallery:before,
+.format-link:before,
+.format-quote:before,
+.format-chat:before,
+.post.format-standard.sticky:before,
+.entry-content .avatar {
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 40px;
+  font-style: normal;
+  position: absolute;
+  left: -65px;
+  top: 30px;
+}
+.format-aside:before {
+  content: "\f075";
+}
+.format-video:before {
+  content: "\f008";
+}
+.format-audio:before {
+  content: "\f0a1";
+}
+.format-image:before {
+  content: "\f03e";
+}
+.format-gallery:before {
+  content: "\f03e";
+}
+.format-link:before {
+  content: "\f02e";
+}
+.post.format-standard.sticky:before {
+  content: "\f08d";
+}
+.format-quote:before {
+  content: "\f036";
+}
+.format-chat:before {
+  content: "\f086";
+}
+
+// infinite-scroll comes with jetpack
+.infinite-scroll {
+  #nav-below, #nav-above, #colophon {
+    display: none;
+  }
+}

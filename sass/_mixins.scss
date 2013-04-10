@@ -28,6 +28,15 @@
   box-shadow: none;
 }
 
+@mixin reset-rounded {
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  -o-border-radius: none;
+  -ms-border-radius: none;
+  -khtml-border-radius: none;
+  border-radius: none;
+}
+
 @mixin border-shadow-top {
   border-top: 1px solid #fff;
   -moz-box-shadow: #ccc 0 -1px 0 0;
