@@ -533,29 +533,6 @@ function sempress_categorized_blog() {
   }
 }
 
-if ( ! function_exists( 'sempress_featured_gallery' ) ) :
-/**
- * Displays first gallery from post content. Changes image size from thumbnail
- * to large, to display a larger first image.
- *
- * @since SemPress 1.3.1
- *
- * @return void
- */
-function sempress_featured_gallery() {
-  $pattern = get_shortcode_regex();
-
-  if ( preg_match( "/$pattern/s", get_the_content(), $match ) ) {
-    if ( 'gallery' == $match[2] ) {
-      if ( ! strpos( $match[3], 'size' ) )
-        $match[3] .= ' size="medium"';
-
-      echo do_shortcode_tag( $match );
-    }
-  }
-}
-endif;
-
 /**
  * Flush out the transients used in sempress_categorized_blog
  *

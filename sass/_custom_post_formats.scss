@@ -41,42 +41,46 @@
 .format-link:before,
 .format-quote:before,
 .format-chat:before,
+.error404:before,
 .post.format-standard.sticky:before,
 .entry-content .avatar {
-  font-family: "FontAwesome";
+  font-family: 'Genericons';
   display: block;
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
   position: absolute;
   left: -65px;
-  top: 30px;
+  top: 25px;
 }
 .format-aside:before {
-  content: "\f075";
+  content: '\f101';
 }
 .format-video:before {
-  content: "\f008";
+  content: '\f104';
 }
 .format-audio:before {
-  content: "\f0a1";
+  content: '\f109';
 }
 .format-image:before {
-  content: "\f03e";
+  content: '\f102';
 }
 .format-gallery:before {
-  content: "\f03e";
+  content: '\f103';
 }
 .format-link:before {
-  content: "\f02e";
+  content: '\f107';
 }
 .post.format-standard.sticky:before {
-  content: "\f08d";
+  content: '\f308';
 }
 .format-quote:before {
-  content: "\f036";
+  content: '\f106';
 }
 .format-chat:before {
-  content: "\f086";
+  content: '\f108';
+}
+.error404:before {
+  content: '\f423';
 }
 
 // infinite-scroll comes with jetpack
