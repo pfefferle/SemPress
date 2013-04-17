@@ -133,9 +133,10 @@ input[type="url"] {
   margin: 0 1em 0 0;
   width: 60%;
 }
-.widget .searchform label input, input#s {
-  width: 90%;
+input[type="search"] {
   margin: 0;
+  font-size: 20px;
+  width: 99%;
 }
 input[type="submit"].searchsubmit,
 input.searchsubmit {

@@ -1108,9 +1108,10 @@ input[type="url"] {
   width: 60%;
 }
 
-.widget .searchform label input, input#s {
-  width: 90%;
+input[type="search"] {
   margin: 0;
+  font-size: 20px;
+  width: 99%;
 }
 
 input[type="submit"].searchsubmit,
