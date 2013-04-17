@@ -617,9 +617,9 @@ if ( ! function_exists( 'sempress_the_post_format_quote' ) ) :
  */ 
 function sempress_the_post_format_quote() { 
   $quote_meta = get_post_format_meta( get_the_ID() ); 
- 	
+
   if ( empty( $quote_meta ) ) 
- 	  return; 
+ 	  return;
 
   if ( ! empty( $quote_meta['quote'] ) && ! stristr( get_the_content(), $quote_meta['quote'] ) ) { 
     $quote = sprintf( '<blockquote>%s</blockquote>', wpautop( $quote_meta['quote'] ) ); 
@@ -630,7 +630,7 @@ function sempress_the_post_format_quote() {
       $quote .= sprintf( '<figcaption class="quote-caption">%s</figcaption>', $source ); 
     } 
     $quote = sprintf( '<figure class="quote">%s</figure>', $quote ); 
-  } 
+  }
 
   if ( isset( $quote ) ) 
     echo $quote; 
@@ -693,7 +693,7 @@ function sempress_blog_itemprop($prop) {
 /**
  * Adds back compat handling for WP versions pre-3.6.
  */
-if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
+if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
 	require( get_template_directory() . '/inc/back-compat.php' );
 
 /**
