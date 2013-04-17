@@ -1,6 +1,6 @@
 # SemPress
 
-A highly semantic, HTML5 template, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
+A WordPress theme, highly semantic with HTML5 templates, responsive and seo optimized. SemPress supports most of the new HTML5 tags, the new HTML5 input-types, microformats, microformats v2 and microdata (Schema.org).
 
 ## POSH - Plain old Semantic HTML
 
@@ -41,7 +41,8 @@ Planned formats:
 
 SemPress supports:
 
-* [Custom Post Formats](http://codex.wordpress.org/Post_Formats): aside, status, gallery, video, audio, link and image
+* [Custom Post Formats](http://codex.wordpress.org/Post_Formats): aside, status, gallery, video, audio, chat, quote, link and image
+* Structured Post Formats (new in WP 3.6)
 * [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails)
 * [Editor-Style](http://codex.wordpress.org/Function_Reference/add_editor_style)
 * [Navigation Menus](http://codex.wordpress.org/Navigation_Menus)
