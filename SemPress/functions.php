@@ -691,5 +691,11 @@ function sempress_blog_itemprop($prop) {
 }
 
 /**
+ * Adds back compat handling for WP versions pre-3.6.
+ */
+if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
+	require( get_template_directory() . '/inc/back-compat.php' );
+
+/**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
  */

@@ -609,7 +609,7 @@ footer.entry-meta {
 }
 
 .entry-title {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 #content nav {
@@ -681,6 +681,7 @@ footer.entry-meta {
 }
 .format-quote .entry-title, .format-video .entry-title, .format-audio .entry-title, .format-image .entry-title, .format-quote .entry-title a, .format-video .entry-title a, .format-audio .entry-title a, .format-image .entry-title a {
   font-size: 22px;
+  padding-top: 30px;
 }
 
 /* 404 page */
@@ -790,7 +791,7 @@ footer.entry-meta {
 }
 
 .format-quote:before {
-  content: '\f106';
+  content: '\f100';
 }
 
 .format-chat:before {

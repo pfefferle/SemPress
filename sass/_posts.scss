@@ -53,7 +53,7 @@ footer.entry-meta {
   display: block;
 }
 .entry-title {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 #content nav {
   display: block;
@@ -116,6 +116,7 @@ footer.entry-meta {
   margin: 0;
   .format-quote &, .format-video &, .format-audio &, .format-image & {
     font-size: 22px;
+    padding-top: 30px;
   }
 }
 
