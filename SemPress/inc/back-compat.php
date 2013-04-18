@@ -31,7 +31,7 @@ if ( ! function_exists( 'the_post_format_chat' ) ) :
 endif;
 
 if ( ! function_exists( 'the_remaining_content' ) ) :
-  function the_remaining_content( $more_link_text, $stripteaser ) {
+  function the_remaining_content( $more_link_text = null, $strip_teaser = false ) {
     return the_content( $more_link_text, $stripteaser );
   }
 endif;
