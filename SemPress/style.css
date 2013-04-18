@@ -133,12 +133,6 @@ figure.quote figcaption.quote-caption {
 pre {
   background-color: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
   display: block;
   font-size: 12.025px;
   line-height: 18px;
@@ -149,26 +143,19 @@ pre {
   position: relative;
 }
 pre code {
-  margin-top: 30px;
   display: block;
 }
 pre code:after {
   content: "code";
   position: absolute;
   top: -1px;
-  left: -1px;
+  right: -1px;
   padding: 3px 7px;
   font-size: 12px;
   font-weight: bold;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #9da0a4;
-  -moz-border-radius: 4px 0 4px 0;
-  -webkit-border-radius: 4px 0 4px 0;
-  -o-border-radius: 4px 0 4px 0;
-  -ms-border-radius: 4px 0 4px 0;
-  -khtml-border-radius: 4px 0 4px 0;
-  border-radius: 4px 0 4px 0;
   display: block;
 }
 pre code[data-programming-language]:after {
@@ -434,12 +421,6 @@ table {
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
 }
 
 table th,
@@ -488,40 +469,6 @@ table thead:first-child tr:first-child th,
 table tbody:first-child tr:first-child th,
 table tbody:first-child tr:first-child td {
   border-top: 0;
-}
-
-table thead:first-child tr:first-child th:first-child,
-table tbody:first-child tr:first-child td:first-child {
-  -webkit-border-top-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-}
-
-table thead:first-child tr:first-child th:last-child,
-table tbody:first-child tr:first-child td:last-child {
-  -webkit-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-}
-
-table thead:last-child tr:last-child th:first-child,
-table tbody:last-child tr:last-child td:first-child {
-  -moz-border-radius: 0 0 0 3px;
-  -webkit-border-radius: 0 0 0 3px;
-  -o-border-radius: 0 0 0 3px;
-  -ms-border-radius: 0 0 0 3px;
-  -khtml-border-radius: 0 0 0 3px;
-  border-radius: 0 0 0 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomleft: 3px;
-}
-
-table thead:last-child tr:last-child th:last-child,
-table tbody:last-child tr:last-child td:last-child {
-  -webkit-border-bottom-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
 }
 
 table tbody tr:nth-child(odd) td,
