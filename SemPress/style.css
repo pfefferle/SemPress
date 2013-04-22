@@ -1310,6 +1310,10 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   display: block;
 }
 
+.post-likes-widget {
+  overflow: hidden;
+}
+
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   #page {
