@@ -109,13 +109,15 @@ figure.quote {
   }
 }
 pre {
+  font-family: monospace, serif;
+  font-size: 14px;
   background-color: #f5f5f5;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: block;
-  font-size: 12.025px;
   line-height: 18px;
-  margin: 0 0 9px;
-  padding: 8.5px;
+  margin: 1em -34px;
+  padding: 8.5px 36px;
   white-space: pre-wrap;
   word-wrap: break-word;
   position: relative;

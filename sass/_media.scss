@@ -17,9 +17,12 @@
 }
 
 .entry-media {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 
 article.format-video {
