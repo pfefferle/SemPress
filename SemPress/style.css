@@ -779,7 +779,6 @@ footer.entry-meta {
 }
 
 .entry-media img, .entry-media iframe, .entry-media object, .entry-media embed {
-  width: 100%;
   max-width: 100%;
   height: auto;
   margin-top: 20px;
