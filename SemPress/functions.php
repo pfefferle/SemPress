@@ -552,6 +552,10 @@ add_action( 'save_post', 'sempress_category_transient_flusher' );
  * @return string
  */
 function sempress_enhanced_image_navigation( $url ) {
+  if ( is_admin() ) {
+    return $url;
+  }
+
   global $post, $wp_rewrite;
 
   $id = (int) $post->ID;
