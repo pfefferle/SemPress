@@ -41,3 +41,9 @@ if ( ! function_exists( 'get_post_format_meta' ) ) :
     return;
   }
 endif;
+
+if ( ! function_exists( 'the_post_format_quote' ) ) :
+  function the_post_format_quote( &$post = null ) {
+    return;
+  }
+endif;

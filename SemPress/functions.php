@@ -611,36 +611,6 @@ function sempress_previous_posts_link_attributes( $attr ) {
 }
 add_filter( 'previous_posts_link_attributes', 'sempress_previous_posts_link_attributes' );
 
-if ( ! function_exists( 'sempress_the_post_format_quote' ) ) : 
-/** 
- * Displays a quote based on post format meta data for quote post formats. 
- * 
- * @since SemPress 1.4.0 
- * 
- * @return void 
- */ 
-function sempress_the_post_format_quote() { 
-  $quote_meta = get_post_format_meta( get_the_ID() ); 
-
-  if ( empty( $quote_meta ) ) 
- 	  return;
-
-  if ( ! empty( $quote_meta['quote'] ) && ! stristr( get_the_content(), $quote_meta['quote'] ) ) { 
-    $quote = sprintf( '<blockquote>%s</blockquote>', wpautop( $quote_meta['quote'] ) ); 
-    if ( ! empty( $quote_meta['quote_source'] ) ) { 
-      $source = ( ! empty( $quote_meta['url'] ) ) ? 
-        sprintf( '<a href="%s">%s</a>', esc_url( $quote_meta['url'] ), $quote_meta['quote_source'] ) : 
-        $quote_meta['quote_source']; 
-      $quote .= sprintf( '<figcaption class="quote-caption">%s</figcaption>', $source ); 
-    } 
-    $quote = sprintf( '<figure class="quote">%s</figure>', $quote ); 
-  }
-
-  if ( isset( $quote ) ) 
-    echo $quote; 
-} 
-endif; 
-
 /**
  * Display the id for the post div.
  *
