@@ -17,8 +17,7 @@
 }
 
 .entry-media {
-  img {
-    width: 100%;
+  img, iframe, object, embed {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
