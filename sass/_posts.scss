@@ -53,6 +53,12 @@ footer.entry-meta {
   display: block;
 }
 .entry-title {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
   padding-top: 25px;
 }
 #content nav {

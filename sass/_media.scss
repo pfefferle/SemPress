@@ -18,8 +18,6 @@
 
 .entry-media {
   img, iframe, object, embed {
-    max-width: 100%;
-    height: auto;
     margin-top: 20px;
   }
 }
@@ -59,7 +57,7 @@ img.size-medium,
 .attachment img,
 .widget-area img,
 .wp-caption,
-.entry-content img {
+.post img {
   max-width: 100%; /* When images are too wide for containing element, force them to fit. */
   height: auto; /* Override height to match resized width for correct aspect ratio. */
 }

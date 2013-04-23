@@ -42,7 +42,7 @@
 .format-quote:before,
 .format-chat:before,
 .error404:before,
-.post.format-standard.sticky:before,
+.sticky:before,
 .entry-content .avatar {
   font-family: 'Genericons';
   display: block;
@@ -70,7 +70,7 @@
 .format-link:before {
   content: '\f107';
 }
-.post.format-standard.sticky:before {
+.sticky:before {
   content: '\f308';
 }
 .format-quote:before {
