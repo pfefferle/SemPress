@@ -8,7 +8,7 @@
     margin: 0px auto;
     text-align: center;
   }
-  img {
+  img, .wp-caption {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
@@ -76,15 +76,17 @@ img.size-thumbnail,
   @include box-shadow(0, 1px, 4px, 0, rgba(0, 0, 0, 0.2));
 }
 .wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
-  padding: .2em;
+  padding: 0px;
+  margin: 0px;
   text-align: center;
   font-style: italic;
   font-size: 12px;
   line-height: 2;
   color: #777;
 }
-.wp-caption img {
-  margin: .25em;
+.wp-caption, .gallery {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .wp-smiley {
   margin: 0;

@@ -776,7 +776,7 @@ footer.entry-meta {
   margin: 0px auto;
   text-align: center;
 }
-.entry-header .entry-media img {
+.entry-header .entry-media img, .entry-header .entry-media .wp-caption {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
@@ -847,7 +847,8 @@ img.size-thumbnail,
 }
 
 .wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
-  padding: .2em;
+  padding: 0px;
+  margin: 0px;
   text-align: center;
   font-style: italic;
   font-size: 12px;
@@ -855,8 +856,9 @@ img.size-thumbnail,
   color: #777;
 }
 
-.wp-caption img {
-  margin: .25em;
+.wp-caption, .gallery {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .wp-smiley {
