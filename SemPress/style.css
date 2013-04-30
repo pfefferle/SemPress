@@ -302,11 +302,13 @@ h1#site-title {
 .alignleft {
   display: inline;
   float: left;
+  margin-right: 1em;
 }
 
 .alignright {
   display: inline;
   float: right;
+  margin-left: 1em;
 }
 
 .aligncenter {
@@ -827,14 +829,6 @@ img.size-medium,
   /* Override height to match resized width for correct aspect ratio. */
 }
 
-img.alignleft {
-  margin-right: 1em;
-}
-
-img.alignright {
-  margin-left: 1em;
-}
-
 img.aligncenter,
 img.attachment-thumbnail,
 img.size-thumbnail,
@@ -856,7 +850,7 @@ img.size-thumbnail,
   color: #777;
 }
 
-.wp-caption, .gallery {
+div.aligncenter, .gallery {
   padding-top: 1em;
   padding-bottom: 1em;
 }

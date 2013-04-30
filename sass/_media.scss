@@ -61,12 +61,6 @@ img.size-medium,
   max-width: 100%; /* When images are too wide for containing element, force them to fit. */
   height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
-img.alignleft {
-  margin-right: 1em;
-}
-img.alignright {
-  margin-left: 1em;
-}
 img.aligncenter,
 img.attachment-thumbnail,
 img.size-thumbnail,
@@ -84,7 +78,7 @@ img.size-thumbnail,
   line-height: 2;
   color: #777;
 }
-.wp-caption, .gallery {
+div.aligncenter, .gallery {
   padding-top: 1em;
   padding-bottom: 1em;
 }
