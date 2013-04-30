@@ -338,9 +338,9 @@ function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-    <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>">
+    <article id="comment-<?php comment_ID(); ?>" class="comment h-comment h-entry <?php $comment->comment_type; ?>">
       <footer>
-        <address class="comment-author vcard hcard h-card">
+        <address class="comment-author p-author author vcard hcard h-card">
           <?php echo get_avatar( $comment, 50 ); ?>
           <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name">%s</cite>', get_comment_author_link() ) ); ?>
         </address><!-- .comment-author .vcard -->
@@ -359,7 +359,7 @@ function sempress_comment( $comment, $args, $depth ) {
         </div><!-- .comment-meta .commentmetadata -->
       </footer>
 
-      <div class="comment-content"><?php comment_text(); ?></div>
+      <div class="comment-content e-content"><?php comment_text(); ?></div>
 
       <div class="reply">
         <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
@@ -378,7 +378,7 @@ if ( ! function_exists( 'sempress_posted_on' ) ) :
  * @since SemPress 1.0.0
  */
 function sempress_posted_on() {
-  printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified">%4$s</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url uid u-url u-uid fn p-name" href="%5$s" title="%6$s" rel="author" itemprop="url"><span itemprop="name">%7$s</span></a></span></address>', 'sempress' ),
+  printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated dt-updated" datetime="%3$s" itemprop="dateModified">%4$s</time></a><address class="byline"><span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><a class="url uid u-url u-uid fn p-name" href="%5$s" title="%6$s" rel="author" itemprop="url"><span itemprop="name">%7$s</span></a></span></address>', 'sempress' ),
     esc_url( get_permalink() ),
     esc_attr( get_the_time() ),
     esc_attr( get_the_date( 'c' ) ),
