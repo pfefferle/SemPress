@@ -109,40 +109,18 @@ figure.quote {
   }
 }
 pre {
-  font-family: monospace, serif;
-  font-size: 14px;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 16px;
   background-color: #f5f5f5;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   display: block;
   line-height: 18px;
   margin: 2em 0;
-  padding: 8.5px;
+  padding: 14px;
   white-space: pre-wrap;
   word-wrap: break-word;
-  position: relative;
-  code {
-    display: block;
-    &:after {
-      content: "code";
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      padding: 3px 7px;
-      font-size: 12px;
-      font-weight: bold;
-      background-color: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      color: #9da0a4;
-      display: block;
-	  }
-    &[data-programming-language] {
-      &:after {
-        content: "" attr(data-programming-language) " code";
-      }
-    }
-  }
 }
 code {
+  font-family: "Courier 10 Pitch", Courier, monospace;
   word-wrap: break-word;
 }
 ins {
