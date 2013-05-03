@@ -738,8 +738,8 @@ footer.entry-meta {
   content: '\f423';
 }
 
-.infinite-scroll #nav-below, .infinite-scroll #nav-above, .infinite-scroll #colophon {
-  display: none;
+.wp-audio-shortcode {
+  margin: 0 auto;
 }
 
 .entry-header .entry-media {
@@ -1293,6 +1293,10 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 
 .post-likes-widget {
   overflow: hidden;
+}
+
+.infinite-scroll #nav-below, .infinite-scroll #nav-above, .infinite-scroll #colophon {
+  display: none;
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
