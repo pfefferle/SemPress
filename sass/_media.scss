@@ -22,18 +22,8 @@
   }
 }
 
-article.format-video {
-  .entry-media {
-    background-color: #000000;
-  }
-}
-
-article.format-audio {
-  .entry-media {
-    padding: 20px 34px;
-    margin: 0 auto;
-    width: auto;
-  }
+.wp-audio-shortcode {
+  margin: 20px auto;
 }
 
 /* =Images

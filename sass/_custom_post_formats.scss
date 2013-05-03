@@ -83,6 +83,8 @@
   content: '\f423';
 }
 
-.wp-audio-shortcode {
-  margin: 0 auto;
+article.format-video {
+  .entry-media {
+    background-color: #000000;
+  }
 }

@@ -738,8 +738,8 @@ footer.entry-meta {
   content: '\f423';
 }
 
-.wp-audio-shortcode {
-  margin: 0 auto;
+article.format-video .entry-media {
+  background-color: #000000;
 }
 
 .entry-header .entry-media {
@@ -769,14 +769,8 @@ footer.entry-meta {
   margin-top: 20px;
 }
 
-article.format-video .entry-media {
-  background-color: #000000;
-}
-
-article.format-audio .entry-media {
-  padding: 20px 34px;
-  margin: 0 auto;
-  width: auto;
+.wp-audio-shortcode {
+  margin: 20px auto;
 }
 
 /* =Images
