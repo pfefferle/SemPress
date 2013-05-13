@@ -62,7 +62,7 @@
   }
   #page {
     width: auto;
-    margin: 0 20px;
+    margin: 0 5px;
   }
   #main .widget-area {
     width: 100%;
@@ -80,18 +80,8 @@
   article.post,
   article.page,
   footer.entry-meta {
-    border: none;
-    @include reset-box-shadow;
     margin: 0;
     padding: 0;
-    background-color: transparent;
-    a {
-      color: inherit;
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-      }
-    }
   }
   .entry-title,
   .entry-content,
@@ -100,8 +90,8 @@
   footer.entry-meta {
     color: inherit;
     text-shadow: inherit;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 5px 15px;
   }
   .entry-title a {
     font-size: 0.8em;

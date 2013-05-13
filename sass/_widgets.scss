@@ -28,3 +28,17 @@
     display: block;
   }
 }
+
+.widget-title > a.rsswidget {
+  img {
+    margin-left: -14px;
+    
+    &:after {
+      font-family: 'Genericons';
+      content: '\f413';
+    }
+  }
+  
+  width: 28px;
+  margin-left: 14px;
+}
