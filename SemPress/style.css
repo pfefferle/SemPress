@@ -1284,18 +1284,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   display: block;
 }
 
-.widget-title > a.rsswidget {
-  width: 28px;
-  margin-left: 14px;
-}
-.widget-title > a.rsswidget img {
-  margin-left: -14px;
-}
-.widget-title > a.rsswidget img:after {
-  font-family: 'Genericons';
-  content: '\f413';
-}
-
 .post-likes-widget {
   overflow: hidden;
 }
