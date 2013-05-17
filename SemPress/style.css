@@ -686,6 +686,7 @@ footer.entry-meta {
 .format-link:before,
 .format-quote:before,
 .format-chat:before,
+.format-standard:before,
 .error404:before,
 .sticky:before,
 .entry-content .avatar {
@@ -696,6 +697,10 @@ footer.entry-meta {
   position: absolute;
   left: -65px;
   top: 25px;
+}
+
+.format-standard:before {
+  content: '\f100';
 }
 
 .format-aside:before {
@@ -727,7 +732,7 @@ footer.entry-meta {
 }
 
 .format-quote:before {
-  content: '\f100';
+  content: '\f106';
 }
 
 .format-chat:before {

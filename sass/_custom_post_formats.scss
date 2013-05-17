@@ -41,6 +41,7 @@
 .format-link:before,
 .format-quote:before,
 .format-chat:before,
+.format-standard:before,
 .error404:before,
 .sticky:before,
 .entry-content .avatar {
@@ -51,6 +52,9 @@
   position: absolute;
   left: -65px;
   top: 25px;
+}
+.format-standard:before {
+  content: '\f100';
 }
 .format-aside:before {
   content: '\f101';
@@ -74,7 +78,7 @@
   content: '\f308';
 }
 .format-quote:before {
-  content: '\f100';
+  content: '\f106';
 }
 .format-chat:before {
   content: '\f108';
