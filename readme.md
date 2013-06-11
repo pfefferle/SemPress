@@ -42,7 +42,6 @@ Planned formats:
 SemPress supports:
 
 * [Custom Post Formats](http://codex.wordpress.org/Post_Formats): aside, status, gallery, video, audio, chat, quote, link and image
-* Structured Post Formats (new in WP 3.6)
 * [Post-Thumbnails](http://codex.wordpress.org/Post_Thumbnails)
 * [Editor-Style](http://codex.wordpress.org/Function_Reference/add_editor_style)
 * [Navigation Menus](http://codex.wordpress.org/Navigation_Menus)

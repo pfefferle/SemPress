@@ -15,7 +15,6 @@ The exceptions to this license are as follows:
 == Changelog ==
 
 = 1.4 =
-* structured post-formats support
 * added genericons instead of font-awesome
 
 = 1.3.3 =
