@@ -82,7 +82,7 @@ function sempress_setup() {
 
   // Add support for the Aside, Gallery Post Formats...
   add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status', 'image', 'video', 'audio', 'quote' ) );
-  add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio', 'quote' ) );
+  //add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio', 'quote' ) );
 
   /**
    * This theme supports jetpacks "infinite-scroll"
@@ -338,7 +338,7 @@ function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-    <article id="comment-<?php comment_ID(); ?>" class="comment h-comment h-entry <?php $comment->comment_type; ?>">
+    <article id="comment-<?php comment_ID(); ?>" class="comment h-comment h-as-comment h-entry hentry <?php $comment->comment_type; ?>">
       <footer>
         <address class="comment-author p-author author vcard hcard h-card">
           <?php echo get_avatar( $comment, 50 ); ?>
@@ -415,10 +415,12 @@ function sempress_content_width() {
     $content_width = 880;
   }
   
+  /*
   if ( has_post_format( 'image' ) || has_post_format( 'video' ) || is_attachment() ) {
     global $content_width;
     $content_width = 668;
   }
+  */
 }
 add_action( 'template_redirect', 'sempress_content_width' );
 
@@ -472,6 +474,7 @@ function sempress_post_classes( $classes ) {
     case "video":
       $classes[] = "h-as-video";
       break;
+    case "gallery":
     case "image":
       $classes[] = "h-as-image";
       break;
@@ -667,8 +670,8 @@ function sempress_blog_itemprop($prop) {
 /**
  * Adds back compat handling for WP versions pre-3.6.
  */
-if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
-	require( get_template_directory() . '/inc/back-compat.php' );
+//if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
+//	require( get_template_directory() . '/inc/back-compat.php' );
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.

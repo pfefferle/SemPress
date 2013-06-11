@@ -14,12 +14,6 @@
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
   
-	<div class="entry-media">
-		<div class="audio-content">
-			<?php the_post_format_audio(); ?>
-		</div><!-- .audio-content -->
-	</div><!-- .entry-media -->
-  
   <?php if ( is_search() ) : // Only display Excerpts for Search ?>
   <div class="entry-summary p-summary" itemprop="description">
     <?php the_excerpt(); ?>

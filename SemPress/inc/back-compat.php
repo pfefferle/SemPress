@@ -32,7 +32,7 @@ endif;
 
 if ( ! function_exists( 'the_remaining_content' ) ) :
   function the_remaining_content( $more_link_text = null, $strip_teaser = false ) {
-    return the_content( $more_link_text, $stripteaser );
+    return the_content( $more_link_text, $strip_teaser );
   }
 endif;
 
