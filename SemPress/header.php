@@ -32,7 +32,7 @@
 </head>
 
 <body <?php body_class(); ?><?php sempress_blog_itemscope(); ?>>
-<div id="page" class="hfeed h-feed feed">
+<div id="page">
 <?php do_action( 'before' ); ?>
   <header id="branding" role="banner">
     <h1 id="site-title" class="p-name"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>

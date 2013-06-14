@@ -438,6 +438,12 @@ function sempress_body_classes( $classes ) {
   if ( get_header_image() ) {
     $classes[] = 'custom-header';
   }
+  
+  if (!is_singular()) {
+    $classes[] = "hfeed";
+    $classes[] = "h-feed";
+    $classes[] = "feed";
+  }
 
   return $classes;
 }
