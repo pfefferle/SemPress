@@ -639,6 +639,21 @@ function sempress_get_post_id() {
 }
 
 /**
+ * adds the new HTML5 input types to the comment-form
+ *
+ * @param string $form
+ * @return string
+ */
+function sempress_comment_autocomplete($fields) {
+  $fields['author'] = preg_replace('/<input/', '<input autocomplete="nickname" ', $fields['author']);
+  $fields['email'] = preg_replace('/<input/', '<input autocomplete="email" ', $fields['email']);
+  $fields['url'] = preg_replace('/<input/', '<input autocomplete="url" ', $fields['url']);
+
+  return $fields;
+}
+add_filter("comment_form_default_fields", "sempress_comment_autocomplete");
+
+/**
  * Switches default core markup for search form to output valid HTML5.
  *
  * @param string $format Expected markup format, default is `xhtml`
@@ -670,8 +685,8 @@ function sempress_blog_itemprop($prop) {
 /**
  * Adds back compat handling for WP versions pre-3.6.
  */
-//if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
-//	require( get_template_directory() . '/inc/back-compat.php' );
+if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
+	require( get_template_directory() . '/inc/back-compat.php' );
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
