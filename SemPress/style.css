@@ -718,6 +718,10 @@ footer.entry-meta {
   content: '\f103';
 }
 
+.format-link .entry-content p:first-child a:first-child:after {
+  font-family: 'Genericons';
+  content: '\f442';
+}
 .format-link:before {
   content: '\f107';
 }
