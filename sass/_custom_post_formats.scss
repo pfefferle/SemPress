@@ -71,8 +71,15 @@
 .format-gallery:before {
   content: '\f103';
 }
-.format-link:before {
-  content: '\f107';
+.format-link {
+  .entry-content p:first-child a:first-child:after {
+    font-family: 'Genericons';
+    content: '\f442';
+  }
+  
+  &:before {
+    content: '\f107';
+  }
 }
 .sticky:before {
   content: '\f308';
