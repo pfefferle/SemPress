@@ -50,3 +50,8 @@ The exceptions to this license are as follows:
 * Some CSS is lend from Twitters Bootstrap - http://twitter.github.com/bootstrap/
 * Genericons by Automattic - http://genericons.com
 * html5shiv - http://code.google.com/p/html5shiv/
+* Translator:
+** de_DE: Benjamin Hartwich - http://www.benjaminhartwich.de/
+** sv_SE: Christopher Anderton - http://deluxive.se/blog/
+** ru_RU: Oleg - http://0leg.net
+** fr_FR: Julien Pierré

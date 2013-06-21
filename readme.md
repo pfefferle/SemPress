@@ -55,5 +55,6 @@ SemPress supports:
 * de_DE: thanks to [Benjamin Hartwich](http://www.benjaminhartwich.de/) ([@benhartwich](https://twitter.com/benhartwich))
 * sv_SE: thanks to [Christopher Anderton](http://deluxive.se/blog/) ([@deluxivese](https://twitter.com/deluxivese))
 * ru_RU: thanks to [Oleg](http://0leg.net) ([@oleg_sh](https://twitter.com/oleg_sh))
+* fr_FR: thanks to [Julien Pierré](http://www.jp-software.fr/en/)
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
