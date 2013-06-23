@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-23 19:14+0100\n"
-"PO-Revision-Date: 2013-06-23 19:14+0100\n"
+"POT-Creation-Date: 2013-06-23 23:09+0100\n"
+"PO-Revision-Date: 2013-06-23 23:09+0100\n"
 "Last-Translator: Christopher Anderton <christopher@deluxive.se>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -128,10 +128,10 @@ msgstr "Kommentarer är stängda."
 #: /Users/pfefferle/Work/SemPress/SemPress/content-chat.php:19
 #: /Users/pfefferle/Work/SemPress/SemPress/content-gallery.php:27
 #: /Users/pfefferle/Work/SemPress/SemPress/content-image.php:24
-#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:24
+#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:20
 #: /Users/pfefferle/Work/SemPress/SemPress/content-quote.php:24
 #: /Users/pfefferle/Work/SemPress/SemPress/content-single.php:29
-#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:25
+#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:20
 #: /Users/pfefferle/Work/SemPress/SemPress/content-video.php:24
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Fortsätt läs <span class=\"meta-nav\">&rarr;</span>"
@@ -142,11 +142,11 @@ msgstr "Fortsätt läs <span class=\"meta-nav\">&rarr;</span>"
 #: /Users/pfefferle/Work/SemPress/SemPress/content-chat.php:20
 #: /Users/pfefferle/Work/SemPress/SemPress/content-gallery.php:28
 #: /Users/pfefferle/Work/SemPress/SemPress/content-image.php:25
-#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:25
+#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:21
 #: /Users/pfefferle/Work/SemPress/SemPress/content-page.php:23
 #: /Users/pfefferle/Work/SemPress/SemPress/content-quote.php:25
 #: /Users/pfefferle/Work/SemPress/SemPress/content-single.php:30
-#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:26
+#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:21
 #: /Users/pfefferle/Work/SemPress/SemPress/content-video.php:25
 #: /Users/pfefferle/Work/SemPress/SemPress/image.php:85
 msgid "Pages:"
@@ -291,8 +291,8 @@ msgid ""
 "\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</time></a><address class="
 "\"byline\"> <span class=\"sep\"> by </span> <span class=\"author p-author "
 "vcard hcard h-card\" itemprop=\"author\" itemscope itemtype=\"http://schema."
-"org/Person\"><a class=\"url uid u-url u-uid fn p-name\" href=\"%5$s\" title="
-"\"%6$s\" rel=\"author\" itemprop=\"url\"><span itemprop=\"name\">%7$s</"
+"org/Person\">%5$s <a class=\"url uid u-url u-uid fn p-name\" href=\"%6$s\" "
+"title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span itemprop=\"name\">%8$s</"
 "span></a></span></address>"
 msgstr ""
 "<span class=\"sep\">Publicerad den </span><a href=\"%1$s\" title=\"%2$s\" "
@@ -300,12 +300,12 @@ msgstr ""
 "updated\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</time></"
 "a><address class=\"byline\"> <span class=\"sep\"> av </span> <span class="
 "\"author p-author card chard h-card\" itemprop=\"author\" itemscope itemtype="
-"\"http://schema.org/Person\"><a class=\"url uid u-url u-hid fn p-name\" href="
-"\"%5$s\" title=\"%6$s\" rel=\"author\" itemprop=\"url\"><span itemprop=\"name"
-"\">%7$s</span></a></span></address>"
+"\"http://schema.org/Person\">%5$s <a class=\"url uid u-url u-hid fn p-name\" "
+"href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span itemprop="
+"\"name\">%8$s</span></a></span></address>"
 
 # @ sempress
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:387
+#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:388
 #, php-format
 msgid "View all posts by %s"
 msgstr "Visa alla inlägg av %s"
