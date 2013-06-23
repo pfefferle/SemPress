@@ -53,7 +53,7 @@ footer.entry-meta {
   display: block;
 }
 .entry-header {
-  .entry-title {
+  .entry-title, .entry-title a {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -61,6 +61,12 @@ footer.entry-meta {
     text-overflow: ellipsis;
     overflow: hidden;
     padding-top: 25px;
+    font-size: 40px;
+    margin: 0;
+    .format-quote &, .format-video &, .format-audio &, .format-image & {
+      font-size: 22px;
+      padding-top: 30px;
+    }
   }
 }
 #content nav {
@@ -118,14 +124,6 @@ footer.entry-meta {
 }
 .entry-meta a {
   color: #777;
-}
-.entry-title, .entry-title a {
-  font-size: 40px;
-  margin: 0;
-  .format-quote &, .format-video &, .format-audio &, .format-image & {
-    font-size: 22px;
-    padding-top: 30px;
-  }
 }
 
 /* 404 page */

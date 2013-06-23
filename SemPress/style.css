@@ -538,7 +538,7 @@ footer.entry-meta {
   display: block;
 }
 
-.entry-header .entry-title {
+.entry-header .entry-title, .entry-header .entry-title a {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -546,6 +546,12 @@ footer.entry-meta {
   text-overflow: ellipsis;
   overflow: hidden;
   padding-top: 25px;
+  font-size: 40px;
+  margin: 0;
+}
+.format-quote .entry-header .entry-title, .format-video .entry-header .entry-title, .format-audio .entry-header .entry-title, .format-image .entry-header .entry-title, .format-quote .entry-header .entry-title a, .format-video .entry-header .entry-title a, .format-audio .entry-header .entry-title a, .format-image .entry-header .entry-title a {
+  font-size: 22px;
+  padding-top: 30px;
 }
 
 #content nav {
@@ -609,15 +615,6 @@ footer.entry-meta {
 
 .entry-meta a {
   color: #777;
-}
-
-.entry-title, .entry-title a {
-  font-size: 40px;
-  margin: 0;
-}
-.format-quote .entry-title, .format-video .entry-title, .format-audio .entry-title, .format-image .entry-title, .format-quote .entry-title a, .format-video .entry-title a, .format-audio .entry-title a, .format-image .entry-title a {
-  font-size: 22px;
-  padding-top: 30px;
 }
 
 /* 404 page */
