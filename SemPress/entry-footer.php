@@ -21,7 +21,7 @@
       if ( $tags_list ) :
     ?>
     <span class="sep"> | </span>
-    <span class="tag-links">
+    <span class="tag-links" itemprop="keywords">
       <?php printf( __( 'Tagged %1$s', 'sempress' ), $tags_list ); ?>
     </span>
     <?php endif; // End if $tags_list ?>
