@@ -52,14 +52,16 @@ footer.entry-meta {
   clear: both;
   display: block;
 }
-.entry-title {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  padding-top: 25px;
+.entry-header {
+  .entry-title {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 25px;
+  }
 }
 #content nav {
   display: block;

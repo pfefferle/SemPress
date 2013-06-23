@@ -359,9 +359,9 @@ h1#site-title {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -538,7 +538,7 @@ footer.entry-meta {
   display: block;
 }
 
-.entry-title {
+.entry-header .entry-title {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -1164,9 +1164,9 @@ input[type="submit"][disabled] {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;
