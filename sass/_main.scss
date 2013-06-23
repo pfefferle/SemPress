@@ -182,7 +182,15 @@ h1#site-title {
   margin-bottom: 30px;
 }
 .page-header {
+  position: relative;
   padding-bottom: 40px;
+
+  .avatar {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -65px;
+  }
 }
 .page-header h1, #author-description h2 {
   margin-top: 0;

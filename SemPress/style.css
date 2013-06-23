@@ -218,7 +218,14 @@ h1#site-title {
 }
 
 .page-header {
+  position: relative;
   padding-bottom: 40px;
+}
+.page-header .avatar {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -65px;
 }
 
 .page-header h1, #author-description h2 {
@@ -685,7 +692,7 @@ footer.entry-meta {
 .format-chat:before,
 .error404:before,
 .sticky:before,
-.entry-content .avatar {
+.format-status .entry-meta .avatar {
   font-family: 'Genericons';
   display: block;
   font-size: 45px;
@@ -877,6 +884,10 @@ div.aligncenter, .gallery {
   background-image: -moz-linear-gradient(top, #555555, #333333);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#333333));
   filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr="#555555",endColorStr="#333333");
+}
+
+.entry-meta .avatar {
+  display: none;
 }
 
 /* =Forms
