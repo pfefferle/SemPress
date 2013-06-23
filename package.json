@@ -45,7 +45,7 @@
   "homepage": "https://github.com/pfefferle/SemPress",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-sass": "~0.2.2",
-    "grunt-replace": "~0.4.0"
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-replace": "~0.4.4"
   }
 }
