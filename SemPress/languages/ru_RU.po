@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.4.0\n"
-"POT-Creation-Date: 2013-06-23 23:09+0100\n"
-"PO-Revision-Date: 2013-06-23 23:10+0100\n"
-"Last-Translator: Oleg Shmelyov <sh@0leg.net>\n"
+"POT-Creation-Date: 2013-06-24 09:49+0100\n"
+"PO-Revision-Date: 2013-06-24 09:49+0100\n"
+"Last-Translator: Matthias Pfefferle <pfefferle@gmail.com>\n"
 "Language-Team: 0leg.net\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,13 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: /Users/pfefferle/Work/SemPress/SemPress\n"
+"X-Poedit-SearchPath-1: /Users/matthias/Work/SemPress/SemPress\n"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/404.php:16
+#: /Users/matthias/Work/SemPress/SemPress/404.php:16
 msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Ой, как неудобно получилось…"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/404.php:20
+#: /Users/matthias/Work/SemPress/SemPress/404.php:20
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching, or one of the links below, can help."
@@ -29,248 +30,248 @@ msgstr ""
 "Мы не можем найти то, что вы ищете. Возможно, поможет поиск или одна из "
 "ссылок ниже?"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/404.php:27
+#: /Users/matthias/Work/SemPress/SemPress/404.php:27
 msgid "Most Used Categories"
 msgstr "Частоиспользуемые категории"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/404.php:35
+#: /Users/matthias/Work/SemPress/SemPress/404.php:35
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Попробуйте поискать в архивах по месяцам. %1$s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/archive.php:32
-#: /Users/pfefferle/Work/SemPress/SemPress/archive.php:34
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:32
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:34
 #, php-format
 msgid "Archives: %s"
 msgstr "Архивы: %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/archive.php:36
-#: /Users/pfefferle/Work/SemPress/SemPress/sidebar.php:19
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:36
+#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:19
 msgid "Archives"
 msgstr "Архивы"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/archive.php:65
-#: /Users/pfefferle/Work/SemPress/SemPress/author.php:63
-#: /Users/pfefferle/Work/SemPress/SemPress/category.php:49
-#: /Users/pfefferle/Work/SemPress/SemPress/index.php:43
-#: /Users/pfefferle/Work/SemPress/SemPress/search.php:35
-#: /Users/pfefferle/Work/SemPress/SemPress/tag.php:51
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:65
+#: /Users/matthias/Work/SemPress/SemPress/author.php:63
+#: /Users/matthias/Work/SemPress/SemPress/category.php:49
+#: /Users/matthias/Work/SemPress/SemPress/index.php:43
+#: /Users/matthias/Work/SemPress/SemPress/search.php:35
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:51
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/archive.php:69
-#: /Users/pfefferle/Work/SemPress/SemPress/author.php:67
-#: /Users/pfefferle/Work/SemPress/SemPress/category.php:53
-#: /Users/pfefferle/Work/SemPress/SemPress/index.php:47
-#: /Users/pfefferle/Work/SemPress/SemPress/tag.php:55
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:69
+#: /Users/matthias/Work/SemPress/SemPress/author.php:67
+#: /Users/matthias/Work/SemPress/SemPress/category.php:53
+#: /Users/matthias/Work/SemPress/SemPress/index.php:47
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:55
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr "Мы не можем найти то, что вы ищете. Возможно, поможет поиск?"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/author.php:27
+#: /Users/matthias/Work/SemPress/SemPress/author.php:27
 #, php-format
 msgid "Author Archives: %s"
 msgstr "Архивы автора: %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/category.php:18
+#: /Users/matthias/Work/SemPress/SemPress/category.php:18
 #, php-format
 msgid "Category Archives: %s"
 msgstr "Архивы категории: %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:16
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:16
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr "Запись защищена паролем. Введите пароль, чтобы увидеть комментарии."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:39
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:59
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:39
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:59
 msgid "Comment navigation"
 msgstr "Переход по комментариям"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:40
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:60
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:40
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:60
 msgid "&larr; Older Comments"
 msgstr "&larr; Старые комментарии"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:41
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:61
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:41
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:61
 msgid "Newer Comments &rarr;"
 msgstr "Новые комментарии &rarr;"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/comments.php:71
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:71
 msgid "Comments are closed."
 msgstr "Комментарии закрыты."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/content-aside.php:20
-#: /Users/pfefferle/Work/SemPress/SemPress/content-audio.php:24
-#: /Users/pfefferle/Work/SemPress/SemPress/content-chat.php:19
-#: /Users/pfefferle/Work/SemPress/SemPress/content-gallery.php:27
-#: /Users/pfefferle/Work/SemPress/SemPress/content-image.php:24
-#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:20
-#: /Users/pfefferle/Work/SemPress/SemPress/content-quote.php:24
-#: /Users/pfefferle/Work/SemPress/SemPress/content-single.php:29
-#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:20
-#: /Users/pfefferle/Work/SemPress/SemPress/content-video.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:19
+#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:27
+#: /Users/matthias/Work/SemPress/SemPress/content-image.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-link.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-single.php:29
+#: /Users/matthias/Work/SemPress/SemPress/content-status.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-video.php:24
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Читать далее <span class=\"meta-nav\">&rarr;</span>"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/content-aside.php:21
-#: /Users/pfefferle/Work/SemPress/SemPress/content-audio.php:25
-#: /Users/pfefferle/Work/SemPress/SemPress/content-chat.php:20
-#: /Users/pfefferle/Work/SemPress/SemPress/content-gallery.php:28
-#: /Users/pfefferle/Work/SemPress/SemPress/content-image.php:25
-#: /Users/pfefferle/Work/SemPress/SemPress/content-link.php:21
-#: /Users/pfefferle/Work/SemPress/SemPress/content-page.php:23
-#: /Users/pfefferle/Work/SemPress/SemPress/content-quote.php:25
-#: /Users/pfefferle/Work/SemPress/SemPress/content-single.php:30
-#: /Users/pfefferle/Work/SemPress/SemPress/content-status.php:21
-#: /Users/pfefferle/Work/SemPress/SemPress/content-video.php:25
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:85
+#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:25
+#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:28
+#: /Users/matthias/Work/SemPress/SemPress/content-image.php:25
+#: /Users/matthias/Work/SemPress/SemPress/content-link.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-page.php:23
+#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:25
+#: /Users/matthias/Work/SemPress/SemPress/content-single.php:30
+#: /Users/matthias/Work/SemPress/SemPress/content-status.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-video.php:25
+#: /Users/matthias/Work/SemPress/SemPress/image.php:85
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/content-page.php:24
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:35
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:33
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:99
+#: /Users/matthias/Work/SemPress/SemPress/content-page.php:24
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:35
+#: /Users/matthias/Work/SemPress/SemPress/image.php:33
+#: /Users/matthias/Work/SemPress/SemPress/image.php:99
 msgid "Edit"
 msgstr "Правка"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:6
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:6
 msgid "Posted"
 msgstr "Опубликовано"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:10
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:20
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:10
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:20
 msgid ", "
 msgstr ", "
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:14
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:14
 #, php-format
 msgid "in %1$s"
 msgstr "в %1$s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:25
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:25
 #, php-format
 msgid "Tagged %1$s"
 msgstr "Теги: %1$s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:32
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:32
 msgid "Leave a comment"
 msgstr "Оставить комментарий"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:32
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:32
 msgid "1 Comment"
 msgstr "1 комментарий"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/entry-footer.php:32
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:32
 msgid "% Comments"
 msgstr "% комментариев(-я)"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/footer.php:17
+#: /Users/matthias/Work/SemPress/SemPress/footer.php:17
 #, php-format
 msgid "This site is powered by %1$s and styled with %2$s"
 msgstr "Сайт сделан с помощью %1$s и оформлен %2$s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:80
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:80
 msgid "Primary Menu"
 msgstr "Основное меню"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:148
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:148
 #, php-format
 msgid "Page %s"
 msgstr "Страница %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:168
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:168
 msgid "Text Color"
 msgstr "Цвет текста"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:179
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:179
 msgid "Shadow Color"
 msgstr "Цвет тени"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:190
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:190
 msgid "Border Color"
 msgstr "Цвет рамки"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:240
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:240
 msgid "Sidebar 1"
 msgstr "Боковая панель 1"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:249
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:249
 msgid "Sidebar 2"
 msgstr "Боковая панель 2"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:251
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:251
 msgid "An optional second sidebar area"
 msgstr "Дополнителная вторая боковая панель"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:302
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:302
 msgid "Post navigation"
 msgstr "Перемещение между страницами"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:312
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:312
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Старые записи"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:316
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:316
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:345
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:345
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">написал:</span>"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:348
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:348
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает проверки."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:356
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:356
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:358
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:358
 msgid "(Edit)"
 msgstr "(Правка)"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:381
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:381
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
-"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated dt-updated"
-"\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</time></a><address class="
-"\"byline\"> <span class=\"sep\"> by </span> <span class=\"author p-author "
-"vcard hcard h-card\" itemprop=\"author\" itemscope itemtype=\"http://schema."
-"org/Person\">%5$s <a class=\"url uid u-url u-uid fn p-name\" href=\"%6$s\" "
-"title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span itemprop=\"name\">%8$s</"
-"span></a></span></address>"
+"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated published "
+"dt-updated dt-published\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</"
+"time></a><address class=\"byline\"> <span class=\"sep\"> by </span> <span "
+"class=\"author p-author vcard hcard h-card\" itemprop=\"author\" itemscope "
+"itemtype=\"http://schema.org/Person\">%5$s <a class=\"url uid u-url u-uid fn "
+"p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
+"itemprop=\"name\">%8$s</span></a></span></address>"
 msgstr ""
 "<span class=\"sep\">Дата: </span><a href=\"%1$s\" title=\"%2$s\" rel="
-"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated dt-updated"
-"\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</time></a><span class="
-"\"byline\">. <span class=\"sep\">Автор: </span> <span class=\"author p-"
-"author card chard h-card\" itemprop=\"author\" itemscope itemtype=\"http://"
-"schema.org/Person\">%5$s <a class=\"url u-url fn p-fm p-name\" href=\"%6$s\" "
-"title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span itemprop=\"name\">%8$s</"
-"span></a></span></span>"
+"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated published "
+"dt-updated dt-published\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</"
+"time></a><span class=\"byline\">. <span class=\"sep\">Автор: </span> <span "
+"class=\"author p-author card chard h-card\" itemprop=\"author\" itemscope "
+"itemtype=\"http://schema.org/Person\">%5$s <a class=\"url u-url fn p-fm p-"
+"name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
+"itemprop=\"name\">%8$s</span></a></span></span>"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/functions.php:388
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:388
 #, php-format
 msgid "View all posts by %s"
 msgstr "Посмотреть все записи %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/header.php:46
+#: /Users/matthias/Work/SemPress/SemPress/header.php:46
 msgid "Main menu"
 msgstr "Главное меню"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/header.php:47
+#: /Users/matthias/Work/SemPress/SemPress/header.php:47
 msgid "Skip to content"
 msgstr "Перейти к содержанию"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:23
+#: /Users/matthias/Work/SemPress/SemPress/image.php:23
 #, php-format
 msgid ""
 "Published <time class=\"entry-date updated dt-updated\" datetime=\"%1$s\" "
@@ -283,15 +284,15 @@ msgstr ""
 "to full-size image\">%4$s &times; %5$s</a> в <a href=\"%6$s\" title=\"Return "
 "to %7$s\" rel=\"gallery\">%7$s</a>"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:37
+#: /Users/matthias/Work/SemPress/SemPress/image.php:37
 msgid "&larr; Previous"
 msgstr "&larr; Назад"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:38
+#: /Users/matthias/Work/SemPress/SemPress/image.php:38
 msgid "Next &rarr;"
 msgstr "Вперед &rarr;"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:91
+#: /Users/matthias/Work/SemPress/SemPress/image.php:91
 #, php-format
 msgid ""
 "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
@@ -303,7 +304,7 @@ msgstr ""
 "\"%s\" title=\"URL трекбэка вашей записи\" rel=\"trackback\">URL трекбэка</"
 "a>."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:93
+#: /Users/matthias/Work/SemPress/SemPress/image.php:93
 #, php-format
 msgid ""
 "Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
@@ -314,7 +315,7 @@ msgstr ""
 "\" href=\"%s\" title=\"URL трекбэка (вашей записи)\" rel=\"trackback\">URL "
 "трекбэка</a>."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:95
+#: /Users/matthias/Work/SemPress/SemPress/image.php:95
 msgid ""
 "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
 "\" title=\"Post a comment\">post a comment</a>."
@@ -322,16 +323,16 @@ msgstr ""
 "Трекбэки закрыты, но вы можете <a class=\"comment-link\" href=\"#respond\" "
 "title=\"Оставить комментарий\">оставить комментарий</a>."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/image.php:97
+#: /Users/matthias/Work/SemPress/SemPress/image.php:97
 msgid "Both comments and trackbacks are currently closed."
 msgstr "И комментарии и трекбеки закрыты."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/search.php:17
+#: /Users/matthias/Work/SemPress/SemPress/search.php:17
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска для: %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/search.php:39
+#: /Users/matthias/Work/SemPress/SemPress/search.php:39
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -339,16 +340,16 @@ msgstr ""
 "К сожалению, по этому запросу ничего не найдено. Попробуйте использовать "
 "другие слова."
 
-#: /Users/pfefferle/Work/SemPress/SemPress/sidebar.php:26
+#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:26
 msgid "Meta"
 msgstr "Мета"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/tag.php:18
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:18
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Архивы тега: %s"
 
-#: /Users/pfefferle/Work/SemPress/SemPress/inc/back-compat.php:29
+#: /Users/matthias/Work/SemPress/SemPress/inc/back-compat.php:29
 msgid "Search here&hellip;"
 msgstr "Поиск&hellip;"
 
