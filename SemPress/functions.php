@@ -75,6 +75,9 @@ function sempress_setup() {
   // Register custom image size for image post formats.
   add_image_size( 'sempress-image-post', 668, 1288 );
   
+  // Switches default core markup for search form to output valid HTML5.
+  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+  
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'sempress' ),
@@ -359,7 +362,7 @@ function sempress_comment( $comment, $args, $depth ) {
         </div><!-- .comment-meta .commentmetadata -->
       </footer>
 
-      <div class="comment-content e-content"><?php comment_text(); ?></div>
+      <div class="comment-content e-content p-summary p-name"><?php comment_text(); ?></div>
 
       <div class="reply">
         <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>

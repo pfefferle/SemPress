@@ -50,7 +50,7 @@
          * define sempress_comment() and that will be used instead.
          * See sempress_comment() in sempress/functions.php for more.
          */
-        wp_list_comments( array( 'callback' => 'sempress_comment' ) );
+        wp_list_comments( array( 'callback' => 'sempress_comment', 'format' => 'html5' ) );
       ?>
     </ol>
 
