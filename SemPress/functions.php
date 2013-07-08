@@ -341,7 +341,7 @@ function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-    <article id="comment-<?php comment_ID(); ?>" class="comment h-comment h-as-comment h-entry hentry <?php $comment->comment_type; ?>">
+    <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>">
       <footer>
         <address class="comment-author p-author author vcard hcard h-card">
           <?php echo get_avatar( $comment, 50 ); ?>
@@ -459,6 +459,42 @@ add_filter( 'body_class', 'sempress_body_classes' );
  * @since SemPress 1.0.0
  */
 function sempress_post_classes( $classes ) {
+  if (!is_singular()) {
+    return sempress_get_post_classes($classes);
+  } else {
+    return $classes;
+  }
+}
+add_filter( 'post_class', 'sempress_post_classes' );
+
+/**
+ * Adds custom classes to the array of comment classes.
+ *
+ * @since SemPress 1.4.0
+ */
+function sempress_comment_classes( $classes ) {
+  $classes[] = "h-as-comment";
+  $classes[] = "p-comment";
+  $classes[] = "h-entry";
+  $classes[] = "hentry";
+
+  return $classes;
+}
+add_filter( 'comment_class', 'sempress_comment_classes' );
+
+/**
+ * add mf2 post-classes to the <main /> tag to support threaded comments
+ */
+function sempress_content_class() {
+  if (is_singular()) {
+    echo 'class="' . join( ' ', sempress_get_post_classes() ) . '"';
+  }
+}
+
+/**
+ * encapsulates post-classes to use them on different tags
+ */
+function sempress_get_post_classes($classes = array()) {
   // Adds a class for microformats v2
   $classes[] = 'h-entry';
   
@@ -495,7 +531,6 @@ function sempress_post_classes( $classes ) {
   
   return $classes;
 }
-add_filter( 'post_class', 'sempress_post_classes' );
 
 /**
  * Adds microformats v2 support to the comment_author_link.

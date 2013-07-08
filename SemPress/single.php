@@ -9,7 +9,7 @@
 get_header(); ?>
 
     <section id="primary">
-      <main id="content" role="main">
+      <main id="content" role="main" <?php sempress_content_class(); ?>>
 
       <?php while ( have_posts() ) : the_post(); ?>
 
