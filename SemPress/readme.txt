@@ -16,6 +16,9 @@ The exceptions to this license are as follows:
 
 = 1.4 =
 * added genericons instead of font-awesome
+* optimized the mf2 support
+* added IndieWeb compatibility
+* optimized HTML5 markup
 
 = 1.3.3 =
 * fixed compatibility issues
@@ -54,4 +57,4 @@ The exceptions to this license are as follows:
 ** de_DE: Benjamin Hartwich - http://www.benjaminhartwich.de/
 ** sv_SE: Christopher Anderton - http://deluxive.se/blog/
 ** ru_RU: Oleg - http://0leg.net
-** fr_FR: Julien Pierré
+** fr_FR: Julien Pierré - http://www.jp-software.fr/en/

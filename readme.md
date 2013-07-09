@@ -26,6 +26,7 @@ SemPress' code is marked-up with microformats and microdata:
     * h-atom/h-entry
     * h-card
     * [ActivityStreams](http://microformats.org/wiki/activity-streams) (h-as-bookmark, h-as-note, ...)
+    * [Comment Draft](http://microformats.org/wiki/comment-brainstorming#microformats2_h-feed_p-comments)
 * used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): 
     * http://schema.org/Blog
     * http://schema.org/BlogPosting
