@@ -447,6 +447,8 @@ function sempress_body_classes( $classes ) {
     $classes[] = "hfeed";
     $classes[] = "h-feed";
     $classes[] = "feed";
+  } else {
+    $classes = sempress_get_post_classes($classes);
   }
 
   return $classes;
@@ -481,15 +483,6 @@ function sempress_comment_classes( $classes ) {
   return $classes;
 }
 add_filter( 'comment_class', 'sempress_comment_classes' );
-
-/**
- * add mf2 post-classes to the <main /> tag to support threaded comments
- */
-function sempress_content_class() {
-  if (is_singular()) {
-    echo 'class="' . join( ' ', sempress_get_post_classes() ) . '"';
-  }
-}
 
 /**
  * encapsulates post-classes to use them on different tags
@@ -710,21 +703,67 @@ function sempress_searchform_format( $format ) {
 add_filter( 'search_form_format', 'sempress_searchform_format' );
 
 /**
- * hide blog item types on single pages and posts
+ * add semantics
+ *
+ * @param string $id the class identifier
+ * @return array
  */
-function sempress_blog_itemscope() {
-  if (!is_singular()) {
-    echo ' itemscope itemtype="http://schema.org/Blog"';
+function sempress_get_semantics($id = null) {
+  $classes = array();
+  
+  // add default values
+  switch ($id) {
+    case "body":
+      if (!is_singular()) {
+        $classes['itemscope'] = array('');
+        $classes['itemtype'] = array('http://schema.org/Blog');
+      }
+      break;
+    case "site-title":
+      if (!is_singular()) {
+        $classes['itemprop'] = array('name');
+        $classes['class'] = array('p-title');
+      }
+      break;
+    case "site-description":
+      if (!is_singular()) {
+        $classes['itemprop'] = array('description');
+        $classes['class'] = array('p-summary', 'e-content');
+      }
+      break;
+    case "site-url":
+      if (!is_singular()) {
+        $classes['itemprop'] = array('url');
+        $classes['class'] = array('u-url', 'url');
+      }
+      break;
+    case "post":
+      if (!is_singular()) {
+        $classes['itemprop'] = array('blogPost');
+      }
+      $classes['itemscope'] = array('');
+      $classes['itemtype'] = array('http://schema.org/BlogPosting');
+      break;
   }
+  
+  $classes = apply_filters( "sempress_semantics", $classes, $id );
+  
+  return $classes; 
 }
 
 /**
- * hide blog item properties on single pages and posts
+ * echos the semantic classes
  */
-function sempress_blog_itemprop($prop) {
-  if (!is_singular()) {
-    echo ' itemprop="'.$prop.'"';
+function sempress_semantics($id) {
+  $classes = sempress_get_semantics($id);
+  
+  if (!$classes) {
+    return;
   }
+  
+  foreach ( $classes as $key => $value ) {
+    echo ' ' . $key . '="' . esc_attr( join( ' ', $value ) ) . '"';
+  }  
 }
 
 /**

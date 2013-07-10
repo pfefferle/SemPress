@@ -31,12 +31,12 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?><?php sempress_blog_itemscope(); ?>>
+<body <?php body_class(); ?><?php sempress_semantics("body"); ?>>
 <div id="page">
 <?php do_action( 'before' ); ?>
   <header id="branding" role="banner">
-    <h1 id="site-title" class="p-name"<?php sempress_blog_itemprop("name"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_blog_itemprop("url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
-    <h2 id="site-description" class="e-content"<?php sempress_blog_itemprop("description"); ?>><?php bloginfo( 'description' ); ?></h2>
+    <h1 id="site-title"<?php sempress_semantics("site-title"); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_semantics("site-url"); ?>><?php bloginfo( 'name' ); ?></a></h1>
+    <h2 id="site-description"<?php sempress_semantics("site-description"); ?>><?php bloginfo( 'description' ); ?></h2>
     
     <?php if (get_header_image()) { ?>
       <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="header image" id="site-image" />
