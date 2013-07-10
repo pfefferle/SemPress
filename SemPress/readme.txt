@@ -14,6 +14,9 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.4.1 =
+* added nicer semantic layer (still some more work to do)
+
 = 1.4 =
 * added genericons instead of font-awesome
 * optimized the mf2 support
