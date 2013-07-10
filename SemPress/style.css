@@ -650,22 +650,10 @@ footer.entry-meta {
 }
 
 /* Aside Posts */
-.format-aside .entry-header,
-.format-status .entry-header,
-.format-link .entry-header {
-  display: none;
-}
 .format-aside .entry-content,
 .format-status .entry-content,
 .format-link .entry-content {
   padding-top: 15px;
-}
-
-/* Aside Posts */
-.search-results .format-aside .entry-header,
-.search-results .format-status .entry-header,
-.search-results .format-link .entry-header {
-  display: block;
 }
 
 .format-chat .chat-timestamp {
@@ -734,6 +722,26 @@ footer.entry-meta {
   content: '\f308';
 }
 
+.format-quote .entry-content {
+  overflow: hidden;
+}
+.format-quote .entry-content blockquote:first-child {
+  background-color: #F5F5F5;
+  height: auto;
+  padding: 34px;
+  margin: 0 -35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.format-quote .entry-content blockquote:first-child:before {
+  content: none;
+}
+.format-quote .entry-content blockquote:first-child p {
+  font-size: 22px;
+}
+.format-quote .entry-content blockquote:first-child p:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
 .format-quote:before {
   content: '\f106';
 }

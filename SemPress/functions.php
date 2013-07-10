@@ -747,12 +747,16 @@ function sempress_get_semantics($id = null) {
   }
   
   $classes = apply_filters( "sempress_semantics", $classes, $id );
-  
+  $classes = apply_filters( "sempress_semantics_{$id}", $classes, $id );
+
   return $classes; 
 }
 
 /**
- * echos the semantic classes
+ * echos the semantic classes added via
+ * the "sempress_semantics" filters
+ *
+ * @param string $id the class identifier
  */
 function sempress_semantics($id) {
   $classes = sempress_get_semantics($id);
@@ -762,7 +766,7 @@ function sempress_semantics($id) {
   }
   
   foreach ( $classes as $key => $value ) {
-    echo ' ' . $key . '="' . esc_attr( join( ' ', $value ) ) . '"';
+    echo ' ' . esc_attr( $key ) . '="' . esc_attr( join( ' ', $value ) ) . '"';
   }  
 }
 

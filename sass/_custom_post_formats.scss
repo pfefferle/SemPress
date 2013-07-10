@@ -2,19 +2,9 @@
 .format-aside,
 .format-status,
 .format-link {
-  .entry-header {
-    display: none;
-  }
   .entry-content {
     padding-top: 15px;
   }
-}
-
-/* Aside Posts */
-.search-results .format-aside .entry-header,
-.search-results .format-status .entry-header,
-.search-results .format-link .entry-header {
-  display: block;
 }
 
 .format-chat {
@@ -84,8 +74,34 @@
 .sticky:before {
   content: '\f308';
 }
-.format-quote:before {
-  content: '\f106';
+.format-quote {  
+  .entry-content {
+    blockquote:first-child {
+      background-color: #F5F5F5;
+      height: auto;
+      padding: 34px;
+      margin: 0 -35px;
+    
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    
+      &:before {
+        content: none;
+      }
+      p {
+        font-size: 22px;
+      }
+      p:first-child {
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+    }
+    
+    overflow: hidden;
+  }
+  
+  &:before {
+    content: '\f106';
+  }
 }
 .format-chat:before {
   content: '\f108';
