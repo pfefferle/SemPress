@@ -47,7 +47,8 @@ img.size-medium,
 .attachment img,
 .widget-area img,
 .wp-caption,
-.post img {
+.post img,
+.page img {
   max-width: 100%; /* When images are too wide for containing element, force them to fit. */
   height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
