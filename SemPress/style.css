@@ -471,6 +471,12 @@ table tbody tr:hover th {
   background-color: #f5f5f5;
 }
 
+table {
+  width: auto;
+  max-width: 100%;
+  overflow: scroll;
+}
+
 /* =Content
 -------------------------------------------------------------- */
 article.page,
@@ -787,6 +793,10 @@ article.format-video .entry-media {
 
 .wp-audio-shortcode {
   margin: 20px auto;
+}
+
+.entry-content iframe, .entry-content object, .entry-content embed {
+  max-width: 100%;
 }
 
 /* =Images
@@ -1395,12 +1405,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     width: 100%;
   }
 
-  iframe, object, embed {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-
   table {
     width: auto;
     max-width: 100%;
@@ -1568,6 +1572,11 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 
   h1.entry-title a {
     font-size: 0.5em;
+  }
+
+  iframe, object, embed {
+    height: auto;
+    max-width: 100%;
   }
 }
 /**

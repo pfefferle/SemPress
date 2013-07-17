@@ -64,3 +64,8 @@ table tbody tr:hover td,
 table tbody tr:hover th {
   background-color: #f5f5f5;
 }
+table {
+  width: auto;
+  max-width: 100%;
+  overflow: scroll;
+}

@@ -26,6 +26,12 @@
   margin: 20px auto;
 }
 
+.entry-content {
+  iframe, object, embed {
+    max-width: 100%;
+  }
+}
+
 /* =Images
 -------------------------------------------------------------- */
 

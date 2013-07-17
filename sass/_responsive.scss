@@ -68,11 +68,6 @@
   #main .widget-area {
     width: 100%;
   }
-  iframe, object, embed {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
   table {
     width: auto;
     max-width: 100%;
@@ -212,5 +207,9 @@
   }
   h1.entry-title a {
     font-size: 0.5em;
+  }
+  iframe, object, embed {
+    height: auto;
+    max-width: 100%;
   }
 }
