@@ -728,21 +728,19 @@ footer.entry-meta {
   content: '\f308';
 }
 
-.format-quote .entry-content {
-  overflow: hidden;
-}
 .format-quote .entry-content blockquote:first-child {
   background-color: #F5F5F5;
   height: auto;
   padding: 34px;
-  margin: 0 -35px;
+  margin: 0 -34px 34px -34px;
+  font-size: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .format-quote .entry-content blockquote:first-child:before {
   content: none;
 }
 .format-quote .entry-content blockquote:first-child p {
-  font-size: 22px;
+  font-size: 25px;
 }
 .format-quote .entry-content blockquote:first-child p:first-child {
   padding-top: 0px;

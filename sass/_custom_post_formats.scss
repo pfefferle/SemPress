@@ -80,23 +80,21 @@
       background-color: #F5F5F5;
       height: auto;
       padding: 34px;
-      margin: 0 -35px;
-    
+      margin: 0 -34px 34px -34px;
+      font-size: 25px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    
+
       &:before {
         content: none;
       }
       p {
-        font-size: 22px;
+        font-size: 25px;
       }
       p:first-child {
         padding-top: 0px;
         margin-top: 0px;
       }
     }
-    
-    overflow: hidden;
   }
   
   &:before {
