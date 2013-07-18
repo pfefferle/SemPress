@@ -341,11 +341,11 @@ function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-    <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>">
+    <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
       <footer>
-        <address class="comment-author p-author author vcard hcard h-card">
+        <address class="comment-author p-author author vcard hcard h-card"  itemprop="creator" itemscope itemtype="http://schema.org/Person">
           <?php echo get_avatar( $comment, 50 ); ?>
-          <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name">%s</cite>', get_comment_author_link() ) ); ?>
+          <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name" itemprop="name">%s</cite>', get_comment_author_link() ) ); ?>
         </address><!-- .comment-author .vcard -->
         <?php if ( $comment->comment_approved == '0' ) : ?>
           <em><?php _e( 'Your comment is awaiting moderation.', 'sempress' ); ?></em>
@@ -353,7 +353,7 @@ function sempress_comment( $comment, $args, $depth ) {
         <?php endif; ?>
 
         <div class="comment-meta commentmetadata">
-          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time class="updated published u-updated u-published" datetime="<?php comment_time( 'c' ); ?>">
+          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time class="updated published u-updated u-published" datetime="<?php comment_time( 'c' ); ?>" itemprop="commentTime">
           <?php
             /* translators: 1: date, 2: time */
             printf( __( '%1$s at %2$s', 'sempress' ), get_comment_date(), get_comment_time() ); ?>
@@ -362,7 +362,7 @@ function sempress_comment( $comment, $args, $depth ) {
         </div><!-- .comment-meta .commentmetadata -->
       </footer>
 
-      <div class="comment-content e-content p-summary p-name"><?php comment_text(); ?></div>
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><?php comment_text(); ?></div>
 
       <div class="reply">
         <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
@@ -716,6 +716,9 @@ function sempress_get_semantics($id = null) {
       if (!is_singular()) {
         $classes['itemscope'] = array('');
         $classes['itemtype'] = array('http://schema.org/Blog');
+      } else {
+        $classes['itemscope'] = array('');
+        $classes['itemtype'] = array('http://schema.org/BlogPosting');
       }
       break;
     case "site-title":
@@ -739,9 +742,9 @@ function sempress_get_semantics($id = null) {
     case "post":
       if (!is_singular()) {
         $classes['itemprop'] = array('blogPost');
+        $classes['itemscope'] = array('');
+        $classes['itemtype'] = array('http://schema.org/BlogPosting');
       }
-      $classes['itemscope'] = array('');
-      $classes['itemtype'] = array('http://schema.org/BlogPosting');
       break;
   }
   
