@@ -353,7 +353,7 @@ function sempress_comment( $comment, $args, $depth ) {
         <?php endif; ?>
 
         <div class="comment-meta commentmetadata">
-          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
+          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time class="updated published u-updated u-published" datetime="<?php comment_time( 'c' ); ?>">
           <?php
             /* translators: 1: date, 2: time */
             printf( __( '%1$s at %2$s', 'sempress' ), get_comment_date(), get_comment_time() ); ?>
@@ -478,7 +478,6 @@ function sempress_comment_classes( $classes ) {
   $classes[] = "h-as-comment";
   $classes[] = "p-comment";
   $classes[] = "h-entry";
-  $classes[] = "hentry";
 
   return $classes;
 }
