@@ -1066,7 +1066,7 @@ input[type="search"] {
   width: 95%;
 }
 
-input[type="submit"].searchsubmit,
+input[type="submit"]#searchsubmit,
 input.searchsubmit {
   display: none;
 }
