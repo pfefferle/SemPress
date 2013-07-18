@@ -14,7 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
-= 1.4.1 =
+= 1.4.2 =
+* fixed display for large media-types (images/iframes/embeds)
+* fixed translations
+* added schema.org/UserComments support
 * added nicer semantic layer (still some more work to do)
 
 = 1.4 =
