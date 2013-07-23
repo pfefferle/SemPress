@@ -19,6 +19,7 @@ The exceptions to this license are as follows:
 * fixed translations
 * added schema.org/UserComments support
 * added nicer semantic layer (still some more work to do)
+* nicer blockquote stylings
 
 = 1.4 =
 * added genericons instead of font-awesome
