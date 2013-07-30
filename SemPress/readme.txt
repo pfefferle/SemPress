@@ -14,6 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.4.3 =
+* fixed german language file
+* fixed h1-style
+
 = 1.4.2 =
 * fixed display for large media-types (images/iframes/embeds)
 * fixed translations
