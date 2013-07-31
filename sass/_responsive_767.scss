@@ -1,0 +1,52 @@
+body {
+  word-wrap: break-word;
+  font-size: 0.9em;
+}
+#site-title {
+  a {
+    font-size: 0.7em;
+    line-height: 1;
+  }
+  margin-bottom: 30px;
+}
+#site-description {
+  font-size: 1.3em;
+}
+article.format-audio {
+  .entry-media {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+#page {
+  width: auto;
+  margin: 0 5px;
+}
+#main .widget-area {
+  width: 100%;
+}
+table {
+  width: auto;
+  max-width: 100%;
+  overflow: scroll;
+}
+article.post,
+article.page,
+footer.entry-meta {
+  margin: 0;
+  padding: 0;
+}
+.entry-title,
+.entry-content,
+.entry-summary,
+.entry-meta,
+footer.entry-meta {
+  color: inherit;
+  text-shadow: inherit;
+  margin: 0px;
+  padding: 5px 15px;
+}
+h1.entry-title a {
+  font-size: 0.7em;
+  line-height: 1;
+}

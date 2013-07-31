@@ -1,0 +1,40 @@
+#page {
+  width: 650px;
+  margin: 0px auto;
+}
+#sidebar {
+  float: right;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+#main .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 285px;
+  padding-right: 40px;
+}
+#primary {
+  width: auto;
+  float: inherit;
+}
+#content {
+  margin: 0;
+}
+.post, .error404, .sticky {
+  &:before {
+    content: none;
+  }
+}
+.format-status .entry-meta .avatar {
+  display: none;
+}
+.entry-content .avatar {
+  display: none;
+}
+#site-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

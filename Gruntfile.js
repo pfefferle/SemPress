@@ -11,8 +11,8 @@ module.exports = function(grunt) {
           line_numbers: false
         },
         files: {
-          'SemPress/style.css': 'sass/style.scss',
-          'SemPress/css/editor-style.css': 'sass/editor-style.scss'
+          'sempress/style.css': 'sass/style.scss',
+          'sempress/css/editor-style.css': 'sass/editor-style.scss'
         }
       }
     },
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           prefix: '@@'
         },
         files: [
-          { expand: true, flatten: true, src: ['SemPress/style.css'], dest: 'SemPress' }
+          { expand: true, flatten: true, src: ['sempress/style.css'], dest: 'SemPress' }
         ]
       }
     }
