@@ -97,7 +97,6 @@ cite {
 
 blockquote small, .post-format-content cite {
   display: block;
-  line-height: 18px;
   color: #999;
   font-style: normal;
 }
@@ -739,6 +738,7 @@ footer.entry-meta {
   margin: 0 -34px 34px -34px;
   font-size: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
 }
 .format-quote .entry-content blockquote:first-child:before {
   content: none;
