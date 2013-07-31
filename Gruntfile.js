@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           prefix: '@@'
         },
         files: [
-          { expand: true, flatten: true, src: ['sempress/style.css'], dest: 'SemPress' }
+          { expand: true, flatten: true, src: ['sempress/style.css'], dest: 'sempress' }
         ]
       }
     }
