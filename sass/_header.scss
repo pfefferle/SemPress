@@ -1,0 +1,55 @@
+/* =Header
+-------------------------------------------------------------- */
+
+#branding {
+  display: block;
+  clear: both;
+  margin-top: 48px;
+}
+#site-image {
+  float: left;
+  @include rounded($border-radius);
+  @include box-shadow(0, 1px, 5px, 0, rgba(0,0,0,0.2));
+  margin-bottom: 40px;
+  clear: both;
+}
+#site-title {
+  font-size: 4em;
+  letter-spacing: -2px;
+  margin: 0;
+	a {
+	  text-decoration: none;
+	}
+  .custom-header & {
+    font-size: 3em;
+  }
+}
+h1#site-title {
+  margin-top: 1em;
+}
+#site-description {
+  font-size: 1.7em;
+  height: auto;
+  line-height: 120%;
+  margin: 0 0 1em;
+  width: 100%;
+  font-weight: 100;
+}
+#author-info {
+  margin-bottom: 30px;
+}
+.page-header {
+  position: relative;
+  padding-bottom: 40px;
+
+  .avatar {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -65px;
+  }
+}
+.page-header h1, #author-description h2 {
+  margin-top: 0;
+  padding-top: 0;
+}

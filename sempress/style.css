@@ -159,15 +159,6 @@ h1 {
   font-size: 30px;
 }
 
-article address {
-  display: inline;
-  font-style: normal;
-}
-
-main {
-  display: block;
-}
-
 /* =Header
 -------------------------------------------------------------- */
 #branding {
@@ -238,6 +229,10 @@ h1#site-title {
 
 /* =Structure
 -------------------------------------------------------------- */
+main {
+  display: block;
+}
+
 #page {
   display: block;
   margin: 0 auto;
@@ -508,6 +503,11 @@ article.page a:hover,
 article.post a:hover,
 article.attachment a:hover {
   text-decoration: underline;
+}
+
+article address {
+  display: inline;
+  font-style: normal;
 }
 
 article, aside {

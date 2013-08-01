@@ -17,6 +17,12 @@ article.attachment {
     }
   }
 }
+article {
+  address {
+    display: inline;
+    font-style: normal;
+  }
+}
 .sticky {
 }
 article, aside {
