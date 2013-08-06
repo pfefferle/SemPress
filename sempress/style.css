@@ -1411,6 +1411,11 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     padding: 0;
   }
 
+  .entry-content table,
+  .entry-summary table {
+    overflow: scroll;
+  }
+
   .entry-title,
   .entry-content,
   .entry-summary,
@@ -1422,13 +1427,20 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     padding: 5px 15px;
   }
 
-  h1.entry-title a {
+  .entry-header .entry-title {
+    padding-top: 0px;
+  }
+  .entry-header .entry-title a {
     font-size: 0.7em;
     line-height: 1;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  h1.section-heading {
+    font-size: 20px;
+  }
+
   #site-title {
     margin-bottom: 20px;
   }
@@ -1563,8 +1575,9 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     box-shadow: none;
   }
 
-  h1.entry-title a {
-    font-size: 0.5em;
+  .entry-header .entry-title a {
+    font-size: 0.6em;
+    line-height: 1;
   }
 
   iframe, object, embed {

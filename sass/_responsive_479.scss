@@ -1,3 +1,6 @@
+h1.section-heading {
+  font-size: 20px;
+}
 #site-title {
   a {
     font-size: 0.7em;
@@ -106,8 +109,9 @@
   border-top: none;
   @include reset-box-shadow;
 }
-h1.entry-title a {
-  font-size: 0.5em;
+.entry-header .entry-title a {
+  font-size: 0.6em;
+  line-height: 1;
 }
 iframe, object, embed {
   height: auto;

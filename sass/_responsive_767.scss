@@ -36,6 +36,12 @@ footer.entry-meta {
   margin: 0;
   padding: 0;
 }
+.entry-content,
+.entry-summary {
+  table {
+    overflow: scroll;
+  }
+}
 .entry-title,
 .entry-content,
 .entry-summary,
@@ -46,7 +52,10 @@ footer.entry-meta {
   margin: 0px;
   padding: 5px 15px;
 }
-h1.entry-title a {
-  font-size: 0.7em;
-  line-height: 1;
+.entry-header .entry-title {
+  a {
+    font-size: 0.7em;
+    line-height: 1;
+  }
+  padding-top: 0px;
 }
