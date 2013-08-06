@@ -1428,11 +1428,19 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   }
 
   .entry-header .entry-title {
-    padding-top: 0px;
+    font-size: 35px;
+    line-height: 1;
   }
   .entry-header .entry-title a {
-    font-size: 0.7em;
-    line-height: 1;
+    font-size: 35px;
+  }
+
+  .format-quote .entry-content {
+    padding-top: 0;
+  }
+  .format-quote .entry-content blockquote:first-child {
+    padding: 15px;
+    margin: 0 -15px 15px -15px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1575,9 +1583,12 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     box-shadow: none;
   }
 
-  .entry-header .entry-title a {
-    font-size: 0.6em;
+  .entry-header .entry-title {
+    font-size: 30px;
     line-height: 1;
+  }
+  .entry-header .entry-title a {
+    font-size: 30px;
   }
 
   iframe, object, embed {

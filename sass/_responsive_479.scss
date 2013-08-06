@@ -109,8 +109,11 @@ h1.section-heading {
   border-top: none;
   @include reset-box-shadow;
 }
-.entry-header .entry-title a {
-  font-size: 0.6em;
+.entry-header .entry-title {
+  a {
+    font-size: 30px;
+  }
+  font-size: 30px;
   line-height: 1;
 }
 iframe, object, embed {

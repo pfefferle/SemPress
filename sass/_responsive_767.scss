@@ -54,8 +54,17 @@ footer.entry-meta {
 }
 .entry-header .entry-title {
   a {
-    font-size: 0.7em;
-    line-height: 1;
+    font-size: 35px;
   }
-  padding-top: 0px;
+  font-size: 35px;
+  line-height: 1;
+}
+.format-quote {  
+  .entry-content {
+    padding-top: 0;
+    blockquote:first-child {
+      padding: 15px;
+      margin: 0 -15px 15px -15px;
+    }
+  }
 }
