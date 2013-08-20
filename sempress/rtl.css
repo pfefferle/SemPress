@@ -13,9 +13,17 @@ body {
   direction: rtl;
   unicode-bidi: embed;
 }
+#primary {
+  float: right;
+}
+#sidebar {
+  float: left;
+}
+#content {
+  margin: 0 0 0 40px;
+}
 #access {
   float: right;
-  margin: 0 auto 1em;
 }
 #access ul {
   padding-right: 0;
@@ -41,4 +49,92 @@ body {
 #content nav .nav-next {
   float: left;
   text-align: left;
+}
+/* Custom Post Types */
+.format-aside:before,
+.format-video:before,
+.format-audio:before,
+.format-image:before,
+.format-gallery:before,
+.format-link:before,
+.format-quote:before,
+.format-chat:before,
+.error404:before,
+.sticky:before,
+.format-status .entry-meta .avatar {
+  left: auto;
+  right: -75px;
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  #content {
+    margin: 0;
+  }
+  
+  #main .widget-area {
+    padding-right: 0px;
+    padding-left: 40px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 767px) {
+  #main .widget-area {
+    padding: 0;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #access {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: #464646;
+    z-index: 99999;
+  }
+  
+  #access .section-heading a:before {
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-left: 0px;
+    padding-right: 25px;
+  }
+  
+  #access li {
+    float: none;
+    margin: inherit;
+    position: inherit;
+  }
+  
+  #access ul {
+    display: none;
+    margin: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  #access ul ul {
+    background-color: transparent;
+    background-image: none;
+    position: inherit;
+    float: none;
+    padding: inherit;
+    margin-left: 0px;
+    margin-right: 20px;
+    border: none;
+    top: inherit;
+    left: auto;
+    right: auto;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
 }
