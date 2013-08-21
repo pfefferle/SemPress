@@ -124,22 +124,11 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
-#searchform label {
-  display: none;
-}
 input[type="text"],
 input[type="email"],
 input[type="url"] {
   margin: 0 1em 0 0;
   width: 60%;
-}
-input[type="search"] {
-  margin: 0;
-  width: 95%;
-}
-input[type="submit"]#searchsubmit,
-input.searchsubmit {
-  display: none;
 }
 textarea {
   width: 80%;
@@ -236,6 +225,16 @@ input[type="submit"], input[type="button"], button {
     -moz-box-shadow: none;
     box-shadow: none;
   }
+}
+input[type="search"] {
+  margin: 0;
+  width: 95%;
+}
+input[type="submit"]#searchsubmit,
+#searchform label,
+input.searchsubmit,
+input.search-submit {
+  display: none;
 }
 
 /* Class for labelling required form items */
