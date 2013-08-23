@@ -13,10 +13,12 @@ The exceptions to this license are as follows:
 * html5shiv is licensed under the [http://opensource.org/licenses/MIT MIT license]
 
 == Changelog ==
+
 = 1.4.4 =
 * more advanced "editor style"
 * fixed h1-style (sidebar)
 * indonesian language file
+* optimized rtl-styles
 
 = 1.4.3 =
 * fixed german language file
