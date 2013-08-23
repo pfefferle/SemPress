@@ -32,6 +32,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "vars";
 @import "mixins";
 
+body {
+  font-family: $main_font_family;
+  color: #555;
+  background-color: #f0f0f0;
+  background-image: url("img/noise.png");
+  text-shadow: 0 1px 0 #fff;
+  font-weight: $main_font_weight;
+}
+
 @import "main";
 
 @import "header";

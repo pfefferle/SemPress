@@ -14,6 +14,9 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.4.5 =
+* improved editor-style
+
 = 1.4.4 =
 * more advanced "editor style"
 * fixed h1-style (sidebar)

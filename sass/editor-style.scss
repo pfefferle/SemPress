@@ -1,5 +1,9 @@
 @import "vars";
 
-body#tinymce.wp-editor { 
+body#tinymce.wp-editor {
+  font-family: $main_font_family;
+  color: #555;
+  font-weight: $main_font_weight;
+  
   @import "main";
 }
