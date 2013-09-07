@@ -364,9 +364,9 @@ main {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -1177,9 +1177,9 @@ input.search-submit {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;
