@@ -793,6 +793,12 @@ article.format-video .entry-media {
 .entry-media img, .entry-media iframe, .entry-media object, .entry-media embed {
   margin-top: 20px;
 }
+.entry-media img.alignright {
+  margin-right: 34px;
+}
+.entry-media img.alignleft {
+  margin-left: 34px;
+}
 
 .wp-audio-shortcode {
   margin: 20px auto;

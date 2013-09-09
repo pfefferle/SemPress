@@ -20,6 +20,14 @@
   img, iframe, object, embed {
     margin-top: 20px;
   }
+  
+  img.alignright {
+    margin-right: 34px;
+  }
+  
+  img.alignleft {
+    margin-left: 34px;
+  }
 }
 
 .wp-audio-shortcode {

@@ -16,7 +16,7 @@
   </div><!-- .entry-summary -->
   <?php else : ?>
   <div class="entry-content e-content p-summary entry-title p-name" itemprop="name headline description articleBody">
-    <?php sempress_the_post_thumbnail(); ?>
+    <?php sempress_the_post_thumbnail('<p>', '</p>'); ?>
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
   </div><!-- .entry-content -->

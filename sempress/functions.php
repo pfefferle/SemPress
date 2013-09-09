@@ -399,11 +399,17 @@ endif;
  *
  * @since SemPress 1.0.0
  */
-function sempress_the_post_thumbnail() {
+function sempress_the_post_thumbnail($before = "", $after = "") {
   if ( '' != get_the_post_thumbnail() ) {
-?>
-    <p><?php the_post_thumbnail( "thumbnail", array( "class" => "alignright", "itemprop" => "image" ) ); ?></p>
-<?php 
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
+    $class = "aligncenter";
+    
+    if ($image['1'] < "300")
+      $class="alignright";
+
+    echo $before;
+    the_post_thumbnail( "post-thumbnail", array( "class" => $class . " photo u-photo", "itemprop" => "image" ) );
+    echo $after;
   }
 }
 

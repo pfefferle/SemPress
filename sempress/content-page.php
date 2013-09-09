@@ -12,11 +12,7 @@
     <h1 class="entry-title p-name" itemprop="name headline"><?php the_title(); ?></h1>
   </header><!-- .entry-header -->
   
-  <?php if ( '' != get_the_post_thumbnail() ) { ?>
-  <div class="entry-media">
-    <?php the_post_thumbnail( "post-thumbnail", array( "itemprop" => "image", "class" => "aligncenter" ) ); ?>
-  </div>
-  <?php } ?>
+  <?php sempress_the_post_thumbnail('<div class="entry-media">', '</div>'); ?>
   
   <div class="entry-content e-content" itemprop="description">
     <?php the_content(); ?>
