@@ -32,6 +32,7 @@ body {
   background-image: url("img/noise.png");
   text-shadow: 0 1px 0 #fff;
   font-weight: 300;
+  word-wrap: break-word;
 }
 
 a {
@@ -1366,7 +1367,6 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
   body {
-    word-wrap: break-word;
     font-size: 0.9em;
   }
 
