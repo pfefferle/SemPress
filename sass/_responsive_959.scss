@@ -6,14 +6,16 @@
   float: right;
   overflow: hidden;
   width: 100%;
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 25px;
+  margin-top: 25px;
 }
 #main .widget-area {
   float: left;
   overflow: hidden;
-  width: 285px;
-  padding-right: 40px;
+  width: 300px;
+}
+#secondary {
+  padding-right: 69px;
 }
 #primary {
   width: auto;

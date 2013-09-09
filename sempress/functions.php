@@ -94,9 +94,15 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
   
+  if (get_theme_mod( 'sempress_columns', 'single' ) == "single") {
+    $width = 670;
+  } else {
+    $width = 950;
+  }
+  
   // This theme supports a custom header
   $custom_header_args = array(
-    'width'         => 950,
+    'width'         => $width,
     'height'        => 200,
     'header-text'   => false
   );
@@ -161,7 +167,13 @@ add_filter( 'wp_title', 'sempress_wp_title', 10, 2 );
  */
 function sempress_customize_register( $wp_customize ) {
   global $themecolors;
-
+  
+  $wp_customize->add_section( 'sempress_settings_section', array(
+    'title'       => __( 'Sempress Settings', 'sempress' ),
+    'description' => __('Allows you to customize some example settings for MyTheme.', 'mytheme'), //Descriptive tooltip
+    'priority'    => 35
+  ) );
+  
   $wp_customize->add_setting( 'sempress_textcolor' , array(
     'default'     => '#'.$themecolors['text'],
     'transport'   => 'refresh',
@@ -194,6 +206,22 @@ function sempress_customize_register( $wp_customize ) {
     'section'    => 'colors',
     'settings'   => 'sempress_bordercolor',
   ) ) );
+  
+  $wp_customize->add_setting( 'sempress_columns' , array(
+    'default'     => 'multi',
+    'transport'   => 'refresh',
+  ) );
+  
+  $wp_customize->add_control( 'sempress_columns', array(
+    'label'      => __( 'Page Structure', 'sempress' ),
+    'section'    => 'sempress_settings_section',
+    'settings'   => 'sempress_columns',
+    'type'       => 'select',
+    'choices'    => array(
+      'single'   => __( 'Single Column (Sidebar at the bottom)', 'sempress' ),
+      'multi'    => __( 'Multi Column (Sidebar at the right)', 'sempress' ),
+    )
+  ) );
 }
 add_action( 'customize_register', 'sempress_customize_register' );
 
@@ -440,6 +468,8 @@ add_action( 'template_redirect', 'sempress_content_width' );
  * @since SemPress 1.0.0
  */
 function sempress_body_classes( $classes ) {
+  $classes[] = get_theme_mod( 'sempress_columns', 'multi' ). "-column";
+  
   // Adds a class of single-author to blogs with only 1 published author
   if ( ! is_multi_author() ) {
     $classes[] = 'single-author';

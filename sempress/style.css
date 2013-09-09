@@ -241,6 +241,27 @@ main {
   width: 950px;
 }
 
+.single-column #page {
+  width: 670px;
+}
+.single-column #main {
+  margin: 0;
+}
+.single-column #main #sidebar {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+.single-column #main #secondary {
+  padding-right: 69px;
+}
+.single-column #main .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 300px;
+}
+
 #main {
   clear: both;
 }
@@ -365,9 +386,9 @@ main {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -1184,9 +1205,9 @@ input.search-submit {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;
@@ -1323,48 +1344,42 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-  #page {
+  body #page, .single-column #page, .multi-column #page {
     width: 650px;
     margin: 0px auto;
   }
-
-  #sidebar {
+  body #sidebar, .single-column #sidebar, .multi-column #sidebar {
     float: right;
     overflow: hidden;
     width: 100%;
-    padding-top: 50px;
-    margin-top: 50px;
+    padding-top: 25px;
+    margin-top: 25px;
   }
-
-  #main .widget-area {
+  body #main .widget-area, .single-column #main .widget-area, .multi-column #main .widget-area {
     float: left;
     overflow: hidden;
-    width: 285px;
-    padding-right: 40px;
+    width: 300px;
   }
-
-  #primary {
+  body #secondary, .single-column #secondary, .multi-column #secondary {
+    padding-right: 69px;
+  }
+  body #primary, .single-column #primary, .multi-column #primary {
     width: auto;
     float: inherit;
   }
-
-  #content {
+  body #content, .single-column #content, .multi-column #content {
     margin: 0;
   }
-
-  .post:before, .error404:before, .sticky:before {
+  body .post:before, body .error404:before, body .sticky:before, .single-column .post:before, .single-column .error404:before, .single-column .sticky:before, .multi-column .post:before, .multi-column .error404:before, .multi-column .sticky:before {
     content: none;
   }
-
-  .format-status .entry-meta .avatar {
+  body .format-status .entry-meta .avatar, .single-column .format-status .entry-meta .avatar, .multi-column .format-status .entry-meta .avatar {
     display: none;
   }
-
-  .entry-content .avatar {
+  body .entry-content .avatar, .single-column .entry-content .avatar, .multi-column .entry-content .avatar {
     display: none;
   }
-
-  #site-image {
+  body #site-image, .single-column #site-image, .multi-column #site-image {
     width: auto;
     height: auto;
     max-width: 100%;
@@ -1372,107 +1387,105 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
-  body {
+  body body, .single-column body, .multi-column body {
     font-size: 0.9em;
   }
-
-  #site-title {
+  body #site-title, .single-column #site-title, .multi-column #site-title {
     margin-bottom: 30px;
   }
-  #site-title a {
+  body #site-title a, .single-column #site-title a, .multi-column #site-title a {
     font-size: 0.7em;
     line-height: 1;
   }
-
-  #site-description {
+  body #site-description, .single-column #site-description, .multi-column #site-description {
     font-size: 1.3em;
   }
-
-  article.format-audio .entry-media {
+  body article.format-audio .entry-media, .single-column article.format-audio .entry-media, .multi-column article.format-audio .entry-media {
     padding-left: 0px;
     padding-right: 0px;
   }
-
-  #page {
+  body #page, .single-column #page, .multi-column #page {
     width: auto;
     margin: 0 5px;
   }
-
-  #main .widget-area {
+  body #main .widget-area, .single-column #main .widget-area, .multi-column #main .widget-area {
     width: 100%;
   }
-
-  table {
+  body table, .single-column table, .multi-column table {
     width: auto;
     max-width: 100%;
     overflow: scroll;
   }
-
-  article.post,
-  article.page,
-  footer.entry-meta {
+  body article.post,
+  body article.page,
+  body footer.entry-meta, .single-column article.post,
+  .single-column article.page,
+  .single-column footer.entry-meta, .multi-column article.post,
+  .multi-column article.page,
+  .multi-column footer.entry-meta {
     margin: 0;
     padding: 0;
   }
-
-  .entry-content table,
-  .entry-summary table {
+  body .entry-content table,
+  body .entry-summary table, .single-column .entry-content table,
+  .single-column .entry-summary table, .multi-column .entry-content table,
+  .multi-column .entry-summary table {
     overflow: scroll;
   }
-
-  .entry-title,
-  .entry-content,
-  .entry-summary,
-  .entry-meta,
-  footer.entry-meta {
+  body .entry-title,
+  body .entry-content,
+  body .entry-summary,
+  body .entry-meta,
+  body footer.entry-meta, .single-column .entry-title,
+  .single-column .entry-content,
+  .single-column .entry-summary,
+  .single-column .entry-meta,
+  .single-column footer.entry-meta, .multi-column .entry-title,
+  .multi-column .entry-content,
+  .multi-column .entry-summary,
+  .multi-column .entry-meta,
+  .multi-column footer.entry-meta {
     color: inherit;
     text-shadow: inherit;
     margin: 0px;
     padding: 5px 15px;
   }
-
-  .entry-header .entry-title {
+  body .entry-header .entry-title, .single-column .entry-header .entry-title, .multi-column .entry-header .entry-title {
     font-size: 35px;
     line-height: 1;
   }
-  .entry-header .entry-title a {
+  body .entry-header .entry-title a, .single-column .entry-header .entry-title a, .multi-column .entry-header .entry-title a {
     font-size: 35px;
   }
-
-  .format-quote .entry-content {
+  body .format-quote .entry-content, .single-column .format-quote .entry-content, .multi-column .format-quote .entry-content {
     padding-top: 0;
   }
-  .format-quote .entry-content blockquote:first-child {
+  body .format-quote .entry-content blockquote:first-child, .single-column .format-quote .entry-content blockquote:first-child, .multi-column .format-quote .entry-content blockquote:first-child {
     padding: 15px;
     margin: 0 -15px 15px -15px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  h1.section-heading {
+  body h1.section-heading, .single-column h1.section-heading, .multi-column h1.section-heading {
     font-size: 20px;
   }
-
-  #site-title {
+  body #site-title, .single-column #site-title, .multi-column #site-title {
     margin-bottom: 20px;
   }
-  #site-title a {
+  body #site-title a, .single-column #site-title a, .multi-column #site-title a {
     font-size: 0.7em;
   }
-
-  #branding {
+  body #branding, .single-column #branding, .multi-column #branding {
     margin-top: 50px;
   }
-
-  #site-description {
+  body #site-description, .single-column #site-description, .multi-column #site-description {
     display: none;
   }
-
-  #page {
+  body #page, .single-column #page, .multi-column #page {
     position: inherit;
   }
-
-  #access {
+  body #access, .single-column #access, .multi-column #access {
     position: absolute;
     top: 0;
     left: 0;
@@ -1486,24 +1499,27 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     background-color: #464646;
     z-index: 99999;
   }
-
-  #access a,
-  #access a:visited,
-  #access a:hover,
-  #access .section-heading a {
+  body #access a,
+  body #access a:visited,
+  body #access a:hover,
+  body #access .section-heading a, .single-column #access a,
+  .single-column #access a:visited,
+  .single-column #access a:hover,
+  .single-column #access .section-heading a, .multi-column #access a,
+  .multi-column #access a:visited,
+  .multi-column #access a:hover,
+  .multi-column #access .section-heading a {
     color: #fff;
     text-shadow: none;
     border: none;
     text-decoration: none;
   }
-
-  #access:target ul {
+  body #access:target ul, .single-column #access:target ul, .multi-column #access:target ul {
     display: block;
     font-size: 17px;
     background-color: transparent;
   }
-
-  #access .section-heading {
+  body #access .section-heading, .single-column #access .section-heading, .multi-column #access .section-heading {
     clip: inherit;
     display: block;
     clear: both;
@@ -1512,31 +1528,26 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     margin: 0;
     background-color: #464646;
   }
-
-  #access .section-heading a:before {
+  body #access .section-heading a:before, .single-column #access .section-heading a:before, .multi-column #access .section-heading a:before {
     font-family: 'Genericons';
     content: '\f419';
     margin-right: 10px;
     padding-left: 25px;
   }
-
-  #access:target .section-heading {
+  body #access:target .section-heading, .single-column #access:target .section-heading, .multi-column #access:target .section-heading {
     display: none;
   }
-
-  #access li {
+  body #access li, .single-column #access li, .multi-column #access li {
     float: inherit;
     margin: inherit;
   }
-
-  #access ul {
+  body #access ul, .single-column #access ul, .multi-column #access ul {
     display: none;
     margin: inherit;
     padding-left: 25px;
     background-color: transparent;
   }
-
-  #access ul ul {
+  body #access ul ul, .single-column #access ul ul, .multi-column #access ul ul {
     background-color: transparent;
     background-image: none;
     display: inherit;
@@ -1552,54 +1563,63 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     box-shadow: none;
     border: none;
   }
-
-  #access ul > li > a {
+  body #access ul > li > a, .single-column #access ul > li > a, .multi-column #access ul > li > a {
     border: none;
     margin: inherit;
   }
-
-  #access ul ul ul {
+  body #access ul ul ul, .single-column #access ul ul ul, .multi-column #access ul ul ul {
     left: inherit;
     top: inherit;
   }
-
-  #access ul ul a {
+  body #access ul ul a, .single-column #access ul ul a, .multi-column #access ul ul a {
     line-height: 1em;
     height: auto;
     border: none;
     width: auto;
   }
-
-  #access div > ul > li > a,
-  #access div > ul > li > a:hover,
-  #access div > ul > li > a:visited,
-  #access .current_page_item > a,
-  #access .current_page_ancestor > a,
-  #access ul ul li a,
-  #access ul ul li a:hover,
-  #access ul ul li a:visited,
-  #access ul ul li.current_page_item a {
+  body #access div > ul > li > a,
+  body #access div > ul > li > a:hover,
+  body #access div > ul > li > a:visited,
+  body #access .current_page_item > a,
+  body #access .current_page_ancestor > a,
+  body #access ul ul li a,
+  body #access ul ul li a:hover,
+  body #access ul ul li a:visited,
+  body #access ul ul li.current_page_item a, .single-column #access div > ul > li > a,
+  .single-column #access div > ul > li > a:hover,
+  .single-column #access div > ul > li > a:visited,
+  .single-column #access .current_page_item > a,
+  .single-column #access .current_page_ancestor > a,
+  .single-column #access ul ul li a,
+  .single-column #access ul ul li a:hover,
+  .single-column #access ul ul li a:visited,
+  .single-column #access ul ul li.current_page_item a, .multi-column #access div > ul > li > a,
+  .multi-column #access div > ul > li > a:hover,
+  .multi-column #access div > ul > li > a:visited,
+  .multi-column #access .current_page_item > a,
+  .multi-column #access .current_page_ancestor > a,
+  .multi-column #access ul ul li a,
+  .multi-column #access ul ul li a:hover,
+  .multi-column #access ul ul li a:visited,
+  .multi-column #access ul ul li.current_page_item a {
     color: #fff;
     border-bottom: none;
   }
-
-  #access ul ul li a {
+  body #access ul ul li a, .single-column #access ul ul li a, .multi-column #access ul ul li a {
     height: auto;
     border-top: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-
-  .entry-header .entry-title {
+  body .entry-header .entry-title, .single-column .entry-header .entry-title, .multi-column .entry-header .entry-title {
     font-size: 30px;
     line-height: 1;
   }
-  .entry-header .entry-title a {
+  body .entry-header .entry-title a, .single-column .entry-header .entry-title a, .multi-column .entry-header .entry-title a {
     font-size: 30px;
   }
-
-  iframe, object, embed {
+  body iframe, body object, body embed, .single-column iframe, .single-column object, .single-column embed, .multi-column iframe, .multi-column object, .multi-column embed {
     height: auto;
     max-width: 100%;
   }
