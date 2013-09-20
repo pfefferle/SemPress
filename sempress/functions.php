@@ -327,7 +327,11 @@ if ( ! function_exists( 'sempress_content_nav' ) ):
  */
 function sempress_content_nav( $nav_id ) {
   global $wp_query;
-
+  
+  // check if content-nav is needed
+  if (!get_next_posts_link() && !get_previous_posts_link()) {
+    return;
+  }
   ?>
   <nav id="<?php echo $nav_id; ?>">
     <h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'sempress' ); ?></h1>

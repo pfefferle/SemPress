@@ -29,6 +29,10 @@ article.comment {
 .form-allowed-tags {
   display: none;
 }
+#reply-title {
+  padding-top: 0;
+  margin-top: 0;
+}
 a.comment-reply-link {
   font-size: 12px;
   height: 16px;
@@ -80,5 +84,5 @@ ol.commentlist {
   color: inherit;
 }
 #comments {
-  padding-top: 30px;
+  padding-top: 40px;
 }

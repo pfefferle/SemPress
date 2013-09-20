@@ -9,13 +9,6 @@ article.attachment {
   @include rounded($border-radius);
   background-color: white;
   border: 1px solid #ccc;
-  a {
-    color: $blue;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 article {
   address {
@@ -29,17 +22,25 @@ article, aside {
   display: block;
   position: relative;
 }
+header .entry-meta {
+  padding-bottom: 14px;
+}
 footer.entry-meta {
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: #f5f5f5;
-  padding: 10px 34px;
-  color: #555;
-  @include custom-rounded(0, 0, $border-radius, $border-radius);
+  padding: 0px 34px;
+  margin-bottom: 34px;
 }
 .entry-content,
 .entry-summary,
 .entry-title {
   color: #3f3f3f;
+  
+  a {
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .entry-content,
 .entry-summary {
@@ -57,6 +58,18 @@ footer.entry-meta {
 .entry-meta {
   clear: both;
   display: block;
+  font-size: 0.9em;
+  
+  &, a {
+    color: #ccc;
+  }
+}
+.post:hover {
+  .entry-meta {
+    &, a {
+      color: #777;
+    }
+  }
 }
 .entry-header {
   .entry-title, .entry-title a {
@@ -89,13 +102,12 @@ footer.entry-meta {
   width: 50%;
 }
 #nav-above {
-  .nav-previous, .nav-next {
-    margin: 0 0 40px;
-  }
+  clear: both;
+  margin: 0 0 40px;
 }
 #nav-below {
   clear: both;
-  margin: 30px 0 0;
+  margin: 40px 0 0;
 }
 .nav-previous, .nav-next,
 .previous-image, .next-image {
@@ -109,6 +121,15 @@ footer.entry-meta {
   clear: both;
   display: block;
 }
+body {
+  &.single, &.page {
+    #content {
+      .post, .page {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
 #content {
   .post, .page {
     margin-bottom: 60px;
@@ -121,15 +142,6 @@ footer.entry-meta {
     line-height: 0;
     height: 0;
   }
-}
-.entry-meta,
-.tag-archive-meta,
-.category-archive-meta,
-.author-note {
-  font-size: 0.8em;
-}
-.entry-meta a {
-  color: #777;
 }
 
 /* 404 page */
