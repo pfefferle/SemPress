@@ -1345,7 +1345,7 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   body #page, .single-column #page, .multi-column #page {
-    width: 650px;
+    width: 670px;
     margin: 0px auto;
   }
   body #sidebar, .single-column #sidebar, .multi-column #sidebar {
