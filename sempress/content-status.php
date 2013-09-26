@@ -9,7 +9,7 @@
  */
 ?>
 
-<article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_semantics("post"); ?>>
+<article <?php sempress_post_id(); ?> <?php post_class(); ?>>
   <?php if ( is_search() ) : // Only display Excerpts for search pages ?>
   <div class="entry-summary p-summary entry-title p-name" itemprop="name description">
     <?php the_excerpt(); ?>

@@ -722,7 +722,7 @@ function sempress_get_post_id() {
  * @return string
  */
 function sempress_comment_autocomplete($fields) {
-  $fields['author'] = preg_replace('/<input/', '<input autocomplete="nickname" ', $fields['author']);
+  $fields['author'] = preg_replace('/<input/', '<input autocomplete="nickname name" ', $fields['author']);
   $fields['email'] = preg_replace('/<input/', '<input autocomplete="email" ', $fields['email']);
   $fields['url'] = preg_replace('/<input/', '<input autocomplete="url" ', $fields['url']);
 
@@ -756,9 +756,12 @@ function sempress_get_semantics($id = null) {
       if (!is_singular()) {
         $classes['itemscope'] = array('');
         $classes['itemtype'] = array('http://schema.org/Blog');
-      } else {
+      } elseif (is_single()) {
         $classes['itemscope'] = array('');
         $classes['itemtype'] = array('http://schema.org/BlogPosting');
+      } elseif (is_page()) {
+        $classes['itemscope'] = array('');
+        $classes['itemtype'] = array('http://schema.org/WebPage');
       }
       break;
     case "site-title":
