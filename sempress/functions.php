@@ -375,7 +375,7 @@ function sempress_comment( $comment, $args, $depth ) {
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
     <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
       <footer>
-        <address class="comment-author p-author author vcard hcard h-card"  itemprop="creator" itemscope itemtype="http://schema.org/Person">
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
           <?php echo get_avatar( $comment, 50 ); ?>
           <?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name" itemprop="name">%s</cite>', get_comment_author_link() ) ); ?>
         </address><!-- .comment-author .vcard -->
