@@ -1342,6 +1342,9 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   text-shadow: none;
 }
 
+.blogroll img{
+  width:16px;
+}
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   body #page, .single-column #page, .multi-column #page {
