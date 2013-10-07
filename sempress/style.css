@@ -1306,7 +1306,7 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   -webkit-box-shadow: #FFF 0 1px 0 0;
   box-shadow: #FFF 0 1px 0 0;
 }
-.widget h1 {
+.widget h3 {
   font-size: 15px;
   font-weight: 500;
   margin: 0 0 10px;
