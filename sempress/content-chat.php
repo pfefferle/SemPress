@@ -13,7 +13,9 @@
       <?php sempress_posted_on(); ?>
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
-
+	  <?php if(in_array("context",get_post_custom_keys(get_the_ID()))){ 
+		$customfields = get_post_custom(get_the_ID());
+		echo '<div class="p-in-reply-to h-cite"><p>'.implode("</p><p>",$customfields["context"]).'</p></div>'; }?>
   <div class="entry-content e-content" itemprop="articleBody description">
     <?php sempress_the_post_thumbnail('<p>', '</p>'); ?>
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>

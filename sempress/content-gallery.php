@@ -23,6 +23,9 @@
     <?php the_excerpt(); ?>
   </div><!-- .entry-summary -->
   <?php else : ?>
+  	  <?php if(in_array("context",get_post_custom_keys(get_the_ID()))){ 
+		$customfields = get_post_custom(get_the_ID());
+		echo '<div class="p-in-reply-to h-cite"><p>'.implode("</p><p>",$customfields["context"]).'</p></div>'; }?>
   <div class="entry-content e-content" itemprop="description">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'sempress' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
