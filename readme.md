@@ -56,7 +56,7 @@ SemPress supports:
 
 * de_DE: thanks to [Benjamin Hartwich](http://www.benjaminhartwich.de/) ([@benhartwich](https://twitter.com/benhartwich))
 * fr_FR: thanks to [Julien Pierré](http://www.jp-software.fr/en/)
-* id_ID: thanks to [Sugeng TiGeFa](http://www.tigefa.org)
+* id_ID: thanks to [Sugeng TiGeFa](http://tigefa4u.github.io)
 * ru_RU: thanks to [Oleg](http://0leg.net) ([@oleg_sh](https://twitter.com/oleg_sh))
 * sv_SE: thanks to [Christopher Anderton](http://deluxive.se/blog/) ([@deluxivese](https://twitter.com/deluxivese))
 
