@@ -1,0 +1,377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SemPress 1.4.0\n"
+"POT-Creation-Date: 2013-08-20 16:10+0100\n"
+"PO-Revision-Date: 2013-10-16 15:06+0100\n"
+"Last-Translator: Molakki <contact@molakki.com>\n"
+"Language-Team: Molakki Temaoversetting <tema@molakki.no>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /Users/pfefferle/Work/SemPress/SemPress\n"
+"X-Poedit-SearchPath-1: /Users/matthias/Work/SemPress/SemPress\n"
+
+#: /Users/matthias/Work/SemPress/SemPress/404.php:16
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Side ikke funnet."
+
+#: /Users/matthias/Work/SemPress/SemPress/404.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+"Vi finner ikke det du letet etter. Kanskje et søk eller noen av lenkene "
+"nedenfor kan hjelpe?"
+
+#: /Users/matthias/Work/SemPress/SemPress/404.php:27
+msgid "Most Used Categories"
+msgstr "Mest brukte kategorier"
+
+#: /Users/matthias/Work/SemPress/SemPress/404.php:35
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prøv å lete i de månedlige arkivene.  %1$s"
+
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:32
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:34
+#, php-format
+msgid "Archives: %s"
+msgstr "Arkiv: %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:36
+#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:19
+msgid "Archives"
+msgstr "Arkiv"
+
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:65
+#: /Users/matthias/Work/SemPress/SemPress/author.php:63
+#: /Users/matthias/Work/SemPress/SemPress/category.php:49
+#: /Users/matthias/Work/SemPress/SemPress/index.php:43
+#: /Users/matthias/Work/SemPress/SemPress/search.php:35
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:51
+#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:49
+msgid "Nothing Found"
+msgstr "Ingen treff"
+
+#: /Users/matthias/Work/SemPress/SemPress/archive.php:69
+#: /Users/matthias/Work/SemPress/SemPress/author.php:67
+#: /Users/matthias/Work/SemPress/SemPress/category.php:53
+#: /Users/matthias/Work/SemPress/SemPress/index.php:47
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:55
+#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:53
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Vi finner ikke det du letet etter. Kanskje et søk kan hjelpe?"
+
+#: /Users/matthias/Work/SemPress/SemPress/author.php:27
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Forfatter-arkiv: %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/category.php:18
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Kategori-arkiv: %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dette innlegget er passordbeskyttet. Skriv inn passordet for å vise "
+"kommentarer."
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:32
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En kommentar til &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer til &ldquo;%2$s&rdquo;"
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:39
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:59
+msgid "Comment navigation"
+msgstr "Kommentarnavigasjon"
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:40
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Eldre kommentarer"
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:41
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: /Users/matthias/Work/SemPress/SemPress/comments.php:71
+msgid "Comments are closed."
+msgstr "Kommentarer er stengt."
+
+#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:19
+#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:27
+#: /Users/matthias/Work/SemPress/SemPress/content-image.php:24
+#: /Users/matthias/Work/SemPress/SemPress/content-link.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-single.php:29
+#: /Users/matthias/Work/SemPress/SemPress/content-status.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-video.php:24
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Fortsett å lese <span class=\"meta-nav\">&rarr;</span>"
+
+#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:25
+#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:20
+#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:28
+#: /Users/matthias/Work/SemPress/SemPress/content-image.php:25
+#: /Users/matthias/Work/SemPress/SemPress/content-link.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-page.php:23
+#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-single.php:30
+#: /Users/matthias/Work/SemPress/SemPress/content-status.php:21
+#: /Users/matthias/Work/SemPress/SemPress/content-video.php:25
+#: /Users/matthias/Work/SemPress/SemPress/image.php:85
+msgid "Pages:"
+msgstr "Sider:"
+
+#: /Users/matthias/Work/SemPress/SemPress/content-page.php:24
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:33
+#: /Users/matthias/Work/SemPress/SemPress/image.php:33
+#: /Users/matthias/Work/SemPress/SemPress/image.php:99
+msgid "Edit"
+msgstr "Rediger"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:5
+msgid "Posted"
+msgstr "Publisert"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:9
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:19
+msgid ", "
+msgstr ", "
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:13
+#, php-format
+msgid "in %1$s"
+msgstr "i %1$s"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:24
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Merket %1$s"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+msgid "Leave a comment"
+msgstr "Legg igjen en kommentar"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: /Users/matthias/Work/SemPress/SemPress/footer.php:17
+#, php-format
+msgid "This site is powered by %1$s and styled with %2$s"
+msgstr "Denne siden er drevet av %1$s med temaet %2$s"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:83
+msgid "Primary Menu"
+msgstr "Hovedmeny"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:151
+#, php-format
+msgid "Page %s"
+msgstr "Side %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:171
+msgid "Text Color"
+msgstr "Tekstfarge"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:182
+msgid "Shadow Color"
+msgstr "Skyggefarge"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:193
+msgid "Border Color"
+msgstr "Rammefarge"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:243
+msgid "Sidebar 1"
+msgstr "Sidekolonne 1"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:252
+msgid "Sidebar 2"
+msgstr "Sidekolonne 2"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:254
+msgid "An optional second sidebar area"
+msgstr "En valgfri ekstra sidekolonne."
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:305
+msgid "Post navigation"
+msgstr "Innleggsnavigasjon"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:309
+msgid "&larr;"
+msgstr "&larr;"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:310
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:315
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Eldre innlegg"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:319
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere innlegg <span class=\"meta-nav\">&rarr;</span>"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:348
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sier:</span>"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:351
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar venter på moderering."
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:359
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s kl. %2$s"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:361
+msgid "(Edit)"
+msgstr "(Rediger)"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:384
+#, php-format
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated published "
+"dt-updated dt-published\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</"
+"time></a><address class=\"byline\"> <span class=\"sep\"> by </span> <span "
+"class=\"author p-author vcard hcard h-card\" itemprop=\"author\" itemscope "
+"itemtype=\"http://schema.org/Person\">%5$s <a class=\"url uid u-url u-uid fn "
+"p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
+"itemprop=\"name\">%8$s</span></a></span></address>"
+msgstr ""
+"<span class=\"sep\">Postet </span><a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated published "
+"dt-updated dt-published\" datetime=\"%3$s\" itemprop=\"dateModified\">%4$s</"
+"time></a><address class=\"byline\"> <span class=\"sep\"> av </span> <span "
+"class=\"author p-author vcard hcard h-card\" itemprop=\"author\" itemscope "
+"itemtype=\"http://schema.org/Person\">%5$s <a class=\"url uid u-url u-uid fn "
+"p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
+"itemprop=\"name\">%8$s</span></a></span></address>"
+
+#: /Users/matthias/Work/SemPress/SemPress/functions.php:391
+#, php-format
+msgid "View all posts by %s"
+msgstr "Vis alle innlegg av %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/header.php:46
+msgid "Main menu"
+msgstr "Hovedmeny"
+
+#: /Users/matthias/Work/SemPress/SemPress/header.php:47
+msgid "Skip to content"
+msgstr "Hopp til innhold"
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:23
+#, php-format
+msgid ""
+"Published <time class=\"entry-date updated dt-updated\" datetime=\"%1$s\" "
+"itemprop=\"dateModified\">%2$s</time> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+"Postet <time class=\"entry-date updated dt-updated\" datetime=\"%1$s\" "
+"itemprop=\"dateModified\">%2$s</time> den <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title=\"Return to "
+"%7$s\" rel=\"gallery\">%7$s</a>"
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:37
+msgid "&larr; Previous"
+msgstr "&larr; Forrige"
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:38
+msgid "Next &rarr;"
+msgstr "Neste &rarr;"
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:91
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post en "
+"kommentar</a> eller legg igjen et tilbaketråkk: <a class=\"trackback-link\" "
+"href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:93
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"Kommentarene er stengt, men du kan legge igjen en trackback: <a class="
+"\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel="
+"\"trackback\">Trackback URL</a>."
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:95
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"Trackbacks er stengt, men du kan <a class=\"comment-link\" href=\"#respond\" "
+"title=\"Post a comment\">legge inn en kommentar</a>."
+
+#: /Users/matthias/Work/SemPress/SemPress/image.php:97
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Stengt for kommentarer og tilbakesporinger."
+
+#: /Users/matthias/Work/SemPress/SemPress/search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Søkeresultat(er) for: %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Beklager, ingenting matcher ditt s&oslash;kekriterie. Fors&oslash;k med en "
+"annen s&oslash;kestreng."
+
+#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
+
+#: /Users/matthias/Work/SemPress/SemPress/tag.php:18
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Stikkord-arkiv: %s"
+
+#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:24
+#, php-format
+msgid "%s Archives"
+msgstr "%s arkiv"
+
+#: /Users/matthias/Work/SemPress/SemPress/inc/back-compat.php:29
+msgid "Search here&hellip;"
+msgstr "Søk her&hellip;"
