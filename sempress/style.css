@@ -1278,7 +1278,7 @@ ol.commentlist {
   margin: 0;
   padding: 0;
 }
-ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingback {
+ol.commentlist > li {
   list-style: none outside none;
   margin: 10px 0;
 }
