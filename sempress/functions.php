@@ -504,7 +504,7 @@ function sempress_post_classes( $classes ) {
   if (!is_singular()) {
     return sempress_get_post_classes($classes);
   } else {
-    return $classes;
+	return array_filter ( $classes ,function( $post_class ) {  return 'hentry' != $post_class ;} );
   }
 }
 add_filter( 'post_class', 'sempress_post_classes' );
