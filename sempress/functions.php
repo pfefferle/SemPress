@@ -500,13 +500,18 @@ add_filter( 'body_class', 'sempress_body_classes' );
  *
  * @since SemPress 1.0.0
  */
+
 function sempress_post_classes( $classes ) {
   if (!is_singular()) {
     return sempress_get_post_classes($classes);
   } else {
-	return array_filter ( $classes ,function( $post_class ) {  return 'hentry' != $post_class ;} );
+	return array_filter ( $classes ,'sempress_remove_core_microformats'  );
   }
 }
+ function sempress_remove_core_microformats($post_class){
+	return 'hentry' != $post_class ;
+ }
+ 
 add_filter( 'post_class', 'sempress_post_classes' );
 
 /**
