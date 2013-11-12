@@ -601,12 +601,10 @@ footer.entry-meta {
   display: block;
   overflow: hidden;
 }
-
 #content nav .nav-previous {
   float: left;
   width: 50%;
 }
-
 #content nav .nav-next {
   float: right;
   text-align: right;
@@ -615,11 +613,15 @@ footer.entry-meta {
 
 #nav-above {
   clear: both;
+}
+#nav-above .nav-previous, #nav-above .nav-next {
   margin: 0 0 40px;
 }
 
 #nav-below {
   clear: both;
+}
+#nav-below .nav-previous, #nav-below .nav-next {
   margin: 40px 0 0;
 }
 

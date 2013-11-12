@@ -33,7 +33,7 @@ footer.entry-meta {
 .entry-summary,
 .entry-title {
   color: #3f3f3f;
-  
+
   a {
     color: $blue;
     text-decoration: none;
@@ -59,7 +59,7 @@ footer.entry-meta {
   clear: both;
   display: block;
   font-size: 0.9em;
-  
+
   &, a {
     color: #ccc;
   }
@@ -91,23 +91,31 @@ footer.entry-meta {
 #content nav {
   display: block;
   overflow: hidden;
-}
-#content nav .nav-previous {
-  float: left;
-  width: 50%;
-}
-#content nav .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
 }
 #nav-above {
   clear: both;
-  margin: 0 0 40px;
+
+  .nav-previous, .nav-next {
+    margin: 0 0 40px;
+  }
 }
 #nav-below {
   clear: both;
-  margin: 40px 0 0;
+
+  .nav-previous, .nav-next {
+    margin: 40px 0 0;
+  }
 }
 .nav-previous, .nav-next,
 .previous-image, .next-image {
