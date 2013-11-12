@@ -328,18 +328,19 @@ if ( ! function_exists( 'sempress_content_nav' ) ):
 function sempress_content_nav( $nav_id ) {
   global $wp_query;
 
-  // check if content-nav is needed
-  if (!get_next_posts_link() && !get_previous_posts_link()) {
-    return;
-  }
   ?>
   <nav id="<?php echo $nav_id; ?>">
     <h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'sempress' ); ?></h1>
 
   <?php if ( is_single() ) : // navigation links for single posts ?>
 
+    <?php if ( get_previous_post_link() ) : ?>
     <?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'sempress' ) . '</span> %title' ); ?>
+    <?php endif; ?>
+
+    <?php if ( get_next_post_link() ) : ?>
     <?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'sempress' ) . '</span>' ); ?>
+    <?php endif; ?>
 
   <?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
