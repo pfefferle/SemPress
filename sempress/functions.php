@@ -516,8 +516,9 @@ function sempress_comment_classes( $classes ) {
   $classes[] = "h-as-comment";
   $classes[] = "p-comment";
   $classes[] = "h-entry";
+  $classes[] = "comment";
 
-  return $classes;
+  return array_unique($classes);
 }
 add_filter( 'comment_class', 'sempress_comment_classes', 99 );
 
