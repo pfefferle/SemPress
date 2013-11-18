@@ -43,16 +43,16 @@ a.comment-reply-link {
     padding-right: 5px;
   }
 }
-.comment {
+li.comment {
+  list-style: none outside none;
+  margin: 10px 0;
+
   cite {
     font-style: normal;
     font-weight: normal;
   }
   img.avatar {
     float: right;
-  }
-  li {
-    list-style-type: disc;
   }
 }
 .comment-meta, .comment-notes, .logged-in-as {
@@ -68,10 +68,6 @@ a.comment-reply-link {
 ol.commentlist {
   margin: 0;
   padding: 0;
-  & > li {
-    list-style: none outside none;
-    margin: 10px 0;
-	}
 }
 .comment-content {
   font-size: 0.9em;

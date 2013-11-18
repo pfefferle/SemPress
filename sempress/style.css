@@ -1253,15 +1253,16 @@ a.comment-reply-link:before {
   padding-right: 5px;
 }
 
-.comment cite {
+li.comment {
+  list-style: none outside none;
+  margin: 10px 0;
+}
+li.comment cite {
   font-style: normal;
   font-weight: normal;
 }
-.comment img.avatar {
+li.comment img.avatar {
   float: right;
-}
-.comment li {
-  list-style-type: disc;
 }
 
 .comment-meta, .comment-notes, .logged-in-as {
@@ -1279,10 +1280,6 @@ a.comment-reply-link:before {
 ol.commentlist {
   margin: 0;
   padding: 0;
-}
-ol.commentlist > li {
-  list-style: none outside none;
-  margin: 10px 0;
 }
 
 .comment-content {
