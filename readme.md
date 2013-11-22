@@ -61,6 +61,9 @@ SemPress supports:
 * ru_RU: thanks to [Oleg](http://0leg.net) ([@oleg_sh](https://twitter.com/oleg_sh))
 * sv_SE: thanks to [Christopher Anderton](http://deluxive.se/blog/) ([@deluxivese](https://twitter.com/deluxivese))
 
+## Child themes
+
+* [SemPress Lite](https://github.com/jihaisse/SemPress-Lite) by [Jihaisse](http://jihais.se/)
 
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
