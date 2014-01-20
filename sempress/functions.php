@@ -362,6 +362,32 @@ if ( ! function_exists( 'sempress_comment' ) ) :
  */
 function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
+
+  switch ( $comment->comment_type ) :
+  	case 'pingback' :
+  	case 'trackback' :
+    case 'webmention' :
+  ?>
+  <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+  	<article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <div class="comment-content p-summary p-name" itemprop="commentText name description"><?php comment_text(); ?></div>
+      <footer>
+        <div class="comment-meta commentmetadata">
+          <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <?php printf( '<cite class="fn p-name" itemprop="name">%s</cite>', get_comment_author_link() ); ?>
+          </address>
+          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time class="updated published u-updated u-published" datetime="<?php comment_time( 'c' ); ?>" itemprop="commentTime">
+            <?php
+            /* translators: 1: date, 2: time */
+            printf( __( '%1$s at %2$s', 'sempress' ), get_comment_date(), get_comment_time() ); ?>
+          </time></a>
+          <?php edit_comment_link( __( '(Edit)', 'sempress' ), ' ' ); ?>
+        </div>
+      </footer>
+    </article>
+  <?php
+  		break;
+  	default :
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
     <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
@@ -391,8 +417,9 @@ function sempress_comment( $comment, $args, $depth ) {
         <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
       </div><!-- .reply -->
     </article><!-- #comment-## -->
-
   <?php
+      break;
+  endswitch;
 }
 endif; // ends check for sempress_comment()
 

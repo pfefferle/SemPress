@@ -70,7 +70,12 @@ ol.commentlist {
   padding: 0;
 }
 .comment-content {
-  font-size: 0.9em;
+  font-size: 1em;
+}
+.webmention, .pingback, .trackback {
+  .comment-content {
+    font-size: 0.9em;
+  }
 }
 .commentlist .odd article {
 }
