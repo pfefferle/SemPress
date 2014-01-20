@@ -1284,6 +1284,10 @@ ol.commentlist {
 }
 
 .comment-content {
+  font-size: 1em;
+}
+
+.webmention .comment-content, .pingback .comment-content, .trackback .comment-content {
   font-size: 0.9em;
 }
 
@@ -1417,12 +1421,9 @@ ol.commentlist {
     overflow: scroll;
   }
   body article.post,
-  body article.page,
-  body footer.entry-meta, .single-column article.post,
-  .single-column article.page,
-  .single-column footer.entry-meta, .multi-column article.post,
-  .multi-column article.page,
-  .multi-column footer.entry-meta {
+  body article.page, .single-column article.post,
+  .single-column article.page, .multi-column article.post,
+  .multi-column article.page {
     margin: 0;
     padding: 0;
   }
@@ -1448,9 +1449,21 @@ ol.commentlist {
     color: inherit;
     text-shadow: inherit;
     margin: 0px;
-    padding: 5px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body footer.entry-meta, .single-column footer.entry-meta, .multi-column footer.entry-meta {
+    padding-bottom: 15px;
+  }
+  body .post:hover .entry-meta, body .post:hover .entry-meta a,
+  body .post .entry-meta, body .post .entry-meta a, .single-column .post:hover .entry-meta, .single-column .post:hover .entry-meta a,
+  .single-column .post .entry-meta, .single-column .post .entry-meta a, .multi-column .post:hover .entry-meta, .multi-column .post:hover .entry-meta a,
+  .multi-column .post .entry-meta, .multi-column .post .entry-meta a {
+    color: #777;
   }
   body .entry-header .entry-title, .single-column .entry-header .entry-title, .multi-column .entry-header .entry-title {
+    padding-top: 10px;
+    padding-bottom: 5px;
     font-size: 35px;
     line-height: 1;
   }

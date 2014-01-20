@@ -30,8 +30,7 @@ table {
   overflow: scroll;
 }
 article.post,
-article.page,
-footer.entry-meta {
+article.page {
   margin: 0;
   padding: 0;
 }
@@ -49,16 +48,26 @@ footer.entry-meta {
   color: inherit;
   text-shadow: inherit;
   margin: 0px;
-  padding: 5px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer.entry-meta {
+  padding-bottom: 15px;
+}
+.post:hover .entry-meta, .post:hover .entry-meta a,
+.post .entry-meta, .post .entry-meta a {
+  color: #777;
 }
 .entry-header .entry-title {
+  padding-top: 10px;
+  padding-bottom: 5px;
   a {
     font-size: 35px;
   }
   font-size: 35px;
   line-height: 1;
 }
-.format-quote {  
+.format-quote {
   .entry-content {
     padding-top: 0;
     blockquote:first-child {
