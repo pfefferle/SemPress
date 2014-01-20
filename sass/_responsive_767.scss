@@ -59,7 +59,7 @@ footer.entry-meta {
   color: #777;
 }
 .entry-header .entry-title {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 5px;
   a {
     font-size: 35px;
@@ -74,5 +74,16 @@ footer.entry-meta {
       padding: 15px;
       margin: 0 -15px 15px -15px;
     }
+  }
+}
+
+/* Custom Post Types */
+.format-aside,
+.format-link,
+.format-quote,
+.format-status {
+  p:first-child {
+    padding-top: 0px;
+    margin-top: 0px;
   }
 }

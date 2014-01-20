@@ -1391,6 +1391,9 @@ ol.commentlist {
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
+  body, .single-column, .multi-column {
+    /* Custom Post Types */
+  }
   body body, .single-column body, .multi-column body {
     font-size: 0.9em;
   }
@@ -1462,7 +1465,7 @@ ol.commentlist {
     color: #777;
   }
   body .entry-header .entry-title, .single-column .entry-header .entry-title, .multi-column .entry-header .entry-title {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 5px;
     font-size: 35px;
     line-height: 1;
@@ -1476,6 +1479,19 @@ ol.commentlist {
   body .format-quote .entry-content blockquote:first-child, .single-column .format-quote .entry-content blockquote:first-child, .multi-column .format-quote .entry-content blockquote:first-child {
     padding: 15px;
     margin: 0 -15px 15px -15px;
+  }
+  body .format-aside p:first-child,
+  body .format-link p:first-child,
+  body .format-quote p:first-child,
+  body .format-status p:first-child, .single-column .format-aside p:first-child,
+  .single-column .format-link p:first-child,
+  .single-column .format-quote p:first-child,
+  .single-column .format-status p:first-child, .multi-column .format-aside p:first-child,
+  .multi-column .format-link p:first-child,
+  .multi-column .format-quote p:first-child,
+  .multi-column .format-status p:first-child {
+    padding-top: 0px;
+    margin-top: 0px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
