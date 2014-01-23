@@ -1082,11 +1082,11 @@ input[type="text"],
 input[type="email"],
 input[type="url"] {
   margin: 0 1em 0 0;
-  width: 60%;
+  width: 70%;
 }
 
 textarea {
-  width: 80%;
+  width: 99%;
   height: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1212,25 +1212,8 @@ article.comment {
   line-height: 24px;
 }
 
-#comments #respond .comment-form-author input,
-#comments #respond .comment-form-email input,
-#comments #respond .comment-form-url input {
-  display: block;
-}
-#comments #respond input {
-  width: 60%;
-}
-#comments #respond .form-submit input {
-  width: auto;
-}
-#comments #respond textarea {
-  display: block;
-  margin: 0 0 1em;
-  width: 98%;
-}
-
 #comments input {
-  width: 98%;
+  display: block;
 }
 
 #respond .form-allowed-tags {

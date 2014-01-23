@@ -8,31 +8,9 @@ article.comment {
   padding: 25px 0;
   line-height: 24px;
 }
-#comments #respond {
-  .comment-form-author,
-  .comment-form-email,
-  .comment-form-url {
-    input {
-      display: block;
-    }
-  }
 
-  input {
-    width: 60%;
-  }
-
-  .form-submit input {
-    width: auto;
-  }
-
-  textarea {
-    display: block;
-    margin: 0 0 1em;
-    width: 98%;
-  }
-}
 #comments input {
-  width: 98%;
+  display: block;
 }
 #respond .form-allowed-tags {
   clear: both;
