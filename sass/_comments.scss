@@ -8,11 +8,23 @@ article.comment {
   padding: 25px 0;
   line-height: 24px;
 }
-#respond input[type="text"],
-#respond input[type="email"],
-#respond input[type="url"] {
-  display: block;
-  width: 60%;
+#respond {
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    input {
+      width: 60%;
+    }
+  }
+
+  input {
+    display: block;
+    width: 98%;
+  }
+
+  .form-submit input {
+    width: auto;
+  }
 }
 #respond textarea {
   display: block;
