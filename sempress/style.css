@@ -1212,22 +1212,24 @@ article.comment {
   line-height: 24px;
 }
 
-#respond .comment-form-author input,
-#respond .comment-form-email input,
-#respond .comment-form-url input {
+#comments #respond .comment-form-author input,
+#comments #respond .comment-form-email input,
+#comments #respond .comment-form-url input {
+  display: block;
+}
+#comments #respond input {
   width: 60%;
 }
-#respond input {
-  display: block;
-  width: 98%;
-}
-#respond .form-submit input {
+#comments #respond .form-submit input {
   width: auto;
 }
-
-#respond textarea {
+#comments #respond textarea {
   display: block;
   margin: 0 0 1em;
+  width: 98%;
+}
+
+#comments input {
   width: 98%;
 }
 
