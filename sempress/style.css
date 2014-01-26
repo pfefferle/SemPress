@@ -388,9 +388,9 @@ main {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -420,19 +420,18 @@ main {
 /* =Tables
 -------------------------------------------------------------- */
 table {
-  max-width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-table {
   width: 100%;
+  overflow: hidden;
+  text-overflow: hidden;
+  overflow-x: hidden;
+  background-color: transparent;
   margin-bottom: 18px;
   border: 1px solid #ddd;
+  border-spacing: 0;
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
+  table-layout: fixed;
 }
 
 table th,
@@ -491,12 +490,6 @@ table tbody tr:nth-child(odd) th {
 table tbody tr:hover td,
 table tbody tr:hover th {
   background-color: #f5f5f5;
-}
-
-table {
-  width: auto;
-  max-width: 100%;
-  overflow: scroll;
 }
 
 /* =Content
@@ -1203,9 +1196,9 @@ input.search-submit {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #ccc 0 -1px 0 0;
-  -webkit-box-shadow: #ccc 0 -1px 0 0;
-  box-shadow: #ccc 0 -1px 0 0;
+  -moz-box-shadow: #cccccc 0 -1px 0 0;
+  -webkit-box-shadow: #cccccc 0 -1px 0 0;
+  box-shadow: #cccccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;
@@ -1409,23 +1402,12 @@ ol.commentlist {
   body #main .widget-area, .single-column #main .widget-area, .multi-column #main .widget-area {
     width: 100%;
   }
-  body table, .single-column table, .multi-column table {
-    width: auto;
-    max-width: 100%;
-    overflow: scroll;
-  }
   body article.post,
   body article.page, .single-column article.post,
   .single-column article.page, .multi-column article.post,
   .multi-column article.page {
     margin: 0;
     padding: 0;
-  }
-  body .entry-content table,
-  body .entry-summary table, .single-column .entry-content table,
-  .single-column .entry-summary table, .multi-column .entry-content table,
-  .multi-column .entry-summary table {
-    overflow: scroll;
   }
   body .entry-title,
   body .entry-content,

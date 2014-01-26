@@ -24,21 +24,10 @@ article.format-audio {
 #main .widget-area {
   width: 100%;
 }
-table {
-  width: auto;
-  max-width: 100%;
-  overflow: scroll;
-}
 article.post,
 article.page {
   margin: 0;
   padding: 0;
-}
-.entry-content,
-.entry-summary {
-  table {
-    overflow: scroll;
-  }
 }
 .entry-title,
 .entry-content,
