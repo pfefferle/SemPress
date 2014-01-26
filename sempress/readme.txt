@@ -16,7 +16,7 @@ The exceptions to this license are as follows:
 
 = 1.4.6 =
 * nicer mobile view
-* changed pingback/trackback/webmention template
+* changed pingback/trackback template
 
 = 1.4.5 =
 * improved editor-style
