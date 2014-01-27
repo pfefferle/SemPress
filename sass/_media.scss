@@ -20,11 +20,11 @@
   img, iframe, object, embed {
     margin-top: 20px;
   }
-  
+
   img.alignright {
     margin-right: 34px;
   }
-  
+
   img.alignleft {
     margin-left: 34px;
   }
@@ -38,6 +38,11 @@
   iframe, object, embed {
     max-width: 100%;
   }
+}
+
+figure {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* =Images

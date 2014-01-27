@@ -50,10 +50,11 @@ blockquote {
 cite {
   font-style: normal;
 }
-blockquote small, .post-format-content cite {
+blockquote small, blockquote cite, .post-format-content cite {
   display: block;
   color: #999;
   font-style: normal;
+  font-size: 0.9em;
   &:before {
     content: '\2014 \00A0';
   }
@@ -80,7 +81,7 @@ figure.quote {
       margin-top: 0px;
     }
   }
-  
+
   figcaption.quote-caption {
     padding-top: 30px;
   }
