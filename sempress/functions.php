@@ -26,7 +26,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) )
-  $content_width = 600; /* pixels */
+  $content_width = 670; /* pixels */
 
 /**
  * Set a default theme color array for WP.com.
@@ -777,7 +777,7 @@ function sempress_html5_caption($empty, $attr, $content) {
   extract(shortcode_atts(array(
     'id'      => '',
     'align'	  => 'alignnone',
-    'width'   => '',
+    'width'   => sempress_content_width(),
     'caption' => ''
   ), $attr));
 
@@ -791,7 +791,8 @@ function sempress_html5_caption($empty, $attr, $content) {
     $id = 'id="' . $id . '" aria-labelledby="figcaption_' . $id . '" ';
   }
 
-  return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align) . '">'
+  return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align)
+    . '" style="width: ' . $width . 'px;">'
     . do_shortcode( $content ) . '<figcaption ' . $capid
     . 'class="wp-caption-text">' . $caption . '</figcaption></figure>';
 }
