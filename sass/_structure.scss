@@ -14,21 +14,21 @@ main {
   #page {
     width: 670px;
   }
-  
+
   #main {
     margin: 0;
-    
+
     #sidebar {
       overflow: hidden;
       width: 100%;
       padding-top: 25px;
       margin-top: 25px;
     }
-    
+
     #secondary {
       padding-right: 69px;
     }
-    
+
     .widget-area {
       float: left;
       overflow: hidden;
@@ -85,7 +85,7 @@ main {
   float: right;
   margin-left: 1em;
 }
-.aligncenter {
+.aligncenter, .alignnone {
   clear: both;
   display: block;
   margin-left: auto;

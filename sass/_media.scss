@@ -74,7 +74,8 @@ img.size-medium,
 img.aligncenter,
 img.attachment-thumbnail,
 img.size-thumbnail,
-.wp-caption img,
+.wp-caption.aligncenter img,
+.wp-caption.alignnone img,
 .media-attachment img,
 .entry-attachment img {
   @include box-shadow(0, 1px, 4px, 0, rgba(0, 0, 0, 0.2));
