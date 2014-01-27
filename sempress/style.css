@@ -97,12 +97,13 @@ cite {
   font-style: normal;
 }
 
-blockquote small, .post-format-content cite {
+blockquote small, blockquote cite, .post-format-content cite {
   display: block;
   color: #999;
   font-style: normal;
+  font-size: 0.9em;
 }
-blockquote small:before, .post-format-content cite:before {
+blockquote small:before, blockquote cite:before, .post-format-content cite:before {
   content: '\2014 \00A0';
 }
 
@@ -388,9 +389,9 @@ main {
   width: 15em;
   height: auto;
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   font-weight: 300;
 }
 #access ul ul li:first-child a {
@@ -421,9 +422,8 @@ main {
 -------------------------------------------------------------- */
 table {
   width: 100%;
-  overflow: hidden;
-  text-overflow: hidden;
-  overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: scroll;
   background-color: transparent;
   margin-bottom: 18px;
   border: 1px solid #ddd;
@@ -820,6 +820,11 @@ article.format-video .entry-media {
   max-width: 100%;
 }
 
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* =Images
 -------------------------------------------------------------- */
 a img {
@@ -1196,9 +1201,9 @@ input.search-submit {
 -------------------------------------------------------------- */
 article.comment {
   border-top: 1px solid #fff;
-  -moz-box-shadow: #cccccc 0 -1px 0 0;
-  -webkit-box-shadow: #cccccc 0 -1px 0 0;
-  box-shadow: #cccccc 0 -1px 0 0;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
   display: block;
   position: relative;
   padding: 25px 0;
