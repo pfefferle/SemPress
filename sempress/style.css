@@ -1215,6 +1215,10 @@ article.comment {
   display: block;
 }
 
+#comments input[type="checkbox"] {
+  display: inline;
+}
+
 #respond .form-allowed-tags {
   clear: both;
   width: 98%;
@@ -1287,6 +1291,14 @@ ol.commentlist {
 
 #comments {
   padding-top: 40px;
+}
+
+.comment-respond {
+  border-top: 1px solid #fff;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
+  padding: 25px 0;
 }
 
 /* =Widgets

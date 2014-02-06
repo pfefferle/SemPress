@@ -12,6 +12,9 @@ article.comment {
 #comments input {
   display: block;
 }
+#comments input[type="checkbox"] {
+  display: inline;
+}
 #respond .form-allowed-tags {
   clear: both;
   width: 98%;
@@ -77,4 +80,8 @@ ol.commentlist {
 }
 #comments {
   padding-top: 40px;
+}
+.comment-respond {
+  @include border-shadow-top;
+  padding: 25px 0;
 }
