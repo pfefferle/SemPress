@@ -485,6 +485,25 @@ function sempress_content_width() {
 add_action( 'template_redirect', 'sempress_content_width' );
 
 /**
+ * replace post-title with id when empty
+ *
+ * @since SemPress 1.4.6
+ *
+ * @param string $title the post-title
+ * @param int $id the post-id
+ * @return string the filtered post-title
+ */
+function sempress_the_title($title, $id) {
+  // if title is empty, return the id
+  if (empty($title)) {
+    return "#$id";
+  }
+
+  return $title;
+}
+add_filter( 'the_title', 'sempress_the_title', 10, 2 );
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @since SemPress 1.0.0
