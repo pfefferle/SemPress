@@ -27,7 +27,7 @@ get_header(); ?>
           <h1 class="page-title"><?php printf( __( 'Author Archives: %s', 'sempress' ), '<a class="url u-url fn p-fn n p-name" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me author" itemprop="url"><span itemprop="name">' . get_the_author() . '</span></a>' ); ?></h1>
           <?php echo get_avatar( get_the_author_meta('ID'), 40 ); ?>
         <?php if (get_the_author_meta('description')) { ?>
-          <div class="author-note note p-note" itemprop="description"><?php echo get_the_author_meta('description'); ?></div>
+          <div class="author-note note p-note" itemprop="description"><p><?php echo get_the_author_meta('description'); ?></p></div>
         <?php } ?>
         </header>
 

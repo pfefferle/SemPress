@@ -55,12 +55,13 @@ body#tinymce.wp-editor blockquote p {
 body#tinymce.wp-editor cite {
   font-style: normal;
 }
-body#tinymce.wp-editor blockquote small, body#tinymce.wp-editor .post-format-content cite {
+body#tinymce.wp-editor blockquote small, body#tinymce.wp-editor blockquote cite, body#tinymce.wp-editor .post-format-content cite {
   display: block;
   color: #999;
   font-style: normal;
+  font-size: 0.9em;
 }
-body#tinymce.wp-editor blockquote small:before, body#tinymce.wp-editor .post-format-content cite:before {
+body#tinymce.wp-editor blockquote small:before, body#tinymce.wp-editor blockquote cite:before, body#tinymce.wp-editor .post-format-content cite:before {
   content: '\2014 \00A0';
 }
 body#tinymce.wp-editor figure.quote {

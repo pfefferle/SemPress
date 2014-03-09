@@ -8,16 +8,12 @@ article.comment {
   padding: 25px 0;
   line-height: 24px;
 }
-#respond input[type="text"],
-#respond input[type="email"],
-#respond input[type="url"] {
+
+#comments input {
   display: block;
-  width: 60%;
 }
-#respond textarea {
-  display: block;
-  margin: 0 0 1em;
-  width: 98%;
+#comments input[type="checkbox"] {
+  display: inline;
 }
 #respond .form-allowed-tags {
   clear: both;
@@ -43,16 +39,16 @@ a.comment-reply-link {
     padding-right: 5px;
   }
 }
-.comment {
+li.comment {
+  list-style: none outside none;
+  margin: 10px 0;
+
   cite {
     font-style: normal;
     font-weight: normal;
   }
   img.avatar {
     float: right;
-  }
-  li {
-    list-style-type: disc;
   }
 }
 .comment-meta, .comment-notes, .logged-in-as {
@@ -68,15 +64,14 @@ a.comment-reply-link {
 ol.commentlist {
   margin: 0;
   padding: 0;
-  li {
-    &.comment, &.trackback, &.pingback {
-      list-style: none outside none;
-      margin: 10px 0;
-    }
-	}
 }
 .comment-content {
-  font-size: 0.9em;
+  font-size: 1em;
+}
+.webmention, .pingback, .trackback {
+  .comment-content {
+    font-size: 0.9em;
+  }
 }
 .commentlist .odd article {
 }
@@ -85,4 +80,8 @@ ol.commentlist {
 }
 #comments {
   padding-top: 40px;
+}
+.comment-respond {
+  @include border-shadow-top;
+  padding: 25px 0;
 }

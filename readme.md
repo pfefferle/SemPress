@@ -23,8 +23,8 @@ SemPress' code is marked-up with microformats and microdata:
     * [rel-tag](http://microformats.org/wiki/rel-tag)
     * [XFN](http://microformats.org/wiki/xfn)
 * used [microformats version 2](http://microformats.org/wiki/microformats-2):
-    * h-atom/h-entry
-    * h-card
+    * [h-feed](http://microformats.org/wiki/h-feed)/[h-entry](http://microformats.org/wiki/h-entry)
+    * [h-card](http://microformats.org/wiki/h-card)
     * [ActivityStreams](http://microformats.org/wiki/activity-streams) (h-as-bookmark, h-as-note, ...)
     * [Comment Draft](http://microformats.org/wiki/comment-brainstorming#microformats2_h-feed_p-comments)
 * used [microdata](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html): 
@@ -56,10 +56,14 @@ SemPress supports:
 
 * de_DE: thanks to [Benjamin Hartwich](http://www.benjaminhartwich.de/) ([@benhartwich](https://twitter.com/benhartwich))
 * fr_FR: thanks to [Julien Pierré](http://www.jp-software.fr/en/)
-* id_ID: thanks to [Sugeng TiGeFa](http://www.tigefa.org)
+* id_ID: thanks to [Sugeng Tigefa](http://tigefa4u.github.io) ([@tigefa_team](https://twitter.com/tigefa_team))
+* nb_NO: thanks to [Kristoffer Risanger](https://github.com/kristofferR) ([@kristofferR](https://twitter.com/kristofferR))
 * ru_RU: thanks to [Oleg](http://0leg.net) ([@oleg_sh](https://twitter.com/oleg_sh))
 * sv_SE: thanks to [Christopher Anderton](http://deluxive.se/blog/) ([@deluxivese](https://twitter.com/deluxivese))
 
+## Child themes
+
+* [SemPress Lite](https://github.com/jihaisse/SemPress-Lite) by [Jihaisse](http://jihais.se/)
 
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)

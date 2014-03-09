@@ -4,10 +4,11 @@ Theme URI: https://github.com/pfefferle/SemPress
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/projects/sempress/
 Description: SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).
-Version: 1.4.5-dev
+Version: 1.4.6-dev
 License: GNU General Public License Version 3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style, featured-images, theme-options
+Text Domain: sempress
 
 This theme is based on the toolbox theme (http://wordpress.org/extend/themes/toolbox)
 and, like WordPress, licensed under the GPL.
@@ -96,12 +97,13 @@ cite {
   font-style: normal;
 }
 
-blockquote small, .post-format-content cite {
+blockquote small, blockquote cite, .post-format-content cite {
   display: block;
   color: #999;
   font-style: normal;
+  font-size: 0.9em;
 }
-blockquote small:before, .post-format-content cite:before {
+blockquote small:before, blockquote cite:before, .post-format-content cite:before {
   content: '\2014 \00A0';
 }
 
@@ -319,7 +321,7 @@ main {
   margin-left: 1em;
 }
 
-.aligncenter {
+.aligncenter, .alignnone {
   clear: both;
   display: block;
   margin-left: auto;
@@ -419,19 +421,17 @@ main {
 /* =Tables
 -------------------------------------------------------------- */
 table {
-  max-width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-table {
   width: 100%;
+  overflow: scroll;
+  overflow-x: scroll;
+  background-color: transparent;
   margin-bottom: 18px;
   border: 1px solid #ddd;
+  border-spacing: 0;
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
+  table-layout: fixed;
 }
 
 table th,
@@ -490,12 +490,6 @@ table tbody tr:nth-child(odd) th {
 table tbody tr:hover td,
 table tbody tr:hover th {
   background-color: #f5f5f5;
-}
-
-table {
-  width: auto;
-  max-width: 100%;
-  overflow: scroll;
 }
 
 /* =Content
@@ -601,12 +595,10 @@ footer.entry-meta {
   display: block;
   overflow: hidden;
 }
-
 #content nav .nav-previous {
   float: left;
   width: 50%;
 }
-
 #content nav .nav-next {
   float: right;
   text-align: right;
@@ -615,11 +607,15 @@ footer.entry-meta {
 
 #nav-above {
   clear: both;
+}
+#nav-above .nav-previous, #nav-above .nav-next {
   margin: 0 0 40px;
 }
 
 #nav-below {
   clear: both;
+}
+#nav-below .nav-previous, #nav-below .nav-next {
   margin: 40px 0 0;
 }
 
@@ -824,6 +820,11 @@ article.format-video .entry-media {
   max-width: 100%;
 }
 
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* =Images
 -------------------------------------------------------------- */
 a img {
@@ -858,7 +859,8 @@ img.size-medium,
 img.aligncenter,
 img.attachment-thumbnail,
 img.size-thumbnail,
-.wp-caption img,
+.wp-caption.aligncenter img,
+.wp-caption.alignnone img,
 .media-attachment img,
 .entry-attachment img {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -1079,11 +1081,11 @@ input[type="text"],
 input[type="email"],
 input[type="url"] {
   margin: 0 1em 0 0;
-  width: 60%;
+  width: 70%;
 }
 
 textarea {
-  width: 80%;
+  width: 99%;
   height: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1209,17 +1211,12 @@ article.comment {
   line-height: 24px;
 }
 
-#respond input[type="text"],
-#respond input[type="email"],
-#respond input[type="url"] {
+#comments input {
   display: block;
-  width: 60%;
 }
 
-#respond textarea {
-  display: block;
-  margin: 0 0 1em;
-  width: 98%;
+#comments input[type="checkbox"] {
+  display: inline;
 }
 
 #respond .form-allowed-tags {
@@ -1251,15 +1248,16 @@ a.comment-reply-link:before {
   padding-right: 5px;
 }
 
-.comment cite {
+li.comment {
+  list-style: none outside none;
+  margin: 10px 0;
+}
+li.comment cite {
   font-style: normal;
   font-weight: normal;
 }
-.comment img.avatar {
+li.comment img.avatar {
   float: right;
-}
-.comment li {
-  list-style-type: disc;
 }
 
 .comment-meta, .comment-notes, .logged-in-as {
@@ -1278,12 +1276,12 @@ ol.commentlist {
   margin: 0;
   padding: 0;
 }
-ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingback {
-  list-style: none outside none;
-  margin: 10px 0;
-}
 
 .comment-content {
+  font-size: 1em;
+}
+
+.webmention .comment-content, .pingback .comment-content, .trackback .comment-content {
   font-size: 0.9em;
 }
 
@@ -1293,6 +1291,14 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 
 #comments {
   padding-top: 40px;
+}
+
+.comment-respond {
+  border-top: 1px solid #fff;
+  -moz-box-shadow: #ccc 0 -1px 0 0;
+  -webkit-box-shadow: #ccc 0 -1px 0 0;
+  box-shadow: #ccc 0 -1px 0 0;
+  padding: 25px 0;
 }
 
 /* =Widgets
@@ -1306,7 +1312,7 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   -webkit-box-shadow: #FFF 0 1px 0 0;
   box-shadow: #FFF 0 1px 0 0;
 }
-.widget h1 {
+.widget h3 {
   font-size: 15px;
   font-weight: 500;
   margin: 0 0 10px;
@@ -1390,6 +1396,9 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
+  body, .single-column, .multi-column {
+    /* Custom Post Types */
+  }
   body body, .single-column body, .multi-column body {
     font-size: 0.9em;
   }
@@ -1414,26 +1423,12 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   body #main .widget-area, .single-column #main .widget-area, .multi-column #main .widget-area {
     width: 100%;
   }
-  body table, .single-column table, .multi-column table {
-    width: auto;
-    max-width: 100%;
-    overflow: scroll;
-  }
   body article.post,
-  body article.page,
-  body footer.entry-meta, .single-column article.post,
-  .single-column article.page,
-  .single-column footer.entry-meta, .multi-column article.post,
-  .multi-column article.page,
-  .multi-column footer.entry-meta {
+  body article.page, .single-column article.post,
+  .single-column article.page, .multi-column article.post,
+  .multi-column article.page {
     margin: 0;
     padding: 0;
-  }
-  body .entry-content table,
-  body .entry-summary table, .single-column .entry-content table,
-  .single-column .entry-summary table, .multi-column .entry-content table,
-  .multi-column .entry-summary table {
-    overflow: scroll;
   }
   body .entry-title,
   body .entry-content,
@@ -1451,9 +1446,21 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
     color: inherit;
     text-shadow: inherit;
     margin: 0px;
-    padding: 5px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body footer.entry-meta, .single-column footer.entry-meta, .multi-column footer.entry-meta {
+    padding-bottom: 15px;
+  }
+  body .post:hover .entry-meta, body .post:hover .entry-meta a,
+  body .post .entry-meta, body .post .entry-meta a, .single-column .post:hover .entry-meta, .single-column .post:hover .entry-meta a,
+  .single-column .post .entry-meta, .single-column .post .entry-meta a, .multi-column .post:hover .entry-meta, .multi-column .post:hover .entry-meta a,
+  .multi-column .post .entry-meta, .multi-column .post .entry-meta a {
+    color: #777;
   }
   body .entry-header .entry-title, .single-column .entry-header .entry-title, .multi-column .entry-header .entry-title {
+    padding-top: 15px;
+    padding-bottom: 5px;
     font-size: 35px;
     line-height: 1;
   }
@@ -1466,6 +1473,19 @@ ol.commentlist li.comment, ol.commentlist li.trackback, ol.commentlist li.pingba
   body .format-quote .entry-content blockquote:first-child, .single-column .format-quote .entry-content blockquote:first-child, .multi-column .format-quote .entry-content blockquote:first-child {
     padding: 15px;
     margin: 0 -15px 15px -15px;
+  }
+  body .format-aside p:first-child,
+  body .format-link p:first-child,
+  body .format-quote p:first-child,
+  body .format-status p:first-child, .single-column .format-aside p:first-child,
+  .single-column .format-link p:first-child,
+  .single-column .format-quote p:first-child,
+  .single-column .format-status p:first-child, .multi-column .format-aside p:first-child,
+  .multi-column .format-link p:first-child,
+  .multi-column .format-quote p:first-child,
+  .multi-column .format-status p:first-child {
+    padding-top: 0px;
+    margin-top: 0px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
