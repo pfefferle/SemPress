@@ -13,7 +13,9 @@
   </header><!-- .entry-header -->
   
   <?php sempress_the_post_thumbnail('<div class="entry-media">', '</div>'); ?>
-  
+  	  <?php if(in_array("context",get_post_custom_keys(get_the_ID()))){ 
+		$customfields = get_post_custom(get_the_ID());
+		echo '<div class="p-in-reply-to h-cite"><p>'.implode("</p><p>",$customfields["context"]).'</p></div>'; }?>
   <div class="entry-content e-content" itemprop="description text">
     <?php the_content(); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>

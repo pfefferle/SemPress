@@ -15,6 +15,9 @@
     <?php the_excerpt(); ?>
   </div><!-- .entry-summary -->
   <?php else : ?>
+  	  <?php if(in_array("context",get_post_custom_keys(get_the_ID()))){ 
+		$customfields = get_post_custom(get_the_ID());
+		echo '<div class="p-in-reply-to h-cite"><p>'.implode("</p><p>",$customfields["context"]).'</p></div>'; }?>
   <div class="entry-content e-content p-summary entry-title p-name" itemprop="name headline description articleBody">
     <?php sempress_the_post_thumbnail('<p>', '</p>'); ?>
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>
