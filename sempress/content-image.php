@@ -13,7 +13,10 @@
     <?php the_excerpt(); ?>
   </div><!-- .entry-summary -->
   <?php else : ?>
-  <?php sempress_the_post_thumbnail('<div class="entry-media">', '</div>'); ?>
+    <figure class="entry-media">
+      <?php sempress_the_post_thumbnail('', ''); ?>
+      <figcaption><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></figcaption>
+    </figure>
   <div class="entry-content e-content" itemprop="description articleBody">
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'sempress' ) ); ?>
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
