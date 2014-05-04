@@ -21,6 +21,6 @@
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'sempress' ), 'after' => '</div>' ) ); ?>
   </div><!-- .entry-content -->
   <?php endif; ?>
-  
+
   <?php get_template_part( 'entry', 'footer' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->
