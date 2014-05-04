@@ -304,7 +304,7 @@ function sempress_enqueue_scripts() {
      ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
      ( false === strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 9' ) ) ) {
 
-    wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.6');
+    wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.7.2');
   }
 
   // Loads our main stylesheet.
