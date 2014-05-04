@@ -71,7 +71,7 @@ function sempress_setup() {
   add_image_size( 'sempress-image-post', 668, 1288 );
 
   // Switches default core markup for search form to output valid HTML5.
-  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
@@ -785,39 +785,6 @@ function sempress_searchform_format( $format ) {
 add_filter( 'search_form_format', 'sempress_searchform_format' );
 
 /**
- * HTML5: Use figure and figcaption for captions
- *
- * @param string $empty Empty string
- * @param array $attr Attributes attributed to the shortcode
- * @param string $content Shortcode content
- * @return string the HTML5 code
- */
-function sempress_html5_caption($empty, $attr, $content) {
-  extract(shortcode_atts(array(
-    'id'      => '',
-    'align'	  => 'alignnone',
-    'width'   => sempress_content_width(),
-    'caption' => ''
-  ), $attr));
-
-  if ( 1 > (int) $width || empty($caption) )
-    return $empty;
-
-  $capid = '';
-  if ( $id ) {
-    $id = esc_attr($id);
-    $capid = 'id="figcaption_'. $id . '" ';
-    $id = 'id="' . $id . '" aria-labelledby="figcaption_' . $id . '" ';
-  }
-
-  return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align)
-    . '" style="width: ' . $width . 'px;">'
-    . do_shortcode( $content ) . '<figcaption ' . $capid
-    . 'class="wp-caption-text">' . $caption . '</figcaption></figure>';
-}
-add_filter( 'img_caption_shortcode', 'sempress_html5_caption', 10, 3 );
-
-/**
  * add semantics
  *
  * @param string $id the class identifier
@@ -892,10 +859,9 @@ function sempress_semantics($id) {
 }
 
 /**
- * Adds back compat handling for WP versions pre-3.6.
+ * Adds back compat handling for older WP versions
  */
-if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) )
-	require( get_template_directory() . '/inc/back-compat.php' );
+require( get_template_directory() . '/inc/back-compat.php' );
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
