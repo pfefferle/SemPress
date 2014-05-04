@@ -452,7 +452,7 @@ endif;
 function sempress_the_post_thumbnail($before = "", $after = "") {
   if ( '' != get_the_post_thumbnail() ) {
     $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumbnail');
-    $class = "aligncenter";
+    $class = "";
 
     if ($image['1'] < "300")
       $class="alignright";
