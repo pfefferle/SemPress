@@ -4,7 +4,7 @@ Theme URI: https://github.com/pfefferle/SemPress
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/projects/sempress/
 Description: SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).
-Version: 1.4.6-dev
+Version: 1.5.0-dev
 License: GNU General Public License Version 3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style, featured-images, theme-options
@@ -25,7 +25,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
@@ -1695,8 +1694,7 @@ ol.commentlist {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p, h2, h3 {
     orphans: 3;
     widows: 3;
