@@ -1,53 +1,53 @@
 {
-	"name": "SemPress",
-	"version": "1.5.0-dev",
-	"description": "SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).",
-	"main": "Gruntfile.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pfefferle/SemPress.git"
-	},
-	"bugs": {
-		"url": "https://github.com/pfefferle/SemPress/issues"
-	},
-	"keywords": [
-		"white",
-		"gray",
-		"light",
-		"black",
-		"custom-menu",
-		"custom-colors",
-		"custom-header",
-		"custom-background",
-		"sticky-post",
-		"microformats",
-		"rtl-language-support",
-		"translation-ready",
-		"full-width-template",
-		"post-formats",
-		"threaded-comments",
-		"responsive-layout",
-		"fluid-layout",
-		"right-sidebar",
-		"two-columns",
-		"one-column",
-		"editor-style",
-		"featured-images",
-		"accessibility-ready"
-	],
-	"author": {
-		"name": "Matthias Pfefferle",
-		"url": "http://notizblog.org/projects/sempress/"
-	},
-	"license": {
-		"name": "GNU General Public License",
-		"version": "3",
-		"url": "http://www.gnu.org/licenses/gpl.html"
-	},
-	"homepage": "https://github.com/pfefferle/SemPress",
-	"devDependencies": {
-		"grunt": "~0.4.1",
-		"grunt-contrib-sass": "~0.5.0",
-		"grunt-replace": "~0.4.4"
-	}
+  "name": "SemPress",
+  "version": "1.5.0-dev",
+  "description": "SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pfefferle/SemPress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pfefferle/SemPress/issues"
+  },
+  "keywords": [
+    "white",
+    "gray",
+    "light",
+    "black",
+    "custom-menu",
+    "custom-colors",
+    "custom-header",
+    "custom-background",
+    "sticky-post",
+    "microformats",
+    "rtl-language-support",
+    "translation-ready",
+    "full-width-template",
+    "post-formats",
+    "threaded-comments",
+    "responsive-layout",
+    "fluid-layout",
+    "right-sidebar",
+    "two-columns",
+    "one-column",
+    "editor-style",
+    "featured-images",
+    "accessibility-ready"
+  ],
+  "author": {
+    "name": "Matthias Pfefferle",
+    "url": "http://notizblog.org/projects/sempress/"
+  },
+  "license": {
+    "name": "GNU General Public License",
+    "version": "3",
+    "url": "http://www.gnu.org/licenses/gpl.html"
+  },
+  "homepage": "https://github.com/pfefferle/SemPress",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-replace": "~0.4.4"
+  }
 }
