@@ -12,9 +12,7 @@ get_header(); ?>
     <main id="content" role="main">
 
       <article id="post-0" class="post error404 not-found">
-        <header class="entry-header">
-          <h1 class="entry-title p-entry-title"><?php _e( 'Well this is somewhat embarrassing, isn&rsquo;t it?', 'sempress' ); ?></h1>
-        </header>
+        <?php get_template_part( 'loop', 'header' ); ?>
 
         <div class="entry-content e-entry-content">
           <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'sempress' ); ?></p>

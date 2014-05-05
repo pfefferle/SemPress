@@ -19,11 +19,7 @@ get_header(); ?>
 
       <?php if ( have_posts() ) : ?>
 
-        <header class="page-header">
-          <h1 class="page-title"><?php
-            printf( __( '%s Archives', 'sempress' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' );
-          ?></h1>
-        </header>
+        <?php get_template_part( 'loop', 'header' ); ?>
 
         <?php sempress_content_nav( 'nav-above' ); ?>
 
