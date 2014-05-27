@@ -164,8 +164,8 @@ function sempress_customize_register( $wp_customize ) {
   global $themecolors;
 
   $wp_customize->add_section( 'sempress_settings_section', array(
-    'title'       => __( 'Sempress Settings', 'sempress' ),
-    'description' => __('Allows you to customize some example settings for MyTheme.', 'mytheme'), //Descriptive tooltip
+    'title'       => __( 'SemPress Settings', 'sempress' ),
+    'description' => __('Change the look and feel of SemPress.', 'sempress'), //Descriptive tooltip
     'priority'    => 35
   ) );
 
@@ -591,21 +591,6 @@ function sempress_get_post_id() {
 }
 
 /**
- * adds the new HTML5 input types to the comment-form
- *
- * @param string $form
- * @return string
- */
-function sempress_comment_autocomplete($fields) {
-  $fields['author'] = preg_replace('/<input/', '<input autocomplete="nickname name" ', $fields['author']);
-  $fields['email'] = preg_replace('/<input/', '<input autocomplete="email" ', $fields['email']);
-  $fields['url'] = preg_replace('/<input/', '<input autocomplete="url" ', $fields['url']);
-
-  return $fields;
-}
-add_filter("comment_form_default_fields", "sempress_comment_autocomplete");
-
-/**
  * Adds some awesome websemantics like microformats(2) and microdata
  */
 require( get_template_directory() . '/inc/semantics.php' );
@@ -613,7 +598,7 @@ require( get_template_directory() . '/inc/semantics.php' );
 /**
  * Adds back compat handling for older WP versions
  */
-require( get_template_directory() . '/inc/back-compat.php' );
+require( get_template_directory() . '/inc/compat.php' );
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
