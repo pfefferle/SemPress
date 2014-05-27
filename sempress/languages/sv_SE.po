@@ -2,31 +2,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-13 12:25+0100\n"
-"PO-Revision-Date: 2013-08-13 12:26+0100\n"
-"Last-Translator: Matthias Pfefferle <pfefferle@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2014-05-27 18:31+0100\n"
+"PO-Revision-Date: 2014-05-27 18:35+0100\n"
+"Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
+"Language-Team: Christopher Anderton - http://deluxive.se/blog/\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_x;_ex;esc_attr_e;_;_n:1,2;_nx:1,2\n"
 ";_n_noop: 1,2;_nx_noop:1,2X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: /Users/pfefferle/Work/SemPress/SemPress\n"
-"X-Poedit-SearchPath-1: /Users/matthias/Work/SemPress/SemPress\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/pfefferle/Work/SemPress/sempress\n"
+"X-Poedit-SearchPath-1: /Users/matthias/Work/SemPress/sempress\n"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/404.php:16
+#: /Users/pfefferle/Work/SemPress/sempress/404.php:16
 msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Ja, detta är väl lite pinsamt, är det inte?"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/404.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/404.php:20
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching, or one of the links below, can help."
@@ -34,48 +33,43 @@ msgstr ""
 "Det verkar som om vi inte kan hitta det du letar efter. Kanske en sökning, "
 "eller någon av länkarna nedan kan hjälpa till."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/404.php:27
+#: /Users/pfefferle/Work/SemPress/sempress/404.php:27
 msgid "Most Used Categories"
 msgstr "Mest använda kategorier"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/404.php:35
+#. translators: %1$s: smilie
+#: /Users/pfefferle/Work/SemPress/sempress/404.php:35
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Prova att leta i de månatliga arkiven %1$s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/archive.php:32
-#: /Users/matthias/Work/SemPress/SemPress/archive.php:34
+#: /Users/pfefferle/Work/SemPress/sempress/archive.php:32
+#: /Users/pfefferle/Work/SemPress/sempress/archive.php:34
 #, php-format
 msgid "Archives: %s"
 msgstr "Arkiv: %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/archive.php:36
-#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:19
+#: /Users/pfefferle/Work/SemPress/sempress/archive.php:36
+#: /Users/pfefferle/Work/SemPress/sempress/sidebar.php:19
 msgid "Archives"
 msgstr "Arkiven"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/archive.php:65
-#: /Users/matthias/Work/SemPress/SemPress/author.php:63
-#: /Users/matthias/Work/SemPress/SemPress/category.php:49
-#: /Users/matthias/Work/SemPress/SemPress/index.php:43
-#: /Users/matthias/Work/SemPress/SemPress/search.php:35
-#: /Users/matthias/Work/SemPress/SemPress/tag.php:51
-#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:49
+#: /Users/pfefferle/Work/SemPress/sempress/archive.php:65
+#: /Users/pfefferle/Work/SemPress/sempress/author.php:63
+#: /Users/pfefferle/Work/SemPress/sempress/category.php:49
+#: /Users/pfefferle/Work/SemPress/sempress/index.php:43
+#: /Users/pfefferle/Work/SemPress/sempress/search.php:35
+#: /Users/pfefferle/Work/SemPress/sempress/tag.php:51
+#: /Users/pfefferle/Work/SemPress/sempress/taxonomy-post_format.php:49
 msgid "Nothing Found"
 msgstr "Ingenting hittades"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/archive.php:69
-#: /Users/matthias/Work/SemPress/SemPress/author.php:67
-#: /Users/matthias/Work/SemPress/SemPress/category.php:53
-#: /Users/matthias/Work/SemPress/SemPress/index.php:47
-#: /Users/matthias/Work/SemPress/SemPress/tag.php:55
-#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:53
+#: /Users/pfefferle/Work/SemPress/sempress/archive.php:69
+#: /Users/pfefferle/Work/SemPress/sempress/author.php:67
+#: /Users/pfefferle/Work/SemPress/sempress/category.php:53
+#: /Users/pfefferle/Work/SemPress/sempress/index.php:47
+#: /Users/pfefferle/Work/SemPress/sempress/tag.php:55
+#: /Users/pfefferle/Work/SemPress/sempress/taxonomy-post_format.php:53
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -83,227 +77,216 @@ msgstr ""
 "Det verkar som om vi inte kan hitta det du letar efter. Kanske en sökning "
 "hjälper."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/author.php:27
+#: /Users/pfefferle/Work/SemPress/sempress/author.php:27
 #, php-format
 msgid "Author Archives: %s"
 msgstr "Författararkiv: %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/category.php:18
+#: /Users/pfefferle/Work/SemPress/sempress/category.php:18
 #, php-format
 msgid "Category Archives: %s"
 msgstr "Kategoriarkiv: %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:16
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:16
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
 "Detta inlägg är lösenordsskyddat. Ange lösenordet för att se eventuella "
 "kommentarer."
 
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:32
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:32
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:39
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:59
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:39
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:59
 msgid "Comment navigation"
 msgstr "Kommentarsnavigering"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:40
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:60
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:40
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:60
 msgid "&larr; Older Comments"
 msgstr "&larr; Äldre kommentarer"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:41
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:61
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:41
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:61
 msgid "Newer Comments &rarr;"
 msgstr "Nyare kommentarer &rarr;"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/comments.php:71
+#: /Users/pfefferle/Work/SemPress/sempress/comments.php:71
 msgid "Comments are closed."
 msgstr "Kommentarer är stängda."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:20
-#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:24
-#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:19
-#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:27
-#: /Users/matthias/Work/SemPress/SemPress/content-image.php:24
-#: /Users/matthias/Work/SemPress/SemPress/content-link.php:20
-#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:20
-#: /Users/matthias/Work/SemPress/SemPress/content-single.php:29
-#: /Users/matthias/Work/SemPress/SemPress/content-status.php:20
-#: /Users/matthias/Work/SemPress/SemPress/content-video.php:24
+#: /Users/pfefferle/Work/SemPress/sempress/content-aside.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/content-audio.php:22
+#: /Users/pfefferle/Work/SemPress/sempress/content-chat.php:13
+#: /Users/pfefferle/Work/SemPress/sempress/content-gallery.php:27
+#: /Users/pfefferle/Work/SemPress/sempress/content-image.php:21
+#: /Users/pfefferle/Work/SemPress/sempress/content-link.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/content-quote.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/content-single.php:25
+#: /Users/pfefferle/Work/SemPress/sempress/content-status.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/content-video.php:18
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Fortsätt läs <span class=\"meta-nav\">&rarr;</span>"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/content-aside.php:21
-#: /Users/matthias/Work/SemPress/SemPress/content-audio.php:25
-#: /Users/matthias/Work/SemPress/SemPress/content-chat.php:20
-#: /Users/matthias/Work/SemPress/SemPress/content-gallery.php:28
-#: /Users/matthias/Work/SemPress/SemPress/content-image.php:25
-#: /Users/matthias/Work/SemPress/SemPress/content-link.php:21
-#: /Users/matthias/Work/SemPress/SemPress/content-page.php:23
-#: /Users/matthias/Work/SemPress/SemPress/content-quote.php:21
-#: /Users/matthias/Work/SemPress/SemPress/content-single.php:30
-#: /Users/matthias/Work/SemPress/SemPress/content-status.php:21
-#: /Users/matthias/Work/SemPress/SemPress/content-video.php:25
-#: /Users/matthias/Work/SemPress/SemPress/image.php:85
+#: /Users/pfefferle/Work/SemPress/sempress/content-aside.php:21
+#: /Users/pfefferle/Work/SemPress/sempress/content-audio.php:23
+#: /Users/pfefferle/Work/SemPress/sempress/content-chat.php:14
+#: /Users/pfefferle/Work/SemPress/sempress/content-gallery.php:28
+#: /Users/pfefferle/Work/SemPress/sempress/content-image.php:22
+#: /Users/pfefferle/Work/SemPress/sempress/content-link.php:21
+#: /Users/pfefferle/Work/SemPress/sempress/content-page.php:19
+#: /Users/pfefferle/Work/SemPress/sempress/content-quote.php:21
+#: /Users/pfefferle/Work/SemPress/sempress/content-single.php:26
+#: /Users/pfefferle/Work/SemPress/sempress/content-status.php:21
+#: /Users/pfefferle/Work/SemPress/sempress/content-video.php:19
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:85
 msgid "Pages:"
 msgstr "Sidor:"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/content-page.php:24
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:33
-#: /Users/matthias/Work/SemPress/SemPress/image.php:33
-#: /Users/matthias/Work/SemPress/SemPress/image.php:99
+#: /Users/pfefferle/Work/SemPress/sempress/content-page.php:20
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:33
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:33
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:99
 msgid "Edit"
 msgstr "Redigera"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:5
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:5
 msgid "Posted"
 msgstr "Publicerat"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:9
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:19
+#. translators: used between list items, there is a space after the comma
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:9
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:19
 msgid ", "
 msgstr ", "
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:13
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:13
 #, php-format
 msgid "in %1$s"
 msgstr "i %1$s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:24
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:24
 #, php-format
 msgid "Tagged %1$s"
 msgstr "Märkt %1$s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "Leave a comment"
 msgstr "Lämna en kommentar"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "1 Comment"
 msgstr "1 kommentar"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/entry-footer.php:30
+#: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "% Comments"
 msgstr "% kommentarer"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/footer.php:17
+#: /Users/pfefferle/Work/SemPress/sempress/footer.php:17
 #, php-format
 msgid "This site is powered by %1$s and styled with %2$s"
 msgstr "Denna webbplats drivs av %1$s och är stylad med  %2$s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:83
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:78
 msgid "Primary Menu"
 msgstr "Primär meny"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:151
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:152
 #, php-format
 msgid "Page %s"
 msgstr "Sida %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:171
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:167
+msgid "SemPress Settings"
+msgstr ""
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:168
+msgid "Change the look and feel of SemPress."
+msgstr ""
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:178
 msgid "Text Color"
 msgstr "Textfärg"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:182
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:189
 msgid "Shadow Color"
 msgstr "Skuggfärg"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:193
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:200
 msgid "Border Color"
 msgstr "Kantfärg"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:243
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:211
+msgid "Page Structure"
+msgstr ""
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:216
+msgid "Single Column (Sidebar at the bottom)"
+msgstr ""
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:217
+msgid "Multi Column (Sidebar at the right)"
+msgstr ""
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:266
 msgid "Sidebar 1"
 msgstr "Sidofält 1"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:252
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:275
 msgid "Sidebar 2"
 msgstr "Sidofält 2"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:254
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:277
 msgid "An optional second sidebar area"
 msgstr "Ett valfritt andra sidofältsområde"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:305
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:328
 msgid "Post navigation"
 msgstr "Inläggsnavigering"
 
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:309
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:332
 msgid "&larr;"
 msgstr "&larr;"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:310
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:333
 msgid "&rarr;"
 msgstr "&rarr;"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:315
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:338
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Äldre inlägg"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:319
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:342
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Nyare inlägg <span class=\"meta-nav\">&rarr;</span>"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:348
-#, php-format
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">säger:</span>"
-
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:351
-msgid "Your comment is awaiting moderation."
-msgstr "Din kommentar inväntar granskning."
-
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:359
+#. translators: 1: date, 2: time
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:382
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:408
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s kl. %2$s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:361
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:384
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:410
 msgid "(Edit)"
 msgstr "(Redigera)"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:384
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:397
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">säger:</span>"
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:400
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar inväntar granskning."
+
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:434
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
@@ -324,24 +307,20 @@ msgstr ""
 "url u-uid fn p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop="
 "\"url\"><span itemprop=\"name\">%8$s</span></a></span></address>"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/functions.php:391
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:441
 #, php-format
 msgid "View all posts by %s"
 msgstr "Visa alla inlägg av %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/header.php:46
+#: /Users/pfefferle/Work/SemPress/sempress/header.php:46
 msgid "Main menu"
 msgstr "Huvudmeny"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/header.php:47
+#: /Users/pfefferle/Work/SemPress/sempress/header.php:47
 msgid "Skip to content"
 msgstr "Hoppa till innehåll"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:23
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:23
 #, php-format
 msgid ""
 "Published <time class=\"entry-date updated dt-updated\" datetime=\"%1$s\" "
@@ -354,18 +333,15 @@ msgstr ""
 "bilden i full storlek\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title="
 "\"Återvänd till %7$s\" rel=\"gallery\">%7$s</a>"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:37
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:37
 msgid "&larr; Previous"
 msgstr "&larr; Föregående"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:38
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:38
 msgid "Next &rarr;"
 msgstr "Nästa &rarr;"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:91
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:91
 #, php-format
 msgid ""
 "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
@@ -377,8 +353,7 @@ msgstr ""
 "\" href=\"%s\" title=\"Trackback URL för ditt inlägg\" rel=\"trackback"
 "\">Trackback URL</a>."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:93
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:93
 #, php-format
 msgid ""
 "Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
@@ -389,8 +364,7 @@ msgstr ""
 "link\" href=\"%s\" title=\"Trackback URL för ditt inlägg\" rel=\"trackback"
 "\">Trackback URL</a>."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:95
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:95
 msgid ""
 "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
 "\" title=\"Post a comment\">post a comment</a>."
@@ -398,19 +372,20 @@ msgstr ""
 "Trackbacks är stängda, men du kan <a class=\"comment-link\" href=\"#respond"
 "\" title=\"Posta en kommentar\">posta en kommentar</a>."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/image.php:97
+#: /Users/pfefferle/Work/SemPress/sempress/image.php:97
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Både kommentarer och trackbaks är förtillfället stängda."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/search.php:17
+#: /Users/pfefferle/Work/SemPress/sempress/inc/compat.php:126
+msgid "Search here&hellip;"
+msgstr "Sök här&hellip;"
+
+#: /Users/pfefferle/Work/SemPress/sempress/search.php:17
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Sökresultat för: %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/search.php:39
+#: /Users/pfefferle/Work/SemPress/sempress/search.php:39
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -418,23 +393,16 @@ msgstr ""
 "Tyvärr matchade inget av dina söktermer. Försök igen med några andra "
 "nyckelord."
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/sidebar.php:26
+#: /Users/pfefferle/Work/SemPress/sempress/sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/tag.php:18
+#: /Users/pfefferle/Work/SemPress/sempress/tag.php:18
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Etikettarkiv: %s"
 
-# @ sempress
-#: /Users/matthias/Work/SemPress/SemPress/taxonomy-post_format.php:24
+#: /Users/pfefferle/Work/SemPress/sempress/taxonomy-post_format.php:24
 #, php-format
 msgid "%s Archives"
 msgstr "%s Arkiven"
-
-#: /Users/matthias/Work/SemPress/SemPress/inc/back-compat.php:29
-msgid "Search here&hellip;"
-msgstr "Sök här&hellip;"
