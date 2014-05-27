@@ -93,8 +93,8 @@ msgstr "Запись защищена паролем. Введите парол�
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Одно мнение о &ldquo;%2$s&rdquo;"
+msgstr[1] "Мнения о &ldquo;%2$s&rdquo; (%1$s)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:39
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:59
@@ -198,11 +198,11 @@ msgstr "Страница %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:167
 msgid "SemPress Settings"
-msgstr ""
+msgstr "Настройки SemPress"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:168
 msgid "Change the look and feel of SemPress."
-msgstr ""
+msgstr "Изменить внешний вид SemPress."
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:178
 msgid "Text Color"
@@ -218,15 +218,15 @@ msgstr "Цвет рамки"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:211
 msgid "Page Structure"
-msgstr ""
+msgstr "Структура страницы"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:216
 msgid "Single Column (Sidebar at the bottom)"
-msgstr ""
+msgstr "Одна колонка (боковая панель снизу)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:217
 msgid "Multi Column (Sidebar at the right)"
-msgstr ""
+msgstr "Две или несколько колонок (боковая панель справа)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:266
 msgid "Sidebar 1"
