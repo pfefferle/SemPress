@@ -11,6 +11,7 @@
  * @link http://indiewebcamp.com
  *
  * @package SemPress
+ * @subpackage semantics
  * @since SemPress 1.5.0
  */
 
