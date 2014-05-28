@@ -83,31 +83,31 @@ msgstr "Archives de l&rsquo;auteur&nbsp;: %s"
 #: /Users/pfefferle/Work/SemPress/sempress/category.php:18
 #, php-format
 msgid "Category Archives: %s"
-msgstr "Archives pour la catégorie %s"
+msgstr "Archives de la catégorie %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:16
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
-"Cet article est protégé par un mot de passe.Veuillez saisir votre mot de "
+"Cet article est protégé par un mot de passe. Veuillez saisir votre mot de "
 "passe pour lire les commentaires."
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:32
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Une commentaire on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commentaire on &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:39
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:59
 msgid "Comment navigation"
-msgstr "Navigation des commentaires"
+msgstr "Navigation dans les commentaires"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:40
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:60
 msgid "&larr; Older Comments"
-msgstr "&larr; Commentaire plus ancien"
+msgstr "&larr; Commentaires plus anciens"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:41
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:61
@@ -201,11 +201,11 @@ msgstr "Page %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:167
 msgid "SemPress Settings"
-msgstr ""
+msgstr "Paramètres SemPress"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:168
 msgid "Change the look and feel of SemPress."
-msgstr ""
+msgstr "Modifier le design de SemPress."
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:178
 msgid "Text Color"
@@ -221,27 +221,27 @@ msgstr "Couleur de la bordure"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:211
 msgid "Page Structure"
-msgstr ""
+msgstr "Structure de la page"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:216
 msgid "Single Column (Sidebar at the bottom)"
-msgstr ""
+msgstr "Une seule colonne (Sidebar en bas)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:217
 msgid "Multi Column (Sidebar at the right)"
-msgstr ""
+msgstr "Colonnes multiples (Sidebar à droite)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:266
 msgid "Sidebar 1"
-msgstr "Colonne latérale 1"
+msgstr "Sidebar 1"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:275
 msgid "Sidebar 2"
-msgstr "Colonne latérale 2"
+msgstr "Sidebar 2"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:277
 msgid "An optional second sidebar area"
-msgstr "Une seconde barre latérale en option"
+msgstr "Une seconde sidebar en option"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:328
 msgid "Post navigation"
