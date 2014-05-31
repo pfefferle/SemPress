@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.4.0\n"
 "POT-Creation-Date: 2014-05-27 18:31+0100\n"
-"PO-Revision-Date: 2014-05-27 18:31+0100\n"
-"Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
+"PO-Revision-Date: 2014-05-31 12:31+0900\n"
+"Last-Translator: CARLITO <calitosway@me.com>\n”
 "Language-Team: CARLITO\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
@@ -30,13 +30,13 @@ msgstr "찾으시는 페이지가 없습니다. 검색을 활용해 보세요."
 
 #: /Users/pfefferle/Work/SemPress/sempress/404.php:27
 msgid "Most Used Categories"
-msgstr "카테고리"
+msgstr "자주 사용한 카테고리"
 
 #. translators: %1$s: smilie
 #: /Users/pfefferle/Work/SemPress/sempress/404.php:35
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "월별 보관 목록에서 찾아 보세요 %1$s"
+msgstr "월별 보관 목록에서 찾아 보세요. %1$s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/archive.php:32
 #: /Users/pfefferle/Work/SemPress/sempress/archive.php:34
@@ -73,12 +73,12 @@ msgstr "찾으시는 페이지가 없습니다. 검색을 활용해 보세요."
 #: /Users/pfefferle/Work/SemPress/sempress/author.php:27
 #, php-format
 msgid "Author Archives: %s"
-msgstr "작성자별 보관함: %s"
+msgstr "작성자 보관함: %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/category.php:18
 #, php-format
 msgid "Category Archives: %s"
-msgstr "카테고리별 보관함: %s"
+msgstr "카테고리 보관함: %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:16
 msgid ""
@@ -137,7 +137,7 @@ msgstr "계속 읽기 <span class=\"meta-nav\">&rarr;</span>"
 #: /Users/pfefferle/Work/SemPress/sempress/content-video.php:19
 #: /Users/pfefferle/Work/SemPress/sempress/image.php:85
 msgid "Pages:"
-msgstr ""
+msgstr "페이지: "
 
 #: /Users/pfefferle/Work/SemPress/sempress/content-page.php:20
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:33
@@ -148,23 +148,23 @@ msgstr "편집"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:5
 msgid "Posted"
-msgstr ""
+msgstr " "
 
 #. translators: used between list items, there is a space after the comma
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:9
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:19
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:13
 #, php-format
 msgid "in %1$s"
-msgstr ""
+msgstr "카테고리: %1$s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:24
 #, php-format
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "태그: %1$s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "Leave a comment"
@@ -172,7 +172,7 @@ msgstr "댓글 남기기"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "1 Comment"
-msgstr "1개의 댓글"
+msgstr "한 개의 댓글"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:30
 msgid "% Comments"
@@ -181,60 +181,60 @@ msgstr "%개의 댓글"
 #: /Users/pfefferle/Work/SemPress/sempress/footer.php:17
 #, php-format
 msgid "This site is powered by %1$s and styled with %2$s"
-msgstr ""
+msgstr "This site is powered by %1$s and styled with %2$s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:78
 msgid "Primary Menu"
-msgstr ""
+msgstr "주 메뉴"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:152
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "페이지 %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:167
 msgid "SemPress Settings"
-msgstr ""
+msgstr "SemPress 설정"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:168
 msgid "Change the look and feel of SemPress."
-msgstr ""
+msgstr "SemPress 외모 변경"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:178
 msgid "Text Color"
-msgstr ""
+msgstr "텍스트 색상"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:189
 msgid "Shadow Color"
-msgstr ""
+msgstr "그림자 색상"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:200
 msgid "Border Color"
-msgstr ""
+msgstr "외곽선 색상"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:211
 msgid "Page Structure"
-msgstr ""
+msgstr "페이지 구조"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:216
 msgid "Single Column (Sidebar at the bottom)"
-msgstr ""
+msgstr "1단 (하단에 사이드바 위치)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:217
 msgid "Multi Column (Sidebar at the right)"
-msgstr ""
+msgstr "2단 (우측에 사이드바 위치)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:266
 msgid "Sidebar 1"
-msgstr ""
+msgstr "사이드바 1"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:275
 msgid "Sidebar 2"
-msgstr ""
+msgstr "사이드바 2"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:277
 msgid "An optional second sidebar area"
-msgstr ""
+msgstr "선택 사이드바 영역"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:328
 msgid "Post navigation"
@@ -242,11 +242,11 @@ msgstr "포스트 내비게이션"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:332
 msgid "&larr;"
-msgstr ""
+msgstr "&larr;"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:333
 msgid "&rarr;"
-msgstr ""
+msgstr "&rarr;"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:338
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
@@ -261,7 +261,7 @@ msgstr "새 글 <span class=\"meta-nav\">&rarr;</span>"
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:408
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s %2$s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:384
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:410
@@ -271,7 +271,7 @@ msgstr "(편집)"
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:397
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
-msgstr ""
+msgstr "%s <span class=\"says\">:</span>"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:400
 msgid "Your comment is awaiting moderation."
@@ -289,6 +289,14 @@ msgid ""
 "p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
 "itemprop=\"name\">%8$s</span></a></span></address>"
 msgstr ""
+"<span class=\"author p-author vcard hcard h-card\" itemprop=\"author\" "
+"itemscope itemtype=\"http://schema.org/Person\">%5$s<a class=\"url uid u-url "
+"u-uid fn p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url"
+"\"><span itemprop=\"name\">%8$s</span></a></span></address><address class="
+"\"byline\"> <span class=\"sep\">에 의해 </span><a href=\"%1$s\" title=\"%2$s"
+"\" rel=\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated "
+"published dt-updated dt-published\" datetime=\"%3$s\" itemprop=\"dateModified"
+"\">%4$s</time></a><span class=\"sep\">에 작성</span>"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:441
 #, php-format
@@ -297,7 +305,7 @@ msgstr "%s의 모든 글 보기"
 
 #: /Users/pfefferle/Work/SemPress/sempress/header.php:46
 msgid "Main menu"
-msgstr ""
+msgstr "메인 메뉴"
 
 #: /Users/pfefferle/Work/SemPress/sempress/header.php:47
 msgid "Skip to content"
@@ -331,6 +339,9 @@ msgid ""
 "comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
 "title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
 msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"댓글 작성\">댓글 작성</"
+"a> 또는 트랙백 남기기: <a class=\"trackback-link\" href=\"%s\" title=\"이 글"
+"의 트랙백 URL\" rel=\"trackback\">트랙백 URL</a>."
 
 #: /Users/pfefferle/Work/SemPress/sempress/image.php:93
 #, php-format
@@ -372,7 +383,7 @@ msgstr "검색어와 일치하는 글이 없습니다. 다른 검색어로 다�
 
 #: /Users/pfefferle/Work/SemPress/sempress/sidebar.php:26
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: /Users/pfefferle/Work/SemPress/sempress/tag.php:18
 #, php-format
