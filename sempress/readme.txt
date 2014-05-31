@@ -84,3 +84,4 @@ The exceptions to this license are as follows:
 ** fr_FR: Julien Pierré - http://www.jp-software.fr/en/
 ** id_ID: Sugeng TiGeFa - http://tigefa4u.github.io
 ** nb_NO: Kristoffer Risanger - https://twitter.com/kristofferR
+** ko_KR: CARLITO - http://www.calitosway.net
