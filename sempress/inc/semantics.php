@@ -211,7 +211,7 @@ function sempress_get_semantics($id = null) {
     case "site-title":
       if (!is_singular()) {
         $classes['itemprop'] = array('name');
-        $classes['class'] = array('p-title');
+        $classes['class'] = array('p-name');
       }
       break;
     case "site-description":
