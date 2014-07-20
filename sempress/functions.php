@@ -376,6 +376,7 @@ function sempress_comment( $comment, $args, $depth ) {
           <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
             <?php printf( '<cite class="fn p-name" itemprop="name">%s</cite>', get_comment_author_link() ); ?>
           </address>
+          <span class="sep">-</span>
           <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time class="updated published dt-updated dt-published" datetime="<?php comment_time( 'c' ); ?>" itemprop="commentTime">
             <?php
             /* translators: 1: date, 2: time */
