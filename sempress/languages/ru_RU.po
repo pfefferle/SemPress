@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.5.0\n"
-"POT-Creation-Date: 2014-05-31 14:26+0100\n"
-"PO-Revision-Date: 2014-05-31 14:26+0100\n"
+"POT-Creation-Date: 2014-08-17 15:47+0100\n"
+"PO-Revision-Date: 2014-08-17 15:47+0100\n"
 "Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
 "Language-Team: Oleg - http://0leg.net\n"
 "Language: ru_RU\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-KeywordsList: __;_e;_x;_ex;esc_attr_e;_;_n:1,2;_nx:1,2\n"
 ";_n_noop: 1,2;_nx_noop:1,2X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -260,27 +260,27 @@ msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
 
 #. translators: 1: date, 2: time
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:382
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:408
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:383
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:409
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:384
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:410
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:385
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:411
 msgid "(Edit)"
 msgstr "(Правка)"
 
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:397
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:398
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">написал:</span>"
 
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:400
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:401
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает проверки."
 
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:434
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:435
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
@@ -301,7 +301,7 @@ msgstr ""
 "p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" itemprop=\"url\"><span "
 "itemprop=\"name\">%8$s</span></a></span></span>"
 
-#: /Users/pfefferle/Work/SemPress/sempress/functions.php:441
+#: /Users/pfefferle/Work/SemPress/sempress/functions.php:442
 #, php-format
 msgid "View all posts by %s"
 msgstr "Посмотреть все записи %s"
