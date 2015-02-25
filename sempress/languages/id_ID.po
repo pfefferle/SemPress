@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: SemPress 1.4.0\n"
 "POT-Creation-Date: 2014-08-17 15:47+0100\n"
 "PO-Revision-Date: 2014-08-17 15:47+0100\n"
-"Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
+"Last-Translator: Rizky Luthfianto <mrluthfianto@gmail.com>\n"
 "Language-Team: Sugeng Tigefa - http://tigefa4u.github.io/\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: /Users/pfefferle/Work/SemPress/sempress/404.php:27
 msgid "Most Used Categories"
-msgstr "Kebanyakan Digunakan Kategori"
+msgstr "Kategori Yang Sering Digunakan"
 
 #. translators: %1$s: smilie
 #: /Users/pfefferle/Work/SemPress/sempress/404.php:35
@@ -100,17 +100,17 @@ msgstr[1] "%1$s pemikiran pada &ldquo;%2$s&rdquo;"
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:39
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:59
 msgid "Comment navigation"
-msgstr "Komentar navigasi"
+msgstr "Navigasi komentar"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:40
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:60
 msgid "&larr; Older Comments"
-msgstr "&larr; Komentar Lebih Lama"
+msgstr "&larr; Komentar-komentar Lebih Lawas"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:41
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:61
 msgid "Newer Comments &rarr;"
-msgstr "Baru Komentar &rarr;"
+msgstr "Komentar-komentar baru &rarr;"
 
 #: /Users/pfefferle/Work/SemPress/sempress/comments.php:71
 msgid "Comments are closed."
@@ -142,14 +142,14 @@ msgstr "Lanjutkan membaca <span class=\"meta-nav\">&rarr;</span>"
 #: /Users/pfefferle/Work/SemPress/sempress/content-video.php:19
 #: /Users/pfefferle/Work/SemPress/sempress/image.php:85
 msgid "Pages:"
-msgstr "halaman:"
+msgstr "Halaman:"
 
 #: /Users/pfefferle/Work/SemPress/sempress/content-page.php:20
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:33
 #: /Users/pfefferle/Work/SemPress/sempress/image.php:33
 #: /Users/pfefferle/Work/SemPress/sempress/image.php:99
 msgid "Edit"
-msgstr "Mengedit"
+msgstr "Ubah"
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:5
 msgid "Posted"
@@ -159,7 +159,7 @@ msgstr "Dikirim"
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:9
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:19
 msgid ", "
-msgstr ","
+msgstr ", "
 
 #: /Users/pfefferle/Work/SemPress/sempress/entry-footer.php:13
 #, php-format
@@ -195,15 +195,15 @@ msgstr "Menu utama"
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:152
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Halaman ke-%s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:167
 msgid "SemPress Settings"
-msgstr ""
+msgstr "Pengaturan SemPress"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:168
 msgid "Change the look and feel of SemPress."
-msgstr ""
+msgstr "Ubah penampilan SemPress"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:178
 msgid "Text Color"
@@ -219,15 +219,15 @@ msgstr "Border Color"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:211
 msgid "Page Structure"
-msgstr ""
+msgstr "Struktur Halaman"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:216
 msgid "Single Column (Sidebar at the bottom)"
-msgstr ""
+msgstr "Satu kolom (Sidebar berada di bawah)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:217
 msgid "Multi Column (Sidebar at the right)"
-msgstr ""
+msgstr "Multi kolom (Sidebar berada di sisi kanan)"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:266
 msgid "Sidebar 1"
@@ -243,7 +243,7 @@ msgstr "Suatu daerah sidebar opsional kedua"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:328
 msgid "Post navigation"
-msgstr "Posting navigasi"
+msgstr "Navigasi posting"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:332
 msgid "&larr;"
@@ -255,7 +255,7 @@ msgstr "&rarr;"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:338
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Post Lama"
+msgstr "<span class=\"meta-nav\">&larr;</span> Post-post lama"
 
 #: /Users/pfefferle/Work/SemPress/sempress/functions.php:342
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
@@ -379,14 +379,14 @@ msgstr "Cari di sini&hellip;"
 #: /Users/pfefferle/Work/SemPress/sempress/search.php:17
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Search Results for: %s"
+msgstr "Hasil pencarian untuk: %s"
 
 #: /Users/pfefferle/Work/SemPress/sempress/search.php:39
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Maaf, tapi tidak ada yang cocok dengan istilah pencarian Anda. Silakan coba "
+"Maaf, tidak ada yang cocok dengan istilah pencarian Anda. Silakan coba "
 "lagi dengan beberapa kata kunci yang berbeda."
 
 #: /Users/pfefferle/Work/SemPress/sempress/sidebar.php:26
