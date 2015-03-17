@@ -71,7 +71,7 @@ function sempress_setup() {
   add_image_size( 'sempress-image-post', 668, 1288 );
 
   // Switches default core markup for search form to output valid HTML5.
-  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
+  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'widgets' ) );
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
@@ -88,12 +88,18 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
 
+  /**
+   * This theme supports the "title-tag" feature
+   *
+   * @see https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
+   */
   add_theme_support( 'title-tag' );
 
   /**
    * Draw attention to supported WebSemantics
    */
   add_theme_support( 'microformats2' );
+  add_theme_support( 'microformats' );
   add_theme_support( 'microdata' );
 
   if (get_theme_mod( 'sempress_columns', 'single' ) == "single") {
@@ -116,9 +122,6 @@ function sempress_setup() {
     'default-image' => get_template_directory_uri() . '/img/noise.png',
   );
   add_theme_support( 'custom-background', $custom_background_args );
-
-  // This theme uses its own gallery styles.
-  //add_filter( 'use_default_gallery_style', '__return_false' );
 
   // Nicer WYSIWYG editor
   add_editor_style( 'css/editor-style.css' );
