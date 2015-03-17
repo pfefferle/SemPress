@@ -8,7 +8,8 @@ module.exports = function (grunt) {
         options: {
           style: 'expanded',
           line_comments: false,
-          line_numbers: false
+          line_numbers: false,
+          sourcemap: 'none'
         },
         files: {
           'sempress/style.css': 'sass/style.scss',
