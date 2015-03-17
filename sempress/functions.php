@@ -88,6 +88,8 @@ function sempress_setup() {
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
 
+  add_theme_support( 'title-tag' );
+
   /**
    * Draw attention to supported WebSemantics
    */
