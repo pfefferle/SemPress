@@ -78,10 +78,18 @@ The exceptions to this license are as follows:
 * Genericons by Automattic - http://genericons.com
 * html5shiv - http://code.google.com/p/html5shiv/
 * Translator:
-** de_DE: Benjamin Hartwich - http://www.benjaminhartwich.de/
-** sv_SE: Christopher Anderton - http://deluxive.se/blog/
-** ru_RU: Oleg - http://0leg.net
-** fr_FR: Julien Pierré - http://www.jp-software.fr/en/
-** id_ID: Sugeng TiGeFa - http://tigefa4u.github.io
-** nb_NO: Kristoffer Risanger - https://twitter.com/kristofferR
-** ko_KR: CARLITO - http://www.calitosway.net
+    * de_DE
+        * Benjamin Hartwich - http://www.benjaminhartwich.de/
+    * sv_SE
+        * Christopher Anderton - http://deluxive.se/blog/
+    * ru_RU
+        * Oleg - http://0leg.net
+    * fr_FR:
+        * Julien Pierré - http://www.jp-software.fr/en/
+    * id_ID
+        * Sugeng TiGeFa - http://tigefa4u.github.io
+        * Rizky Luthfianto - https://github.com/rilut
+    * nb_NO
+        * Kristoffer Risanger - https://twitter.com/kristofferR
+    * ko_KR
+        * CARLITO - http://www.calitosway.net

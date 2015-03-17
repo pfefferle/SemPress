@@ -138,3 +138,8 @@ body {
     border: none;
   }
 }
+
+.screen-reader-text:focus {
+  right: 15px;
+  left: auto;
+}

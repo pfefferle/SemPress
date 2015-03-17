@@ -62,6 +62,8 @@
     text-decoration: none;
   }
 }
-#access ul li:hover > ul {
+#access ul li:hover > ul,
+#access ul li:focus > ul,
+#access ul li.focus > ul {
   display: block;
 }

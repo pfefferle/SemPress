@@ -80,7 +80,6 @@ function sempress_setup() {
 
   // Add support for the Aside, Gallery Post Formats...
   add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status', 'image', 'video', 'audio', 'quote' ) );
-  //add_theme_support( 'structured-post-formats', array( 'image', 'video', 'audio', 'quote' ) );
 
   /**
    * This theme supports jetpacks "infinite-scroll"
@@ -88,6 +87,12 @@ function sempress_setup() {
    * @see http://jetpack.me/support/infinite-scroll/
    */
   add_theme_support( 'infinite-scroll', array('container' => 'content', 'footer' => 'colophon') );
+
+  /**
+   * Draw attention to supported WebSemantics
+   */
+  add_theme_support( 'microformats2' );
+  add_theme_support( 'microdata' );
 
   if (get_theme_mod( 'sempress_columns', 'single' ) == "single") {
     $width = 670;
@@ -134,24 +139,24 @@ add_action( 'after_setup_theme', 'sempress_setup' );
  * @return string Filtered title.
  */
 function sempress_wp_title( $title, $sep ) {
-	global $paged, $page;
+  global $paged, $page;
 
-	if ( is_feed() )
-		return $title;
+  if ( is_feed() )
+    return $title;
 
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
+  // Add the site name.
+  $title .= get_bloginfo( 'name' );
 
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
+  // Add the site description for the home/front page.
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    $title = "$title $sep $site_description";
 
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
+  // Add a page number if necessary.
+  if ( $paged >= 2 || $page >= 2 )
+    $title = "$title $sep " . sprintf( __( 'Page %s', 'sempress' ), max( $paged, $page ) );
 
-	return $title;
+  return $title;
 }
 add_filter( 'wp_title', 'sempress_wp_title', 10, 2 );
 
@@ -307,6 +312,8 @@ function sempress_enqueue_scripts() {
     wp_enqueue_script('html5', get_template_directory_uri() . '/js/html5.js', false, '3.7.2');
   }
 
+  wp_enqueue_script( 'sempress-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.5.1', true );
+
   // Loads our main stylesheet.
   wp_enqueue_style( 'sempress-style', get_stylesheet_uri() );
 }
@@ -364,12 +371,12 @@ function sempress_comment( $comment, $args, $depth ) {
   $GLOBALS['comment'] = $comment;
 
   switch ( $comment->comment_type ) :
-  	case 'pingback' :
-  	case 'trackback' :
+    case 'pingback' :
+    case 'trackback' :
     case 'webmention' :
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-  	<article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+    <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
       <div class="comment-content p-summary p-name" itemprop="commentText name description"><?php comment_text(); ?></div>
       <footer>
         <div class="comment-meta commentmetadata">
@@ -387,8 +394,8 @@ function sempress_comment( $comment, $args, $depth ) {
       </footer>
     </article>
   <?php
-  		break;
-  	default :
+      break;
+    default :
   ?>
   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
     <article id="comment-<?php comment_ID(); ?>" class="comment <?php $comment->comment_type; ?>" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">

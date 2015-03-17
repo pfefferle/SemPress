@@ -76,3 +76,105 @@ footer.entry-meta {
     margin-top: 0px;
   }
 }
+
+#page {
+  position: inherit;
+}
+
+#access {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  @include rounded(0);
+  background-color: #464646;
+  z-index: 99999;
+}
+#access a,
+#access a:visited,
+#access a:hover,
+#access .section-heading a {
+  color: #fff;
+  text-shadow: none;
+  border: none;
+  text-decoration: none;
+}
+#access:target ul,
+#access.fokus ul {
+  display: block;
+  font-size: 17px;
+  background-color: transparent;
+}
+#access .section-heading {
+  clip: inherit;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin: 0;
+  background-color: #464646;
+}
+#access .section-heading a:before {
+  font-family: 'Genericons';
+  content: '\f419';
+  margin-right: 10px;
+  padding-left: 25px;
+}
+#access:target .section-heading {
+  display: none;
+}
+#access li {
+  float: inherit;
+  margin: inherit;
+}
+#access ul {
+  display: none;
+  margin: inherit;
+  padding-left: 25px;
+  background-color: transparent;
+}
+#access ul ul {
+  background-color: transparent;
+  background-image: none;
+  display: inherit;
+  position: inherit;
+  float: none;
+  padding: inherit;
+  margin-left: 10px;
+  border: none;
+  top: inherit;
+  left: inherit;
+  @include reset-box-shadow;
+  border: none;
+}
+#access ul > li > a {
+  border: none;
+  margin: inherit;
+}
+#access ul ul ul {
+  left: inherit;
+  top: inherit;
+}
+#access ul ul a {
+  line-height: 1em;
+  height: auto;
+  border: none;
+  width: auto;
+}
+#access div > ul > li > a,
+#access div > ul > li > a:hover,
+#access div > ul > li > a:visited,
+#access .current_page_item > a,
+#access .current_page_ancestor > a,
+#access ul ul li a,
+#access ul ul li a:hover,
+#access ul ul li a:visited,
+#access ul ul li.current_page_item a {
+  color: #fff;
+  border-bottom: none;
+}
+#access ul ul li a {
+  height: auto;
+  border-top: none;
+  @include reset-box-shadow;
+}
