@@ -14,6 +14,17 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.5.1 =
+* removed unused functions
+* updated translations
+* fixed bug with wrong header image-size
+* added sanitize callbacks
+* register sidebars on widgets_ini
+
+= 1.5.0 =
+* improved css
+* fixed microformats(2)
+
 = 1.4.6 =
 * nicer mobile view
 * changed pingback/trackback template
