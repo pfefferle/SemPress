@@ -182,6 +182,7 @@ function sempress_customize_register( $wp_customize ) {
   $wp_customize->add_setting( 'sempress_textcolor' , array(
     'default'     => '#'.$themecolors['text'],
     'transport'   => 'refresh',
+    'sanitize_callback' => 'sanitize_hex_color',
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_textcolor', array(
@@ -193,6 +194,7 @@ function sempress_customize_register( $wp_customize ) {
   $wp_customize->add_setting( 'sempress_shadowcolor' , array(
     'default'     => '#'.$themecolors['shadow'],
     'transport'   => 'refresh',
+    'sanitize_callback' => 'sanitize_hex_color',
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_shadowcolor', array(
@@ -204,6 +206,7 @@ function sempress_customize_register( $wp_customize ) {
   $wp_customize->add_setting( 'sempress_bordercolor' , array(
     'default'     => '#'.$themecolors['border'],
     'transport'   => 'refresh',
+    'sanitize_callback' => 'sanitize_hex_color',
   ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sempress_bordercolor', array(
