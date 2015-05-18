@@ -218,6 +218,7 @@ function sempress_customize_register( $wp_customize ) {
   $wp_customize->add_setting( 'sempress_columns' , array(
     'default'     => 'multi',
     'transport'   => 'refresh',
+    'sanitize_callback' => 'sanitize_key',
   ) );
 
   $wp_customize->add_control( 'sempress_columns', array(
