@@ -294,7 +294,7 @@ function sempress_widgets_init() {
     'after_title' => '</h3>',
   ) );
 }
-add_action( 'init', 'sempress_widgets_init' );
+add_action( 'widgets_init', 'sempress_widgets_init' );
 
 if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
 /**
