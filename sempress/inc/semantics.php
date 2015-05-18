@@ -67,8 +67,8 @@ add_filter( 'post_class', 'sempress_post_classes', 99 );
  */
 function sempress_comment_classes( $classes ) {
   $classes[] = "h-as-comment";
-  $classes[] = "p-comment";
   $classes[] = "h-entry";
+  $classes[] = "p-comment";
   $classes[] = "comment";
 
   return array_unique($classes);
@@ -135,11 +135,17 @@ add_filter( 'get_comment_author_link', 'sempress_author_link' );
  *
  * @since SemPress 1.0.0
  */
-function sempress_get_avatar( $tag ) {
+function sempress_pre_get_avatar_data( $args, $id_or_email ) {
+  if(!isset($args['class']) ) {
+    $args['class'] = array();
+  }
+
   // Adds a class for microformats v2
-  return preg_replace('/(class\s*=\s*[\"|\'])/i', '${1}u-photo ', $tag);
+  $args['class'] = array_unique(array_merge($args['class'], array('u-photo')));
+
+  return $args;
 }
-add_filter( 'get_avatar', 'sempress_get_avatar' );
+add_filter( 'pre_get_avatar_data', 'sempress_pre_get_avatar_data', 99, 2 );
 
 /**
  * add rel-prev attribute to previous_image_link
