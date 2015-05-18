@@ -102,7 +102,7 @@ function sempress_setup() {
   add_theme_support( 'microformats' );
   add_theme_support( 'microdata' );
 
-  if (get_theme_mod( 'sempress_columns', 'single' ) == "single") {
+  if (get_theme_mod( 'sempress_columns', 'multi' ) == 'single') {
     $width = 670;
   } else {
     $width = 950;
