@@ -14,6 +14,9 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.5.2 =
+* added h-cite to be compatible to: https://indiewebcamp.com/comments-presentation#How_to_markup
+
 = 1.5.1 =
 * removed unused functions
 * updated translations

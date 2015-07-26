@@ -68,6 +68,7 @@ add_filter( 'post_class', 'sempress_post_classes', 99 );
 function sempress_comment_classes( $classes ) {
   $classes[] = "h-as-comment";
   $classes[] = "h-entry";
+  $classes[] = "h-cite";
   $classes[] = "p-comment";
   $classes[] = "comment";
 
