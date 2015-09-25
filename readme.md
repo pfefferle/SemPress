@@ -74,7 +74,16 @@ SemPress supports:
 
 ## Child themes
 
-* [SemPress Lite](https://github.com/jihaisse/SemPress-Lite) by [Jihaisse](http://jihais.se/)
+### [Index](http://cmx.org.uk/indextheme/) by [Phil Julian](http://cmx.org.uk/)
 
+See <http://cmx.org.uk> for an example
+
+### [SemPress Lite](https://github.com/jihaisse/SemPress-Lite) by [Jihaisse](http://jihais.se/)
+
+![SemPress Lite](https://raw.githubusercontent.com/jihaisse/SemPress-Lite/master/sempress-lite/screenshot.png)
+
+### [SenPress](https://github.com/pfefferle/SenPress) by me
+
+![SenPress](https://raw.githubusercontent.com/pfefferle/SenPress/master/screenshot.png)
 
 [![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
