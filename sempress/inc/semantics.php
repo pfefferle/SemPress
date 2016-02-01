@@ -143,6 +143,7 @@ function sempress_pre_get_avatar_data( $args, $id_or_email ) {
 
   // Adds a class for microformats v2
   $args['class'] = array_unique(array_merge($args['class'], array('u-photo')));
+  $args['extra_attr'] = 'itemprop="image"';
 
   return $args;
 }
@@ -210,9 +211,11 @@ function sempress_get_semantics($id = null) {
       } elseif (is_single()) {
         $classes['itemscope'] = array('');
         $classes['itemtype'] = array('http://schema.org/BlogPosting');
+        $classes['itemprop'] = array('mainEntityOfPage');
       } elseif (is_page()) {
         $classes['itemscope'] = array('');
         $classes['itemtype'] = array('http://schema.org/WebPage');
+        $classes['itemprop'] = array('mainEntityOfPage');
       }
       break;
     case "site-title":
