@@ -23,11 +23,11 @@
  * @param string $form
  * @return string
  */
-function sempress_comment_autocomplete($fields) {
-  $fields['author'] = preg_replace('/<input/', '<input autocomplete="nickname name" ', $fields['author']);
-  $fields['email'] = preg_replace('/<input/', '<input autocomplete="email" ', $fields['email']);
-  $fields['url'] = preg_replace('/<input/', '<input autocomplete="url" ', $fields['url']);
+function sempress_comment_autocomplete( $fields ) {
+	$fields['author'] = preg_replace( '/<input/', '<input autocomplete="nickname name" ', $fields['author'] );
+	$fields['email'] = preg_replace( '/<input/', '<input autocomplete="email" ', $fields['email'] );
+	$fields['url'] = preg_replace( '/<input/', '<input autocomplete="url" ', $fields['url'] );
 
-  return $fields;
+	return $fields;
 }
-add_filter("comment_form_default_fields", "sempress_comment_autocomplete");
+add_filter( 'comment_form_default_fields', 'sempress_comment_autocomplete' );

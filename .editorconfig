@@ -3,12 +3,16 @@
 # top-most EditorConfig file
 root = true
 
-# Unix-style newlines with trim trailing whitespaces
 [*]
 end_of_line = lf
 trim_trailing_whitespace = true
+charset = utf-8
 
-# 2 space indentation
+[*.php]
+indent_style = tab
+indent_size = 4
+
+[*.{js,json}]
 indent_style = space
 indent_size = 2
 
