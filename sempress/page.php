@@ -13,19 +13,19 @@
 
 get_header(); ?>
 
-    <section id="primary">
-      <main id="content" role="main">
+		<section id="primary">
+			<main id="content" role="main">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-          <?php get_template_part( 'content', 'page' ); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
 
-          <?php comments_template( '', true ); ?>
+					<?php comments_template( '', true ); ?>
 
-        <?php endwhile; // end of the loop. ?>
+				<?php endwhile; // end of the loop. ?>
 
-      </main><!-- #content -->
-    </section><!-- #primary -->
+			</main><!-- #content -->
+		</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -88,7 +88,7 @@ function sempress_get_post_classes( $classes = array() ) {
 
 	// adds microformats 2 activity-stream support
 	// for pages and articles
-	if ( get_post_type() == 'page' ) {
+	if ( get_post_type() === 'page' ) {
 		$classes[] = 'h-as-page';
 	}
 	if ( ! get_post_format() && 'post' === get_post_type() ) {

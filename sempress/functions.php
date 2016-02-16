@@ -283,7 +283,6 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-
 		// Add HTML5 support to older versions of IE
 		if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
 			( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
