@@ -89,5 +89,3 @@ See <http://cmx.org.uk> for an example
 ### [SenPress](https://github.com/pfefferle/SenPress) by me
 
 ![SenPress](https://raw.githubusercontent.com/pfefferle/SenPress/master/screenshot.png)
-
-[![endorse](http://api.coderwall.com/pfefferle/endorsecount.png)](http://coderwall.com/pfefferle)
