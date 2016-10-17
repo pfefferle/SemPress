@@ -65,7 +65,7 @@ SemPress supports:
 * **fr_FR**
     * [Julien Pierré](http://www.jp-software.fr/en/)
 * **id_ID**
-    * [Sugeng Tigefa](http://tigefa4u.github.io) ([@tigefa_team](https://twitter.com/tigefa_team))
+    * [Sugeng Tigefa](https://github.com/tigefa4u) ([@sugeng_tigefa](https://twitter.com/sugeng_tigefa))
     * [Rizky Luthfianto](https://github.com/rilut) ([@rilut](https://twitter.com/rilut))
 * **ko_KR**
     * [CARLITO](http://www.calitosway.net) ([@calitoway](https://twitter.com/calitoway))
