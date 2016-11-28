@@ -24,6 +24,9 @@
 #content {
   margin: 0;
 }
+.custom-logo-link {
+  display: none;
+}
 .post, .error404, .sticky {
   &:before {
     content: none;

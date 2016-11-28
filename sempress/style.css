@@ -4,7 +4,7 @@ Theme URI: https://github.com/pfefferle/SemPress
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/projects/sempress/
 Description: SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).
-Version: 1.5.2
+Version: 1.5.3
 License: GNU General Public License Version 3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, fluid-layout, right-sidebar, responsive-layout, accessibility-ready, two-columns, one-column, editor-style, featured-images, theme-options
@@ -167,6 +167,22 @@ h1 {
   display: block;
   clear: both;
   margin-top: 60px;
+}
+#branding .custom-logo-link {
+  float: left;
+  clear: both;
+  margin-left: -100px;
+}
+#branding .custom-logo-link img.custom-logo {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 #site-image {
@@ -1395,6 +1411,9 @@ ol.commentlist {
   }
   body #content, .single-column #content, .multi-column #content {
     margin: 0;
+  }
+  body .custom-logo-link, .single-column .custom-logo-link, .multi-column .custom-logo-link {
+    display: none;
   }
   body .post:before, body .error404:before, body .sticky:before, .single-column .post:before, .single-column .error404:before, .single-column .sticky:before, .multi-column .post:before, .multi-column .error404:before, .multi-column .sticky:before {
     content: none;
