@@ -117,6 +117,12 @@ if ( ! function_exists( 'sempress_setup' ) ) :
 		);
 		add_theme_support( 'custom-header', $custom_header_args );
 
+		// custom logo support
+		add_theme_support( 'custom-logo', array(
+			'height'      => 80,
+			'width'       => 80,
+		) );
+
 		// This theme supports custom backgrounds
 		$custom_background_args = array(
 			'default-color' => $themecolors['bg'],
@@ -149,7 +155,7 @@ function sempress_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'sempress_textcolor' , array(
-		'default'	 => '#'.$themecolors['text'],
+		'default'	 => '#' . $themecolors['text'],
 		'transport'   => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
@@ -161,7 +167,7 @@ function sempress_customize_register( $wp_customize ) {
 	) ) );
 
 	$wp_customize->add_setting( 'sempress_shadowcolor' , array(
-		'default'	 => '#'.$themecolors['shadow'],
+		'default'	 => '#' . $themecolors['shadow'],
 		'transport'   => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
@@ -173,7 +179,7 @@ function sempress_customize_register( $wp_customize ) {
 	) ) );
 
 	$wp_customize->add_setting( 'sempress_bordercolor' , array(
-		'default'	 => '#'.$themecolors['border'],
+		'default'	 => '#' . $themecolors['border'],
 		'transport'   => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
@@ -283,13 +289,9 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		// Add HTML5 support to older versions of IE
-		if ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
-			( false !== strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) ) &&
-			( false === strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE 9' ) ) ) {
-
-			wp_enqueue_script( 'html5', get_template_directory_uri() . '/js/html5.js', false, '3.7.2' );
-		}
+		// Load the html5 shiv.
+		wp_enqueue_script( 'html5', get_template_directory_uri() . '/js/html5shiv.min.js', array(), '3.7.3' );
+		wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
 
 		wp_enqueue_script( 'sempress-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.5.1', true );
 
@@ -385,7 +387,7 @@ if ( ! function_exists( 'sempress_comment' ) ) :
 				<?php echo get_avatar( $comment, 50 ); ?>
 				<?php printf( __( '%s <span class="says">says:</span>', 'sempress' ), sprintf( '<cite class="fn p-name" itemprop="name">%s</cite>', get_comment_author_link() ) ); ?>
 					</address><!-- .comment-author .vcard -->
-					<?php if ( $comment->comment_approved === '0' ) : ?>
+					<?php if ( '0' === $comment->comment_approved ) : ?>
 						<em><?php _e( 'Your comment is awaiting moderation.', 'sempress' ); ?></em>
 						<br />
 					<?php endif; ?>
@@ -518,6 +520,15 @@ function sempress_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'sempress_enhanced_image_navigation' );
 
+/**
+ * Add a pingback url auto-discovery header for singularly identifiable articles.
+ */
+function sempress_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		printf( '<link rel="pingback" href="%s">' . PHP_EOL, get_bloginfo( 'pingback_url' ) );
+	}
+}
+add_action( 'wp_head', 'sempress_pingback_header' );
 
 /**
  * Display the id for the post div.
