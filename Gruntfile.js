@@ -40,12 +40,25 @@ module.exports = function (grunt) {
           dest: 'sempress'
         }]
       }
+    },
+    makepot: {
+      target: {
+        options: {
+          cwd: 'sempress',
+          domainPath: '/languages',
+          exclude: ['bin/.*', '.git/.*', 'vendor/.*'],
+          potFilename: 'sempress.pot',
+          type: 'wp-theme',
+          updateTimestamp: true
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-wp-i18n');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'replace']);

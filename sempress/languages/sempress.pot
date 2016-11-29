@@ -1,0 +1,345 @@
+# Copyright (C) 2016 Matthias Pfefferle
+# This file is distributed under the GNU General Public License Version 3.
+msgid ""
+msgstr ""
+"Project-Id-Version: SemPress 1.5.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-11-29 19:42:15+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: 404.php:16
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:35
+#. translators: %1$s: smilie
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:32 archive.php:34
+msgid "Archives: %s"
+msgstr ""
+
+#: archive.php:36 sidebar.php:19
+msgid "Archives"
+msgstr ""
+
+#: archive.php:65 author.php:63 category.php:49 index.php:43 search.php:35
+#: tag.php:51 taxonomy-post_format.php:49
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:69 author.php:67 category.php:53 index.php:47 tag.php:55
+#: taxonomy-post_format.php:53
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: author.php:27
+msgid "Author Archives: %s"
+msgstr ""
+
+#: category.php:18
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:16
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:32
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: content-aside.php:20 content-audio.php:22 content-chat.php:13
+#: content-gallery.php:27 content-image.php:21 content-link.php:20
+#: content-quote.php:20 content-single.php:25 content-status.php:20
+#: content-video.php:18
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-aside.php:21 content-audio.php:23 content-chat.php:14
+#: content-gallery.php:28 content-image.php:22 content-link.php:21
+#: content-page.php:19 content-quote.php:21 content-single.php:26
+#: content-status.php:21 content-video.php:19 image.php:85
+msgid "Pages:"
+msgstr ""
+
+#: content-gallery.php:14 content-single.php:9 entry-header.php:2
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-page.php:20 entry-footer.php:33 image.php:33 image.php:99
+msgid "Edit"
+msgstr ""
+
+#: entry-footer.php:5
+msgid "Posted"
+msgstr ""
+
+#: entry-footer.php:9 entry-footer.php:19
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: entry-footer.php:13
+msgid "in %1$s"
+msgstr ""
+
+#: entry-footer.php:24
+msgid "Tagged %1$s"
+msgstr ""
+
+#: entry-footer.php:30
+msgid "Leave a comment"
+msgstr ""
+
+#: entry-footer.php:30
+msgid "1 Comment"
+msgstr ""
+
+#: entry-footer.php:30
+msgid "% Comments"
+msgstr ""
+
+#: footer.php:17
+msgid "This site is powered by %1$s and styled with %2$s"
+msgstr ""
+
+#: functions.php:79
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:152
+msgid "SemPress Settings"
+msgstr ""
+
+#: functions.php:153
+msgid "Change the look and feel of SemPress."
+msgstr ""
+
+#: functions.php:164
+msgid "Text Color"
+msgstr ""
+
+#: functions.php:176
+msgid "Shadow Color"
+msgstr ""
+
+#: functions.php:188
+msgid "Border Color"
+msgstr ""
+
+#: functions.php:200
+msgid "Page Structure"
+msgstr ""
+
+#: functions.php:205
+msgid "Single Column (Sidebar at the bottom)"
+msgstr ""
+
+#: functions.php:206
+msgid "Multi Column (Sidebar at the right)"
+msgstr ""
+
+#: functions.php:255
+msgid "Sidebar 1"
+msgstr ""
+
+#: functions.php:264
+msgid "Sidebar 2"
+msgstr ""
+
+#: functions.php:266
+msgid "An optional second sidebar area"
+msgstr ""
+
+#: functions.php:316
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:326
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:330
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:373 functions.php:399
+#. translators: 1: date, 2: time
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:375 functions.php:401
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:388
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:391
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:425
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\" class=\"url u-url\"><time class=\"entry-date updated "
+"published dt-updated dt-published\" datetime=\"%3$s\" "
+"itemprop=\"dateModified datePublished\">%4$s</time></a><address "
+"class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author "
+"p-author vcard hcard h-card\" itemprop=\"author editor publisher\" "
+"itemscope itemtype=\"http://schema.org/Person\">%5$s <a class=\"url uid "
+"u-url u-uid fn p-name\" href=\"%6$s\" title=\"%7$s\" rel=\"author\" "
+"itemprop=\"url\"><span itemprop=\"name\">%8$s</span></a></span></address>"
+msgstr ""
+
+#: functions.php:432
+msgid "View all posts by %s"
+msgstr ""
+
+#: header.php:38
+msgid "Main menu"
+msgstr ""
+
+#: header.php:39
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:23
+msgid ""
+"Published <time class=\"entry-date updated dt-updated\" datetime=\"%1$s\" "
+"itemprop=\"dateModified\">%2$s</time> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:37
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:38
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:91
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:93
+msgid ""
+"Comments are closed, but you can leave a trackback: <a "
+"class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" "
+"rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:95
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" "
+"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:97
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: sidebar.php:26
+msgid "Meta"
+msgstr ""
+
+#: tag.php:18
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: taxonomy-post_format.php:24
+msgid "%s Archives"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "SemPress"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/pfefferle/SemPress"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"SemPress is an extremely lightweight, responsive theme designed to show off "
+"your posts, quotes, and images. SemPress supports multiple post formats, "
+"widgets, and the option to upload a custom header or background image. The "
+"theme is based on HTML5 mixed with microformats, microformats v2 and "
+"microdata (Schema.org)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Matthias Pfefferle"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://notizblog.org/projects/sempress/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full-width, no sidebar"
+msgstr ""
+
+#: functions.php:320
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: functions.php:321
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
