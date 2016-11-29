@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-11-29 20:48+0100\n"
-"PO-Revision-Date: 2016-11-29 20:51+0100\n"
+"POT-Creation-Date: 2016-11-29 21:04+0100\n"
+"PO-Revision-Date: 2016-11-29 21:08+0100\n"
 "Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
 "Language-Team: CARLITO\n"
 "Language: ko_KR\n"
@@ -346,7 +346,7 @@ msgid "Matthias Pfefferle"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://notizblog.org/projects/sempress/"
+msgid "http://notiz.blog/projects/sempress/"
 msgstr ""
 
 #. Template Name of the plugin/theme

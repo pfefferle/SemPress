@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SemPress 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-11-29 20:44+0100\n"
-"PO-Revision-Date: 2016-11-29 20:52+0100\n"
+"POT-Creation-Date: 2016-11-29 21:08+0100\n"
+"PO-Revision-Date: 2016-11-29 21:08+0100\n"
 "Last-Translator: Matthias Pfefferle <matthias@pfefferle.org>\n"
 "Language-Team: Benjamin Hartwich - http://www.benjaminhartwich.de/, Matthias "
 "Pfefferle\n"
@@ -366,8 +366,8 @@ msgid "Matthias Pfefferle"
 msgstr "Matthias Pfefferle"
 
 #. Author URI of the plugin/theme
-msgid "http://notizblog.org/projects/sempress/"
-msgstr "http://notizblog.org/projects/sempress/"
+msgid "http://notiz.blog/projects/sempress/"
+msgstr "http://notiz.blog/projects/sempress/"
 
 #. Template Name of the plugin/theme
 msgid "Full-width, no sidebar"
