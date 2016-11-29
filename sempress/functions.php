@@ -440,7 +440,7 @@ endif;
  *
  * @since SemPress 1.0.0
  */
-function sempress_the_post_thumbnail( $before = ', $after = ' ) {
+function sempress_the_post_thumbnail( $before = '', $after = '' ) {
 	if ( '' != get_the_post_thumbnail() ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' );
 		$class = '';

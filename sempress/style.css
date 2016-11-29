@@ -898,7 +898,10 @@ img.size-thumbnail,
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
+.wp-caption .wp-caption-text,
+.gallery-caption,
+.entry-caption,
+.entry-media figcaption {
   padding: 0px;
   margin: 0px;
   text-align: center;
