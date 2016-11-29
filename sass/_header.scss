@@ -10,11 +10,6 @@
     float: left;
     clear: both;
     margin-left: -70px;
-
-    img.custom-logo {
-      @include rounded($border-radius);
-      @include box-shadow(0, 1px, 5px, 0, rgba(0,0,0,0.2));
-    }
   }
 }
 #site-image {

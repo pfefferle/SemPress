@@ -173,17 +173,6 @@ h1 {
   clear: both;
   margin-left: -70px;
 }
-#branding .custom-logo-link img.custom-logo {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-}
 
 #site-image {
   float: left;
