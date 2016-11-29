@@ -19,6 +19,7 @@
     "custom-colors",
     "custom-header",
     "custom-background",
+    "custom-logo",
     "sticky-post",
     "microformats",
     "rtl-language-support",
@@ -29,10 +30,13 @@
     "responsive-layout",
     "fluid-layout",
     "right-sidebar",
+    "theme-options",
     "two-columns",
     "one-column",
     "editor-style",
-    "featured-images"
+    "featured-images",
+    "blog",
+    "news"
   ],
   "author": {
     "name": "Matthias Pfefferle",
