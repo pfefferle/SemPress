@@ -133,3 +133,16 @@ div.aligncenter, .gallery {
 .entry-meta .avatar {
   display: none;
 }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 0 1em;
+  padding: .5em;
+  width: 30%;
+}
