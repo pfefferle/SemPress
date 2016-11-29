@@ -119,8 +119,8 @@ if ( ! function_exists( 'sempress_setup' ) ) :
 
 		// custom logo support
 		add_theme_support( 'custom-logo', array(
-			'height'      => 80,
-			'width'       => 80,
+			'height'      => 50,
+			'width'       => 50,
 		) );
 
 		// This theme supports custom backgrounds
