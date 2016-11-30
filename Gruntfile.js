@@ -29,7 +29,8 @@ module.exports = function (grunt) {
             'license_url': '<%= pkg.license.url %>',
             'name': '<%= pkg.name %>',
             'description': '<%= pkg.description %>',
-            'homepage': '<%= pkg.homepage %>'
+            'homepage': '<%= pkg.homepage %>',
+            'keywords': '<%= pkg.keywords.join(", ") %>'
           },
           prefix: '@@'
         },
