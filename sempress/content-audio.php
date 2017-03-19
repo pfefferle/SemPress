@@ -5,7 +5,7 @@
  */
 ?>
 
-<article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_semantics("post"); ?>>
+<article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_semantics( 'post' ); ?>>
 	<?php get_template_part( 'entry', 'header' ); ?>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>

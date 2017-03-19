@@ -1,6 +1,6 @@
 {
   "name": "SemPress",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "SemPress is an extremely lightweight, responsive theme designed to show off your posts, quotes, and images. SemPress supports multiple post formats, widgets, and the option to upload a custom header or background image. The theme is based on HTML5 mixed with microformats, microformats v2 and microdata (Schema.org).",
   "main": "Gruntfile.js",
   "repository": {

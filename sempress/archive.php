@@ -21,20 +21,22 @@ get_header(); ?>
 				<header class="page-header">
 					<h1 class="page-title">
 						<?php
-							if ( is_date() ) :
-								$link = "";
-								if ( is_day() )
-									$link .= ' <a href="'.get_day_link( get_the_time('Y'), get_the_time('m'), get_the_time('d') ).'">'.get_the_time('d').'.</a>';
-								if ( is_month() || is_day() )
-									$link .= ' <a href="'.get_month_link( get_the_time('Y'), get_the_time('m') ).'">'.get_the_date( 'F' ).'</a>';
-								if ( is_year() || is_month() || is_day() )
-									$link .= ' <a href="'.get_year_link( get_the_time('Y') ).'">'.get_the_time('Y').'</a>';
-								printf( __( 'Archives: %s', 'sempress' ), '<span itemprop="breadcrumb">' . $link . '</span>' );
-							elseif ( get_post_format() ) :
-								printf( __( 'Archives: %s', 'sempress' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' );
-							else :
-								_e( 'Archives', 'sempress' );
-							endif;
+						if ( is_date() ) :
+							$link = '';
+							if ( is_day() ) {
+								$link .= ' <a href=" ' . get_day_link( get_the_time( 'Y' ), get_the_time( 'm' ), get_the_time( 'd' ) ) . '">' . get_the_time( 'd' ) . '.</a>';
+							} if ( is_month() || is_day() ) {
+								$link .= ' <a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '">' . get_the_date( 'F' ) . '</a>';
+							} if ( is_year() || is_month() || is_day() ) {
+								$link .= ' <a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a>';
+							}
+
+							printf( __( 'Archives: %s', 'sempress' ), '<span itemprop="breadcrumb">' . $link . '</span>' );
+						elseif ( get_post_format() ) :
+							printf( __( 'Archives: %s', 'sempress' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' );
+						else :
+							_e( 'Archives', 'sempress' );
+						endif;
 						?>
 					</h1>
 				</header>

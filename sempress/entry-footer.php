@@ -1,13 +1,15 @@
 <footer class="entry-meta">
-	<?php if (in_array(get_post_format(), array("aside", "link", "status", "quote"))) {
+	<?php
+	if ( in_array( get_post_format(), array( 'aside', 'link', 'status', 'quote' ) ) ) {
 		sempress_posted_on();
 	} else {
 		_e( 'Posted', 'sempress' );
-	}?>
+	}
+	?>
 	<?php
-		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'sempress' ) );
-		if ( $categories_list ) :
+	/* translators: used between list items, there is a space after the comma */
+	$categories_list = get_the_category_list( __( ', ', 'sempress' ) );
+	if ( $categories_list ) :
 	?>
 	<span class="cat-links">
 		<?php printf( __( 'in %1$s', 'sempress' ), $categories_list ); ?>
@@ -15,9 +17,9 @@
 	<?php endif; // End if categories ?>
 
 	<?php
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'sempress' ) );
-		if ( $tags_list ) :
+	/* translators: used between list items, there is a space after the comma */
+	$tags_list = get_the_tag_list( '', __( ', ', 'sempress' ) );
+	if ( $tags_list ) :
 	?>
 	<span class="sep"> | </span>
 	<span class="tag-links" itemprop="keywords">

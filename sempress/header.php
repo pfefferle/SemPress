@@ -23,10 +23,15 @@
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<?php
-		if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
+		if ( has_custom_logo() ) {
+			$image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ) );
 		?>
+			<div class="u-photo photo logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+				<img itemprop="url" src="<?php echo current( $image ); ?>" />
+				<meta itemprop="width" content="<?php echo next( $image ); ?>" />
+				<meta itemprop="height" content="<?php echo next( $image ); ?>" />
+			</div>
+		<?php } ?>
 		<h1 id="site-title"<?php sempress_semantics( 'site-title' ); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_semantics( 'site-url' ); ?>><?php bloginfo( 'name' ); ?></a></h1>
 		<h2 id="site-description"<?php sempress_semantics( 'site-description' ); ?>><?php bloginfo( 'description' ); ?></h2>
 
@@ -42,4 +47,4 @@
 		</nav><!-- #access -->
 	</header><!-- #branding -->
 
-	<div id="main">
+	<div id="main" itemprop="mainEntityOfPage">

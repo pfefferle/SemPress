@@ -189,9 +189,22 @@ add_filter( 'next_posts_link_attributes', 'sempress_next_posts_link_attributes' 
  * @return string
  */
 function sempress_previous_posts_link_attributes( $attr ) {
-	return $attr.' rel="next"';
+	return $attr . ' rel="next"';
 }
 add_filter( 'previous_posts_link_attributes', 'sempress_previous_posts_link_attributes' );
+
+/**
+ *
+ *
+ */
+function sempress_get_search_form( $form ) {
+	$form = preg_replace( '/<form/i', '<form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"', $form );
+	$form = preg_replace( '/<\/form>/i', '<meta itemprop="target" content="' . site_url( '/?s={search} ' ) . '"/></form>', $form );
+	$form = preg_replace( '/<input type="search"/i', '<input type="search" itemprop="query-input"', $form );
+
+	return $form;
+}
+add_filter( 'get_search_form', 'sempress_get_search_form' );
 
 /**
  * add semantics
@@ -207,7 +220,7 @@ function sempress_get_semantics( $id = null ) {
 		case 'body':
 			if ( ! is_singular() ) {
 				$classes['itemscope'] = array( '' );
-				$classes['itemtype'] = array( 'http://schema.org/Blog' );
+				$classes['itemtype'] = array( 'http://schema.org/Blog', 'http://schema.org/WebPage' );
 			} elseif ( is_single() ) {
 				$classes['itemscope'] = array( '' );
 				$classes['itemtype'] = array( 'http://schema.org/BlogPosting' );
