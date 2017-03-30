@@ -47,4 +47,4 @@
 		</nav><!-- #access -->
 	</header><!-- #branding -->
 
-	<div id="main" itemprop="mainEntityOfPage">
+	<div id="main">
