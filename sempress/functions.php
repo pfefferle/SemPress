@@ -312,7 +312,7 @@ if ( ! function_exists( 'sempress_content_nav' ) ) :
 		global $wp_query;
 
 		?>
-		<nav id="<?php echo $nav_id; ?>">
+		<nav id="<?php echo esc_attr( $nav_id ); ?>">
 			<h1 class="assistive-text section-heading"><?php _e( 'Post navigation', 'sempress' ); ?></h1>
 
 			<?php if ( is_single() ) : // navigation links for single posts ?>
