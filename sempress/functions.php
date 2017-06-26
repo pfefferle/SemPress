@@ -450,7 +450,7 @@ function sempress_the_post_thumbnail( $before = '', $after = '' ) {
 		}
 
 		echo $before;
-		the_post_thumbnail( 'post-thumbnail', array( 'class' => $class . ' photo u-photo', 'itemprop' => 'image' ) );
+		the_post_thumbnail( 'post-thumbnail', array( 'class' => $class . ' photo u-photo u-featured', 'itemprop' => 'image' ) );
 		echo $after;
 	}
 }
