@@ -66,7 +66,6 @@ add_filter( 'post_class', 'sempress_post_classes', 99 );
  * @since SemPress 1.4.0
  */
 function sempress_comment_classes( $classes ) {
-	$classes[] = 'h-as-comment';
 	$classes[] = 'h-entry';
 	$classes[] = 'h-cite';
 	$classes[] = 'p-comment';
@@ -85,37 +84,6 @@ function sempress_get_post_classes( $classes = array() ) {
 
 	// add hentry to the same tag as h-entry
 	$classes[] = 'hentry';
-
-	// adds microformats 2 activity-stream support
-	// for pages and articles
-	if ( get_post_type() === 'page' ) {
-		$classes[] = 'h-as-page';
-	}
-	if ( ! get_post_format() && 'post' === get_post_type() ) {
-		$classes[] = 'h-as-article';
-	}
-
-	// adds some more microformats 2 classes based on the
-	// posts "format"
-	switch ( get_post_format() ) {
-		case 'aside':
-		case 'status':
-			$classes[] = 'h-as-note';
-			break;
-		case 'audio':
-			$classes[] = 'h-as-audio';
-			break;
-		case 'video':
-			$classes[] = 'h-as-video';
-			break;
-		case 'gallery':
-		case 'image':
-			$classes[] = 'h-as-image';
-			break;
-		case 'link':
-			$classes[] = 'h-as-bookmark';
-			break;
-	}
 
 	return array_unique( $classes );
 }
