@@ -449,8 +449,19 @@ function sempress_the_post_thumbnail( $before = '', $after = '' ) {
 			$class = 'alignright';
 		}
 
+		$class .= ' photo';
+
+		$post_format = get_post_format();
+
+		// use `u-photo` on photo/gallery posts
+		if ( in_array( $post_format, array( 'image', 'gallery' ) ) ) {
+			$class .= ' u-photo';
+		} else { // otherwise use `u-featured`
+			$class .= ' u-featured';
+		}
+
 		echo $before;
-		the_post_thumbnail( 'post-thumbnail', array( 'class' => $class . ' photo u-photo u-featured', 'itemprop' => 'image' ) );
+		the_post_thumbnail( 'post-thumbnail', array( 'class' => $class, 'itemprop' => 'image' ) );
 		echo $after;
 	}
 }
