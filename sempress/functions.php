@@ -496,9 +496,9 @@ add_action( 'template_redirect', 'sempress_content_width' );
  * @param int $id the post-id
  * @return string the filtered post-title
  */
-function sempress_the_title( $title, $id ) {
+function sempress_the_title( $title, $id = null ) {
 	// if title is empty, return the id
-	if ( empty( $title ) ) {
+	if ( empty( $title ) && ! empty( $id ) ) {
 		return "#$id";
 	}
 
