@@ -1,0 +1,15 @@
+language: node_js
+before_install: gem install sass
+before_script:
+- npm install grunt-cli -g
+script: grunt
+deploy:
+  provider: releases
+  api_key:
+    secure: FhFDWcEFof6LuXYOMq/1+uT1UkczIkBKMp3CsYua46Xce+Ns4G7WROfyl44M+oPvp/f8UnHMfj2qNNjYr5XurLmFMvMZ09I2KvxslyVo2dgrjO6eUPjx7CYMzj7HsQ95erSpWdesR1kIWP0Jony0HngrKi/QQgAM+9zjDNicnJTOaa51uNXNkF776oZ9iYXG+ouQL1c/nqv6a6Vajd9/Eu/xk7FwvNuzAniAPU++N1NkOgyYX7shzUfV3Diru92CNwvdMWGpytnHyyPzXf9ObBxkrTM4D48yck8Ur4rp9uGyRbWnMLp6FeJCysUjN6vZIyFpDX9fFMIY2+PPng2T0CF+ISqy+03s8oXsqHev+s51ZB0BxpWysHYAvbfbaZ2o6WburKNc8mk18QiA7uXvBO8ZG2XTKjdKNo+E7hFbKItpH/+HBmVAVhWGIaNeFpWCTy3LN3qvtx/fnZNVvsHt47OSKc8BpJRDJn3N/whDH7S8MWtxkemNgOumsDXVeoY3cVDyl+sIeSrCV7M8LWPmc1H56w8kBqlnMtY9P/8Fk3lnLua+ttSKe+2fNVliK6V/xrdeEXSvhslZ9A0r0QjpkOiLdKG9nemoSIBHlJNg85zt5kLisxkjNazEpWR9Bul6CsYrW+vOLsApNlnOBSERRjJ5DxhbOBSNJJTKf67Rm6M=
+  file: build/sempress.zip
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: dougbeal/SemPress
+    branch: master

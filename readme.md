@@ -1,4 +1,6 @@
-# SemPress
+# SemPress [![Build Status](https://travis-ci.org/dougbeal/SemPress.svg?branch=travis-ci)](https://travis-ci.org/dougbeal/SemPress)
+
+
 
 [![Flattr this](http://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=pfefferle&url=https%3A%2F%2Fgithub.com%2Fpfefferle%2Fsempress)
 
@@ -88,3 +90,8 @@ See <http://cmx.org.uk> for an example
 ### [SenPress](https://github.com/pfefferle/SenPress) by me
 
 ![SenPress](https://raw.githubusercontent.com/pfefferle/SenPress/master/screenshot.png)
+
+## Development
+* npm install
+* gem install sass
+* grunt

@@ -1,5 +1,4 @@
 module.exports = function (grunt) {
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -12,11 +11,30 @@ module.exports = function (grunt) {
           sourcemap: 'none'
         },
         files: {
-          'sempress/style.css': 'sass/style.scss',
-          'sempress/css/editor-style.css': 'sass/editor-style.scss'
+          'build/<%= pkg.name.toLowerCase() %>/style.css': 'sass/style.scss',
+          'build/<%= pkg.name.toLowerCase() %>/css/editor-style.css': 'sass/editor-style.scss'
         }
       }
     },
+    compress: {
+      build: {
+        options: {
+          archive: 'build/<%= pkg.name.toLowerCase() %>.zip'
+        },
+        files: [
+          { cwd: '.',
+            src: ['<%= pkg.name.toLowerCase() %>/**'],
+            dest: '/',
+            expand: true
+          },
+          { cwd: 'build/',
+            src: ['<%= pkg.name.toLowerCase() %>/**'],
+            dest: '/',
+            expand: true
+          }         
+          ]
+      }
+    },    
     replace: {
       style: {
         options: {
@@ -37,18 +55,18 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['sempress/style.css'],
-          dest: 'sempress'
+          src: ['build/<%= pkg.name.toLowerCase() %>/style.css'],
+          dest: 'build/<%= pkg.name.toLowerCase() %>'
         }]
       }
     },
     makepot: {
       target: {
         options: {
-          cwd: 'sempress',
+          cwd: '<%= pkg.name.toLowerCase() %>',
           domainPath: '/languages',
           exclude: ['bin/.*', '.git/.*', 'vendor/.*'],
-          potFilename: 'sempress.pot',
+          potFilename: '<%= pkg.name.toLowerCase() %>.pot',
           type: 'wp-theme',
           updateTimestamp: true
         }
@@ -60,7 +78,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wp-i18n');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'replace']);
+  grunt.registerTask('default', ['sass', 'replace', 'compress' ]);
 };
