@@ -141,11 +141,118 @@ div.aligncenter, .gallery {
 ## Galleries
 --------------------------------------------------------------*/
 
-.gallery-item {
-  display: inline-block;
+.gallery {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.gallery .gallery-item {
+  overflow: hidden;
+  float: left;
+  margin: 10px 0 0;
   text-align: center;
-  vertical-align: top;
-  margin: 0 0 1em;
-  padding: .5em;
-  width: 30%;
+  list-style: none;
+}
+
+.gallery-caption {
+  font-size: 11px;
+}
+
+/*
+Image sizes depending on the number of columns
+Based on Hybrid theme
+*/
+.gallery-columns-0 .gallery-item {
+  width: 100%;
+}
+.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  width: 11.11%;
+}
+.gallery-columns-10 .gallery-item {
+  width: 10%;
+}
+.gallery-columns-11 .gallery-item {
+  width: 9.09%;
+}
+.gallery-columns-12 .gallery-item {
+  width: 8.33%;
+}
+.gallery-columns-13 .gallery-item {
+  width: 7.69%;
+}
+.gallery-columns-14 .gallery-item {
+  width: 7.14%;
+}
+.gallery-columns-15 .gallery-item {
+  width: 6.66%;
+}
+.gallery-columns-16 .gallery-item {
+  width: 6.25%;
+}
+.gallery-columns-17 .gallery-item {
+  width: 5.88%;
+}
+.gallery-columns-18 .gallery-item {
+  width: 5.55%;
+}
+.gallery-columns-19 .gallery-item {
+  width: 5.26%;
+}
+.gallery-columns-20 .gallery-item {
+  width: 5%;
+}
+.gallery-columns-21 .gallery-item {
+  width: 4.76%;
+}
+.gallery-columns-22 .gallery-item {
+  width: 4.54%;
+}
+.gallery-columns-23 .gallery-item {
+  width: 4.34%;
+}
+.gallery-columns-24 .gallery-item {
+  width: 4.16%;
+}
+.gallery-columns-25 .gallery-item {
+  width: 4%;
+}
+.gallery-columns-26 .gallery-item {
+  width: 3.84%;
+}
+.gallery-columns-27 .gallery-item {
+  width: 3.7%;
+}
+.gallery-columns-28 .gallery-item {
+  width: 3.57%;
+}
+.gallery-columns-29 .gallery-item {
+  width: 3.44%;
+}
+.gallery-columns-30 .gallery-item {
+  width: 3.33%;
 }

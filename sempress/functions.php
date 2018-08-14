@@ -132,6 +132,8 @@ if ( ! function_exists( 'sempress_setup' ) ) :
 
 		// Nicer WYSIWYG editor
 		add_editor_style( 'css/editor-style.css' );
+
+		add_filter( 'use_default_gallery_style', '__return_false' );
 	}
 endif; // sempress_setup
 
