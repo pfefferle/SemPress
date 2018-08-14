@@ -32,7 +32,7 @@ function sempress_body_classes( $classes ) {
 		$classes[] = 'custom-header';
 	}
 
-	if ( ! is_singular() ) {
+	if ( ! is_singular() && ! is_404() ) {
 		$classes[] = 'hfeed';
 		$classes[] = 'h-feed';
 		$classes[] = 'feed';
