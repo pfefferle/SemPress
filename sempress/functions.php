@@ -498,7 +498,7 @@ add_action( 'template_redirect', 'sempress_content_width' );
  */
 function sempress_the_title( $title, $id = null ) {
 	// if title is empty, return the id
-	if ( empty( $title ) && ! empty( $id ) ) {
+	if ( empty( $title ) && ! empty( $id ) && ! is_feed() ) {
 		return "#$id";
 	}
 
