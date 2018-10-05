@@ -23,13 +23,6 @@
  */
 
 /**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 670; /* pixels */
-}
-
-/**
  * Set a default theme color array for WP.com.
  */
 $themecolors = array(
@@ -475,39 +468,14 @@ function sempress_the_post_thumbnail( $before = '', $after = '' ) {
  * @since SemPress 1.3.0
  */
 function sempress_content_width() {
+	global $content_width;
+	$content_width = 670; /* pixels */
+
 	if ( is_page_template( 'full-width-page.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
-		global $content_width;
 		$content_width = 880;
 	}
-
-	/*
-	if ( has_post_format( 'image' ) || has_post_format( 'video' ) || is_attachment() ) {
-		global $content_width;
-		$content_width = 668;
-	}
-	*/
 }
 add_action( 'template_redirect', 'sempress_content_width' );
-
-/**
- * replace post-title with id when empty
- *
- * @since SemPress 1.4.6
- *
- * @param string $title the post-title
- * @param int $id the post-id
- * @return string the filtered post-title
- */
-function sempress_the_title( $title, $id = null ) {
-	// if title is empty, return the id
-	if ( empty( $title ) && ! empty( $id ) && ! is_feed() ) {
-		return "#$id";
-	}
-
-	return $title;
-}
-add_filter( 'the_title', 'sempress_the_title', 10, 2 );
-
 
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on

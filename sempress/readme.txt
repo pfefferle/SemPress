@@ -14,6 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.5.11 =
+
+* Support for titleless posts
+
 = 1.5.10 =
 
 * Fixed a lot of bugs

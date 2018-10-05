@@ -1,8 +1,10 @@
 /* Aside Posts */
 .format-aside,
 .format-status,
-.format-link {
-  .entry-content {
+.format-link,
+.no-title {
+  .entry-content,
+  .entry-summary {
     padding-top: 15px;
   }
 }

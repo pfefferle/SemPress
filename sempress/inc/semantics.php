@@ -52,6 +52,10 @@ add_filter( 'body_class', 'sempress_body_classes' );
 function sempress_post_classes( $classes ) {
 	$classes = array_diff( $classes, array( 'hentry' ) );
 
+	if ( ! get_the_title() ) {
+		$classes[] = 'no-title';
+	}
+
 	if ( ! is_singular() ) {
 		return sempress_get_post_classes( $classes );
 	} else {
