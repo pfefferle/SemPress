@@ -14,6 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.5.12 =
+
+* fixed HTML issue in sidebar.php (thanks @billbennett)
+
 = 1.5.11 =
 
 * Support for titleless posts

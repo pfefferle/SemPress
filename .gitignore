@@ -3,3 +3,4 @@ node_modules/*
 *.esproj
 sempress.zip
 package-lock.json
+.idea/*
