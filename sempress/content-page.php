@@ -8,9 +8,7 @@
 ?>
 
 <article <?php sempress_post_id(); ?> <?php post_class(); ?><?php sempress_semantics( 'page' ); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title p-name" itemprop="name headline"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
+	<?php get_template_part( 'entry', 'header' ); ?>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary p-summary" itemprop="description">
