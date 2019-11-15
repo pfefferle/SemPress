@@ -251,3 +251,38 @@ function sempress_semantics( $id ) {
 		echo ' ' . esc_attr( $key ) . '="' . esc_attr( join( ' ', $value ) ) . '"';
 	}
 }
+
+/**
+ * Add `p-category` to tags links
+ *
+ * @link https://www.webrocker.de/2016/05/13/add-class-attribute-to-wordpress-the_tags-markup/
+ *
+ * @param  array $links
+ * @return array
+ */
+function sempress_term_links_tag( $links ) {
+	$post  = get_post();
+	$terms = get_the_terms( $post->ID, 'post_tag' );
+
+	if ( is_wp_error( $terms ) ) {
+		return $terms;
+	}
+
+	if ( empty( $terms ) ) {
+		return false;
+	}
+
+	$links = array();
+	foreach ( $terms as $term ) {
+		$link = get_term_link( $term );
+
+		if ( is_wp_error( $link ) ) {
+			return $link;
+		}
+
+		$links[] = '<a class="p-category" href="' . esc_url( $link ) . '" rel="tag">' . $term->name . '</a>';
+	}
+
+	return $links;
+}
+add_filter( 'term_links-post_tag', 'sempress_term_links_tag' );
