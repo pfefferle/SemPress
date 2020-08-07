@@ -20,7 +20,7 @@
  *
  * @since SemPress 1.0.0
  */
-function sempress_body_classes( $classes ) {
+function sempress_body_classes( $classes = array() ) {
 	$classes[] = get_theme_mod( 'sempress_columns', 'multi' ) . '-column';
 
 	// Adds a class of single-author to blogs with only 1 published author
@@ -47,16 +47,14 @@ add_filter( 'body_class', 'sempress_body_classes' );
  *
  * @since SemPress 1.0.0
  */
-function sempress_post_classes( $classes ) {
+function sempress_post_classes( $classes = array() ) {
 	$classes = array_diff( $classes, array( 'hentry' ) );
 
 	if ( ! get_the_title() ) {
 		$classes[] = 'no-title';
 	}
 
-	if ( is_singular() ) {
-		return $classes;
-	}
+	return $classes;
 }
 add_filter( 'post_class', 'sempress_post_classes', 99 );
 
@@ -65,7 +63,7 @@ add_filter( 'post_class', 'sempress_post_classes', 99 );
  *
  * @since SemPress 1.4.0
  */
-function sempress_comment_classes( $classes ) {
+function sempress_comment_classes( $classes = array() ) {
 	$classes[] = 'h-entry';
 	$classes[] = 'h-cite';
 	$classes[] = 'p-comment';
@@ -79,6 +77,9 @@ add_filter( 'comment_class', 'sempress_comment_classes', 99 );
  * encapsulates post-classes to use them on different tags
  */
 function sempress_get_post_classes( $classes = array() ) {
+	if ( ! $classes ) {
+		$classes = array();
+	}
 	// Adds a class for microformats v2
 	$classes[] = 'h-entry';
 
