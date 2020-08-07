@@ -545,6 +545,14 @@ require( get_template_directory() . '/inc/semantics.php' );
  */
 require( get_template_directory() . '/inc/compat.php' );
 
+if ( defined( 'SYNDICATION_LINKS_VERSION' ) ) {
+	/**
+	 * Adds Indieweb Syndcation Links
+	 * if github.com/dshanske/syndication-links is activated
+	 */
+	require( get_template_directory() . '/int/syndication-links.php' );
+}
+
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
  */
