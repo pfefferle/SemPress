@@ -1,15 +1,16 @@
 module.exports = function (grunt) {
+  const sass = require('node-sass');
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
-      expanded: {
+      main: {
         options: {
-          style: 'expanded',
-          line_comments: false,
-          line_numbers: false,
-          sourcemap: 'none'
+          implementation: sass,
+          outputStyle: 'compressed',
+          sourceComments: false,
+          sourceMap: false
         },
         files: {
           'sempress/style.css': 'sass/style.scss',
@@ -56,7 +57,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wp-i18n');
