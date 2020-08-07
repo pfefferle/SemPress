@@ -14,12 +14,13 @@
 get_header(); ?>
 
 		<section id="primary">
-			<main id="content" role="main">
+			<main id="content" role="main"<?php sempress_main_class(); ?>>
 
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
 					<h1 class="page-title"><?php the_archive_title(); ?></h1>
+					<div class="page-description"><?php the_archive_description(); ?></div>
 				</header>
 
 				<?php rewind_posts(); ?>

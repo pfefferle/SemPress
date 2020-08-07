@@ -36,8 +36,6 @@ function sempress_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 		$classes[] = 'h-feed';
 		$classes[] = 'feed';
-	} else {
-		$classes = sempress_get_post_classes( $classes );
 	}
 
 	return $classes;
@@ -56,9 +54,7 @@ function sempress_post_classes( $classes ) {
 		$classes[] = 'no-title';
 	}
 
-	if ( ! is_singular() ) {
-		return sempress_get_post_classes( $classes );
-	} else {
+	if ( is_singular() ) {
 		return $classes;
 	}
 }
@@ -286,3 +282,40 @@ function sempress_term_links_tag( $links ) {
 	return $links;
 }
 add_filter( 'term_links-post_tag', 'sempress_term_links_tag' );
+
+function sempress_main_class( $class = '' ) {
+	// Separates class names with a single space, collates class names for body element
+	echo 'class="' . join( ' ', sempress_get_main_class( $class ) ) . '"';
+}
+
+function sempress_get_main_class( $class = '' ) {
+	$classes = array();
+
+	if ( is_singular() ) {
+		$classes = sempress_get_post_classes( $classes );
+	}
+
+	if ( ! empty( $class ) ) {
+		if ( ! is_array( $class ) ) {
+			$class = preg_split( '#\s+#', $class );
+		}
+		$classes = array_merge( $classes, $class );
+	} else {
+		// Ensure that we always coerce class to being an array.
+		$class = array();
+	}
+
+	$classes = array_map( 'esc_attr', $classes );
+
+	/**
+	 * Filters the list of CSS main class names for the current post or page.
+	 *
+	 * @since 2.8.0
+	 *
+	 * @param string[] $classes An array of main class names.
+	 * @param string[] $class   An array of additional class names added to the main.
+	 */
+	$classes = apply_filters( 'sempress_main_class', $classes, $class );
+
+	return array_unique( $classes );
+}

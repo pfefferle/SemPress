@@ -9,7 +9,7 @@
 get_header(); ?>
 
 	<section id="primary" class="full-width">
-		<main id="content" role="main">
+		<main id="content" role="main"<?php sempress_main_class(); ?>>
 
 			<article id="post-0" class="post error404 not-found">
 				<header class="entry-header">

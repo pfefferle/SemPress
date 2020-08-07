@@ -553,6 +553,10 @@ if ( defined( 'SYNDICATION_LINKS_VERSION' ) ) {
 	require( get_template_directory() . '/int/syndication-links.php' );
 }
 
+if ( class_exists( 'Post_Kinds_Plugin' ) ) {
+	require( get_template_directory() . '/int/post-kinds.php' );
+}
+
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and SemPress.
  */
