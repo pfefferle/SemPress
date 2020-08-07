@@ -14,6 +14,12 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.6.0 =
+
+* sidebar is no longer part of the `h-entry`
+* direct integration of the Syndication-Links plugin
+* direct integration of the Post-Kinds plugin
+
 = 1.5.12 =
 
 * fixed HTML issue in sidebar.php (thanks @billbennett)
