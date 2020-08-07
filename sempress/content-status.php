@@ -10,6 +10,8 @@
 ?>
 
 <article <?php sempress_post_id(); ?> <?php post_class(); ?>>
+	<?php get_template_part( 'entry', 'header' ); ?>
+
 	<?php if ( is_search() ) : // Only display Excerpts for search pages ?>
 	<div class="entry-summary p-summary entry-title p-name" itemprop="name description">
 		<?php the_excerpt(); ?>

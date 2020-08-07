@@ -9,3 +9,4 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 <?php endif; ?>
+<?php do_action( 'sempress_before_entry_content' ); ?>
