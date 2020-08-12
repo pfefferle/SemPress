@@ -16,7 +16,7 @@ services:
     links:
       - db
     ports:
-      - "80:80"
+      - "8012:80"
     volumes:
       - ./sempress:/var/www/html/wp-content/themes/sempress
     restart: always

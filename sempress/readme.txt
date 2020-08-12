@@ -14,6 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.6.1 =
+
+* fixed Post-Kinds styling
+
 = 1.6.0 =
 
 * sidebar is no longer part of the `h-entry`

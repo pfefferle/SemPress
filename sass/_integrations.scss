@@ -14,6 +14,36 @@ ul.relsyn {
     display: inline-block;
     list-style: none;
     margin-left: 5px;
-    vertical-align: middle;
   }
+}
+
+.post-kind .entry-reaction {
+  line-height: 27px;
+  border-bottom: inset #D6D6D6;
+
+  .svg-icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    font-style: normal;
+    position: absolute;
+    left: -65px;
+    top: 25px;
+
+    svg {
+      fill: #555;
+    }
+  }
+
+  a {
+    color: #21759B;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+}
+
+#page .post-kind img.avatar {
+  display: none;
 }
