@@ -19,6 +19,7 @@
 </head>
 
 <body <?php body_class(); ?><?php sempress_semantics( 'body' ); ?>>
+<?php wp_body_open(); ?>
 <div id="page">
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
@@ -32,7 +33,7 @@
 				<meta itemprop="height" content="<?php echo next( $image ); ?>" />
 			</div>
 		<?php } ?>
-		<h1 id="site-title"<?php sempress_semantics( 'site-title' ); ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_semantics( 'site-url' ); ?>><?php bloginfo( 'name' ); ?></a></h1>
+		<h1 id="site-title"<?php sempress_semantics( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"<?php sempress_semantics( 'site-url' ); ?>><?php bloginfo( 'name' ); ?></a></h1>
 		<h2 id="site-description"<?php sempress_semantics( 'site-description' ); ?>><?php bloginfo( 'description' ); ?></h2>
 
 		<?php if ( get_header_image() ) { ?>

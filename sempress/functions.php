@@ -214,19 +214,19 @@ function sempress_customize_css() {
 	global $themecolors;
 ?>
 	<style type="text/css" id="sempress-custom-colors">
-		body { text-shadow: 0 1px 0 <?php echo get_theme_mod( 'sempress_shadowcolor', '#' . $themecolors['shadow'] ); ?>; }
-		body, a { color: <?php echo get_theme_mod( 'sempress_textcolor', '#' . $themecolors['text'] ); ?>; }
+		body { text-shadow: 0 1px 0 <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', '#' . $themecolors['shadow'] ) ); ?>; }
+		body, a { color: <?php echo esc_attr( get_theme_mod( 'sempress_textcolor', '#' . $themecolors['text'] ) ); ?>; }
 		.widget, #access {
-			border-bottom: 1px solid <?php echo get_theme_mod( 'sempress_bordercolor', 'inherit' ); ?>;
-			-moz-box-shadow: <?php echo get_theme_mod( 'sempress_shadowcolor', 'inherit' ); ?> 0 1px 0 0;
-			-webkit-box-shadow: <?php echo get_theme_mod( 'sempress_shadowcolor', 'inherit' ); ?> 0 1px 0 0;
-			box-shadow: <?php echo get_theme_mod( 'sempress_shadowcolor', 'inherit' ); ?> 0 1px 0 0;
+			border-bottom: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?>;
+			-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
+			-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
+			box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
 		}
 		article.comment {
-			border-top: 1px solid <?php echo get_theme_mod( 'sempress_shadowcolor', 'inherit' ); ?>;
-			-moz-box-shadow: <?php echo get_theme_mod( 'sempress_bordercolor', 'inherit' ); ?> 0 -1px 0 0;
-			-webkit-box-shadow: <?php echo get_theme_mod( 'sempress_bordercolor', 'inherit' ); ?> 0 -1px 0 0;
-			box-shadow: <?php echo get_theme_mod( 'sempress_bordercolor', 'inherit' ); ?> 0 -1px 0 0;
+			border-top: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?>;
+			-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
+			-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
+			box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
 		}
 	</style>
 <?php

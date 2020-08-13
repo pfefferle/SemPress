@@ -31,7 +31,9 @@ module.exports = function (grunt) {
             'name': '<%= pkg.name %>',
             'description': '<%= pkg.description %>',
             'homepage': '<%= pkg.homepage %>',
-            'keywords': '<%= pkg.keywords.join(", ") %>'
+            'keywords': '<%= pkg.keywords.join(", ") %>',
+            'php': '<%= pkg.wordpress.php %>',
+            'wordpress': '<%= pkg.wordpress.wordpress %>'
           },
           prefix: '@@'
         },

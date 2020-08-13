@@ -14,7 +14,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div id="site-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 			<meta itemprop="name" content="<?php echo get_bloginfo( 'name', 'display' ); ?>" />
-			<meta itemprop="url" content="<?php echo home_url( '/' ); ?>" />
+			<meta itemprop="url" content="<?php echo esc_url( home_url( '/' ) ); ?>" />
 			<?php
 			if ( has_custom_logo() ) {
 				$image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ) );
