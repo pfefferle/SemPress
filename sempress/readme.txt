@@ -14,6 +14,10 @@ The exceptions to this license are as follows:
 
 == Changelog ==
 
+= 1.6.3 =
+
+* fix microformats2
+
 = 1.6.2 =
 
 * "Automated Theme Scanning" fixes

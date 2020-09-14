@@ -1,6 +1,6 @@
 {
   "name": "SemPress",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "wordpress": {
     "php": "5.6",
     "wordpress": "5.5"
