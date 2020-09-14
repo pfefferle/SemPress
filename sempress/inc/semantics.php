@@ -54,7 +54,11 @@ function sempress_post_classes( $classes = array() ) {
 		$classes[] = 'no-title';
 	}
 
-	return $classes;
+	if ( ! is_singular() ) {
+		return sempress_get_post_classes( $classes );
+	} else {
+		return $classes;
+	}
 }
 add_filter( 'post_class', 'sempress_post_classes', 99 );
 
@@ -286,7 +290,7 @@ add_filter( 'term_links-post_tag', 'sempress_term_links_tag' );
 
 function sempress_main_class( $class = '' ) {
 	// Separates class names with a single space, collates class names for body element
-	echo 'class="' . join( ' ', sempress_get_main_class( $class ) ) . '"';
+	echo ' class="' . join( ' ', sempress_get_main_class( $class ) ) . '"';
 }
 
 function sempress_get_main_class( $class = '' ) {
