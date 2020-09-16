@@ -204,33 +204,35 @@ function sempress_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'sempress_customize_register' );
 
+if ( ! function_exists( 'sempress_customize_css' ) ) :
+	/**
+	 * Adds the custom CSS to the theme-header
+	 *
+	 * @since 1.3.0
+	 */
+	function sempress_customize_css() {
+		global $themecolors;
+	?>
+		<style type="text/css" id="sempress-custom-colors">
+			body { text-shadow: 0 1px 0 <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', '#' . $themecolors['shadow'] ) ); ?>; }
+			body, a { color: <?php echo esc_attr( get_theme_mod( 'sempress_textcolor', '#' . $themecolors['text'] ) ); ?>; }
+			.widget, #access {
+				border-bottom: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?>;
+				-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
+				-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
+				box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
+			}
+			article.comment {
+				border-top: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?>;
+				-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
+				-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
+				box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
+			}
+		</style>
+	<?php
+	}
+endif; // sempress_customize_css
 
-/**
- * Adds the custom CSS to the theme-header
- *
- * @since 1.3.0
- */
-function sempress_customize_css() {
-	global $themecolors;
-?>
-	<style type="text/css" id="sempress-custom-colors">
-		body { text-shadow: 0 1px 0 <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', '#' . $themecolors['shadow'] ) ); ?>; }
-		body, a { color: <?php echo esc_attr( get_theme_mod( 'sempress_textcolor', '#' . $themecolors['text'] ) ); ?>; }
-		.widget, #access {
-			border-bottom: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?>;
-			-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
-			-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
-			box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?> 0 1px 0 0;
-		}
-		article.comment {
-			border-top: 1px solid <?php echo esc_attr( get_theme_mod( 'sempress_shadowcolor', 'inherit' ) ); ?>;
-			-moz-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
-			-webkit-box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
-			box-shadow: <?php echo esc_attr( get_theme_mod( 'sempress_bordercolor', 'inherit' ) ); ?> 0 -1px 0 0;
-		}
-	</style>
-<?php
-}
 add_action( 'wp_head', 'sempress_customize_css' );
 
 /**
