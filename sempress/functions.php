@@ -286,11 +286,14 @@ if ( ! function_exists( 'sempress_enqueue_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		// Load the html5 shiv.
-		wp_enqueue_script( 'html5', get_template_directory_uri() . '/js/html5shiv.min.js', array(), '3.7.3' );
-		wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
+		// Load scripts only on non-AMP pages.
+		if ( ! function_exists( 'is_amp_endpoint' ) || ( function_exists( 'is_amp_endpoint' ) && ! is_amp_endpoint() ) ) {
+			// Load the html5 shiv.
+			wp_enqueue_script( 'html5', get_template_directory_uri() . '/js/html5shiv.min.js', array(), '3.7.3' );
+			wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
 
-		wp_enqueue_script( 'sempress-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.5.1', true );
+			wp_enqueue_script( 'sempress-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.5.1', true );
+		}
 
 		// Loads our main stylesheet.
 		wp_enqueue_style( 'sempress-style', get_stylesheet_uri() );
