@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 /**
  * The template for displaying posts in the Link Post Format on index and archive pages
  *

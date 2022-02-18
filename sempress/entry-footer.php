@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <footer class="entry-meta">
 	<?php
 	if ( in_array( get_post_format(), array( 'aside', 'link', 'status', 'quote' ) ) || ! get_the_title()  ) {

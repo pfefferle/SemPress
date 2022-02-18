@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Template Name: Full-width, no sidebar
  * Description: A full-width template with no sidebar

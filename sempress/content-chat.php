@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 /**
  * @package SemPress
  * @since SemPress 1.0.0
