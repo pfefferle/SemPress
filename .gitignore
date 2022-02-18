@@ -4,3 +4,4 @@ node_modules/*
 sempress.zip
 package-lock.json
 .idea/*
+.DS_Store
