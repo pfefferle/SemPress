@@ -98,7 +98,7 @@ if ( ! function_exists( 'sempress_setup' ) ) :
 		add_theme_support( 'microformats' );
 		add_theme_support( 'microdata' );
 
-		if ( get_theme_mod( 'sempress_columns', 'multi' ) === 'single' ) {
+		if ( get_theme_mod( 'sempress_columns', 'multi' ) !== 'multi' ) {
 			$width = 670;
 		} else {
 			$width = 950;
@@ -199,8 +199,9 @@ function sempress_customize_register( $wp_customize ) {
 		'settings'   => 'sempress_columns',
 		'type'	   => 'select',
 		'choices'	=> array(
-			'single' => __( 'Single Column (Sidebar at the bottom)', 'sempress' ),
-			'multi'	=> __( 'Multi Column (Sidebar at the right)', 'sempress' ),
+			'single'    => __( 'Single Column (Sidebar at the bottom)', 'sempress' ),
+			'nosidebar'	=> __( 'Single Column (No Sidebar)', 'sempress' ),
+			'multi'	    => __( 'Multi Column (Sidebar at the right)', 'sempress' ),
 		),
 	) );
 }

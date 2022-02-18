@@ -23,7 +23,13 @@ defined( 'ABSPATH' ) || exit;
  * @since SemPress 1.0.0
  */
 function sempress_body_classes( $classes = array() ) {
-	$classes[] = get_theme_mod( 'sempress_columns', 'multi' ) . '-column';
+	$columns = get_theme_mod( 'sempress_columns', 'multi' );
+
+	if ( 'nosidebar' === $columns ) {
+		$columns = 'single';
+	}
+
+	$classes[] = $columns . '-column';
 
 	// Adds a class of single-author to blogs with only 1 published author
 	if ( ! is_multi_author() ) {

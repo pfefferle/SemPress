@@ -63,5 +63,9 @@ get_header(); ?>
 			</main><!-- #content -->
 		</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php
+if ( 'nosidebar' !== get_theme_mod( 'sempress_columns', 'multi' ) ) {
+	get_sidebar();
+}
+?>
 <?php get_footer(); ?>
