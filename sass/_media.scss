@@ -17,6 +17,10 @@
 }
 
 .entry-media {
+  img {
+    width: 100%;
+  }
+
   img, iframe, object, embed {
     margin-top: 20px;
   }
