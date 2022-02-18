@@ -1,6 +1,6 @@
 == Copyright ==
 
-SemPress WordPress Theme, Copyright 2013 Matthias Pfefferle
+SemPress WordPress Theme, Copyright 2022 Matthias Pfefferle
 SemPress is distributed under the terms of the GNU GPL Version 3
 
 == Licenses ==
@@ -13,6 +13,13 @@ The exceptions to this license are as follows:
 * html5shiv is licensed under the [http://opensource.org/licenses/MIT MIT license]
 
 == Changelog ==
+
+= 1.7.0 =
+
+* fix: Featured image to small for full width pages
+* fix: Syndication links icons don't show in Safari
+* fix: Make AMP Compatible
+* fix: Call to undefined function get_header()
 
 = 1.6.3 =
 
