@@ -14,6 +14,11 @@ ul.relsyn {
     display: inline-block;
     list-style: none;
     margin-left: 5px;
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
   }
 }
 
