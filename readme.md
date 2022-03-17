@@ -1,7 +1,5 @@
 # SemPress
 
-[![Flattr this](http://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=pfefferle&url=https%3A%2F%2Fgithub.com%2Fpfefferle%2Fsempress)
-
 A WordPress theme, highly semantic, HTML5 templates, responsive and SEO optimized.
 
 ![SenPress](https://raw.githubusercontent.com/pfefferle/SemPress/master/sempress/screenshot.png)
