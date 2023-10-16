@@ -75,7 +75,7 @@ if ( ! function_exists( 'sempress_setup' ) ) :
 		) );
 
 		// Add support for the Aside, Gallery Post Formats...
-		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status', 'image', 'video', 'audio', 'quote' ) );
+		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'status', 'image', 'video', 'audio', 'quote', 'chat' ) );
 
 		/**
 		 * This theme supports jetpacks "infinite-scroll"
