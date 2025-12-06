@@ -75,10 +75,6 @@ SemPress supports:
 
 ## Child themes
 
-### [Index](http://cmx.org.uk/indextheme/) by [Phil Julian](http://cmx.org.uk/)
-
-See <http://cmx.org.uk> for an example
-
 ### [SemPress Lite](https://github.com/jihaisse/SemPress-Lite) by [Jihaisse](http://jihais.se/)
 
 ![SemPress Lite](https://raw.githubusercontent.com/jihaisse/SemPress-Lite/master/sempress-lite/screenshot.png)
